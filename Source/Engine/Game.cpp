@@ -8,7 +8,7 @@
 namespace N {
     using N::Log;
 
-    void IGame::Run() {
+    void Game::Run() {
         mRunning = Initialize();
         if (!mRunning) return;
         OnAwake();
@@ -29,29 +29,27 @@ namespace N {
         Shutdown();
     }
 
-    void IGame::Quit() {
+    void Game::Quit() {
         mRunning = false;
     }
 
-    void IGame::ToggleFullscreen() {
+    void Game::ToggleFullscreen() {
         mFullscreen = !mFullscreen;
         throw N_NOT_IMPLEMENTED;
     }
 
-    void IGame::SetTitle(const string& title) {
+    void Game::SetTitle(const string& title) {
         mTitle = title;
         glfwSetWindowTitle(mWindow, title.c_str());
     }
 
-    void IGame::Resize(u32 width, u32 height) {
+    void Game::Resize(u32 width, u32 height) {
         mWidth  = width;
         mHeight = height;
         glfwSetWindowSize(mWindow, (s32)width, (s32)height);
     }
 
-    bool IGame::Initialize() {
-        Log::Initialize();
-
+    bool Game::Initialize() {
         if (!glfwInit()) {
             Log::Critical("Failed to initialize GLFW");
             return false;
@@ -89,26 +87,26 @@ namespace N {
         return true;
     }
 
-    void IGame::Shutdown() const {
-        Log::Shutdown();
-
+    void Game::Shutdown() const {
         if (mWindow) glfwDestroyWindow(mWindow);
         glfwTerminate();
+
+        Log::Shutdown();
     }
 
-    void IGame::Render() const {}
+    void Game::Render() const {}
 
-    void IGame::GLFWResizeCallback(GLFWwindow* window, s32 width, s32 height) {
-        auto* game = CAST<IGame*>(glfwGetWindowUserPointer(window));
+    void Game::GLFWResizeCallback(GLFWwindow* window, s32 width, s32 height) {
+        auto* game = CAST<Game*>(glfwGetWindowUserPointer(window));
         if (game) { game->OnResize(width, height); }
         // glViewport(0, 0, width, height);
     }
 
-    void IGame::GLFWKeyCallback(GLFWwindow* window, s32 key, s32 scancode, s32 action, s32 mods) {
+    void Game::GLFWKeyCallback(GLFWwindow* window, s32 key, s32 scancode, s32 action, s32 mods) {
         N_UNUSED(scancode);
         N_UNUSED(mods);
 
-        auto* game = CAST<IGame*>(glfwGetWindowUserPointer(window));
+        auto* game = CAST<Game*>(glfwGetWindowUserPointer(window));
         if (game) {
             game->OnKey(key);
             if (action == GLFW_PRESS) game->OnKeyDown(key);
@@ -116,10 +114,10 @@ namespace N {
         }
     }
 
-    void IGame::GLFWMouseButtonCallback(GLFWwindow* window, s32 button, s32 action, s32 mods) {
+    void Game::GLFWMouseButtonCallback(GLFWwindow* window, s32 button, s32 action, s32 mods) {
         N_UNUSED(mods);
 
-        auto* game = CAST<IGame*>(glfwGetWindowUserPointer(window));
+        auto* game = CAST<Game*>(glfwGetWindowUserPointer(window));
         if (game) {
             game->OnMouseButton(button);
             if (action == GLFW_PRESS) game->OnMouseButtonDown(button);
@@ -127,13 +125,13 @@ namespace N {
         }
     }
 
-    void IGame::GLFWMouseCursorCallback(GLFWwindow* window, f64 xpos, f64 ypos) {
-        auto* game = CAST<IGame*>(glfwGetWindowUserPointer(window));
+    void Game::GLFWMouseCursorCallback(GLFWwindow* window, f64 xpos, f64 ypos) {
+        auto* game = CAST<Game*>(glfwGetWindowUserPointer(window));
         if (game) { game->OnMouseMove(xpos, ypos); }
     }
 
-    void IGame::GLFWMouseScrollCallback(GLFWwindow* window, f64 xoffset, f64 yoffset) {
-        auto* game = CAST<IGame*>(glfwGetWindowUserPointer(window));
+    void Game::GLFWMouseScrollCallback(GLFWwindow* window, f64 xoffset, f64 yoffset) {
+        auto* game = CAST<Game*>(glfwGetWindowUserPointer(window));
         if (game) { game->OnMouseScroll(xoffset, yoffset); }
     }
 }  // namespace N

@@ -8,17 +8,19 @@
 #include "Clock.hpp"
 
 namespace N {
-    class IGame {
+    /// @brief Base class where all engine systems meet and execute. Owns the system window and handles communication
+    /// between the OS, graphics API, and game client code (among many other things).
+    class Game {
     public:
         static constexpr u32 kDefaultWidth {800};
         static constexpr u32 kDefaultHeight {600};
 
-        N_CLASS_PREVENT_MOVES_COPIES(IGame)
+        N_CLASS_PREVENT_MOVES_COPIES(Game)
 
-        IGame() = default;
-        IGame(string title, u32 width, u32 height) : mWidth(width), mHeight(height), mTitle(std::move(title)) {}
+        Game() = default;
+        Game(string title, u32 width, u32 height) : mWidth(width), mHeight(height), mTitle(std::move(title)) {}
 
-        virtual ~IGame() = default;
+        virtual ~Game() = default;
 
         void Run();
         void Quit();

@@ -7,9 +7,9 @@
 #include <Log.hpp>
 
 namespace N {
-    class SandboxGame final : public IGame {
+    class SandboxGame final : public Game {
     public:
-        SandboxGame() : IGame("Sandbox", 1280, 720) {}
+        SandboxGame() : Game("Sandbox", 1280, 720) {}
 
         void OnKeyDown(u32 keyCode) override {
             if (keyCode == Input::Keys::Escape) { Quit(); }
