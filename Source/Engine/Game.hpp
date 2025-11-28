@@ -74,7 +74,7 @@ namespace N {
         }
 
     protected:
-        void Render() const;
+        void Render();
 
     private:
         bool Initialize();

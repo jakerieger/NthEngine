@@ -77,7 +77,7 @@ namespace N {
         glfwSetCursorPosCallback(mWindow, GLFWMouseCursorCallback);
         glfwSetScrollCallback(mWindow, GLFWMouseScrollCallback);
 
-        glfwSwapInterval(1);
+        glfwSwapInterval(1);  // Enable V-Sync
 
         if (!mRenderContext.Initialize(mWidth, mHeight)) {
             glfwDestroyWindow(mWindow);
@@ -99,9 +99,11 @@ namespace N {
         Log::Shutdown();
     }
 
-    void Game::Render() const {
+    void Game::Render() {
         mRenderContext.BeginFrame();
-
+        {
+            // Submit drawing commands here
+        }
         mRenderContext.EndFrame(mWindow);
     }
 

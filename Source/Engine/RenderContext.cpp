@@ -26,6 +26,7 @@ namespace N {
         glEnable(GL_BLEND);
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
+        mCommandQueue.Reserve(1000);
         mInitialized = true;
 
         return true;
@@ -35,16 +36,14 @@ namespace N {
         N_UNUSED(this);
     }
 
-    void RenderContext::BeginFrame() const {
+    void RenderContext::BeginFrame() {
         N_ASSERT(mInitialized);
-        glClearColor(0.08f, 0.08f, 0.08f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        Submit(ClearCommand {{0.08f, 0.08f, 0.08f, 1.0f}, true, false});
     }
 
-    void RenderContext::EndFrame(GLFWwindow* window) const {
+    void RenderContext::EndFrame(GLFWwindow* window) {
         N_ASSERT(mInitialized);
-        glBindVertexArray(0);
-        glUseProgram(0);
+        mCommandQueue.ExecuteQueue();
         glfwSwapBuffers(window);
     }
 
@@ -52,6 +51,6 @@ namespace N {
         N_ASSERT(mInitialized);
         mWidth  = width;
         mHeight = height;
-        glViewport(0, 0, (s32)width, (s32)height);
+        Submit(SetViewportCommand {0, 0, width, height});
     }
 }  // namespace N
