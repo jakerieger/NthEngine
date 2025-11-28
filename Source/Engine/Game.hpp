@@ -6,6 +6,7 @@
 
 #include "CommonPCH.hpp"
 #include "Clock.hpp"
+#include "RenderContext.hpp"
 
 namespace N {
     /// @brief Base class where all engine systems meet and execute. Owns the system window and handles communication
@@ -68,6 +69,10 @@ namespace N {
             return mTitle;
         }
 
+        N_ND RenderContext& GetRenderContext() {
+            return mRenderContext;
+        }
+
     protected:
         void Render() const;
 
@@ -92,5 +97,6 @@ namespace N {
 
         // Internal systems
         Clock mClock;
+        RenderContext mRenderContext;
     };
 }  // namespace N

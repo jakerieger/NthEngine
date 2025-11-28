@@ -15,6 +15,9 @@
 #include <spdlog/sinks/stdout_color_sinks.h>
 #include <spdlog/fmt/fmt.h>
 
+// For some reason, this has to be a relative path like so
+#include "../Vendor/glad/glad.h"
+
 #include <GLFW/glfw3.h>
 
 #if defined(N_ENGINE_PLATFORM_WINDOWS)

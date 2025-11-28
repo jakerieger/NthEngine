@@ -18,7 +18,6 @@ namespace N {
                 mClock.Tick();
                 OnUpdate(mClock);
                 Render();
-                glfwSwapBuffers(mWindow);
                 OnLateUpdate();
                 glfwPollEvents();
             }
@@ -72,15 +71,20 @@ namespace N {
         glfwMakeContextCurrent(mWindow);
         glfwSetWindowUserPointer(mWindow, this);
 
-        // SetupOpenGL();
-
         glfwSetFramebufferSizeCallback(mWindow, GLFWResizeCallback);
         glfwSetKeyCallback(mWindow, GLFWKeyCallback);
         glfwSetMouseButtonCallback(mWindow, GLFWMouseButtonCallback);
         glfwSetCursorPosCallback(mWindow, GLFWMouseCursorCallback);
         glfwSetScrollCallback(mWindow, GLFWMouseScrollCallback);
 
-        // glfwSwapInterval(1);
+        glfwSwapInterval(1);
+
+        if (!mRenderContext.Initialize(mWidth, mHeight)) {
+            glfwDestroyWindow(mWindow);
+            glfwTerminate();
+            Log::Critical("Failed to initialize render context");
+            return false;
+        }
 
         Log::Info("Successfully initialized game instance");
 
@@ -88,18 +92,25 @@ namespace N {
     }
 
     void Game::Shutdown() const {
+        mRenderContext.Shutdown();
         if (mWindow) glfwDestroyWindow(mWindow);
         glfwTerminate();
 
         Log::Shutdown();
     }
 
-    void Game::Render() const {}
+    void Game::Render() const {
+        mRenderContext.BeginFrame();
+
+        mRenderContext.EndFrame(mWindow);
+    }
 
     void Game::GLFWResizeCallback(GLFWwindow* window, s32 width, s32 height) {
         auto* game = CAST<Game*>(glfwGetWindowUserPointer(window));
-        if (game) { game->OnResize(width, height); }
-        // glViewport(0, 0, width, height);
+        if (game) {
+            game->GetRenderContext().Resize(width, height);
+            game->OnResize(width, height);
+        }
     }
 
     void Game::GLFWKeyCallback(GLFWwindow* window, s32 key, s32 scancode, s32 action, s32 mods) {
