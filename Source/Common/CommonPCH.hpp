@@ -18,10 +18,9 @@
 #define SPDLOG_NO_FMT_STRING
 #include <spdlog/spdlog.h>
 #include <spdlog/sinks/stdout_color_sinks.h>
-#include <spdlog/fmt/fmt.h>
 
 // For some reason, this has to be a relative path like so
-#include "../Vendor/glad/glad.h"
+#include "../Vendor/glad.h"
 
 #include <GLFW/glfw3.h>
 

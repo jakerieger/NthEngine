@@ -37,7 +37,7 @@ namespace Nth {
 
         int w, h, channels;
         stbi_set_flip_vertically_on_load(true);  // For OpenGL
-        const auto data = stbi_load(filename.c_str(), &w, &h, &channels, 0);
+        const auto data = stbi_load(filename.string().c_str(), &w, &h, &channels, 0);
         if (!data) { Log::Error("TextureManager", "Failed to load image!"); }
 
         GLenum format = GL_RGBA;
@@ -57,7 +57,7 @@ namespace Nth {
         stbi_image_free(data);
 
         sCache[filename.string()] = id;
-        Log::Info("TextureManager", "Loaded texture `{}` with OpenGL id `{}`", filename.c_str(), id);
+        Log::Info("TextureManager", "Loaded texture `{}` with OpenGL id `{}`", filename.string().c_str(), id);
 
         return id;
     }

@@ -4,6 +4,8 @@
 
 #pragma once
 
+#include <variant>
+
 #include "CommonPCH.hpp"
 #include "Components/Transform.hpp"
 
