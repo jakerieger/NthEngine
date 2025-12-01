@@ -7,16 +7,19 @@
 #include <iterator>
 #include <ranges>
 #include <filesystem>
+#include <utility>
 #include <string_view>
+#include <source_location>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-#include <utility>
 
 #define SPDLOG_NO_FMT_STRING
 #include <spdlog/spdlog.h>
 #include <spdlog/sinks/stdout_color_sinks.h>
+
+#include <fmt/format.h>
 
 // For some reason, this has to be a relative path like so
 #include "../Vendor/glad.h"
@@ -36,8 +39,6 @@
 
 #include "Macros.hpp"
 #include "IO.hpp"
-
-#include <source_location>
 
 #define CAST static_cast
 #define CCAST const_cast

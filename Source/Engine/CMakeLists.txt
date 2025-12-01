@@ -34,6 +34,7 @@ target_link_libraries(NthEngine PUBLIC
         glm::glm
         spdlog::spdlog
         EnTT::EnTT
+        fmt::fmt-header-only
 )
 
 if (UNIX AND NOT APPLE)
