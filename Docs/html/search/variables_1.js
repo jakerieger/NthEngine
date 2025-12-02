@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['geometry_0',['geometry',['../struct_nth_1_1_sprite_renderer.html#ae957d5cf81fcdf80ed07c61d4a215127',1,'Nth::SpriteRenderer']]]
+  ['entities_0',['entities',['../struct_nth_1_1_scene_descriptor.html#a1210e789dc8851d1b7fa0cd8e0af946c',1,'Nth::SceneDescriptor']]]
 ];

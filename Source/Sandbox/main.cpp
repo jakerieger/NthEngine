@@ -23,38 +23,16 @@ namespace Nth {
         }
 
         void OnAwake() override {
-            const auto spriteTex = TextureManager::Load(Content::GetContentPath("Sprites/ball.png"));
-
-            auto& state      = GetActiveScene()->GetState();
-            mBallEntity      = state.CreateEntity();
-            auto& sprite     = state.AddComponent<SpriteRenderer>(mBallEntity);
-            sprite.textureId = spriteTex;
-            sprite.geometry  = Geometry::CreateQuad(1.f, 1.f);
-
-            auto& transform    = state.GetTransform(mBallEntity);
-            transform.position = {640, 360};  // Center of screen
-            transform.scale    = {64, 64};
+            GetActiveScene()->Load(Content::GetContentPath("Scenes/Sandbox.xml"));
         }
 
-        void OnUpdate(const Clock& clock) override {
-            auto& state     = GetActiveScene()->GetState();
-            auto& transform = state.GetTransform(mBallEntity);
-        }
+        void OnUpdate(const Clock& clock) override {}
 
         void OnLateUpdate() override {}
 
         void OnDestroyed() override {}
 
-        void OnResize(u32 width, u32 height) override {
-            auto& state     = GetActiveScene()->GetState();
-            auto& transform = state.GetTransform(mBallEntity);
-
-            transform.position.x = (f32)width / 2;
-            transform.position.y = (f32)height / 2;
-        }
-
-    private:
-        Entity mBallEntity {};
+        void OnResize(u32 width, u32 height) override {}
     };
 }  // namespace Nth
 

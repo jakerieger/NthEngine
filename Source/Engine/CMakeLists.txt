@@ -35,6 +35,7 @@ target_link_libraries(NthEngine PUBLIC
         spdlog::spdlog
         EnTT::EnTT
         fmt::fmt-header-only
+        pugixml::static
 )
 
 if (UNIX AND NOT APPLE)

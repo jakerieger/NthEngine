@@ -25,6 +25,9 @@ namespace Nth {
 
         void Render(RenderContext& context);
 
+        void Load(const fs::path& filename);
+        void Load(const string& source);
+
         N_ND SceneState& GetState() {
             return mState;
         }

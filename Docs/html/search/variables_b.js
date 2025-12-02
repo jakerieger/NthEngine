@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['v_0',['v',['../struct_nth_1_1_sprite_vertex.html#a32ed15b78943e4d07ac896da9560fc5b',1,'Nth::SpriteVertex']]],
-  ['value_1',['value',['../struct_nth_1_1_set_uniform_command.html#aac4902469e38da457a69fc33ec3302db',1,'Nth::SetUniformCommand']]]
+  ['texture_0',['texture',['../struct_nth_1_1_sprite_renderer_descriptor.html#abf0b506e4044a3fc894fadb35840b2f1',1,'Nth::SpriteRendererDescriptor']]],
+  ['textureid_1',['textureId',['../struct_nth_1_1_sprite_renderer.html#ae5e9a13d6ba8ad09d2f085c84bf93c2f',1,'Nth::SpriteRenderer']]],
+  ['tintcolor_2',['tintColor',['../struct_nth_1_1_draw_sprite_command.html#a9fe9405a614880ed0e971cefb362a4b3',1,'Nth::DrawSpriteCommand']]],
+  ['transform_3',['transform',['../struct_nth_1_1_draw_sprite_command.html#a847429630b7ae2fc19813c18aac203e4',1,'Nth::DrawSpriteCommand::transform()'],['../struct_nth_1_1_entity_descriptor.html#a5cfc6169117639617e273d3d616a38d1',1,'Nth::EntityDescriptor::transform()']]],
+  ['type_4',['type',['../struct_nth_1_1_vertex_attribute.html#aa268e0e671f15d120d046ebaa758121c',1,'Nth::VertexAttribute']]]
 ];

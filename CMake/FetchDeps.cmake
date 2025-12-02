@@ -52,10 +52,17 @@ FetchContent_Declare(
         GIT_TAG 12.1.0
 )
 
+FetchContent_Declare(
+        pugixml
+        GIT_REPOSITORY https://github.com/zeux/pugixml.git
+        GIT_TAG v1.15
+)
+
 FetchContent_MakeAvailable(
         glfw
         glm
         spdlog
         entt
         fmt
+        pugixml
 )

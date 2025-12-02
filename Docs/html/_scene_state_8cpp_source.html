@@ -90,8 +90,18 @@ $(document).ready(function(){initNavTree('_scene_state_8cpp_source.html',''); in
 <a href="_scene_state_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_scene_state_8hpp.html">SceneState.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_nth.html">Nth</a> {}  <span class="comment">// namespace N</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_nth.html">Nth</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_state.html#ac778934dbb2efac87bcfd77b7b70e82c">    7</a></span>    <a class="code hl_function" href="class_nth_1_1_scene_state.html#ac778934dbb2efac87bcfd77b7b70e82c">SceneState::~SceneState</a>() {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <a class="code hl_function" href="class_nth_1_1_scene_state.html#aaa2b30b5db00f3ea2985f65068f5e79e">Reset</a>();</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    }</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_state.html#aaa2b30b5db00f3ea2985f65068f5e79e">   11</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_scene_state.html#aaa2b30b5db00f3ea2985f65068f5e79e">SceneState::Reset</a>() {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        mRegistry.clear();  <span class="comment">// Clear the entity registry</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}  <span class="comment">// namespace Nth</span></div>
 <div class="ttc" id="a_scene_state_8hpp_html"><div class="ttname"><a href="_scene_state_8hpp.html">SceneState.hpp</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_scene_state_html_aaa2b30b5db00f3ea2985f65068f5e79e"><div class="ttname"><a href="class_nth_1_1_scene_state.html#aaa2b30b5db00f3ea2985f65068f5e79e">Nth::SceneState::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Resets the scene to its initial state.</div><div class="ttdef"><b>Definition:</b> <a href="_scene_state_8cpp_source.html#l00011">SceneState.cpp:11</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_scene_state_html_ac778934dbb2efac87bcfd77b7b70e82c"><div class="ttname"><a href="class_nth_1_1_scene_state.html#ac778934dbb2efac87bcfd77b7b70e82c">Nth::SceneState::~SceneState</a></div><div class="ttdeci">~SceneState()</div><div class="ttdef"><b>Definition:</b> <a href="_scene_state_8cpp_source.html#l00007">SceneState.cpp:7</a></div></div>
 <div class="ttc" id="anamespace_nth_html"><div class="ttname"><a href="namespace_nth.html">Nth</a></div><div class="ttdef"><b>Definition:</b> <a href="_clock_8cpp_source.html#l00006">Clock.cpp:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

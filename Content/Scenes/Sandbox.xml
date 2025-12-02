@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Scene name="Sandbox">
+    <Entities>
+        <Entity id="0" name="Ball">
+            <Components>
+                <Transform>
+                    <Position x="640" y="360"/>
+                    <Rotation x="0" y="0"/>
+                    <Scale x="64" y="64"/>
+                </Transform>
+                <SpriteRenderer>
+                    <Texture>Sprites/ball.png</Texture>
+                </SpriteRenderer>
+            </Components>
+        </Entity>
+    </Entities>
+</Scene>

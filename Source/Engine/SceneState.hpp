@@ -41,6 +41,17 @@ namespace Nth {
 
         ~SceneState();
 
+        N_CLASS_PREVENT_COPIES(SceneState)
+
+        // Move Constructor
+        SceneState(SceneState&& other) noexcept : mRegistry(std::exchange(other.mRegistry, {})) {}
+
+        // Move Assignment
+        SceneState& operator=(SceneState&& other) noexcept {
+            if (this != &other) { mRegistry = std::exchange(other.mRegistry, {}); }
+            return *this;
+        }
+
         /// @brief Resets the scene to its initial state
         void Reset();
 

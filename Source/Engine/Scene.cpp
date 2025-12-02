@@ -3,6 +3,8 @@
 ///
 #include "Scene.hpp"
 
+#include "SceneParser.hpp"
+
 namespace Nth {
     Scene::~Scene() {
         mState.Reset();
@@ -33,4 +35,13 @@ namespace Nth {
             context.Submit(DrawSpriteCommand {sprite, transform, {screenWidth, screenHeight}, {1, 1, 1, 1}});
         }
     }
+
+    void Scene::Load(const fs::path& filename) {
+        mState.Reset();
+        SceneDescriptor descriptor;
+        SceneParser::DeserializeDescriptor(filename, descriptor);
+        SceneParser::DescriptorToState(descriptor, mState);
+    }
+
+    void Scene::Load(const string& source) {}
 }  // namespace Nth

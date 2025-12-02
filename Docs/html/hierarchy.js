@@ -7,6 +7,7 @@ var hierarchy =
     [ "Nth::CommandExecutor", "class_nth_1_1_command_executor.html", null ],
     [ "Nth::CommandQueue", "class_nth_1_1_command_queue.html", null ],
     [ "Nth::DrawSpriteCommand", "struct_nth_1_1_draw_sprite_command.html", null ],
+    [ "Nth::EntityDescriptor", "struct_nth_1_1_entity_descriptor.html", null ],
     [ "Nth::Game", "class_nth_1_1_game.html", null ],
     [ "Nth::Geometry", "class_nth_1_1_geometry.html", null ],
     [ "Nth::IBuffer", "class_nth_1_1_i_buffer.html", [
@@ -19,15 +20,20 @@ var hierarchy =
       [ "Nth::OpenGLException", "struct_nth_1_1_open_g_l_exception.html", null ]
     ] ],
     [ "Nth::Scene", "class_nth_1_1_scene.html", null ],
+    [ "Nth::SceneDescriptor", "struct_nth_1_1_scene_descriptor.html", null ],
+    [ "Nth::SceneParser", "class_nth_1_1_scene_parser.html", null ],
     [ "Nth::SceneState", "class_nth_1_1_scene_state.html", null ],
+    [ "Nth::ScriptEngine", "class_nth_1_1_script_engine.html", null ],
     [ "Nth::SetUniformCommand", "struct_nth_1_1_set_uniform_command.html", null ],
     [ "Nth::SetViewportCommand", "struct_nth_1_1_set_viewport_command.html", null ],
     [ "Nth::Shader", "class_nth_1_1_shader.html", null ],
     [ "Nth::ShaderManager", "class_nth_1_1_shader_manager.html", null ],
     [ "Nth::SpriteRenderer", "struct_nth_1_1_sprite_renderer.html", null ],
+    [ "Nth::SpriteRendererDescriptor", "struct_nth_1_1_sprite_renderer_descriptor.html", null ],
     [ "Nth::SpriteVertex", "struct_nth_1_1_sprite_vertex.html", null ],
     [ "Nth::TextureManager", "class_nth_1_1_texture_manager.html", null ],
     [ "Nth::Transform", "struct_nth_1_1_transform.html", null ],
+    [ "Nth::TransformDescriptor", "struct_nth_1_1_transform_descriptor.html", null ],
     [ "Nth::VertexArray", "class_nth_1_1_vertex_array.html", null ],
     [ "Nth::VertexAttribute", "struct_nth_1_1_vertex_attribute.html", null ],
     [ "Nth::VertexLayout", "class_nth_1_1_vertex_layout.html", null ]
