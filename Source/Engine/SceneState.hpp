@@ -16,12 +16,17 @@
 #include <entt/entt.hpp>
 
 namespace Nth {
+    /// @brief Type alias for entt::entity. Casts to integer types as id value.
     using Entity = entt::entity;
 
+    /// @brief Ensures only valid components are passed to the ECS
+    /// @tparam T Component type
     template<typename T>
     concept ValidComponent =
       std::is_same_v<T, Transform> || std::is_same_v<T, SpriteRenderer> || std::is_same_v<T, Camera>;
 
+    /// @brief Holds the current state of the scene such as entities, components, and scene-specific components like
+    /// cameras and audio
     class SceneState {
     public:
         SceneState() {
@@ -34,7 +39,10 @@ namespace Nth {
             }>();
         }
 
-        ~SceneState() = default;
+        ~SceneState();
+
+        /// @brief Resets the scene to its initial state
+        void Reset();
 
         /// @brief Creates a new entity in the scene tree. All entities are required to have a Transform component
         /// and this method automatically adds it when creating the new entity.
@@ -44,10 +52,17 @@ namespace Nth {
             return entity;
         }
 
+        /// @brief Destroys the provided entity from the scene registry
         void DestroyEntity(Entity entity) {
             mRegistry.destroy(entity);
         }
 
+        /// @brief Attaches specified component to specified entity
+        /// @tparam Component Component type
+        /// @tparam Args Component construction arguments
+        /// @param entity The entity to attach the component to
+        /// @param args Arguments for component construction
+        /// @returns Newly added component reference
         template<typename Component, typename... Args>
             requires ValidComponent<Component>
         Component& AddComponent(Entity entity, Args&&... args) {
@@ -55,18 +70,29 @@ namespace Nth {
             return mRegistry.get<Component>(entity);
         }
 
+        /// @brief Fetches the given component if it exists on the provided entity
+        /// @tparam Component Component type
+        /// @param entity Entity id
+        /// @returns Component reference
         template<typename Component>
             requires ValidComponent<Component>
         Component& GetComponent(Entity entity) {
             return mRegistry.get<Component>(entity);
         }
 
+        /// @brief Returns a view of all entities with the provided components. `.each()` can be used to get an
+        /// iterator.
+        /// @tparam Components Component types to get
+        /// @returns EnTT view
         template<typename... Components>
             requires(ValidComponent<Components> && ...)
         auto View() {
             return mRegistry.view<Components...>();
         }
 
+        /// @brief Returns an array of all the entities that contain the provided component
+        /// @tparam Component Component type
+        /// @returns Vector of entity IDs
         template<typename Component>
             requires ValidComponent<Component>
         vector<Entity> GetAllEntitiesWithComponent() {
@@ -80,9 +106,19 @@ namespace Nth {
             return entities;
         }
 
+        /// @brief Get number of entities currently in scene
+        /// @returns Number of entities
         N_ND size_t GetEntityCount() const {
             const auto iter = mRegistry.view<Transform>().each();
             return CAST<size_t>(Nth::Distance(iter));
+        }
+
+        /// @brief Gets the transform component of the specified entity. All entities are created with a Transform
+        /// component attached by default.
+        /// @param entity Entity id
+        /// @returns Transform component reference
+        N_ND Transform& GetTransform(Entity entity) {
+            return GetComponent<Transform>(entity);
         }
 
     private:

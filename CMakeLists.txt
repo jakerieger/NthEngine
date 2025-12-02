@@ -17,3 +17,12 @@ include(CMake/FetchDeps.cmake)
 add_subdirectory(Source/Engine)
 add_subdirectory(Source/Sandbox)
 add_subdirectory(Source/Tools)
+
+# Generate documentation
+include(CMake/GenerateDocs.cmake)
+
+option(NTH_ENGINE_BUILD_DOCS "" ON)
+
+if (NTH_ENGINE_BUILD_DOCS)
+    GenerateDocs()
+endif ()

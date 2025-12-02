@@ -12,8 +12,8 @@
 namespace Nth {
     class Scene {
     public:
-        Scene()  = default;
-        ~Scene() = default;
+        Scene() = default;
+        ~Scene();
 
         N_CLASS_PREVENT_MOVES_COPIES(Scene)
 

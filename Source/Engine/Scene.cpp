@@ -4,6 +4,10 @@
 #include "Scene.hpp"
 
 namespace Nth {
+    Scene::~Scene() {
+        mState.Reset();
+    }
+
     void Scene::Awake() {
         N_UNUSED(this);
     }

@@ -2,6 +2,8 @@
 /// @created 11/27/25
 ///
 
+#pragma once
+
 #include "CommonPCH.hpp"
 
 namespace Nth {

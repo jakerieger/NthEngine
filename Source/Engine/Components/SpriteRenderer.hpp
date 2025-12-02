@@ -10,6 +10,10 @@
 namespace Nth {
     struct SpriteRenderer {
         u32 textureId;
-        Geometry* geometry;
+        GeometryHandle geometry;
+
+        ~SpriteRenderer() {
+            geometry.reset();
+        }
     };
 }  // namespace Nth

@@ -17,6 +17,8 @@ namespace Nth {
         SpriteVertex(f32 x, f32 y, f32 u, f32 v) : x(x), y(y), u(u), v(v) {}
     };
 
+    using GeometryHandle = shared_ptr<class Geometry>;
+
     /// @brief High-level geometry abstraction that manages vertex/index data and VAO setup
     class Geometry {
     public:
@@ -29,7 +31,7 @@ namespace Nth {
         /// @param width Width of the quad
         /// @param height Height of the quad
         /// @return Shared pointer to the created geometry
-        static shared_ptr<Geometry> CreateQuad(f32 width = 1.0f, f32 height = 1.0f);
+        static GeometryHandle CreateQuad(f32 width = 1.0f, f32 height = 1.0f);
 
         /// @brief Bind this geometry for rendering
         void Bind() const;

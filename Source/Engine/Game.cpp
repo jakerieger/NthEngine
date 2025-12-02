@@ -68,6 +68,7 @@ namespace Nth {
     }
 
     bool Game::Initialize() {
+        // Enforce X11 on Wayland systems for debugging support (RenderDoc doens't support Wayland)
 #if defined(N_ENGINE_PLATFORM_LINUX_WAYLAND) || defined(N_ENGINE_PLATFORM_LINUX_X11)
         glfwInitHint(GLFW_PLATFORM, GLFW_PLATFORM_X11);
 #endif

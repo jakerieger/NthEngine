@@ -13,7 +13,7 @@ namespace Nth::Coordinates {
     /// @param screenWidth Width of the screen in pixels
     /// @param screenHeight Height of the screen in pixels
     /// @return Position in NDC space [-1, 1]
-    static Vec2 ScreenToNDC(const Vec2& screenPos, f32 screenWidth, f32 screenHeight) {
+    inline static Vec2 ScreenToNDC(const Vec2& screenPos, f32 screenWidth, f32 screenHeight) {
         const f32 ndcX = (screenPos.x / screenWidth) * 2.0f - 1.0f;
         const f32 ndcY = (screenPos.y / screenHeight) * 2.0f - 1.0f;
         return {ndcX, ndcY};
@@ -24,7 +24,7 @@ namespace Nth::Coordinates {
     /// @param screenWidth Width of the screen in pixels
     /// @param screenHeight Height of the screen in pixels
     /// @return Position in screen space (pixels)
-    static Vec2 NDCToScreen(const Vec2& ndcPos, f32 screenWidth, f32 screenHeight) {
+    inline static Vec2 NDCToScreen(const Vec2& ndcPos, f32 screenWidth, f32 screenHeight) {
         const f32 screenX = (ndcPos.x + 1.0f) * 0.5f * screenWidth;
         const f32 screenY = (ndcPos.y + 1.0f) * 0.5f * screenHeight;
         return {screenX, screenY};
@@ -39,13 +39,13 @@ namespace Nth::Coordinates {
     /// @param worldBottom Bottom bound of world space (typically 0)
     /// @param worldTop Top bound of world space (typically screenHeight)
     /// @return Position in world space
-    static Vec2 ScreenToWorld(const Vec2& screenPos,
-                              f32 screenWidth,
-                              f32 screenHeight,
-                              f32 worldLeft   = 0.0f,
-                              f32 worldRight  = 0.0f,
-                              f32 worldBottom = 0.0f,
-                              f32 worldTop    = 0.0f) {
+    inline static Vec2 ScreenToWorld(const Vec2& screenPos,
+                                     f32 screenWidth,
+                                     f32 screenHeight,
+                                     f32 worldLeft   = 0.0f,
+                                     f32 worldRight  = 0.0f,
+                                     f32 worldBottom = 0.0f,
+                                     f32 worldTop    = 0.0f) {
         // Default to 1:1 mapping if world bounds not specified
         if (worldRight == 0.0f) worldRight = screenWidth;
         if (worldTop == 0.0f) worldTop = screenHeight;
@@ -64,13 +64,13 @@ namespace Nth::Coordinates {
     /// @param worldBottom Bottom bound of world space
     /// @param worldTop Top bound of world space
     /// @return Position in screen space (pixels)
-    static Vec2 WorldToScreen(const Vec2& worldPos,
-                              f32 screenWidth,
-                              f32 screenHeight,
-                              f32 worldLeft   = 0.0f,
-                              f32 worldRight  = 0.0f,
-                              f32 worldBottom = 0.0f,
-                              f32 worldTop    = 0.0f) {
+    inline static Vec2 WorldToScreen(const Vec2& worldPos,
+                                     f32 screenWidth,
+                                     f32 screenHeight,
+                                     f32 worldLeft   = 0.0f,
+                                     f32 worldRight  = 0.0f,
+                                     f32 worldBottom = 0.0f,
+                                     f32 worldTop    = 0.0f) {
         // Default to 1:1 mapping if world bounds not specified
         if (worldRight == 0.0f) worldRight = screenWidth;
         if (worldTop == 0.0f) worldTop = screenHeight;
@@ -85,7 +85,7 @@ namespace Nth::Coordinates {
     /// @param screenWidth Width of the screen in pixels
     /// @param screenHeight Height of the screen in pixels
     /// @return Position in screen space (pixels)
-    static Vec2 NormalizedToScreen(const Vec2& normalizedPos, f32 screenWidth, f32 screenHeight) {
+    inline static Vec2 NormalizedToScreen(const Vec2& normalizedPos, f32 screenWidth, f32 screenHeight) {
         return {normalizedPos.x * screenWidth, normalizedPos.y * screenHeight};
     }
 
@@ -94,7 +94,7 @@ namespace Nth::Coordinates {
     /// @param screenWidth Width of the screen in pixels
     /// @param screenHeight Height of the screen in pixels
     /// @return Position in normalized space [0, 1]
-    static Vec2 ScreenToNormalized(const Vec2& screenPos, f32 screenWidth, f32 screenHeight) {
+    inline static Vec2 ScreenToNormalized(const Vec2& screenPos, f32 screenWidth, f32 screenHeight) {
         return {screenPos.x / screenWidth, screenPos.y / screenHeight};
     }
 
@@ -106,7 +106,8 @@ namespace Nth::Coordinates {
     /// @param near Near clipping plane (default -1)
     /// @param far Far clipping plane (default 1)
     /// @return Orthographic projection matrix
-    static Mat4 CreateOrthoProjection(f32 left, f32 right, f32 bottom, f32 top, f32 near = -1.0f, f32 far = 1.0f) {
+    inline static Mat4
+    CreateOrthoProjection(f32 left, f32 right, f32 bottom, f32 top, f32 near = -1.0f, f32 far = 1.0f) {
         return glm::ortho(left, right, bottom, top, near, far);
     }
 
@@ -115,7 +116,7 @@ namespace Nth::Coordinates {
     /// @param screenHeight Height of the screen in pixels
     /// @param originTopLeft If true, origin is at top-left; if false, origin is at bottom-left
     /// @return Orthographic projection matrix
-    static Mat4 CreateScreenProjection(f32 screenWidth, f32 screenHeight, bool originTopLeft = false) {
+    inline static Mat4 CreateScreenProjection(f32 screenWidth, f32 screenHeight, bool originTopLeft = false) {
         if (originTopLeft) {
             // Top-left origin (common for UI and 2D games)
             return glm::ortho(0.0f, screenWidth, screenHeight, 0.0f, -1.0f, 1.0f);
@@ -129,7 +130,7 @@ namespace Nth::Coordinates {
     /// @param screenWidth Width of the screen in pixels
     /// @param screenHeight Height of the screen in pixels
     /// @return Aspect ratio (width / height)
-    static f32 GetAspectRatio(f32 screenWidth, f32 screenHeight) {
+    inline static f32 GetAspectRatio(f32 screenWidth, f32 screenHeight) {
         return screenWidth / screenHeight;
     }
 
@@ -138,7 +139,7 @@ namespace Nth::Coordinates {
     /// @param screenWidth Width of the screen in pixels
     /// @param screenHeight Height of the screen in pixels
     /// @return Clamped position
-    static Vec2 ClampToScreen(const Vec2& pos, f32 screenWidth, f32 screenHeight) {
+    inline static Vec2 ClampToScreen(const Vec2& pos, f32 screenWidth, f32 screenHeight) {
         return {glm::clamp(pos.x, 0.0f, screenWidth), glm::clamp(pos.y, 0.0f, screenHeight)};
     }
 
@@ -147,7 +148,7 @@ namespace Nth::Coordinates {
     /// @param screenWidth Width of the screen in pixels
     /// @param screenHeight Height of the screen in pixels
     /// @return True if position is within bounds
-    static bool IsOnScreen(const Vec2& pos, f32 screenWidth, f32 screenHeight) {
+    inline static bool IsOnScreen(const Vec2& pos, f32 screenWidth, f32 screenHeight) {
         return pos.x >= 0.0f && pos.x <= screenWidth && pos.y >= 0.0f && pos.y <= screenHeight;
     }
 
@@ -157,7 +158,8 @@ namespace Nth::Coordinates {
     /// @param screenHeight Height of the screen in pixels
     /// @param originTopLeft Whether your world space has origin at top-left
     /// @return Position in world space
-    static Vec2 MouseToWorld(const Vec2& mousePos, f32 screenWidth, f32 screenHeight, bool originTopLeft = false) {
+    inline static Vec2
+    MouseToWorld(const Vec2& mousePos, f32 screenWidth, f32 screenHeight, bool originTopLeft = false) {
         if (originTopLeft) {
             // Mouse coords typically have Y down, and our world does too
             return mousePos;

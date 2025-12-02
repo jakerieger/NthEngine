@@ -6,7 +6,7 @@
 #include "Log.hpp"
 
 namespace Nth {
-    shared_ptr<Geometry> Geometry::CreateQuad(f32 width, f32 height) {
+    GeometryHandle Geometry::CreateQuad(f32 width, f32 height) {
         auto geometry = make_shared<Geometry>();
 
         // Calculate half-extents for centered quad

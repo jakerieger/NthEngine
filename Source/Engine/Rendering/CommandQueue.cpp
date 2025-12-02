@@ -3,6 +3,7 @@
 ///
 #include "CommandQueue.hpp"
 
+#include "Coordinates.hpp"
 #include "Geometry.hpp"
 #include "Log.hpp"
 #include "ShaderManager.hpp"
@@ -56,7 +57,7 @@ namespace Nth {
 
         // Calculate MVP matrix
         const Mat4 model      = cmd.transform.GetMatrix();
-        const Mat4 projection = glm::ortho(0.0f, cmd.screenDimensions.x, 0.0f, cmd.screenDimensions.y, -1.0f, 1.0f);
+        const Mat4 projection = Coordinates::CreateScreenProjection(cmd.screenDimensions.x, cmd.screenDimensions.y);
         const Mat4 mvp        = projection * model;
         spriteShader->SetUniform("uMVP", mvp);
 

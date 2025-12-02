@@ -21,7 +21,7 @@ namespace Nth {
 
         Game() : mActiveScene(make_unique<Scene>()) {}
         Game(string title, u32 width, u32 height)
-            : mWidth(width), mHeight(height), mTitle(std::move(title)), mActiveScene(make_unique<Scene>()) {}
+            : mTitle(std::move(title)), mWidth(width), mHeight(height), mActiveScene(make_unique<Scene>()) {}
 
         virtual ~Game() = default;
 
@@ -84,6 +84,13 @@ namespace Nth {
         }
 
     protected:
+        // Subclass-accessible window properties. Use provided getters for the others.
+        string mTitle {};
+        bool mRunning {false};
+        bool mFullscreen {false};
+        u32 mWidth {kDefaultWidth};
+        u32 mHeight {kDefaultHeight};
+
         void Render();
 
     private:
@@ -99,11 +106,6 @@ namespace Nth {
 
         // Window properties
         GLFWwindow* mWindow {nullptr};
-        u32 mWidth {kDefaultWidth};
-        u32 mHeight {kDefaultHeight};
-        string mTitle {};
-        bool mRunning {false};
-        bool mFullscreen {false};
         bool mVsync {false};
 
         // Internal systems

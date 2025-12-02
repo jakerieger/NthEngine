@@ -3,4 +3,12 @@
 ///
 #include "SceneState.hpp"
 
-namespace Nth {}  // namespace N
+namespace Nth {
+    SceneState::~SceneState() {
+        Reset();
+    }
+
+    void SceneState::Reset() {
+        mRegistry.clear();  // Clear the entity registry
+    }
+}  // namespace Nth
