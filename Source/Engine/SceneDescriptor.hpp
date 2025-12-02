@@ -25,7 +25,7 @@ namespace Nth {
     };
 
     struct SceneDescriptor {
-        const char* name;
+        string name;
         vector<EntityDescriptor> entities;
     };
 }  // namespace Nth

@@ -41,7 +41,16 @@ namespace Nth {
         SceneDescriptor descriptor;
         SceneParser::DeserializeDescriptor(filename, descriptor);
         SceneParser::DescriptorToState(descriptor, mState);
+
+        Log::Debug("Scene", "Loaded scene: `{}`", descriptor.name);
     }
 
-    void Scene::Load(const string& source) {}
+    void Scene::Load(const string& source) {
+        mState.Reset();
+        SceneDescriptor descriptor;
+        SceneParser::DeserializeDescriptor(source, descriptor);
+        SceneParser::DescriptorToState(descriptor, mState);
+
+        Log::Debug("Scene", "Loaded scene: `{}`", descriptor.name);
+    }
 }  // namespace Nth

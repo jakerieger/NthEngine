@@ -6,6 +6,8 @@
 
 #include "CommonPCH.hpp"
 
+#include <sol/sol.hpp>
+
 namespace Nth {
     class ScriptEngine {};
 }  // namespace Nth

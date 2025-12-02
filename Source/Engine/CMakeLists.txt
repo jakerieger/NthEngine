@@ -36,6 +36,8 @@ target_link_libraries(NthEngine PUBLIC
         EnTT::EnTT
         fmt::fmt-header-only
         pugixml::static
+        luajit
+        sol2::sol2
 )
 
 if (UNIX AND NOT APPLE)

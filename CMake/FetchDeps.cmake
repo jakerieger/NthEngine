@@ -58,6 +58,20 @@ FetchContent_Declare(
         GIT_TAG v1.15
 )
 
+FetchContent_Declare(
+        luajit
+        GIT_REPOSITORY https://github.com/LuaJIT/LuaJIT.git
+        GIT_TAG v2.0.5
+)
+include(${CMAKE_SOURCE_DIR}/CMake/BuildLuaJIT.cmake)
+BuildLuaJIT()
+
+FetchContent_Declare(
+        sol2
+        GIT_REPOSITORY https://github.com/ThePhD/sol2.git
+        GIT_TAG v3.5.0
+)
+
 FetchContent_MakeAvailable(
         glfw
         glm
@@ -65,4 +79,5 @@ FetchContent_MakeAvailable(
         entt
         fmt
         pugixml
+        sol2
 )

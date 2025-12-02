@@ -11,6 +11,10 @@
                 <SpriteRenderer>
                     <Texture>Sprites/ball.png</Texture>
                 </SpriteRenderer>
+                <Behavior>
+                    <!-- TODO: Support multiple scripts per entity -->
+                    <Script>Scripts/BallController.lua</Script>
+                </Behavior>
             </Components>
         </Entity>
     </Entities>

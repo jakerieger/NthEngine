@@ -11,7 +11,7 @@ var searchData=
   ['togglefullscreen_8',['ToggleFullscreen',['../class_nth_1_1_game.html#a41c6a5336bd38670d1c287d78446b000',1,'Nth::Game']]],
   ['trace_9',['Trace',['../class_nth_1_1_log.html#ab4870c08436486501434f7ac56e703e8',1,'Nth::Log']]],
   ['transform_10',['Transform',['../struct_nth_1_1_transform.html',1,'Nth']]],
-  ['transform_11',['transform',['../struct_nth_1_1_draw_sprite_command.html#a847429630b7ae2fc19813c18aac203e4',1,'Nth::DrawSpriteCommand::transform()'],['../struct_nth_1_1_entity_descriptor.html#a5cfc6169117639617e273d3d616a38d1',1,'Nth::EntityDescriptor::transform()']]],
+  ['transform_11',['transform',['../struct_nth_1_1_draw_sprite_command.html#a847429630b7ae2fc19813c18aac203e4',1,'Nth::DrawSpriteCommand::transform()'],['../struct_nth_1_1_entity_descriptor.html#a61cc7dc7d368e57b4088b3ed28eb2472',1,'Nth::EntityDescriptor::transform()']]],
   ['transform_2ecpp_12',['Transform.cpp',['../_transform_8cpp.html',1,'']]],
   ['transform_2ehpp_13',['Transform.hpp',['../_transform_8hpp.html',1,'']]],
   ['transformdescriptor_14',['TransformDescriptor',['../struct_nth_1_1_transform_descriptor.html',1,'Nth']]],
