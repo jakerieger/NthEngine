@@ -9,8 +9,9 @@ function onAwake(entity)
 end
 
 function onUpdate(entity, clock)
-    transform = entity.transform
-    print(string.format("LuaInterpreter: Position: x: %.1f, y: %.1f", transform.Position.x, transform.Position.y))
+    local transform = entity.transform
+    local deltaX = Vec2(0.1, 0.0)
+    transform:Translate(deltaX)
 end
 
 function onDestroyed(entity)

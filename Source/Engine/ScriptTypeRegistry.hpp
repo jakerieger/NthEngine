@@ -9,9 +9,9 @@
 namespace Nth {
     struct BehaviorEntity {
         string name;
-        Transform transform;
+        Transform* transform;
 
-        explicit BehaviorEntity(const string& name, const Transform& transform) : name(name), transform(transform) {}
+        explicit BehaviorEntity(const string& name, Transform* transform) : name(name), transform(transform) {}
     };
 
     template<>
@@ -29,8 +29,9 @@ namespace Nth {
         static constexpr std::string_view typeName = "Vec2";
 
         static void RegisterMembers(sol::usertype<Vec2>& usertype) {
-            usertype["x"] = &Vec2::x;
-            usertype["y"] = &Vec2::y;
+            usertype[sol::call_constructor] = sol::constructors<Vec2(), Vec2(f32, f32)>();
+            usertype["x"]                   = &Vec2::x;
+            usertype["y"]                   = &Vec2::y;
         }
     };
 
@@ -53,9 +54,12 @@ namespace Nth {
         static constexpr std::string_view typeName = "Transform";
 
         static void RegisterMembers(sol::usertype<Transform>& usertype) {
-            usertype["Position"] = &Transform::position;
-            usertype["Rotation"] = &Transform::rotation;
-            usertype["Scale"]    = &Transform::scale;
+            usertype["position"]  = &Transform::position;
+            usertype["rotation"]  = &Transform::rotation;
+            usertype["scale"]     = &Transform::scale;
+            usertype["Translate"] = &Transform::Translate;
+            usertype["Rotate"]    = &Transform::Rotate;
+            usertype["Scale"]     = &Transform::Scale;
         }
     };
 }  // namespace Nth
