@@ -13,7 +13,7 @@
                 </SpriteRenderer>
                 <Behavior>
                     <!-- TODO: Support multiple scripts per entity -->
-                    <Script>Scripts/BallController.lua</Script>
+                    <Script id="0">Scripts/BallController.lua</Script>
                 </Behavior>
             </Components>
         </Entity>

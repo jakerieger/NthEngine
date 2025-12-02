@@ -23,14 +23,21 @@ namespace Nth {
         }
 
         void OnAwake() override {
-            GetActiveScene()->Load(Content::GetContentPath("Scenes/Sandbox.xml"));
+            GetActiveScene()->Load(Content::GetContentPath("Scenes/Sandbox.xml"), GetScriptEngine());
+            Game::OnAwake();
         }
 
-        void OnUpdate(const Clock& clock) override {}
+        void OnUpdate(const Clock& clock) override {
+            Game::OnUpdate(clock);
+        }
 
-        void OnLateUpdate() override {}
+        void OnLateUpdate() override {
+            Game::OnLateUpdate();
+        }
 
-        void OnDestroyed() override {}
+        void OnDestroyed() override {
+            Game::OnDestroyed();
+        }
 
         void OnResize(u32 width, u32 height) override {}
     };

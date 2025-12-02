@@ -1,5 +1,6 @@
 var dir_bc66738a698217762e0795bdbde32974 =
 [
+    [ "Behavior.hpp", "_behavior_8hpp.html", "_behavior_8hpp" ],
     [ "Camera.cpp", "_camera_8cpp.html", null ],
     [ "Camera.hpp", "_camera_8hpp.html", "_camera_8hpp" ],
     [ "SpriteRenderer.cpp", "_sprite_renderer_8cpp.html", null ],

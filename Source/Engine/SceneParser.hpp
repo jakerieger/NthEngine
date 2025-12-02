@@ -10,11 +10,13 @@
 namespace Nth {
     struct SceneDescriptor;
     class SceneState;
+    class ScriptEngine;
 
     class SceneParser {
     public:
         static void StateToDescriptor(const SceneState& state, SceneDescriptor& outDescriptor);
-        static void DescriptorToState(const SceneDescriptor& descriptor, SceneState& outState);
+        static void
+        DescriptorToState(const SceneDescriptor& descriptor, SceneState& outState, ScriptEngine& scriptEngine);
         static void SerializeDescriptor(const SceneDescriptor& descriptor);
         static void DeserializeDescriptor(const fs::path& filename, SceneDescriptor& outDescriptor);
         static void DeserializeDescriptor(const string& source, SceneDescriptor& outDescriptor);

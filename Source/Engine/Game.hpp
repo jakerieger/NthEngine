@@ -7,6 +7,7 @@
 #include "CommonPCH.hpp"
 #include "Clock.hpp"
 #include "Scene.hpp"
+#include "ScriptEngine.hpp"
 #include "Rendering/RenderContext.hpp"
 
 namespace Nth {
@@ -83,6 +84,10 @@ namespace Nth {
             return mVsync;
         }
 
+        N_ND ScriptEngine& GetScriptEngine() {
+            return mScriptEngine;
+        }
+
     protected:
         // Subclass-accessible window properties. Use provided getters for the others.
         string mTitle {};
@@ -111,6 +116,7 @@ namespace Nth {
         // Internal systems
         Clock mClock;
         RenderContext mRenderContext;
+        ScriptEngine mScriptEngine;
 
         // Client systems
         unique_ptr<Scene> mActiveScene;

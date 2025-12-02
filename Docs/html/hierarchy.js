@@ -1,5 +1,9 @@
 var hierarchy =
 [
+    [ "Nth::Behavior", "struct_nth_1_1_behavior.html", null ],
+    [ "Nth::BehaviorDescriptor", "struct_nth_1_1_behavior_descriptor.html", null ],
+    [ "Nth::BehaviorEntity", "struct_nth_1_1_behavior_entity.html", null ],
+    [ "Nth::BehaviorScriptContext", "struct_nth_1_1_behavior_script_context.html", null ],
     [ "Nth::BindShaderCommand", "struct_nth_1_1_bind_shader_command.html", null ],
     [ "Nth::Camera", "struct_nth_1_1_camera.html", null ],
     [ "Nth::ClearCommand", "struct_nth_1_1_clear_command.html", null ],
@@ -15,6 +19,15 @@ var hierarchy =
       [ "Nth::VertexBuffer", "class_nth_1_1_vertex_buffer.html", null ]
     ] ],
     [ "Nth::Log", "class_nth_1_1_log.html", null ],
+    [ "Nth::LuaRegisterable", "struct_nth_1_1_lua_registerable.html", [
+      [ "Nth::LuaRegistry< T >", "struct_nth_1_1_lua_registry.html", null ]
+    ] ],
+    [ "Nth::LuaTypeRegistration< T >", "struct_nth_1_1_lua_type_registration.html", null ],
+    [ "Nth::LuaTypeTraits< T, typename >", "struct_nth_1_1_lua_type_traits.html", null ],
+    [ "Nth::LuaTypeTraits< BehaviorEntity >", "struct_nth_1_1_lua_type_traits_3_01_behavior_entity_01_4.html", null ],
+    [ "Nth::LuaTypeTraits< Clock >", "struct_nth_1_1_lua_type_traits_3_01_clock_01_4.html", null ],
+    [ "Nth::LuaTypeTraits< Transform >", "struct_nth_1_1_lua_type_traits_3_01_transform_01_4.html", null ],
+    [ "Nth::LuaTypeTraits< Vec2 >", "struct_nth_1_1_lua_type_traits_3_01_vec2_01_4.html", null ],
     [ "Nth::RenderContext", "class_nth_1_1_render_context.html", null ],
     [ "std::runtime_error", null, [
       [ "Nth::OpenGLException", "struct_nth_1_1_open_g_l_exception.html", null ]

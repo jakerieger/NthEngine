@@ -14,14 +14,20 @@ namespace Nth {
     };
 
     struct SpriteRendererDescriptor {
-        const char* texture;
+        string texture;
+    };
+
+    struct BehaviorDescriptor {
+        u64 id;
+        string script;
     };
 
     struct EntityDescriptor {
         u32 id {};
-        const char* name {};
+        string name {};
         TransformDescriptor transform {};
         optional<SpriteRendererDescriptor> spriteRenderer {};
+        optional<BehaviorDescriptor> behavior {};
     };
 
     struct SceneDescriptor {

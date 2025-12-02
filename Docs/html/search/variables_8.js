@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['position_0',['position',['../struct_nth_1_1_transform.html#ab0f5238cf2cb10a32c04d69590b1266d',1,'Nth::Transform::position()'],['../struct_nth_1_1_transform_descriptor.html#a000066c4e86362b2e35e181ee3086a34',1,'Nth::TransformDescriptor::position()']]],
-  ['programid_1',['programId',['../struct_nth_1_1_bind_shader_command.html#a8d29113896b0eb8968ab7cd072fbcac4',1,'Nth::BindShaderCommand::programId()'],['../struct_nth_1_1_set_uniform_command.html#a64d349b2b8822d218c610d39729d50ee',1,'Nth::SetUniformCommand::programId()']]]
+  ['name_0',['name',['../struct_nth_1_1_set_uniform_command.html#abffa76dfc00318438c3d42d0b5680f8c',1,'Nth::SetUniformCommand::name'],['../struct_nth_1_1_vertex_attribute.html#a093b1e9913116ec1b885bb4d51d0e656',1,'Nth::VertexAttribute::name'],['../struct_nth_1_1_entity_descriptor.html#af6ae042870db2423dfd174fddccfd87f',1,'Nth::EntityDescriptor::name'],['../struct_nth_1_1_scene_descriptor.html#a412afd1c90e9292e48d5f60579458c7b',1,'Nth::SceneDescriptor::name'],['../struct_nth_1_1_behavior_entity.html#a279db5bad4913475f13e8bb7f9608bac',1,'Nth::BehaviorEntity::name']]],
+  ['normalized_1',['normalized',['../struct_nth_1_1_vertex_attribute.html#ae5498563f28f2d216dee998f77c3a0fd',1,'Nth::VertexAttribute']]]
 ];

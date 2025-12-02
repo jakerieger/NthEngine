@@ -7,6 +7,7 @@ var class_nth_1_1_game =
     [ "GetFullscreen", "class_nth_1_1_game.html#a83035c39bd624542bdd900f3c599526c", null ],
     [ "GetRenderContext", "class_nth_1_1_game.html#a1fd80fd3ac5a60e167c81d686291188f", null ],
     [ "GetRunning", "class_nth_1_1_game.html#af8bb36701dc38d381fa56b3a02c4254c", null ],
+    [ "GetScriptEngine", "class_nth_1_1_game.html#afc86bedec9934d82009ed4649dad4447", null ],
     [ "GetVsyncEnabled", "class_nth_1_1_game.html#a50732aaf3a721683f60157ffa3d68ca8", null ],
     [ "GetWindowHandle", "class_nth_1_1_game.html#ac579c3988a1dc2b691260cb83fedf5d5", null ],
     [ "GetWindowSize", "class_nth_1_1_game.html#a9ec73eecdf68b56c63bde1d27952445a", null ],

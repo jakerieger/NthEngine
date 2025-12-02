@@ -9,10 +9,11 @@ var searchData=
   ['scenestate_2ehpp_6',['SceneState.hpp',['../_scene_state_8hpp.html',1,'']]],
   ['scriptengine_2ecpp_7',['ScriptEngine.cpp',['../_script_engine_8cpp.html',1,'']]],
   ['scriptengine_2ehpp_8',['ScriptEngine.hpp',['../_script_engine_8hpp.html',1,'']]],
-  ['shader_2ecpp_9',['Shader.cpp',['../_shader_8cpp.html',1,'']]],
-  ['shader_2ehpp_10',['Shader.hpp',['../_shader_8hpp.html',1,'']]],
-  ['shadermanager_2ecpp_11',['ShaderManager.cpp',['../_shader_manager_8cpp.html',1,'']]],
-  ['shadermanager_2ehpp_12',['ShaderManager.hpp',['../_shader_manager_8hpp.html',1,'']]],
-  ['spriterenderer_2ecpp_13',['SpriteRenderer.cpp',['../_sprite_renderer_8cpp.html',1,'']]],
-  ['spriterenderer_2ehpp_14',['SpriteRenderer.hpp',['../_sprite_renderer_8hpp.html',1,'']]]
+  ['scripttyperegistry_2ehpp_9',['ScriptTypeRegistry.hpp',['../_script_type_registry_8hpp.html',1,'']]],
+  ['shader_2ecpp_10',['Shader.cpp',['../_shader_8cpp.html',1,'']]],
+  ['shader_2ehpp_11',['Shader.hpp',['../_shader_8hpp.html',1,'']]],
+  ['shadermanager_2ecpp_12',['ShaderManager.cpp',['../_shader_manager_8cpp.html',1,'']]],
+  ['shadermanager_2ehpp_13',['ShaderManager.hpp',['../_shader_manager_8hpp.html',1,'']]],
+  ['spriterenderer_2ecpp_14',['SpriteRenderer.cpp',['../_sprite_renderer_8cpp.html',1,'']]],
+  ['spriterenderer_2ehpp_15',['SpriteRenderer.hpp',['../_sprite_renderer_8hpp.html',1,'']]]
 ];

@@ -4,14 +4,15 @@
 --- DateTime: 12/2/25 4:43 AM
 ---
 
-function OnAwake(entity)
-
+function onAwake(entity)
+    print("LuaInterpreter: onAwake() was called")
 end
 
-function OnUpdate(entity, clock)
-
+function onUpdate(entity, clock)
+    transform = entity.transform
+    print(string.format("LuaInterpreter: Position: x: %.1f, y: %.1f", transform.Position.x, transform.Position.y))
 end
 
-function OnDestroyed(entity)
-
+function onDestroyed(entity)
+    print("LuaInterpreter: onDestroyed() was called")
 end

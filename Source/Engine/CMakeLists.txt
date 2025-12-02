@@ -34,7 +34,7 @@ target_link_libraries(NthEngine PUBLIC
         glm::glm
         spdlog::spdlog
         EnTT::EnTT
-        fmt::fmt-header-only
+        fmt::fmt
         pugixml::static
         luajit
         sol2::sol2
@@ -43,3 +43,11 @@ target_link_libraries(NthEngine PUBLIC
 if (UNIX AND NOT APPLE)
     target_link_libraries(NthEngine PUBLIC rt)
 endif ()
+
+if(WIN32)
+    add_compile_definitions(
+            NOMINMAX           # Prevents min/max macros
+            WIN32_LEAN_AND_MEAN # Reduces unnecessary includes
+            VC_EXTRALEAN       # Further reduces includes (MSVC)
+    )
+endif()

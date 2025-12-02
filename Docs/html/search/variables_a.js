@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['scale_0',['scale',['../struct_nth_1_1_transform.html#aa277ade64a0c6269a63d267244193076',1,'Nth::Transform::scale()'],['../struct_nth_1_1_transform_descriptor.html#a327040e4b05ccde63abf5c301209ed64',1,'Nth::TransformDescriptor::scale()']]],
-  ['screendimensions_1',['screenDimensions',['../struct_nth_1_1_draw_sprite_command.html#a3e9f8461eec88c4570be0869f765c831',1,'Nth::DrawSpriteCommand']]],
-  ['sprite_2',['sprite',['../struct_nth_1_1_draw_sprite_command.html#a7dc8ce86312e1ec708be5f19103015a9',1,'Nth::DrawSpriteCommand']]],
-  ['sprite_3',['Sprite',['../namespace_nth_1_1_shaders.html#a596edcfeeadcfcff558b6be87803bad9',1,'Nth::Shaders']]],
-  ['spriterenderer_4',['spriteRenderer',['../struct_nth_1_1_entity_descriptor.html#a785c13240648884854397731c1dab9e3',1,'Nth::EntityDescriptor']]]
+  ['position_0',['position',['../struct_nth_1_1_transform.html#ab0f5238cf2cb10a32c04d69590b1266d',1,'Nth::Transform::position'],['../struct_nth_1_1_transform_descriptor.html#a000066c4e86362b2e35e181ee3086a34',1,'Nth::TransformDescriptor::position']]],
+  ['programid_1',['programId',['../struct_nth_1_1_bind_shader_command.html#a8d29113896b0eb8968ab7cd072fbcac4',1,'Nth::BindShaderCommand::programId'],['../struct_nth_1_1_set_uniform_command.html#a64d349b2b8822d218c610d39729d50ee',1,'Nth::SetUniformCommand::programId']]]
 ];

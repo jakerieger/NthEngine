@@ -2,28 +2,44 @@
 /// @created 11/28/25
 ///
 #include "Scene.hpp"
-
 #include "SceneParser.hpp"
+#include "ScriptTypeRegistry.hpp"
 
 namespace Nth {
     Scene::~Scene() {
         mState.Reset();
     }
 
-    void Scene::Awake() {
-        N_UNUSED(this);
+    void Scene::Awake(ScriptEngine& scriptEngine) {
+        const auto iter = mState.View<Transform, Behavior>().each();
+        for (auto [entity, transform, behavior] : iter) {
+            BehaviorEntity behaviorEntity(std::to_string(CAST<u32>(entity)), transform);
+            scriptEngine.CallAwakeBehavior(behavior.id, behaviorEntity);
+        }
     }
 
-    void Scene::Update(const Clock& clock) {
-        N_UNUSED(clock);
+    void Scene::Update(ScriptEngine& scriptEngine, const Clock& clock) {
+        const auto iter = mState.View<Transform, Behavior>().each();
+        for (auto [entity, transform, behavior] : iter) {
+            BehaviorEntity behaviorEntity(std::to_string(CAST<u32>(entity)), transform);
+            scriptEngine.CallUpdateBehavior(behavior.id, behaviorEntity, clock);
+        }
     }
 
-    void Scene::LateUpdate() {
-        N_UNUSED(this);
+    void Scene::LateUpdate(ScriptEngine& scriptEngine) {
+        const auto iter = mState.View<Transform, Behavior>().each();
+        for (auto [entity, transform, behavior] : iter) {
+            BehaviorEntity behaviorEntity(std::to_string(CAST<u32>(entity)), transform);
+            scriptEngine.CallLateUpdateBehavior(behavior.id, behaviorEntity);
+        }
     }
 
-    void Scene::Destroyed() {
-        N_UNUSED(this);
+    void Scene::Destroyed(ScriptEngine& scriptEngine) {
+        const auto iter = mState.View<Transform, Behavior>().each();
+        for (auto [entity, transform, behavior] : iter) {
+            BehaviorEntity behaviorEntity(std::to_string(CAST<u32>(entity)), transform);
+            scriptEngine.CallDestroyedBehavior(behavior.id, behaviorEntity);
+        }
     }
 
     void Scene::Render(RenderContext& context) {
@@ -36,20 +52,20 @@ namespace Nth {
         }
     }
 
-    void Scene::Load(const fs::path& filename) {
+    void Scene::Load(const fs::path& filename, ScriptEngine& scriptEngine) {
         mState.Reset();
         SceneDescriptor descriptor;
         SceneParser::DeserializeDescriptor(filename, descriptor);
-        SceneParser::DescriptorToState(descriptor, mState);
+        SceneParser::DescriptorToState(descriptor, mState, scriptEngine);
 
         Log::Debug("Scene", "Loaded scene: `{}`", descriptor.name);
     }
 
-    void Scene::Load(const string& source) {
+    void Scene::Load(const string& source, ScriptEngine& scriptEngine) {
         mState.Reset();
         SceneDescriptor descriptor;
         SceneParser::DeserializeDescriptor(source, descriptor);
-        SceneParser::DescriptorToState(descriptor, mState);
+        SceneParser::DescriptorToState(descriptor, mState, scriptEngine);
 
         Log::Debug("Scene", "Loaded scene: `{}`", descriptor.name);
     }

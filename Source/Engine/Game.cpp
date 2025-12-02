@@ -5,6 +5,7 @@
 #include "Log.hpp"
 #include "TextureManager.hpp"
 #include "ShaderManager.hpp"
+#include "ScriptTypeRegistry.hpp"
 
 namespace Nth {
     using Nth::Log;
@@ -52,19 +53,19 @@ namespace Nth {
     }
 
     void Game::OnAwake() {
-        if (mActiveScene) mActiveScene->Awake();
+        if (mActiveScene) mActiveScene->Awake(mScriptEngine);
     }
 
     void Game::OnUpdate(const Clock& clock) {
-        if (mActiveScene) mActiveScene->Update(clock);
+        if (mActiveScene) mActiveScene->Update(mScriptEngine, clock);
     }
 
     void Game::OnLateUpdate() {
-        if (mActiveScene) mActiveScene->LateUpdate();
+        if (mActiveScene) mActiveScene->LateUpdate(mScriptEngine);
     }
 
     void Game::OnDestroyed() {
-        if (mActiveScene) mActiveScene->Destroyed();
+        if (mActiveScene) mActiveScene->Destroyed(mScriptEngine);
     }
 
     bool Game::Initialize() {
@@ -113,6 +114,9 @@ namespace Nth {
 
         TextureManager::Initialize();
         ShaderManager::Initialize();
+        mScriptEngine.Initialize();
+        N_ASSERT(mScriptEngine.IsInitialized());
+        mScriptEngine.RegisterTypes<BehaviorEntity, Vec2, Clock, Transform>();
 
         Log::Debug("Game",
                    "Successfully initialized game instance:\n-- Dimensions: {}x{}\n-- V-Sync: {}",

@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['name_0',['name',['../struct_nth_1_1_set_uniform_command.html#abffa76dfc00318438c3d42d0b5680f8c',1,'Nth::SetUniformCommand::name()'],['../struct_nth_1_1_vertex_attribute.html#a093b1e9913116ec1b885bb4d51d0e656',1,'Nth::VertexAttribute::name()'],['../struct_nth_1_1_entity_descriptor.html#afc41d673e8ed612f713d1f689b05e4c4',1,'Nth::EntityDescriptor::name()'],['../struct_nth_1_1_scene_descriptor.html#abdbf938dcddb3ae65741ea1e0ab7fb3d',1,'Nth::SceneDescriptor::name()']]],
-  ['normalized_1',['normalized',['../struct_nth_1_1_vertex_attribute.html#ae5498563f28f2d216dee998f77c3a0fd',1,'Nth::VertexAttribute']]]
+  ['mbufferid_0',['mBufferID',['../class_nth_1_1_i_buffer.html#ac16384dbe811cac0c1eb7a45b64fdad0',1,'Nth::IBuffer']]],
+  ['mfullscreen_1',['mFullscreen',['../class_nth_1_1_game.html#ac251b818484d44b5fd7ead8ac5c2ccc8',1,'Nth::Game']]],
+  ['mheight_2',['mHeight',['../class_nth_1_1_game.html#a24649cb44c1e27701a8a8e6615a74ee2',1,'Nth::Game']]],
+  ['mrunning_3',['mRunning',['../class_nth_1_1_game.html#ad892fb717e53733c536b210570f743bc',1,'Nth::Game']]],
+  ['msize_4',['mSize',['../class_nth_1_1_i_buffer.html#a39f83082e95474691fe147702aecd6b7',1,'Nth::IBuffer']]],
+  ['mtitle_5',['mTitle',['../class_nth_1_1_game.html#af34c4fa402e088ef45802fd1dc021bbb',1,'Nth::Game']]],
+  ['mwidth_6',['mWidth',['../class_nth_1_1_game.html#aaf82138d585d41d950d1ec93730ad817',1,'Nth::Game']]]
 ];

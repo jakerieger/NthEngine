@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['x_0',['x',['../struct_nth_1_1_set_viewport_command.html#aecd9a3a1b17a777ad79d9b728343b547',1,'Nth::SetViewportCommand::x()'],['../struct_nth_1_1_sprite_vertex.html#a4536e8e75358a7ca4dc54892c5e71390',1,'Nth::SpriteVertex::x()']]]
+  ['v_0',['v',['../struct_nth_1_1_sprite_vertex.html#a32ed15b78943e4d07ac896da9560fc5b',1,'Nth::SpriteVertex']]],
+  ['value_1',['value',['../struct_nth_1_1_set_uniform_command.html#aac4902469e38da457a69fc33ec3302db',1,'Nth::SetUniformCommand']]]
 ];

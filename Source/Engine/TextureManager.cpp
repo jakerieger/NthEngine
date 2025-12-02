@@ -37,7 +37,7 @@ namespace Nth {
         int w, h, channels;
         stbi_set_flip_vertically_on_load(true);  // For OpenGL
         const auto data = stbi_load(filename.string().c_str(), &w, &h, &channels, 0);
-        if (!data) { Log::Error("TextureManager", "Failed to load image!"); }
+        if (!data) { Log::Error("TextureManager", "Failed to load image: `{}`", filename.string()); }
 
         GLenum format = GL_RGBA;
         if (channels == 1) format = GL_RED;

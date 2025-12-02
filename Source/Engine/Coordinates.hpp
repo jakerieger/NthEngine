@@ -6,6 +6,15 @@
 
 #include "CommonPCH.hpp"
 
+// Naming conflicts from minwindef.h
+#ifdef near
+#undef near
+#endif
+
+#ifdef far
+#undef far
+#endif
+
 /// @brief Utility functions for converting from screen space to NDC (Normalized Device Coordinates)
 namespace Nth::Coordinates {
     /// @brief Convert screen pixel coordinates to NDC (Normalized Device Coordinates)

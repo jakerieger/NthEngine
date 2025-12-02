@@ -11,6 +11,7 @@
 #include "Components/Camera.hpp"
 #include "Components/Transform.hpp"
 #include "Components/SpriteRenderer.hpp"
+#include "Components/Behavior.hpp"
 #pragma endregion
 
 #include <entt/entt.hpp>
@@ -22,8 +23,8 @@ namespace Nth {
     /// @brief Ensures only valid components are passed to the ECS
     /// @tparam T Component type
     template<typename T>
-    concept ValidComponent =
-      std::is_same_v<T, Transform> || std::is_same_v<T, SpriteRenderer> || std::is_same_v<T, Camera>;
+    concept ValidComponent = std::is_same_v<T, Transform> || std::is_same_v<T, SpriteRenderer> ||
+                             std::is_same_v<T, Camera> || std::is_same_v<T, Behavior>;
 
     /// @brief Holds the current state of the scene such as entities, components, and scene-specific components like
     /// cameras and audio
