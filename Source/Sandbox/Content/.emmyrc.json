@@ -1,14 +1,17 @@
 {
-    "workspace.library": [
-        "../../EngineContent/Scripts/types/"
-    ],
-    "runtime.version": "Lua 5.3",
-    "diagnostics.globals": [
-        "Vec2",
-        "Game",
-        "Log",
-        "Math",
-        "Coordinates",
-        "Input"
-    ]
+  "workspace.library": [
+    "../../EngineContent/Scripts/types/"
+  ],
+  "runtime.version": "Lua 5.3",
+  "diagnostics.globals": [
+    "Clock",
+    "Coordinates",
+    "Entity",
+    "Game",
+    "Input",
+    "Log",
+    "Math",
+    "Transform",
+    "Vec2"
+  ]
 }

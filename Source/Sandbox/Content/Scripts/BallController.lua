@@ -9,11 +9,6 @@ ballSpeed = 500
 ---@param this Entity
 function onAwake(this)
     Log:Debug(string.format("onAwake() called for entity: %s", this.name))
-
-    local screenSize = Game:GetScreenSize()
-    local screenPos = Vec2(320, 180)
-    local toNDC = Coordinates:ScreenToNDC(screenPos, screenSize.x, screenSize.y)
-    Log:Debug(string.format("NDC Pos: {x: %f, y: %f}", toNDC.x, toNDC.y))
 end
 
 ---@param transform Transform
