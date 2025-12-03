@@ -25,11 +25,9 @@ function handleMovement(transform, dT)
     end
     if Input:GetKeyDown(KEY_S) then
         newPosition.y = -(ballSpeed * dT)
-
     end
     if Input:GetKeyDown(KEY_A) then
         newPosition.x = -(ballSpeed * dT)
-
     end
     if Input:GetKeyDown(KEY_D) then
         newPosition.x = (ballSpeed * dT)
