@@ -6,6 +6,7 @@
 
 ballSpeed = 500
 
+---@param this Entity
 function onAwake(this)
     Log:Debug(string.format("onAwake() called for entity: %s", this.name))
 
@@ -15,21 +16,23 @@ function onAwake(this)
     Log:Debug(string.format("NDC Pos: {x: %f, y: %f}", toNDC.x, toNDC.y))
 end
 
+---@param transform Transform
+---@param dT number
 function handleMovement(transform, dT)
     local newPosition = Vec2(0, 0)
 
     -- Check is one of our movement keys is pressed
-    if Input:GetKeyDown(KEY_W) then
+    if Input:GetKeyDown(KeyCode.W) then
         -- Apply a new value to the correct axis scaled by delta time
         newPosition.y = (ballSpeed * dT)
     end
-    if Input:GetKeyDown(KEY_S) then
+    if Input:GetKeyDown(KeyCode.S) then
         newPosition.y = -(ballSpeed * dT)
     end
-    if Input:GetKeyDown(KEY_A) then
+    if Input:GetKeyDown(KeyCode.A) then
         newPosition.x = -(ballSpeed * dT)
     end
-    if Input:GetKeyDown(KEY_D) then
+    if Input:GetKeyDown(KeyCode.D) then
         newPosition.x = (ballSpeed * dT)
     end
 
@@ -37,10 +40,13 @@ function handleMovement(transform, dT)
     transform:Translate(newPosition)
 end
 
+---@param this Entity
+---@param clock Clock
 function onUpdate(this, clock)
     handleMovement(this.transform, clock:GetDeltaTime())
 end
 
+---@param this Entity
 function onDestroyed(this)
     Log:Debug(string.format("onDestroyed() called for entity: %s", this.name))
 end
