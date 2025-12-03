@@ -5,7 +5,6 @@
 #pragma once
 
 #include "CommonPCH.hpp"
-#include "Log.hpp"
 
 #pragma region Components
 #include "Components/Camera.hpp"
@@ -30,44 +29,38 @@ namespace Nth {
     /// cameras and audio
     class SceneState {
     public:
-        SceneState() {
-            mRegistry.on_construct<Transform>().connect<[](entt::registry& reg, entt::entity entity) {
-                Log::Debug("SceneState", "Entity created `{}`", (u32)entity);
-            }>();
-
-            mRegistry.on_destroy<Transform>().connect<[](entt::registry& reg, entt::entity entity) {
-                Log::Debug("SceneState", "Entity destroyed `{}`", (u32)entity);
-            }>();
-        }
-
+        SceneState();
         ~SceneState();
 
         N_CLASS_PREVENT_COPIES(SceneState)
 
-        // Move Constructor
-        SceneState(SceneState&& other) noexcept : mRegistry(std::exchange(other.mRegistry, {})) {}
-
-        // Move Assignment
-        SceneState& operator=(SceneState&& other) noexcept {
-            if (this != &other) { mRegistry = std::exchange(other.mRegistry, {}); }
-            return *this;
-        }
+        SceneState(SceneState&& other) noexcept;
+        SceneState& operator=(SceneState&& other) noexcept;
 
         /// @brief Resets the scene to its initial state
         void Reset();
 
         /// @brief Creates a new entity in the scene tree. All entities are required to have a Transform component
         /// and this method automatically adds it when creating the new entity.
-        Entity CreateEntity() {
-            const auto entity = mRegistry.create();
-            mRegistry.emplace<Transform>(entity);
-            return entity;
-        }
+        Entity CreateEntity(const string& name);
 
         /// @brief Destroys the provided entity from the scene registry
-        void DestroyEntity(Entity entity) {
-            mRegistry.destroy(entity);
-        }
+        void DestroyEntity(Entity entity);
+
+        /// @brief Get number of entities currently in scene
+        /// @returns Number of entities
+        N_ND size_t GetEntityCount() const;
+
+        /// @brief Gets the transform component of the specified entity. All entities are created with a Transform
+        /// component attached by default.
+        /// @param entity Entity id
+        /// @returns Transform component reference
+        N_ND Transform& GetTransform(Entity entity);
+
+        /// @brief Returns the name of the given entity if it exists
+        /// @param entity Entity id
+        /// @return Name of entity
+        N_ND const string& GetEntityName(Entity entity) const;
 
         /// @brief Attaches specified component to specified entity
         /// @tparam Component Component type
@@ -118,22 +111,8 @@ namespace Nth {
             return entities;
         }
 
-        /// @brief Get number of entities currently in scene
-        /// @returns Number of entities
-        N_ND size_t GetEntityCount() const {
-            const auto iter = mRegistry.view<Transform>().each();
-            return CAST<size_t>(Nth::Distance(iter));
-        }
-
-        /// @brief Gets the transform component of the specified entity. All entities are created with a Transform
-        /// component attached by default.
-        /// @param entity Entity id
-        /// @returns Transform component reference
-        N_ND Transform& GetTransform(Entity entity) {
-            return GetComponent<Transform>(entity);
-        }
-
     private:
         entt::registry mRegistry {};
+        unordered_map<Entity, string> mEntityNames {};
     };
 }  // namespace Nth

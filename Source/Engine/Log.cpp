@@ -7,6 +7,18 @@ namespace Nth {
     shared_ptr<spdlog::logger> Log::sLogger;
 
     void Log::Initialize() {
+#ifdef _WIN32
+        // Enable ANSI escape codes on Windows 10+
+        HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+        if (hOut != INVALID_HANDLE_VALUE) {
+            DWORD dwMode = 0;
+            if (GetConsoleMode(hOut, &dwMode)) {
+                dwMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+                SetConsoleMode(hOut, dwMode);
+            }
+        }
+#endif
+
         // Create a color console sink
         auto consoleSink = make_shared<spdlog::sinks::stdout_color_sink_mt>();
 

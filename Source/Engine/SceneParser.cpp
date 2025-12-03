@@ -81,7 +81,7 @@ namespace Nth {
                                         SceneState& outState,
                                         ScriptEngine& scriptEngine) {
         for (const auto& entity : descriptor.entities) {
-            const auto newEntity              = outState.CreateEntity();
+            const auto newEntity              = outState.CreateEntity(entity.name);
             auto& [position, rotation, scale] = outState.GetTransform(newEntity);
             position                          = entity.transform.position;
             rotation                          = entity.transform.rotation;

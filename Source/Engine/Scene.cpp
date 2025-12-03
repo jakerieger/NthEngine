@@ -1,9 +1,11 @@
 /// @author Jake Rieger
 /// @created 11/28/25
 ///
+
 #include "Scene.hpp"
 #include "SceneParser.hpp"
 #include "ScriptTypeRegistry.hpp"
+#include "Log.hpp"
 
 namespace Nth {
     Scene::~Scene() {
