@@ -4,6 +4,7 @@ var searchData=
   ['float2_1',['Float2',['../namespace_nth.html#a2cbc17b47e5b46db1b6d2ded11dcbd46a6694430a2b471b5d2de071f2ef1fdc57',1,'Nth']]],
   ['float3_2',['Float3',['../namespace_nth.html#a2cbc17b47e5b46db1b6d2ded11dcbd46a8a8a1d211464d4bdee46db3c75bfa121',1,'Nth']]],
   ['float4_3',['Float4',['../namespace_nth.html#a2cbc17b47e5b46db1b6d2ded11dcbd46a33116adc6690289da9b82ea736864eeb',1,'Nth']]],
-  ['fromfile_4',['FromFile',['../class_nth_1_1_shader.html#a20f8f77082b24f9e15fe8d5a6ab49983',1,'Nth::Shader']]],
-  ['frommemory_5',['FromMemory',['../class_nth_1_1_shader.html#a38f6261b8d666489d09bf9223978181f',1,'Nth::Shader']]]
+  ['floor_4',['Floor',['../class_nth_1_1_math.html#a536d2ccaa99328277021168e8339c56a',1,'Nth::Math']]],
+  ['fromfile_5',['FromFile',['../class_nth_1_1_shader.html#a20f8f77082b24f9e15fe8d5a6ab49983',1,'Nth::Shader']]],
+  ['frommemory_6',['FromMemory',['../class_nth_1_1_shader.html#a38f6261b8d666489d09bf9223978181f',1,'Nth::Shader']]]
 ];

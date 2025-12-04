@@ -1,7 +1,25 @@
 var searchData=
 [
-  ['tick_0',['Tick',['../class_nth_1_1_clock.html#a216cf37aa34c4db3959c6d85fe92ec21',1,'Nth::Clock']]],
-  ['togglefullscreen_1',['ToggleFullscreen',['../class_nth_1_1_game.html#a41c6a5336bd38670d1c287d78446b000',1,'Nth::Game']]],
-  ['trace_2',['Trace',['../class_nth_1_1_log.html#ab4870c08436486501434f7ac56e703e8',1,'Nth::Log']]],
-  ['translate_3',['Translate',['../struct_nth_1_1_transform.html#a296d303dde3b9393b277c48a124453be',1,'Nth::Transform']]]
+  ['scale_0',['Scale',['../struct_nth_1_1_transform.html#afc7961f22b5901c1e9c3f28803c3e239',1,'Nth::Transform']]],
+  ['scene_1',['Scene',['../class_nth_1_1_scene.html#a2ee9588cba3247316081fda30ea0b966',1,'Nth::Scene']]],
+  ['scenestate_2',['SceneState',['../class_nth_1_1_scene_state.html#a6dc03df82d300aeccd0bad9fe5a5f977',1,'Nth::SceneState::SceneState()'],['../class_nth_1_1_scene_state.html#a635a758f0aad72e8b0e7af4b0e404c4a',1,'Nth::SceneState::SceneState(SceneState &amp;&amp;other) noexcept']]],
+  ['scriptengine_3',['ScriptEngine',['../class_nth_1_1_script_engine.html#a9a7edb343ad2b321376df97e4f77c4cb',1,'Nth::ScriptEngine']]],
+  ['serialize_4',['Serialize',['../struct_nth_1_1_project_descriptor.html#aabcbfa59d9f25c81b5c063dd8328817c',1,'Nth::ProjectDescriptor']]],
+  ['serializedescriptor_5',['SerializeDescriptor',['../class_nth_1_1_scene_parser.html#a5b5d5d37d510f70014182e3011db3a85',1,'Nth::SceneParser']]],
+  ['setcontentpath_6',['SetContentPath',['../class_nth_1_1_content.html#ad049b2d4429fef351f55503d13ca61ea',1,'Nth::Content']]],
+  ['setdata_7',['SetData',['../class_nth_1_1_i_buffer.html#acf7afc88664a5708d7722329216a6d05',1,'Nth::IBuffer::SetData()'],['../class_nth_1_1_vertex_buffer.html#abd51b31965718a95dd7e2be580ab0ee4',1,'Nth::VertexBuffer::SetData()'],['../class_nth_1_1_index_buffer.html#a52f51d15462b77e1563908515c47d6ef',1,'Nth::IndexBuffer::SetData()']]],
+  ['setenginecontentpath_8',['SetEngineContentPath',['../class_nth_1_1_content.html#ae45b31a52965f4e4175e1c735ab3a354',1,'Nth::Content']]],
+  ['setindexbuffer_9',['SetIndexBuffer',['../class_nth_1_1_vertex_array.html#a24bb8a7e147c1587a9ceebc3bce5f875',1,'Nth::VertexArray']]],
+  ['setindices_10',['SetIndices',['../class_nth_1_1_index_buffer.html#a4ea690938aaf7014c359591ecf5ad973',1,'Nth::IndexBuffer']]],
+  ['setstartupscene_11',['SetStartupScene',['../class_nth_1_1_project_runner.html#a877bbb9ab0b0ed08eea2bf8f47bfeef5',1,'Nth::ProjectRunner']]],
+  ['settitle_12',['SetTitle',['../class_nth_1_1_game.html#aed3cb6d7e14fc97b29e3dca4c8dc4003',1,'Nth::Game']]],
+  ['setuniform_13',['SetUniform',['../class_nth_1_1_shader.html#ac3a9f06a314fae62274cbd86f8e5fe08',1,'Nth::Shader::SetUniform(const char *name, bool val)'],['../class_nth_1_1_shader.html#a7558c9b989d18dd71f5df2db41114c00',1,'Nth::Shader::SetUniform(const char *name, i32 val)'],['../class_nth_1_1_shader.html#a859dedba5fdea8f828bcba0c61068501',1,'Nth::Shader::SetUniform(const char *name, f32 val)'],['../class_nth_1_1_shader.html#a0229e704f806a30691758cb76183104a',1,'Nth::Shader::SetUniform(const char *name, const Vec2 &amp;val)'],['../class_nth_1_1_shader.html#adaa1d23aea5d2d472231415aa70db220',1,'Nth::Shader::SetUniform(const char *name, const Vec3 &amp;val)'],['../class_nth_1_1_shader.html#af05df5f4247ebe217b4cd991dab8ee02',1,'Nth::Shader::SetUniform(const char *name, const Vec4 &amp;val)'],['../class_nth_1_1_shader.html#a948347c72b680f2bc6ef667f4a9a3afb',1,'Nth::Shader::SetUniform(const char *name, const Mat4 &amp;val)']]],
+  ['shader_14',['Shader',['../class_nth_1_1_shader.html#a001b939944c266f87865c47893ffcf76',1,'Nth::Shader::Shader()=default'],['../class_nth_1_1_shader.html#a2990f1d7e2333b397a4909e5258981dd',1,'Nth::Shader::Shader(const Shader &amp;other)'],['../class_nth_1_1_shader.html#a52deafcccc648992ec445932eaf89718',1,'Nth::Shader::Shader(Shader &amp;&amp;other) noexcept']]],
+  ['shutdown_15',['Shutdown',['../class_nth_1_1_log.html#a5ef9a971757b6b554e3b9358b5461398',1,'Nth::Log::Shutdown()'],['../class_nth_1_1_render_context.html#abf8aed351e0b7698888f73e6f84af46c',1,'Nth::RenderContext::Shutdown()'],['../class_nth_1_1_shader_manager.html#afeeca0508342a19cf92e0ff308c94393',1,'Nth::ShaderManager::Shutdown()'],['../class_nth_1_1_texture_manager.html#a5e60772b990563cc8c519453056bfbcd',1,'Nth::TextureManager::Shutdown()']]],
+  ['sin_16',['Sin',['../class_nth_1_1_math.html#af1e6a6225b992ab537b3874c8b92571f',1,'Nth::Math']]],
+  ['size_17',['Size',['../class_nth_1_1_command_queue.html#aff31d85c0ff3ed96dead8f2b7e7653de',1,'Nth::CommandQueue']]],
+  ['spritevertex_18',['SpriteVertex',['../struct_nth_1_1_sprite_vertex.html#a767ec7510af4e240e2e9c69f7cf739f0',1,'Nth::SpriteVertex::SpriteVertex()=default'],['../struct_nth_1_1_sprite_vertex.html#a2beeb2afa211f2c96e23a4ffba29f085',1,'Nth::SpriteVertex::SpriteVertex(f32 x, f32 y, f32 u, f32 v)']]],
+  ['sqrt_19',['Sqrt',['../class_nth_1_1_math.html#ad85826e593e259ed6cc35579b6e801e5',1,'Nth::Math']]],
+  ['statetodescriptor_20',['StateToDescriptor',['../class_nth_1_1_scene_parser.html#ab40bfa27177345bda8e56eb84f02df67',1,'Nth::SceneParser']]],
+  ['submit_21',['Submit',['../class_nth_1_1_render_context.html#a0bcd2fa798b54a5c0c4214dba553dcdf',1,'Nth::RenderContext']]]
 ];

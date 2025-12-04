@@ -112,7 +112,7 @@ namespace Nth {
 
     void SceneParser::DeserializeDescriptor(const fs::path& filename, SceneDescriptor& outDescriptor) {
         pugi::xml_document doc;
-        const pugi::xml_parse_result result = doc.load_file(filename.c_str());
+        const pugi::xml_parse_result result = doc.load_file(filename.string().c_str());
 
         if (!result) { throw std::runtime_error(fmt::format("XML parsing error: {}", result.description())); }
 

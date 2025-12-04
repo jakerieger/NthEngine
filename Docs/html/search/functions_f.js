@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['unbind_0',['Unbind',['../class_nth_1_1_i_buffer.html#abca490ccd0875a92bf2be23330aea8b7',1,'Nth::IBuffer::Unbind()'],['../class_nth_1_1_vertex_buffer.html#a10c2faee86bc5a3a1df982f3e82f79d2',1,'Nth::VertexBuffer::Unbind()'],['../class_nth_1_1_index_buffer.html#a0d8d8e55ec8d6cf55875426b268ef63a',1,'Nth::IndexBuffer::Unbind()'],['../class_nth_1_1_geometry.html#a117d26852f20ff4ab3ec621962f2f294',1,'Nth::Geometry::Unbind()'],['../class_nth_1_1_shader.html#ab74b6f8cda821687776aa89db8c4d58f',1,'Nth::Shader::Unbind()'],['../class_nth_1_1_vertex_array.html#ab8db068bcc3fc43b49e9f59b7cbe9c60',1,'Nth::VertexArray::Unbind()']]],
-  ['update_1',['Update',['../class_nth_1_1_scene.html#a75144b2dfa295e2e23847d0b0b79443d',1,'Nth::Scene']]],
-  ['updatedata_2',['UpdateData',['../class_nth_1_1_i_buffer.html#a17cb82fa70e1f2e9f5b68456906dabac',1,'Nth::IBuffer::UpdateData()'],['../class_nth_1_1_vertex_buffer.html#a3f645ab25493be4568badb08b8137169',1,'Nth::VertexBuffer::UpdateData()'],['../class_nth_1_1_index_buffer.html#a7d9401a479b5a6532a8690966344a1bc',1,'Nth::IndexBuffer::UpdateData()']]]
+  ['tan_0',['Tan',['../class_nth_1_1_math.html#a96a4cef330dfaa6dc4f2ec6b2c38d642',1,'Nth::Math']]],
+  ['tick_1',['Tick',['../class_nth_1_1_clock.html#a216cf37aa34c4db3959c6d85fe92ec21',1,'Nth::Clock']]],
+  ['togglefullscreen_2',['ToggleFullscreen',['../class_nth_1_1_game.html#a41c6a5336bd38670d1c287d78446b000',1,'Nth::Game']]],
+  ['trace_3',['Trace',['../class_nth_1_1_log.html#ab4870c08436486501434f7ac56e703e8',1,'Nth::Log']]],
+  ['translate_4',['Translate',['../struct_nth_1_1_transform.html#a296d303dde3b9393b277c48a124453be',1,'Nth::Transform']]]
 ];

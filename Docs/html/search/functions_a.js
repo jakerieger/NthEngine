@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['onawake_0',['OnAwake',['../class_nth_1_1_game.html#aa7659c123e2cc165f84c672346078f44',1,'Nth::Game']]],
+  ['onawake_0',['OnAwake',['../class_nth_1_1_game.html#aa7659c123e2cc165f84c672346078f44',1,'Nth::Game::OnAwake()'],['../class_nth_1_1_project_runner.html#aaf217b2eb0632fd4a64e60557cf27e5a',1,'Nth::ProjectRunner::OnAwake()']]],
   ['ondestroyed_1',['OnDestroyed',['../class_nth_1_1_game.html#a56f208b4078cbf688998acb9f53fb072',1,'Nth::Game']]],
   ['onkey_2',['OnKey',['../class_nth_1_1_game.html#a509c1ba2ca7bce9c65aea7a678b3c3a4',1,'Nth::Game']]],
-  ['onkeydown_3',['OnKeyDown',['../class_nth_1_1_game.html#aad72d93b918f2d4bb64ca7f4c423acc0',1,'Nth::Game']]],
+  ['onkeydown_3',['OnKeyDown',['../class_nth_1_1_game.html#aad72d93b918f2d4bb64ca7f4c423acc0',1,'Nth::Game::OnKeyDown()'],['../class_nth_1_1_project_runner.html#ab8e1559bd21d27674c9d1ae4b5940933',1,'Nth::ProjectRunner::OnKeyDown()']]],
   ['onkeyup_4',['OnKeyUp',['../class_nth_1_1_game.html#a78f1f05d656a861f703a7d3cd44f041b',1,'Nth::Game']]],
   ['onlateupdate_5',['OnLateUpdate',['../class_nth_1_1_game.html#af6ad8097cf55e5b5c1073d81471714aa',1,'Nth::Game']]],
   ['onmousebutton_6',['OnMouseButton',['../class_nth_1_1_game.html#a1f8f149b061b00c0d7031e0048cba760',1,'Nth::Game']]],

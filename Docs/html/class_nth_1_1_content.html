@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Nth Engine: Nth::Content&lt; type, engine &gt; Class Template Reference</title>
+<title>Nth Engine: Nth::Content Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -101,24 +101,32 @@ $(function(){initNavTree('class_nth_1_1_content.html',''); initResizable(true); 
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_nth_1_1_content-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Nth::Content&lt; type, engine &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">Nth::Content Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_nth_1_1_content.html" title="Content container and helper class.">Content</a> container and helper class.  
+ <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_content_8hpp_source.html">Content.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a45d48e49a9cc970d68aa087b79f46b8f" id="r_a45d48e49a9cc970d68aa087b79f46b8f"><td class="memItemLeft" align="right" valign="top">static fs::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45d48e49a9cc970d68aa087b79f46b8f">Get</a> (const fs::path &amp;filename)</td></tr>
-<tr class="separator:a45d48e49a9cc970d68aa087b79f46b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0667eeff9a366ffff8bc85d2ac0ad9f" id="r_af0667eeff9a366ffff8bc85d2ac0ad9f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespace_nth.html#a3eef24a1a7b14ac53c550acee0b26b02">ContentType</a> type, bool engine = false&gt; </td></tr>
+<tr class="memitem:af0667eeff9a366ffff8bc85d2ac0ad9f"><td class="memTemplItemLeft" align="right" valign="top">static fs::path&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af0667eeff9a366ffff8bc85d2ac0ad9f">Get</a> (const string &amp;filename)</td></tr>
+<tr class="separator:af0667eeff9a366ffff8bc85d2ac0ad9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad049b2d4429fef351f55503d13ca61ea" id="r_ad049b2d4429fef351f55503d13ca61ea"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad049b2d4429fef351f55503d13ca61ea">SetContentPath</a> (const fs::path &amp;path)</td></tr>
+<tr class="separator:ad049b2d4429fef351f55503d13ca61ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45b31a52965f4e4175e1c735ab3a354" id="r_ae45b31a52965f4e4175e1c735ab3a354"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae45b31a52965f4e4175e1c735ab3a354">SetEngineContentPath</a> (const fs::path &amp;path)</td></tr>
+<tr class="separator:ae45b31a52965f4e4175e1c735ab3a354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespace_nth.html#a3eef24a1a7b14ac53c550acee0b26b02">ContentType</a> type, bool engine = false&gt;<br />
-class Nth::Content&lt; type, engine &gt;</div>
-<p class="definition">Definition at line <a class="el" href="_content_8hpp_source.html#l00019">19</a> of file <a class="el" href="_content_8hpp_source.html">Content.hpp</a>.</p>
+<div class="textblock"><p><a class="el" href="class_nth_1_1_content.html" title="Content container and helper class.">Content</a> container and helper class. </p>
+
+<p class="definition">Definition at line <a class="el" href="_content_8hpp_source.html#l00020">20</a> of file <a class="el" href="_content_8hpp_source.html">Content.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a45d48e49a9cc970d68aa087b79f46b8f" name="a45d48e49a9cc970d68aa087b79f46b8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45d48e49a9cc970d68aa087b79f46b8f">&#9670;&#160;</a></span>Get()</h2>
+<a id="af0667eeff9a366ffff8bc85d2ac0ad9f" name="af0667eeff9a366ffff8bc85d2ac0ad9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0667eeff9a366ffff8bc85d2ac0ad9f">&#9670;&#160;</a></span>Get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -129,9 +137,9 @@ template&lt;<a class="el" href="namespace_nth.html#a3eef24a1a7b14ac53c550acee0b2
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static fs::path <a class="el" href="class_nth_1_1_content.html">Nth::Content</a>&lt; type, engine &gt;::Get </td>
+          <td class="memname">static fs::path Nth::Content::Get </td>
           <td>(</td>
-          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -142,7 +150,61 @@ template&lt;<a class="el" href="namespace_nth.html#a3eef24a1a7b14ac53c550acee0b2
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_content_8hpp_source.html#l00030">30</a> of file <a class="el" href="_content_8hpp_source.html">Content.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_content_8hpp_source.html#l00032">32</a> of file <a class="el" href="_content_8hpp_source.html">Content.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad049b2d4429fef351f55503d13ca61ea" name="ad049b2d4429fef351f55503d13ca61ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad049b2d4429fef351f55503d13ca61ea">&#9670;&#160;</a></span>SetContentPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Nth::Content::SetContentPath </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_content_8hpp_source.html#l00051">51</a> of file <a class="el" href="_content_8hpp_source.html">Content.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae45b31a52965f4e4175e1c735ab3a354" name="ae45b31a52965f4e4175e1c735ab3a354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45b31a52965f4e4175e1c735ab3a354">&#9670;&#160;</a></span>SetEngineContentPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Nth::Content::SetEngineContentPath </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_content_8hpp_source.html#l00055">55</a> of file <a class="el" href="_content_8hpp_source.html">Content.hpp</a>.</p>
 
 </div>
 </div>

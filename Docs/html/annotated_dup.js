@@ -21,7 +21,7 @@ var annotated_dup =
       [ "Geometry", "class_nth_1_1_geometry.html", "class_nth_1_1_geometry" ],
       [ "IBuffer", "class_nth_1_1_i_buffer.html", "class_nth_1_1_i_buffer" ],
       [ "IndexBuffer", "class_nth_1_1_index_buffer.html", "class_nth_1_1_index_buffer" ],
-      [ "Log", "class_nth_1_1_log.html", null ],
+      [ "Log", "class_nth_1_1_log.html", "class_nth_1_1_log" ],
       [ "LuaRegisterable", "struct_nth_1_1_lua_registerable.html", "struct_nth_1_1_lua_registerable" ],
       [ "LuaRegistry", "struct_nth_1_1_lua_registry.html", "struct_nth_1_1_lua_registry" ],
       [ "LuaTypeRegistration", "struct_nth_1_1_lua_type_registration.html", null ],
@@ -30,7 +30,10 @@ var annotated_dup =
       [ "LuaTypeTraits< Clock >", "struct_nth_1_1_lua_type_traits_3_01_clock_01_4.html", null ],
       [ "LuaTypeTraits< Transform >", "struct_nth_1_1_lua_type_traits_3_01_transform_01_4.html", null ],
       [ "LuaTypeTraits< Vec2 >", "struct_nth_1_1_lua_type_traits_3_01_vec2_01_4.html", null ],
+      [ "Math", "class_nth_1_1_math.html", "class_nth_1_1_math" ],
       [ "OpenGLException", "struct_nth_1_1_open_g_l_exception.html", "struct_nth_1_1_open_g_l_exception" ],
+      [ "ProjectDescriptor", "struct_nth_1_1_project_descriptor.html", "struct_nth_1_1_project_descriptor" ],
+      [ "ProjectRunner", "class_nth_1_1_project_runner.html", "class_nth_1_1_project_runner" ],
       [ "RenderContext", "class_nth_1_1_render_context.html", "class_nth_1_1_render_context" ],
       [ "Scene", "class_nth_1_1_scene.html", "class_nth_1_1_scene" ],
       [ "SceneDescriptor", "struct_nth_1_1_scene_descriptor.html", "struct_nth_1_1_scene_descriptor" ],
@@ -50,6 +53,7 @@ var annotated_dup =
       [ "VertexArray", "class_nth_1_1_vertex_array.html", "class_nth_1_1_vertex_array" ],
       [ "VertexAttribute", "struct_nth_1_1_vertex_attribute.html", "struct_nth_1_1_vertex_attribute" ],
       [ "VertexBuffer", "class_nth_1_1_vertex_buffer.html", "class_nth_1_1_vertex_buffer" ],
-      [ "VertexLayout", "class_nth_1_1_vertex_layout.html", "class_nth_1_1_vertex_layout" ]
+      [ "VertexLayout", "class_nth_1_1_vertex_layout.html", "class_nth_1_1_vertex_layout" ],
+      [ "XmlMacroExpander", "class_nth_1_1_xml_macro_expander.html", "class_nth_1_1_xml_macro_expander" ]
     ] ]
 ];

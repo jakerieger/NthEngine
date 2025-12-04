@@ -18,23 +18,20 @@ namespace Nth {
 
     /// @brief Content container and helper class
     class Content {
-        static constexpr std::string_view kContentRoot       = "Content";
-        static constexpr std::string_view kEngineContentRoot = "EngineContent";
-
         static constexpr std::string_view kSceneRoot  = "Scenes";
         static constexpr std::string_view kScriptRoot = "Scripts";
         static constexpr std::string_view kShaderRoot = "Shaders";
         static constexpr std::string_view kSpriteRoot = "Sprites";
         static constexpr std::string_view kAudioRoot  = "Audio";
 
-        inline static fs::path sWorkingDirectory;
+        inline static fs::path sContentRoot;
+        inline static fs::path sEngineContentRoot;
 
     public:
         template<ContentType type, bool engine = false>
-        inline static fs::path Get(const fs::path& filename) {
-            N_ASSERT(exists(sWorkingDirectory));
-            fs::path contentPath = sWorkingDirectory / kContentRoot;
-            if constexpr (engine) { contentPath /= kEngineContentRoot; }
+        inline static fs::path Get(const string& filename) {
+            fs::path contentPath = sContentRoot;
+            if constexpr (engine) { contentPath = sEngineContentRoot; }
 
             if constexpr (type == ContentType::Audio) {
                 return contentPath / kAudioRoot / filename;
@@ -51,8 +48,12 @@ namespace Nth {
             }
         }
 
-        inline static void SetWorkingDirectory(const fs::path& path) {
-            sWorkingDirectory = path;
+        inline static void SetContentPath(const fs::path& path) {
+            sContentRoot = path;
+        }
+
+        inline static void SetEngineContentPath(const fs::path& path) {
+            sEngineContentRoot = path;
         }
     };
 }  // namespace Nth

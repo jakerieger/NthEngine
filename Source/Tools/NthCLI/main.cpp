@@ -10,6 +10,7 @@
 #include <fmt/color.h>
 
 #include "Content.hpp"
+#include "ProjectDescriptor.hpp"
 #include "ProjectRunner.hpp"
 
 namespace fs = std::filesystem;
@@ -31,8 +32,15 @@ namespace ProjectSubcommand {
     static void Info() {}
 
     static void Run() {
-        Nth::Content::SetWorkingDirectory("C:/Users/conta/Code/NthEngine/build/Debug/bin/Sandbox");
-        Nth::ProjectRunner projectRunner(value);
+        using namespace Nth;
+        ProjectDescriptor descriptor;
+        ProjectDescriptor::Deserialize(value, descriptor);
+
+        Content::SetContentPath(descriptor.contentPath);
+        Content::SetEngineContentPath(descriptor.engineContentPath);
+
+        ProjectRunner projectRunner(descriptor.name);
+        projectRunner.SetStartupScene(descriptor.startupScene);
         projectRunner.Run();
     }
 }  // namespace ProjectSubcommand

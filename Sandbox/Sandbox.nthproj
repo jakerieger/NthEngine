@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NthProject name="Sandbox" engine_version="1">
+    <StartupScene>Sandbox</StartupScene>
+    <ContentPath>${ProjectRoot}/Content</ContentPath>
+    <EngineContentPath>C:/Users/conta/Code/NthEngine/EngineContent</EngineContentPath>
+    <SupportedPlatforms>
+        <Windows>
+            <MinimumVersion>10</MinimumVersion>
+            <WindowIcon>${ProjectRoot}/Runtime/Res/icon.ico</WindowIcon>
+        </Windows>
+        <Linux>
+            <SupportWayland>false</SupportWayland>
+        </Linux>
+    </SupportedPlatforms>
+</NthProject>

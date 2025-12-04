@@ -10,10 +10,12 @@ var hierarchy =
     [ "Nth::Clock", "class_nth_1_1_clock.html", null ],
     [ "Nth::CommandExecutor", "class_nth_1_1_command_executor.html", null ],
     [ "Nth::CommandQueue", "class_nth_1_1_command_queue.html", null ],
-    [ "Nth::Content< type, engine >", "class_nth_1_1_content.html", null ],
+    [ "Nth::Content", "class_nth_1_1_content.html", null ],
     [ "Nth::DrawSpriteCommand", "struct_nth_1_1_draw_sprite_command.html", null ],
     [ "Nth::EntityDescriptor", "struct_nth_1_1_entity_descriptor.html", null ],
-    [ "Nth::Game", "class_nth_1_1_game.html", null ],
+    [ "Nth::Game", "class_nth_1_1_game.html", [
+      [ "Nth::ProjectRunner", "class_nth_1_1_project_runner.html", null ]
+    ] ],
     [ "Nth::Geometry", "class_nth_1_1_geometry.html", null ],
     [ "Nth::IBuffer", "class_nth_1_1_i_buffer.html", [
       [ "Nth::IndexBuffer", "class_nth_1_1_index_buffer.html", null ],
@@ -30,6 +32,8 @@ var hierarchy =
     [ "Nth::LuaTypeTraits< Clock >", "struct_nth_1_1_lua_type_traits_3_01_clock_01_4.html", null ],
     [ "Nth::LuaTypeTraits< Transform >", "struct_nth_1_1_lua_type_traits_3_01_transform_01_4.html", null ],
     [ "Nth::LuaTypeTraits< Vec2 >", "struct_nth_1_1_lua_type_traits_3_01_vec2_01_4.html", null ],
+    [ "Nth::Math", "class_nth_1_1_math.html", null ],
+    [ "Nth::ProjectDescriptor", "struct_nth_1_1_project_descriptor.html", null ],
     [ "Nth::RenderContext", "class_nth_1_1_render_context.html", null ],
     [ "std::runtime_error", null, [
       [ "Nth::OpenGLException", "struct_nth_1_1_open_g_l_exception.html", null ]
@@ -51,5 +55,6 @@ var hierarchy =
     [ "Nth::TransformDescriptor", "struct_nth_1_1_transform_descriptor.html", null ],
     [ "Nth::VertexArray", "class_nth_1_1_vertex_array.html", null ],
     [ "Nth::VertexAttribute", "struct_nth_1_1_vertex_attribute.html", null ],
-    [ "Nth::VertexLayout", "class_nth_1_1_vertex_layout.html", null ]
+    [ "Nth::VertexLayout", "class_nth_1_1_vertex_layout.html", null ],
+    [ "Nth::XmlMacroExpander", "class_nth_1_1_xml_macro_expander.html", null ]
 ];

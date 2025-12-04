@@ -13,6 +13,8 @@ var dir_5405398c23c020946029b9f4e6e04094 =
     [ "InputCodes.hpp", "_input_codes_8hpp.html", null ],
     [ "Log.cpp", "_log_8cpp.html", null ],
     [ "Log.hpp", "_log_8hpp.html", "_log_8hpp" ],
+    [ "Math.cpp", "_math_8cpp.html", null ],
+    [ "Math.hpp", "_math_8hpp.html", "_math_8hpp" ],
     [ "Scene.cpp", "_scene_8cpp.html", null ],
     [ "Scene.hpp", "_scene_8hpp.html", "_scene_8hpp" ],
     [ "SceneDescriptor.hpp", "_scene_descriptor_8hpp.html", "_scene_descriptor_8hpp" ],

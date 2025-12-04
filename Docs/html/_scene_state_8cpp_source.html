@@ -103,24 +103,85 @@ $(function(){initNavTree('_scene_state_8cpp_source.html',''); initResizable(true
 <div class="contents">
 <a href="_scene_state_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_scene_state_8hpp.html">SceneState.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_nth.html">Nth</a> {</div>
-<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_state.html#ac778934dbb2efac87bcfd77b7b70e82c">    7</a></span>    <a class="code hl_function" href="class_nth_1_1_scene_state.html#ac778934dbb2efac87bcfd77b7b70e82c">SceneState::~SceneState</a>() {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <a class="code hl_function" href="class_nth_1_1_scene_state.html#aaa2b30b5db00f3ea2985f65068f5e79e">Reset</a>();</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    }</div>
-</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_log_8hpp.html">Log.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_nth.html">Nth</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_function" href="class_nth_1_1_scene_state.html#a6dc03df82d300aeccd0bad9fe5a5f977">SceneState::SceneState</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_state.html#a635a758f0aad72e8b0e7af4b0e404c4a">    9</a></span>    <a class="code hl_function" href="class_nth_1_1_scene_state.html#a6dc03df82d300aeccd0bad9fe5a5f977">SceneState::SceneState</a>(<a class="code hl_class" href="class_nth_1_1_scene_state.html">SceneState</a>&amp;&amp; other) noexcept : mRegistry(std::exchange(other.mRegistry, {})) {}</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_state.html#aaa2b30b5db00f3ea2985f65068f5e79e">   11</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_scene_state.html#aaa2b30b5db00f3ea2985f65068f5e79e">SceneState::Reset</a>() {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        mRegistry.clear();  <span class="comment">// Clear the entity registry</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_state.html#ac71f73f7109c04b3caf884c84987af60">   11</a></span>    <a class="code hl_class" href="class_nth_1_1_scene_state.html">SceneState</a>&amp; <a class="code hl_function" href="class_nth_1_1_scene_state.html#ac71f73f7109c04b3caf884c84987af60">SceneState::operator=</a>(<a class="code hl_class" href="class_nth_1_1_scene_state.html">SceneState</a>&amp;&amp; other) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other) { mRegistry = std::exchange(other.mRegistry, {}); }</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    }</div>
 </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}  <span class="comment">// namespace Nth</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_state.html#a03ce6968bca8000f9bfd60fcbf4b5724">   16</a></span>    <a class="code hl_typedef" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a> <a class="code hl_function" href="class_nth_1_1_scene_state.html#a03ce6968bca8000f9bfd60fcbf4b5724">SceneState::CreateEntity</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        N_ASSERT(!name.empty());</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">const</span> <span class="keyword">auto</span> entity = mRegistry.create();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        mRegistry.emplace&lt;<a class="code hl_struct" href="struct_nth_1_1_transform.html">Transform</a>&gt;(entity);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        mEntityNames[entity] = name;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordflow">return</span> entity;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_state.html#a45923d8851c6b62667ccf21abb1261f7">   26</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_scene_state.html#a45923d8851c6b62667ccf21abb1261f7">SceneState::DestroyEntity</a>(<a class="code hl_typedef" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a> entity) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        mRegistry.destroy(entity);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        mEntityNames.erase(entity);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_state.html#a55feaec56fc4abe5501ff485879a8a4a">   31</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_nth_1_1_scene_state.html#a55feaec56fc4abe5501ff485879a8a4a">SceneState::GetEntityCount</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">const</span> <span class="keyword">auto</span> iter = mRegistry.view&lt;<a class="code hl_struct" href="struct_nth_1_1_transform.html">Transform</a>&gt;().each();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">return</span> CAST&lt;size_t&gt;(Nth::Distance(iter));</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_state.html#a20b7e32cf6a716c2c39d85fcebaa3963">   36</a></span>    <a class="code hl_struct" href="struct_nth_1_1_transform.html">Transform</a>&amp; <a class="code hl_function" href="class_nth_1_1_scene_state.html#a20b7e32cf6a716c2c39d85fcebaa3963">SceneState::GetTransform</a>(<a class="code hl_typedef" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a> entity) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="class_nth_1_1_scene_state.html#aa0fe49bf2097d89b0af7f20a837222f8">GetComponent&lt;Transform&gt;</a>(entity);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_state.html#a646e83f598b88c723eb79afe90730c26">   40</a></span>    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code hl_function" href="class_nth_1_1_scene_state.html#a646e83f598b88c723eb79afe90730c26">SceneState::GetEntityName</a>(<a class="code hl_typedef" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a> entity)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> mEntityNames.at(entity);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_state.html#ac778934dbb2efac87bcfd77b7b70e82c">   44</a></span>    <a class="code hl_function" href="class_nth_1_1_scene_state.html#ac778934dbb2efac87bcfd77b7b70e82c">SceneState::~SceneState</a>() {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <a class="code hl_function" href="class_nth_1_1_scene_state.html#aaa2b30b5db00f3ea2985f65068f5e79e">Reset</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_state.html#aaa2b30b5db00f3ea2985f65068f5e79e">   48</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_scene_state.html#aaa2b30b5db00f3ea2985f65068f5e79e">SceneState::Reset</a>() {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        mRegistry.clear();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}  <span class="comment">// namespace Nth</span></div>
+<div class="ttc" id="a_log_8hpp_html"><div class="ttname"><a href="_log_8hpp.html">Log.hpp</a></div></div>
 <div class="ttc" id="a_scene_state_8hpp_html"><div class="ttname"><a href="_scene_state_8hpp.html">SceneState.hpp</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_scene_state_html_aaa2b30b5db00f3ea2985f65068f5e79e"><div class="ttname"><a href="class_nth_1_1_scene_state.html#aaa2b30b5db00f3ea2985f65068f5e79e">Nth::SceneState::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Resets the scene to its initial state.</div><div class="ttdef"><b>Definition</b> <a href="#l00011">SceneState.cpp:11</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_scene_state_html_ac778934dbb2efac87bcfd77b7b70e82c"><div class="ttname"><a href="class_nth_1_1_scene_state.html#ac778934dbb2efac87bcfd77b7b70e82c">Nth::SceneState::~SceneState</a></div><div class="ttdeci">~SceneState()</div><div class="ttdef"><b>Definition</b> <a href="#l00007">SceneState.cpp:7</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_scene_state_html"><div class="ttname"><a href="class_nth_1_1_scene_state.html">Nth::SceneState</a></div><div class="ttdoc">Holds the current state of the scene such as entities, components, and scene-specific components like...</div><div class="ttdef"><b>Definition</b> <a href="_scene_state_8hpp_source.html#l00030">SceneState.hpp:30</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_scene_state_html_a03ce6968bca8000f9bfd60fcbf4b5724"><div class="ttname"><a href="class_nth_1_1_scene_state.html#a03ce6968bca8000f9bfd60fcbf4b5724">Nth::SceneState::CreateEntity</a></div><div class="ttdeci">Entity CreateEntity(const string &amp;name)</div><div class="ttdoc">Creates a new entity in the scene tree. All entities are required to have a Transform component and t...</div><div class="ttdef"><b>Definition</b> <a href="#l00016">SceneState.cpp:16</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_scene_state_html_a20b7e32cf6a716c2c39d85fcebaa3963"><div class="ttname"><a href="class_nth_1_1_scene_state.html#a20b7e32cf6a716c2c39d85fcebaa3963">Nth::SceneState::GetTransform</a></div><div class="ttdeci">N_ND Transform &amp; GetTransform(Entity entity)</div><div class="ttdoc">Gets the transform component of the specified entity. All entities are created with a Transform compo...</div><div class="ttdef"><b>Definition</b> <a href="#l00036">SceneState.cpp:36</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_scene_state_html_a45923d8851c6b62667ccf21abb1261f7"><div class="ttname"><a href="class_nth_1_1_scene_state.html#a45923d8851c6b62667ccf21abb1261f7">Nth::SceneState::DestroyEntity</a></div><div class="ttdeci">void DestroyEntity(Entity entity)</div><div class="ttdoc">Destroys the provided entity from the scene registry.</div><div class="ttdef"><b>Definition</b> <a href="#l00026">SceneState.cpp:26</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_scene_state_html_a55feaec56fc4abe5501ff485879a8a4a"><div class="ttname"><a href="class_nth_1_1_scene_state.html#a55feaec56fc4abe5501ff485879a8a4a">Nth::SceneState::GetEntityCount</a></div><div class="ttdeci">N_ND size_t GetEntityCount() const</div><div class="ttdoc">Get number of entities currently in scene.</div><div class="ttdef"><b>Definition</b> <a href="#l00031">SceneState.cpp:31</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_scene_state_html_a646e83f598b88c723eb79afe90730c26"><div class="ttname"><a href="class_nth_1_1_scene_state.html#a646e83f598b88c723eb79afe90730c26">Nth::SceneState::GetEntityName</a></div><div class="ttdeci">N_ND const string &amp; GetEntityName(Entity entity) const</div><div class="ttdoc">Returns the name of the given entity if it exists.</div><div class="ttdef"><b>Definition</b> <a href="#l00040">SceneState.cpp:40</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_scene_state_html_a6dc03df82d300aeccd0bad9fe5a5f977"><div class="ttname"><a href="class_nth_1_1_scene_state.html#a6dc03df82d300aeccd0bad9fe5a5f977">Nth::SceneState::SceneState</a></div><div class="ttdeci">SceneState()</div></div>
+<div class="ttc" id="aclass_nth_1_1_scene_state_html_aa0fe49bf2097d89b0af7f20a837222f8"><div class="ttname"><a href="class_nth_1_1_scene_state.html#aa0fe49bf2097d89b0af7f20a837222f8">Nth::SceneState::GetComponent</a></div><div class="ttdeci">Component &amp; GetComponent(Entity entity)</div><div class="ttdoc">Fetches the given component if it exists on the provided entity.</div><div class="ttdef"><b>Definition</b> <a href="_scene_state_8hpp_source.html#l00084">SceneState.hpp:84</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_scene_state_html_aaa2b30b5db00f3ea2985f65068f5e79e"><div class="ttname"><a href="class_nth_1_1_scene_state.html#aaa2b30b5db00f3ea2985f65068f5e79e">Nth::SceneState::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Resets the scene to its initial state.</div><div class="ttdef"><b>Definition</b> <a href="#l00048">SceneState.cpp:48</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_scene_state_html_ac71f73f7109c04b3caf884c84987af60"><div class="ttname"><a href="class_nth_1_1_scene_state.html#ac71f73f7109c04b3caf884c84987af60">Nth::SceneState::operator=</a></div><div class="ttdeci">SceneState &amp; operator=(SceneState &amp;&amp;other) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00011">SceneState.cpp:11</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_scene_state_html_ac778934dbb2efac87bcfd77b7b70e82c"><div class="ttname"><a href="class_nth_1_1_scene_state.html#ac778934dbb2efac87bcfd77b7b70e82c">Nth::SceneState::~SceneState</a></div><div class="ttdeci">~SceneState()</div><div class="ttdef"><b>Definition</b> <a href="#l00044">SceneState.cpp:44</a></div></div>
 <div class="ttc" id="anamespace_nth_html"><div class="ttname"><a href="namespace_nth.html">Nth</a></div><div class="ttdef"><b>Definition</b> <a href="_clock_8cpp_source.html#l00006">Clock.cpp:6</a></div></div>
+<div class="ttc" id="anamespace_nth_html_aa65d4979054658c810ffdf84a478c07b"><div class="ttname"><a href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Nth::Entity</a></div><div class="ttdeci">entt::entity Entity</div><div class="ttdoc">Type alias for entt::entity. Casts to integer types as id value.</div><div class="ttdef"><b>Definition</b> <a href="_scene_state_8hpp_source.html#l00020">SceneState.hpp:20</a></div></div>
+<div class="ttc" id="astruct_nth_1_1_transform_html"><div class="ttname"><a href="struct_nth_1_1_transform.html">Nth::Transform</a></div><div class="ttdef"><b>Definition</b> <a href="_transform_8hpp_source.html#l00010">Transform.hpp:10</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

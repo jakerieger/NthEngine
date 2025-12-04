@@ -1,7 +1,7 @@
 var class_nth_1_1_game =
 [
     [ "Game", "class_nth_1_1_game.html#aac17c0893351f382d24c605478c33787", null ],
-    [ "Game", "class_nth_1_1_game.html#ae132b6abab8b79d854fbffe47040bde0", null ],
+    [ "Game", "class_nth_1_1_game.html#a8e37f534e1c398d2d4152c92f93bcbf2", null ],
     [ "~Game", "class_nth_1_1_game.html#a30ffbbded3be3744c6dc8ec53ec3f1eb", null ],
     [ "GetActiveScene", "class_nth_1_1_game.html#ad75d1a7e3f10d7a111ca24f9ad2b7a0a", null ],
     [ "GetFullscreen", "class_nth_1_1_game.html#a83035c39bd624542bdd900f3c599526c", null ],
@@ -27,7 +27,7 @@ var class_nth_1_1_game =
     [ "OnUpdate", "class_nth_1_1_game.html#a21cd032ce160eaf93801011e59e3c9fa", null ],
     [ "Quit", "class_nth_1_1_game.html#a63de301da300613821b9f999d8dedad1", null ],
     [ "Render", "class_nth_1_1_game.html#a5087ae9290b2ef75fc7d2d05b0ace52d", null ],
-    [ "Resize", "class_nth_1_1_game.html#a388de02956f22d95ed2381b007f9d3c9", null ],
+    [ "Resize", "class_nth_1_1_game.html#a54b815529b9c2ad7d4988c1ddd60298c", null ],
     [ "Run", "class_nth_1_1_game.html#a81d49b3cad0421e1760b24be2b40674d", null ],
     [ "SetTitle", "class_nth_1_1_game.html#aed3cb6d7e14fc97b29e3dca4c8dc4003", null ],
     [ "ToggleFullscreen", "class_nth_1_1_game.html#a41c6a5336bd38670d1c287d78446b000", null ],

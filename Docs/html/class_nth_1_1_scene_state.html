@@ -123,12 +123,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaa2b30b5db00f3ea2985f65068f5e79e" id="r_aaa2b30b5db00f3ea2985f65068f5e79e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa2b30b5db00f3ea2985f65068f5e79e">Reset</a> ()</td></tr>
 <tr class="memdesc:aaa2b30b5db00f3ea2985f65068f5e79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the scene to its initial state.  <br /></td></tr>
 <tr class="separator:aaa2b30b5db00f3ea2985f65068f5e79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84ce8e2c56e68df37362de7a7a3f7081" id="r_a84ce8e2c56e68df37362de7a7a3f7081"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84ce8e2c56e68df37362de7a7a3f7081">CreateEntity</a> ()</td></tr>
-<tr class="memdesc:a84ce8e2c56e68df37362de7a7a3f7081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new entity in the scene tree. All entities are required to have a <a class="el" href="struct_nth_1_1_transform.html">Transform</a> component and this method automatically adds it when creating the new entity.  <br /></td></tr>
-<tr class="separator:a84ce8e2c56e68df37362de7a7a3f7081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ce6968bca8000f9bfd60fcbf4b5724" id="r_a03ce6968bca8000f9bfd60fcbf4b5724"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03ce6968bca8000f9bfd60fcbf4b5724">CreateEntity</a> (const string &amp;name)</td></tr>
+<tr class="memdesc:a03ce6968bca8000f9bfd60fcbf4b5724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new entity in the scene tree. All entities are required to have a <a class="el" href="struct_nth_1_1_transform.html">Transform</a> component and this method automatically adds it when creating the new entity.  <br /></td></tr>
+<tr class="separator:a03ce6968bca8000f9bfd60fcbf4b5724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45923d8851c6b62667ccf21abb1261f7" id="r_a45923d8851c6b62667ccf21abb1261f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45923d8851c6b62667ccf21abb1261f7">DestroyEntity</a> (<a class="el" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a> entity)</td></tr>
 <tr class="memdesc:a45923d8851c6b62667ccf21abb1261f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the provided entity from the scene registry.  <br /></td></tr>
 <tr class="separator:a45923d8851c6b62667ccf21abb1261f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55feaec56fc4abe5501ff485879a8a4a" id="r_a55feaec56fc4abe5501ff485879a8a4a"><td class="memItemLeft" align="right" valign="top">N_ND size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55feaec56fc4abe5501ff485879a8a4a">GetEntityCount</a> () const</td></tr>
+<tr class="memdesc:a55feaec56fc4abe5501ff485879a8a4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of entities currently in scene.  <br /></td></tr>
+<tr class="separator:a55feaec56fc4abe5501ff485879a8a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b7e32cf6a716c2c39d85fcebaa3963" id="r_a20b7e32cf6a716c2c39d85fcebaa3963"><td class="memItemLeft" align="right" valign="top">N_ND <a class="el" href="struct_nth_1_1_transform.html">Transform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20b7e32cf6a716c2c39d85fcebaa3963">GetTransform</a> (<a class="el" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a> entity)</td></tr>
+<tr class="memdesc:a20b7e32cf6a716c2c39d85fcebaa3963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the transform component of the specified entity. All entities are created with a <a class="el" href="struct_nth_1_1_transform.html">Transform</a> component attached by default.  <br /></td></tr>
+<tr class="separator:a20b7e32cf6a716c2c39d85fcebaa3963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646e83f598b88c723eb79afe90730c26" id="r_a646e83f598b88c723eb79afe90730c26"><td class="memItemLeft" align="right" valign="top">N_ND const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a646e83f598b88c723eb79afe90730c26">GetEntityName</a> (<a class="el" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a> entity) const</td></tr>
+<tr class="memdesc:a646e83f598b88c723eb79afe90730c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the given entity if it exists.  <br /></td></tr>
+<tr class="separator:a646e83f598b88c723eb79afe90730c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64fd0273f091849d9ffded5c197374e0" id="r_a64fd0273f091849d9ffded5c197374e0"><td class="memTemplParams" colspan="2">template&lt;typename Component , typename... Args&gt; <br />
 requires ValidComponent&lt;Component&gt;</td></tr>
 <tr class="memitem:a64fd0273f091849d9ffded5c197374e0"><td class="memTemplItemLeft" align="right" valign="top">Component &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a64fd0273f091849d9ffded5c197374e0">AddComponent</a> (<a class="el" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a> entity, Args &amp;&amp;... args)</td></tr>
@@ -149,17 +158,11 @@ requires ValidComponent&lt;Component&gt;</td></tr>
 <tr class="memitem:a34d7e0f0222d0e00aed0525db401d88f"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; <a class="el" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a34d7e0f0222d0e00aed0525db401d88f">GetAllEntitiesWithComponent</a> ()</td></tr>
 <tr class="memdesc:a34d7e0f0222d0e00aed0525db401d88f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of all the entities that contain the provided component.  <br /></td></tr>
 <tr class="separator:a34d7e0f0222d0e00aed0525db401d88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a540dbf3434d8ad75a88fb07b34ee4250" id="r_a540dbf3434d8ad75a88fb07b34ee4250"><td class="memItemLeft" align="right" valign="top">N_ND size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a540dbf3434d8ad75a88fb07b34ee4250">GetEntityCount</a> () const</td></tr>
-<tr class="memdesc:a540dbf3434d8ad75a88fb07b34ee4250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of entities currently in scene.  <br /></td></tr>
-<tr class="separator:a540dbf3434d8ad75a88fb07b34ee4250"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b192032f7a4cd9267b154c325d8372" id="r_aa7b192032f7a4cd9267b154c325d8372"><td class="memItemLeft" align="right" valign="top">N_ND <a class="el" href="struct_nth_1_1_transform.html">Transform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7b192032f7a4cd9267b154c325d8372">GetTransform</a> (<a class="el" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a> entity)</td></tr>
-<tr class="memdesc:aa7b192032f7a4cd9267b154c325d8372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the transform component of the specified entity. All entities are created with a <a class="el" href="struct_nth_1_1_transform.html">Transform</a> component attached by default.  <br /></td></tr>
-<tr class="separator:aa7b192032f7a4cd9267b154c325d8372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Holds the current state of the scene such as entities, components, and scene-specific components like cameras and audio. </p>
 
-<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00031">31</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00030">30</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6dc03df82d300aeccd0bad9fe5a5f977" name="a6dc03df82d300aeccd0bad9fe5a5f977"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6dc03df82d300aeccd0bad9fe5a5f977">&#9670;&#160;</a></span>SceneState() <span class="overload">[1/2]</span></h2>
@@ -179,12 +182,10 @@ requires ValidComponent&lt;Component&gt;</td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00033">33</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
 
 </div>
 </div>
@@ -203,7 +204,7 @@ requires ValidComponent&lt;Component&gt;</td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scene_state_8cpp_source.html#l00007">7</a> of file <a class="el" href="_scene_state_8cpp_source.html">SceneState.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_state_8cpp_source.html#l00044">44</a> of file <a class="el" href="_scene_state_8cpp_source.html">SceneState.cpp</a>.</p>
 
 </div>
 </div>
@@ -225,12 +226,12 @@ requires ValidComponent&lt;Component&gt;</td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00048">48</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_state_8cpp_source.html#l00009">9</a> of file <a class="el" href="_scene_state_8cpp_source.html">SceneState.cpp</a>.</p>
 
 </div>
 </div>
@@ -282,36 +283,28 @@ requires ValidComponent&lt;Component&gt;</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Newly added component reference </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00080">80</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00073">73</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a84ce8e2c56e68df37362de7a7a3f7081" name="a84ce8e2c56e68df37362de7a7a3f7081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84ce8e2c56e68df37362de7a7a3f7081">&#9670;&#160;</a></span>CreateEntity()</h2>
+<a id="a03ce6968bca8000f9bfd60fcbf4b5724" name="a03ce6968bca8000f9bfd60fcbf4b5724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03ce6968bca8000f9bfd60fcbf4b5724">&#9670;&#160;</a></span>CreateEntity()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a> Nth::SceneState::CreateEntity </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Creates a new entity in the scene tree. All entities are required to have a <a class="el" href="struct_nth_1_1_transform.html">Transform</a> component and this method automatically adds it when creating the new entity. </p>
 
-<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00061">61</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_state_8cpp_source.html#l00016">16</a> of file <a class="el" href="_scene_state_8cpp_source.html">SceneState.cpp</a>.</p>
 
 </div>
 </div>
@@ -320,9 +313,6 @@ requires ValidComponent&lt;Component&gt;</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Nth::SceneState::DestroyEntity </td>
@@ -331,16 +321,11 @@ requires ValidComponent&lt;Component&gt;</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Destroys the provided entity from the scene registry. </p>
 
-<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00068">68</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_state_8cpp_source.html#l00026">26</a> of file <a class="el" href="_scene_state_8cpp_source.html">SceneState.cpp</a>.</p>
 
 </div>
 </div>
@@ -379,7 +364,7 @@ requires ValidComponent&lt;Component&gt;</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Vector of entity IDs </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00110">110</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00103">103</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
 
 </div>
 </div>
@@ -424,61 +409,73 @@ requires ValidComponent&lt;Component&gt;</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Component reference </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00091">91</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00084">84</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a540dbf3434d8ad75a88fb07b34ee4250" name="a540dbf3434d8ad75a88fb07b34ee4250"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a540dbf3434d8ad75a88fb07b34ee4250">&#9670;&#160;</a></span>GetEntityCount()</h2>
+<a id="a55feaec56fc4abe5501ff485879a8a4a" name="a55feaec56fc4abe5501ff485879a8a4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55feaec56fc4abe5501ff485879a8a4a">&#9670;&#160;</a></span>GetEntityCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">N_ND size_t Nth::SceneState::GetEntityCount </td>
+          <td class="memname">size_t Nth::SceneState::GetEntityCount </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get number of entities currently in scene. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of entities </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00123">123</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_state_8cpp_source.html#l00031">31</a> of file <a class="el" href="_scene_state_8cpp_source.html">SceneState.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aa7b192032f7a4cd9267b154c325d8372" name="aa7b192032f7a4cd9267b154c325d8372"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7b192032f7a4cd9267b154c325d8372">&#9670;&#160;</a></span>GetTransform()</h2>
+<a id="a646e83f598b88c723eb79afe90730c26" name="a646e83f598b88c723eb79afe90730c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646e83f598b88c723eb79afe90730c26">&#9670;&#160;</a></span>GetEntityName()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">N_ND <a class="el" href="struct_nth_1_1_transform.html">Transform</a> &amp; Nth::SceneState::GetTransform </td>
+          <td class="memname">const string &amp; Nth::SceneState::GetEntityName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a></td>          <td class="paramname"><span class="paramname"><em>entity</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the name of the given entity if it exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Entity id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Name of entity </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_scene_state_8cpp_source.html#l00040">40</a> of file <a class="el" href="_scene_state_8cpp_source.html">SceneState.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a20b7e32cf6a716c2c39d85fcebaa3963" name="a20b7e32cf6a716c2c39d85fcebaa3963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b7e32cf6a716c2c39d85fcebaa3963">&#9670;&#160;</a></span>GetTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_nth_1_1_transform.html">Transform</a> &amp; Nth::SceneState::GetTransform </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_nth.html#aa65d4979054658c810ffdf84a478c07b">Entity</a></td>          <td class="paramname"><span class="paramname"><em>entity</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Gets the transform component of the specified entity. All entities are created with a <a class="el" href="struct_nth_1_1_transform.html">Transform</a> component attached by default. </p>
@@ -490,7 +487,7 @@ requires ValidComponent&lt;Component&gt;</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_nth_1_1_transform.html">Transform</a> component reference </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00132">132</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_state_8cpp_source.html#l00036">36</a> of file <a class="el" href="_scene_state_8cpp_source.html">SceneState.cpp</a>.</p>
 
 </div>
 </div>
@@ -512,12 +509,12 @@ requires ValidComponent&lt;Component&gt;</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00051">51</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_state_8cpp_source.html#l00011">11</a> of file <a class="el" href="_scene_state_8cpp_source.html">SceneState.cpp</a>.</p>
 
 </div>
 </div>
@@ -538,7 +535,7 @@ requires ValidComponent&lt;Component&gt;</div>
 
 <p>Resets the scene to its initial state. </p>
 
-<p class="definition">Definition at line <a class="el" href="_scene_state_8cpp_source.html#l00011">11</a> of file <a class="el" href="_scene_state_8cpp_source.html">SceneState.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_state_8cpp_source.html#l00048">48</a> of file <a class="el" href="_scene_state_8cpp_source.html">SceneState.cpp</a>.</p>
 
 </div>
 </div>
@@ -577,7 +574,7 @@ requires (ValidComponent&lt;Components&gt; &amp;&amp; ...)</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>EnTT view </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00101">101</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00094">94</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
 
 </div>
 </div>

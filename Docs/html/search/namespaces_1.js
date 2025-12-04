@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sol_0',['sol',['../namespacesol.html',1,'']]]
+  ['projectsubcommand_0',['ProjectSubcommand',['../namespace_project_subcommand.html',1,'']]]
 ];

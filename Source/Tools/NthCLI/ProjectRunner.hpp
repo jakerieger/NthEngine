@@ -19,8 +19,16 @@ namespace Nth {
         }
 
         void OnAwake() override {
-            GetActiveScene()->Load(Content::Get<ContentType::Scene>("Sandbox.xml"), GetScriptEngine());
+            if (!mStartupScene.empty())
+                GetActiveScene()->Load(Content::Get<ContentType::Scene>(mStartupScene), GetScriptEngine());
             Game::OnAwake();
         }
+
+        void SetStartupScene(const string& name) {
+            mStartupScene = name + ".xml";  // TODO: Cheap hack, replace with actual scene caching
+        }
+
+    private:
+        string mStartupScene;
     };
 }  // namespace Nth
