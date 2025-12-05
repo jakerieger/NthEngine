@@ -74,7 +74,7 @@ function(BuildLuaJIT)
     set(LUAJIT_LIBRARY "${luajit_SOURCE_DIR}/src/${LUAJIT_LIB_NAME}" PARENT_SCOPE)
 endfunction()
 
-function(install_luajit install_lib_dir install_include_dir)
+function(InstallLuaJIT install_lib_dir install_include_dir)
     FetchContent_GetProperties(luajit)
 
     # Install LuaJIT library (platform-specific name)

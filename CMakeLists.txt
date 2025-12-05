@@ -8,11 +8,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
-set(NTHENGINE_INSTALL_INCLUDEDIR "include" CACHE PATH "Installation directory for header files")
-set(NTHENGINE_INSTALL_LIBDIR "lib" CACHE PATH "Installation directory for libraries")
-set(NTHENGINE_INSTALL_BINDIR "bin" CACHE PATH "Installation directory for executables")
-set(NTHENGINE_INSTALL_CONTENTDIR "." CACHE PATH "Installation directory for EngineContent")
-
 # Detect platform and set engine defines (N_ENGINE_XXX)
 include(CMake/DetectPlatform.cmake)
 
@@ -31,6 +26,79 @@ add_custom_target(CMake_GenerateDocs
         -P "${CMAKE_SOURCE_DIR}/CMake/GenerateDocs.cmake"
         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
         COMMENT "Run doxygen and build docs"
+)
+
+set(NTHENGINE_INSTALL_BINDIR "bin")
+set(NTHENGINE_INSTALL_LIBDIR "lib")
+set(NTHENGINE_INSTALL_INCLUDEDIR "include")
+set(NTHENGINE_INSTALL_CMAKEDIR "cmake/NthEngine")
+set(NTHENGINE_INSTALL_CONTENTDIR "." CACHE PATH "Installation directory for EngineContent")
+
+include(CMakePackageConfigHelpers)
+
+# Configure the version file
+write_basic_package_version_file(
+        "${CMAKE_CURRENT_BINARY_DIR}/NthEngineConfigVersion.cmake"
+        VERSION 1.0.0  # Set your version here
+        COMPATIBILITY SameMajorVersion
+)
+
+# Configure the config file (lol)
+configure_package_config_file(
+        "${CMAKE_SOURCE_DIR}/CMake/NthEngineConfig.cmake.in"
+        "${CMAKE_CURRENT_BINARY_DIR}/NthEngineConfig.cmake"
+        INSTALL_DESTINATION ${NTHENGINE_INSTALL_CMAKEDIR}
+)
+
+# Install headers for Engine
+install(
+        DIRECTORY ${CMAKE_SOURCE_DIR}/Source/Engine
+        DESTINATION ${NTHENGINE_INSTALL_INCLUDEDIR}/NthEngine
+        FILES_MATCHING PATTERN "*.h" PATTERN "*.hpp"
+)
+
+# Install common headers
+install(
+        DIRECTORY ${CMAKE_SOURCE_DIR}/Source/Common
+        DESTINATION ${NTHENGINE_INSTALL_INCLUDEDIR}/NthEngine
+        FILES_MATCHING PATTERN "*.h" PATTERN "*.hpp"
+)
+
+# Install vendor headers
+install(
+        DIRECTORY ${CMAKE_SOURCE_DIR}/Source/Vendor
+        DESTINATION ${NTHENGINE_INSTALL_INCLUDEDIR}/NthEngine
+        FILES_MATCHING PATTERN "*.h" PATTERN "*.hpp"
+)
+
+# Install NthEngine targets
+install(
+        TARGETS NthEngine glfw glm glm-header-only spdlog EnTT fmt pugixml sol2
+        EXPORT NthEngineTargets
+        LIBRARY DESTINATION ${NTHENGINE_INSTALL_LIBDIR}
+        ARCHIVE DESTINATION ${NTHENGINE_INSTALL_LIBDIR}
+        RUNTIME DESTINATION ${NTHENGINE_INSTALL_BINDIR}
+        INCLUDES DESTINATION ${NTHENGINE_INSTALL_INCLUDEDIR}
+        PUBLIC_HEADER DESTINATION include/fmt
+)
+
+# Install LuaJIT
+InstallLuaJIT(${NTHENGINE_INSTALL_LIBDIR} ${NTHENGINE_INSTALL_INCLUDEDIR})
+
+# Export targets for installation
+install(
+        EXPORT NthEngineTargets
+        FILE NthEngineTargets.cmake
+        NAMESPACE NthEngine::
+        DESTINATION ${NTHENGINE_INSTALL_CMAKEDIR}
+)
+
+# Install config files
+install(
+        FILES
+        "${CMAKE_CURRENT_BINARY_DIR}/NthEngineConfig.cmake"
+        "${CMAKE_CURRENT_BINARY_DIR}/NthEngineConfigVersion.cmake"
+        DESTINATION ${NTHENGINE_INSTALL_CMAKEDIR}
 )
 
 install(DIRECTORY ${CMAKE_SOURCE_DIR}/EngineContent

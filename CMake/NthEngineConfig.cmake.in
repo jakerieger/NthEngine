@@ -1,135 +1,23 @@
 @PACKAGE_INIT@
 
-set(_NTHENGINE_PREFIX "${CMAKE_CURRENT_LIST_DIR}/../../..")
+include(CMakeFindDependencyMacro)
 
-# Include the main targets file
-include("${CMAKE_CURRENT_LIST_DIR}/NthEngineTargets.cmake")
+set_and_check(NTHENGINE_LIBRARY_DIR "${PACKAGE_PREFIX_DIR}/lib")
+set_and_check(NTHENGINE_INCLUDE_DIR "${PACKAGE_PREFIX_DIR}/include")
 
-# Import the bundled dependency libraries
-# GLFW
-if (NOT TARGET glfw)
-    add_library(glfw STATIC IMPORTED)
-    if (WIN32)
-        set_target_properties(glfw PROPERTIES
-                IMPORTED_LOCATION "${_NTHENGINE_PREFIX}/lib/glfw3.lib"
-                INTERFACE_INCLUDE_DIRECTORIES "${_NTHENGINE_PREFIX}/include"
-        )
-    else ()
-        set_target_properties(glfw PROPERTIES
-                IMPORTED_LOCATION "${_NTHENGINE_PREFIX}/lib/libglfw3.a"
-                INTERFACE_INCLUDE_DIRECTORIES "${_NTHENGINE_PREFIX}/include"
-        )
-    endif ()
-endif ()
-
-# GLM (header-only)
-if (NOT TARGET glm::glm)
-    add_library(glm INTERFACE IMPORTED)
-    set_target_properties(glm PROPERTIES
-            INTERFACE_INCLUDE_DIRECTORIES "${_NTHENGINE_PREFIX}/include"
-    )
-    add_library(glm::glm ALIAS glm)
-endif ()
-
-# spdlog
-if (NOT TARGET spdlog::spdlog)
-    add_library(spdlog STATIC IMPORTED)
-    if (WIN32)
-        set_target_properties(spdlog PROPERTIES
-                IMPORTED_LOCATION "${_NTHENGINE_PREFIX}/lib/spdlog.lib"
-                INTERFACE_INCLUDE_DIRECTORIES "${_NTHENGINE_PREFIX}/include"
-        )
-    else ()
-        set_target_properties(spdlog PROPERTIES
-                IMPORTED_LOCATION "${_NTHENGINE_PREFIX}/lib/libspdlog.a"
-                INTERFACE_INCLUDE_DIRECTORIES "${_NTHENGINE_PREFIX}/include"
-        )
-    endif ()
-    add_library(spdlog::spdlog ALIAS spdlog)
-endif ()
-
-# EnTT (header-only)
-if (NOT TARGET EnTT::EnTT)
-    add_library(EnTT INTERFACE IMPORTED)
-    set_target_properties(EnTT PROPERTIES
-            INTERFACE_INCLUDE_DIRECTORIES "${_NTHENGINE_PREFIX}/include"
-    )
-    add_library(EnTT::EnTT ALIAS EnTT)
-endif ()
-
-# fmt
-if (NOT TARGET fmt::fmt)
-    add_library(fmt STATIC IMPORTED)
-    if (WIN32)
-        set_target_properties(fmt PROPERTIES
-                IMPORTED_LOCATION "${_NTHENGINE_PREFIX}/lib/fmt.lib"
-                INTERFACE_INCLUDE_DIRECTORIES "${_NTHENGINE_PREFIX}/include"
-        )
-    else ()
-        set_target_properties(fmt PROPERTIES
-                IMPORTED_LOCATION "${_NTHENGINE_PREFIX}/lib/libfmt.a"
-                INTERFACE_INCLUDE_DIRECTORIES "${_NTHENGINE_PREFIX}/include"
-        )
-    endif ()
-    add_library(fmt::fmt ALIAS fmt)
-endif ()
-
-# pugixml
-if (NOT TARGET pugixml::static)
-    add_library(pugixml-static STATIC IMPORTED)
-    if (WIN32)
-        set_target_properties(pugixml-static PROPERTIES
-                IMPORTED_LOCATION "${_NTHENGINE_PREFIX}/lib/pugixml.lib"
-                INTERFACE_INCLUDE_DIRECTORIES "${_NTHENGINE_PREFIX}/include"
-        )
-    else ()
-        set_target_properties(pugixml-static PROPERTIES
-                IMPORTED_LOCATION "${_NTHENGINE_PREFIX}/lib/libpugixml.a"
-                INTERFACE_INCLUDE_DIRECTORIES "${_NTHENGINE_PREFIX}/include"
-        )
-    endif ()
-    add_library(pugixml::static ALIAS pugixml-static)
-endif ()
-
-# sol2 (header-only)
-if (NOT TARGET sol2::sol2)
-    add_library(sol2 INTERFACE IMPORTED)
-    set_target_properties(sol2 PROPERTIES
-            INTERFACE_INCLUDE_DIRECTORIES "${_NTHENGINE_PREFIX}/include"
-    )
-    add_library(sol2::sol2 ALIAS sol2)
-endif ()
-
-# LuaJIT
 if (NOT TARGET luajit)
     add_library(luajit STATIC IMPORTED)
-
-    if (WIN32)
-        set(LUAJIT_LIB_NAME "lua51.lib")
-    elseif (UNIX AND NOT APPLE)
-        set(LUAJIT_LIB_NAME "libluajit.a")
-    endif ()
-
     set_target_properties(luajit PROPERTIES
-            IMPORTED_LOCATION "${_NTHENGINE_PREFIX}/lib/${LUAJIT_LIB_NAME}"
-            INTERFACE_INCLUDE_DIRECTORIES "${_NTHENGINE_PREFIX}/include/NthEngine/luajit"
+            IMPORTED_LOCATION "${NTHENGINE_LIBRARY_DIR}/lua51.lib"
+            INTERFACE_INCLUDE_DIRECTORIES "${NTHENGINE_INCLUDE_DIR}/NthEngine/luajit"
     )
-
-    # On Linux, LuaJIT requires linking against libdl and libm
-    if (UNIX AND NOT APPLE)
-        set_target_properties(luajit PROPERTIES
-                INTERFACE_LINK_LIBRARIES "dl;m"
-        )
-    endif ()
 endif ()
 
-# Link all dependencies to NthEngine
-set_target_properties(NthEngine::NthEngine PROPERTIES
-        INTERFACE_LINK_LIBRARIES "glfw;glm::glm;spdlog::spdlog;EnTT::EnTT;fmt::fmt;pugixml::static;luajit;sol2::sol2"
-)
+include("${CMAKE_CURRENT_LIST_DIR}/NthEngineTargets.cmake")
 
-# Set variables for users
-set(NTHENGINE_INCLUDE_DIRS "${_NTHENGINE_PREFIX}/include")
-set(NTHENGINE_LIBRARIES NthEngine::NthEngine)
-
-check_required_components(NthEngine)
+if (TARGET NthEngine)
+    set(NTHENGINE_FOUND TRUE)
+else ()
+    set(NTHENGINE_FOUND FALSE)
+    message(FATAL_ERROR "Nth Engine targets not properly exported")
+endif ()
