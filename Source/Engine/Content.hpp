@@ -55,5 +55,10 @@ namespace Nth {
         inline static void SetEngineContentPath(const fs::path& path) {
             sEngineContentRoot = path;
         }
+
+        inline static void SetRuntimeDefaults() {
+            sContentRoot       = fs::current_path() / "Content";
+            sEngineContentRoot = sContentRoot / "EngineContent";
+        }
     };
 }  // namespace Nth

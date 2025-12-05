@@ -41,8 +41,8 @@ namespace Nth {
     };
 }  // namespace Nth
 
-int main() {
-    Nth::Content::SetWorkingDirectory(Nth::fs::current_path());
+N_ENTRYPOINT {
+    Nth::Content::SetRuntimeDefaults();
     Nth::SandboxGame game;
     game.Run();
 }

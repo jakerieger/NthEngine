@@ -125,4 +125,10 @@ namespace Nth {
         // Client systems
         unique_ptr<Scene> mActiveScene;
     };
+
+#if defined(N_ENGINE_PLATFORM_WINDOWS) && defined(NDEBUG)
+    #define N_ENTRYPOINT int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, int nCmdShow)
+#else
+    #define N_ENTRYPOINT int main(int argc, char* argv[])
+#endif
 }  // namespace Nth
