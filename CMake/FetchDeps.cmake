@@ -52,6 +52,8 @@ FetchContent_Declare(
         GIT_TAG 12.1.0
 )
 
+set(FMT_INSTALL ON CACHE BOOL "Install fmt")
+
 FetchContent_Declare(
         pugixml
         GIT_REPOSITORY https://github.com/zeux/pugixml.git

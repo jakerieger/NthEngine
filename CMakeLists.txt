@@ -8,6 +8,11 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
+set(NTHENGINE_INSTALL_INCLUDEDIR "include" CACHE PATH "Installation directory for header files")
+set(NTHENGINE_INSTALL_LIBDIR "lib" CACHE PATH "Installation directory for libraries")
+set(NTHENGINE_INSTALL_BINDIR "bin" CACHE PATH "Installation directory for executables")
+set(NTHENGINE_INSTALL_CONTENTDIR "." CACHE PATH "Installation directory for EngineContent")
+
 # Detect platform and set engine defines (N_ENGINE_XXX)
 include(CMake/DetectPlatform.cmake)
 
@@ -26,4 +31,10 @@ add_custom_target(CMake_GenerateDocs
         -P "${CMAKE_SOURCE_DIR}/CMake/GenerateDocs.cmake"
         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
         COMMENT "Run doxygen and build docs"
+)
+
+install(DIRECTORY ${CMAKE_SOURCE_DIR}/EngineContent
+        DESTINATION ${NTHENGINE_INSTALL_CONTENTDIR}
+        PATTERN "*.md" EXCLUDE
+        PATTERN ".git*" EXCLUDE
 )

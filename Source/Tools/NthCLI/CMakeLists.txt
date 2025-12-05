@@ -21,3 +21,8 @@ target_include_directories(nth PRIVATE
         ../../../Source/Engine
         ../../../Source/Vendor
 )
+
+# Install nth executable to bin directory
+install(TARGETS nth
+        RUNTIME DESTINATION ${NTHENGINE_INSTALL_BINDIR}
+)
