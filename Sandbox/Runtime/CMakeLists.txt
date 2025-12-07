@@ -12,7 +12,10 @@ else ()
     )
 endif ()
 
-target_link_libraries(Sandbox PRIVATE NthEngine)
+target_link_libraries(Sandbox PRIVATE
+        ${NTHENGINE_LIBS}
+        NthEngine
+)
 
 target_include_directories(Sandbox PRIVATE
         ../../Source/Common

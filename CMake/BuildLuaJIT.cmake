@@ -33,7 +33,7 @@ function(BuildLuaJIT)
                     OUTPUT
                     "${luajit_SOURCE_DIR}/src/libluajit.a"
                     COMMAND make clean
-                    COMMAND make amalg BUILDMODE=static
+                    COMMAND make amalg BUILDMODE=static CFLAGS=-fPIC #  Requires fPIC in order to build NthEngine as shared
                     WORKING_DIRECTORY ${luajit_SOURCE_DIR}/src
                     COMMENT "Building LuaJIT for Linux"
                     DEPENDS

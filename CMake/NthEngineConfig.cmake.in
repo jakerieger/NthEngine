@@ -1,23 +1,13 @@
 @PACKAGE_INIT@
 
-include(CMakeFindDependencyMacro)
-
 set_and_check(NTHENGINE_LIBRARY_DIR "${PACKAGE_PREFIX_DIR}/lib")
 set_and_check(NTHENGINE_INCLUDE_DIR "${PACKAGE_PREFIX_DIR}/include")
 
-if (NOT TARGET luajit)
-    add_library(luajit STATIC IMPORTED)
-    set_target_properties(luajit PROPERTIES
-            IMPORTED_LOCATION "${NTHENGINE_LIBRARY_DIR}/lua51.lib"
-            INTERFACE_INCLUDE_DIRECTORIES "${NTHENGINE_INCLUDE_DIR}/NthEngine/luajit"
-    )
-endif ()
-
 include("${CMAKE_CURRENT_LIST_DIR}/NthEngineTargets.cmake")
 
-if (TARGET NthEngine)
-    set(NTHENGINE_FOUND TRUE)
-else ()
-    set(NTHENGINE_FOUND FALSE)
-    message(FATAL_ERROR "Nth Engine targets not properly exported")
+# On Linux, users still need to link system libraries
+if (UNIX AND NOT APPLE)
+    target_link_libraries(NthEngine : :NthEngine INTERFACE rt dl m)
 endif ()
+
+check_required_components(NthEngine)

@@ -7,13 +7,15 @@ file(GLOB ENGINE_SOURCES
         **/*.cpp
 )
 
-add_library(NthEngine STATIC
+add_library(NthEngine SHARED
         ../Common/CommonPCH.hpp
         ../Common/CommonPCH.cpp
         ../Vendor/glad.c
         ../Vendor/stb_image.cpp
         ${ENGINE_SOURCES}
 )
+include(GenerateExportHeader)
+generate_export_header(NthEngine)
 
 target_precompile_headers(NthEngine PRIVATE ../Common/CommonPCH.hpp)
 
@@ -30,25 +32,18 @@ target_include_directories(NthEngine PUBLIC
         $<INSTALL_INTERFACE:include/NthEngine>
 )
 
-target_link_libraries(NthEngine PUBLIC
-        glfw
-        glm::glm
-        spdlog::spdlog
-        EnTT::EnTT
-        fmt::fmt
-        pugixml::static
-        luajit
-        sol2::sol2
+target_link_libraries(NthEngine PRIVATE
+        ${NTHENGINE_LIBS}
 )
 
 if (UNIX AND NOT APPLE)
-    target_link_libraries(NthEngine PUBLIC rt)
+    target_link_libraries(NthEngine PUBLIC rt dl m)
 endif ()
 
 if (WIN32)
     add_compile_definitions(
-            NOMINMAX           # Prevents min/max macros
-            WIN32_LEAN_AND_MEAN # Reduces unnecessary includes
-            VC_EXTRALEAN       # Further reduces includes (MSVC)
+            NOMINMAX
+            WIN32_LEAN_AND_MEAN
+            VC_EXTRALEAN
     )
 endif ()
