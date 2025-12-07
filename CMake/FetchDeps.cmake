@@ -12,7 +12,7 @@ FetchContent_Declare(
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "Build GLFW docs")
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "Build GLFW tests")
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "Build GLFW examples")
-set(GLFW_INSTALL OFF CACHE BOOL "Generate GLFW installation target")
+#set(GLFW_INSTALL OFF CACHE BOOL "Generate GLFW installation target")
 
 # Causes problems on Windows
 if (NOT MSVC)
@@ -27,7 +27,7 @@ FetchContent_Declare(
 )
 
 set(GLM_BUILD_TESTS OFF CACHE BOOL "Build GLM tests")
-set(GLM_BUILD_INSTALL OFF CACHE BOOL "Install GLM")
+#set(GLM_BUILD_INSTALL OFF CACHE BOOL "Install GLM")
 
 FetchContent_Declare(
         spdlog
@@ -38,7 +38,7 @@ FetchContent_Declare(
 
 set(SPDLOG_BUILD_TESTS OFF CACHE BOOL "Build spdlog tests")
 set(SPDLOG_BUILD_EXAMPLE OFF CACHE BOOL "Build spdlog examples")
-set(SPDLOG_INSTALL OFF CACHE BOOL "Install spdlog")
+#set(SPDLOG_INSTALL OFF CACHE BOOL "Install spdlog")
 
 FetchContent_Declare(
         entt
@@ -51,8 +51,6 @@ FetchContent_Declare(
         GIT_REPOSITORY https://github.com/fmtlib/fmt.git
         GIT_TAG 12.1.0
 )
-
-set(FMT_INSTALL OFF CACHE BOOL "Install fmt")
 
 FetchContent_Declare(
         pugixml

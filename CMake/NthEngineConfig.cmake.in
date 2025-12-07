@@ -3,11 +3,30 @@
 set_and_check(NTHENGINE_LIBRARY_DIR "${PACKAGE_PREFIX_DIR}/lib")
 set_and_check(NTHENGINE_INCLUDE_DIR "${PACKAGE_PREFIX_DIR}/include")
 
-include("${CMAKE_CURRENT_LIST_DIR}/NthEngineTargets.cmake")
+# Recreate LuaJIT imported target
+if (NOT TARGET luajit)
+    add_library(luajit STATIC IMPORTED)
 
-# On Linux, users still need to link system libraries
-if (UNIX AND NOT APPLE)
-    target_link_libraries(NthEngine : :NthEngine INTERFACE rt dl m)
+    if (WIN32)
+        set(LUAJIT_LIB_FILE "${NTHENGINE_LIBRARY_DIR}/lua51.lib")
+    elseif (UNIX AND NOT APPLE)
+        set(LUAJIT_LIB_FILE "${NTHENGINE_LIBRARY_DIR}/libluajit.a")
+    else ()
+        message(FATAL_ERROR "Unsupported platform for LuaJIT")
+    endif ()
+
+    set_target_properties(luajit PROPERTIES
+            IMPORTED_LOCATION "${LUAJIT_LIB_FILE}"
+            INTERFACE_INCLUDE_DIRECTORIES "${NTHENGINE_INCLUDE_DIR}/NthEngine/luajit"
+    )
+
+    if (UNIX AND NOT APPLE)
+        set_property(TARGET luajit APPEND PROPERTY INTERFACE_LINK_LIBRARIES "dl;m")
+    endif ()
 endif ()
 
+# Include the exported targets
+include("${CMAKE_CURRENT_LIST_DIR}/NthEngineTargets.cmake")
+
+# Use the standard CMake check mechanism
 check_required_components(NthEngine)

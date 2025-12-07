@@ -17,7 +17,7 @@ add_library(NthEngine SHARED
 include(GenerateExportHeader)
 generate_export_header(NthEngine)
 
-target_precompile_headers(NthEngine PRIVATE ../Common/CommonPCH.hpp)
+target_precompile_headers(NthEngine PUBLIC ../Common/CommonPCH.hpp)
 
 # Remove glad from PCH
 set_source_files_properties(../Vendor/glad.c PROPERTIES

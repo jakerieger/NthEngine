@@ -10,8 +10,7 @@ add_executable(nth
 )
 
 target_link_libraries(nth PRIVATE
-        fmt::fmt
-        pugixml::static
+        ${NTHENGINE_LIBS}
         CLI11::CLI11
         NthEngine
 )
