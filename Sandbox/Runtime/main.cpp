@@ -5,6 +5,7 @@
 #include <Game.hpp>
 #include <InputCodes.hpp>
 #include <Content.hpp>
+#include <AudioEngine.hpp>
 
 namespace Nth {
     class SandboxGame final : public Game {
@@ -20,6 +21,11 @@ namespace Nth {
 
         void OnAwake() override {
             GetActiveScene()->Load(Content::Get<ContentType::Scene>("Sandbox.xml"), GetScriptEngine());
+
+            // Audio engine test
+            mTestSound = GetAudioEngine().LoadSound(Content::Get<ContentType::Audio>("bg.wav"));
+            GetAudioEngine().PlaySound(mTestSound);
+
             Game::OnAwake();
         }
 
@@ -38,6 +44,9 @@ namespace Nth {
         void OnResize(u32 width, u32 height) override {
             Game::OnResize(width, height);
         }
+
+    private:
+        SoundID mTestSound;
     };
 }  // namespace Nth
 

@@ -9,6 +9,7 @@ file(GLOB ENGINE_INCLUDES
 )
 
 add_library(NthEngine_Objects OBJECT
+    ${MINIAUDIO_SOURCES}
     ${GLAD_SOURCES}
     ${STB_SOURCES}
     ${ENGINE_INCLUDES}

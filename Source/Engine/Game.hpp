@@ -4,6 +4,7 @@
 
 #pragma once
 
+#include "AudioEngine.hpp"
 #include "Common/CommonPCH.hpp"
 #include "Clock.hpp"
 #include "Input.hpp"
@@ -89,6 +90,10 @@ namespace Nth {
             return mScriptEngine;
         }
 
+        N_ND AudioEngine& GetAudioEngine() {
+            return mAudioEngine;
+        }
+
     protected:
         // Subclass-accessible window properties. Use provided getters for the others.
         string mTitle {};
@@ -121,6 +126,7 @@ namespace Nth {
         RenderContext mRenderContext;
         ScriptEngine mScriptEngine;
         Input::InputManager mInputManager;
+        AudioEngine mAudioEngine;
 
         // Client systems
         unique_ptr<Scene> mActiveScene;
