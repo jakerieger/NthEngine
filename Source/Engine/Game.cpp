@@ -10,6 +10,7 @@
 #include "ScriptTypeRegistry.hpp"
 #include "Input.hpp"
 #include "Math.hpp"
+#include "Rendering/ImGuiDebugLayer.hpp"
 
 namespace Nth {
     using Nth::Log;
@@ -102,6 +103,7 @@ namespace Nth {
     }
 
     void Game::OnUpdate(const Clock& clock) {
+        mDebugManager.Update(clock.GetDeltaTime());
         if (mActiveScene) mActiveScene->Update(mScriptEngine, clock);
     }
 
@@ -162,6 +164,10 @@ namespace Nth {
         mAudioEngine.Initialize();
         InitializeScriptEngine();
 
+        // Debug layer
+        mImGuiDebugLayer = make_unique<ImGuiDebugLayer>(GetWindowHandle());
+        mDebugManager.AttachOverlay(mImGuiDebugLayer.get());
+
         Log::Debug("Game",
                    "Successfully initialized game instance:\n-- Dimensions: {}x{}\n-- V-Sync: {}",
                    mWidth,
@@ -172,6 +178,8 @@ namespace Nth {
     }
 
     void Game::Shutdown() {
+        mDebugManager.DetachOverlay();
+        mImGuiDebugLayer.reset();
         TextureManager::Shutdown();
         ShaderManager::Shutdown();
         mAudioEngine.Shutdown();
@@ -212,7 +220,10 @@ namespace Nth {
             // Submit drawing commands here
             if (mActiveScene) { mActiveScene->Render(mRenderContext); }
         }
-        mRenderContext.EndFrame(mWindow);
+        mRenderContext.EndFrame();
+
+        mDebugManager.Render();
+        glfwSwapBuffers(mWindow);
     }
 
     void Game::GLFWResizeCallback(GLFWwindow* mWindow, i32 width, i32 height) {

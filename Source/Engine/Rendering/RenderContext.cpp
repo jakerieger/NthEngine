@@ -41,10 +41,9 @@ namespace Nth {
         Submit(ClearCommand {{0.08f, 0.08f, 0.08f, 1.0f}, true, false});
     }
 
-    void RenderContext::EndFrame(GLFWwindow* window) {
+    void RenderContext::EndFrame() {
         N_ASSERT(mInitialized);
         mCommandQueue.ExecuteQueue();
-        glfwSwapBuffers(window);
     }
 
     void RenderContext::Resize(u32 width, u32 height) {

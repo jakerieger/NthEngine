@@ -19,7 +19,7 @@ namespace Nth {
         void Shutdown() const;
 
         void BeginFrame();
-        void EndFrame(GLFWwindow* window);
+        void EndFrame();
 
         void Resize(u32 width, u32 height);
 

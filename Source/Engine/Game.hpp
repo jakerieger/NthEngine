@@ -10,6 +10,8 @@
 #include "Input.hpp"
 #include "Scene.hpp"
 #include "ScriptEngine.hpp"
+#include "Rendering/DebugInterface.hpp"
+#include "Rendering/ImGuiDebugLayer.hpp"
 #include "Rendering/RenderContext.hpp"
 
 namespace Nth {
@@ -66,7 +68,7 @@ namespace Nth {
             return mFullscreen;
         }
 
-        N_ND const GLFWwindow* GetWindowHandle() const {
+        N_ND GLFWwindow* GetWindowHandle() {
             return mWindow;
         }
 
@@ -122,6 +124,7 @@ namespace Nth {
         bool mVsync {false};
 
         // Internal systems
+        DebugManager mDebugManager;
         Clock mClock;
         RenderContext mRenderContext;
         ScriptEngine mScriptEngine;
@@ -130,6 +133,7 @@ namespace Nth {
 
         // Client systems
         unique_ptr<Scene> mActiveScene;
+        unique_ptr<ImGuiDebugLayer> mImGuiDebugLayer;
     };
 
 #if defined(N_ENGINE_PLATFORM_WINDOWS) && defined(NDEBUG)

@@ -12,3 +12,9 @@ set(MINIAUDIO_SOURCES
     ${VENDOR_ROOT}/miniaudio.c
     ${VENDOR_ROOT}/miniaudio.h
 )
+
+file(GLOB IMGUI_SOURCES
+    ${VENDOR_ROOT}/im*
+    ${VENDOR_ROOT}/backends/imgui_impl_glfw*
+    ${VENDOR_ROOT}/backends/imgui_impl_opengl3*
+)

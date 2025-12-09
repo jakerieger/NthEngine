@@ -47,7 +47,7 @@ namespace Nth {
         }
 
     private:
-        SoundID mTestSound;
+        SoundID mTestSound {kInvalidSoundID};
     };
 }  // namespace Nth
 
