@@ -14,7 +14,7 @@ var searchData=
   ['input_2ehpp_11',['Input.hpp',['../_input_8hpp.html',1,'']]],
   ['input_2elua_12',['Input.lua',['../_input_8lua.html',1,'']]],
   ['inputcodes_2ehpp_13',['InputCodes.hpp',['../_input_codes_8hpp.html',1,'']]],
-  ['inputmanager_14',['inputmanager',['../class_nth_1_1_input_1_1_input_manager.html#a89563c6132ace70ce0d597fb6c946196',1,'Nth::Input::InputManager::InputManager()'],['../class_nth_1_1_input_1_1_input_manager.html',1,'Nth::Input::InputManager']]],
+  ['inputmanager_14',['inputmanager',['../class_nth_1_1_input_manager.html#a7349b25fa10ecf72204203dfda1226d7',1,'Nth::InputManager::InputManager()'],['../class_nth_1_1_input_manager.html',1,'Nth::InputManager']]],
   ['int_15',['Int',['../namespace_nth.html#a2cbc17b47e5b46db1b6d2ded11dcbd46a1686a6c336b71b36d77354cea19a8b52',1,'Nth']]],
   ['int2_16',['Int2',['../namespace_nth.html#a2cbc17b47e5b46db1b6d2ded11dcbd46a4c6bc90f2bbdf35523e29c414a57bad3',1,'Nth']]],
   ['int3_17',['Int3',['../namespace_nth.html#a2cbc17b47e5b46db1b6d2ded11dcbd46a56bf1b0e694b442bf4145a04b82ea943',1,'Nth']]],

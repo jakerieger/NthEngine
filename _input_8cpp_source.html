@@ -106,201 +106,201 @@ $(document).ready(function(){initNavTree('_input_8cpp_source.html',''); initResi
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;sol/sol.hpp&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespace_nth_1_1_input.html">   10</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_nth_1_1_input.html">Nth::Input</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_nth.html">Nth</a> {</div>
 <div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_1_1_input_manager.html#af0bd1a486d193811dd3a274f38d50151">   11</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#af0bd1a486d193811dd3a274f38d50151">InputManager::GetKeyDown</a>(i32 key) {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_manager.html#afac5f93309bb8408cf32e860bfd1bb1c">   11</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_nth_1_1_input_manager.html#afac5f93309bb8408cf32e860bfd1bb1c">InputManager::GetKeyDown</a>(i32 key) {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordflow">return</span> mKeyStates[key].pressed;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }</div>
 </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_1_1_input_manager.html#ad84f0bdcf24db9a7cb37bc97d45afa8a">   15</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#ad84f0bdcf24db9a7cb37bc97d45afa8a">InputManager::GetKeyUp</a>(i32 key) {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_manager.html#ac8f0a307b48032c802f48d00a07e4cc3">   15</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_nth_1_1_input_manager.html#ac8f0a307b48032c802f48d00a07e4cc3">InputManager::GetKeyUp</a>(i32 key) {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">return</span> mKeyStates[key].released;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
 </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_1_1_input_manager.html#a6ea7fa0813893b50aa3d229c4019ac35">   19</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#a6ea7fa0813893b50aa3d229c4019ac35">InputManager::GetMouseButtonDown</a>(i32 button) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_manager.html#aa570b081bdaa8e2b7d8927b19f38e1fb">   19</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_nth_1_1_input_manager.html#aa570b081bdaa8e2b7d8927b19f38e1fb">InputManager::GetMouseButtonDown</a>(i32 button) {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">return</span> mMouseStates[button].pressed;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>
 </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_1_1_input_manager.html#abe1534d7fb14205fa065bbe9841abb89">   23</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#abe1534d7fb14205fa065bbe9841abb89">InputManager::GetMouseButtonUp</a>(i32 button) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_manager.html#a27d11548cae59dd2b4ce5356f374b5a0">   23</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_nth_1_1_input_manager.html#a27d11548cae59dd2b4ce5356f374b5a0">InputManager::GetMouseButtonUp</a>(i32 button) {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">return</span> mMouseStates[button].released;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
 </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_1_1_input_manager.html#a28274483a5990347664e38ec57458fcb">   27</a></span>    i32 <a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#a28274483a5990347664e38ec57458fcb">InputManager::GetMouseX</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_manager.html#a99747008f10c847c35f84967e627fa0f">   27</a></span>    i32 <a class="code hl_function" href="class_nth_1_1_input_manager.html#a99747008f10c847c35f84967e627fa0f">InputManager::GetMouseX</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">return</span> mMouseX;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
 </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_1_1_input_manager.html#a1b3c015e9731b337a3a30593a6f86dbb">   31</a></span>    i32 <a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#a1b3c015e9731b337a3a30593a6f86dbb">InputManager::GetMouseY</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_manager.html#ad5d09032e434d2fb87c802567db3cb69">   31</a></span>    i32 <a class="code hl_function" href="class_nth_1_1_input_manager.html#ad5d09032e434d2fb87c802567db3cb69">InputManager::GetMouseY</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span> mMouseY;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
 </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_1_1_input_manager.html#ae777e9eefdfa309bf88d102d2eda1210">   35</a></span>    f32 <a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#ae777e9eefdfa309bf88d102d2eda1210">InputManager::GetMouseDeltaX</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_manager.html#a402b4eca38b1c0681000e5c4f6d0b450">   35</a></span>    f32 <a class="code hl_function" href="class_nth_1_1_input_manager.html#a402b4eca38b1c0681000e5c4f6d0b450">InputManager::GetMouseDeltaX</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">return</span> mMouseDeltaX;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
 </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_1_1_input_manager.html#ae333de8cfb3156044d7c9005e8cc95f3">   39</a></span>    f32 <a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#ae333de8cfb3156044d7c9005e8cc95f3">InputManager::GetMouseDeltaY</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_manager.html#a1768bcdcd403e57283698d540763802f">   39</a></span>    f32 <a class="code hl_function" href="class_nth_1_1_input_manager.html#a1768bcdcd403e57283698d540763802f">InputManager::GetMouseDeltaY</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span> mMouseDeltaY;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
 </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_1_1_input_manager.html#a3d50e1d8b5b90baf7d26e32bedefce7c">   43</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#a3d50e1d8b5b90baf7d26e32bedefce7c">InputManager::ResetMouseDeltas</a>() {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_nth_1_1_input_manager.html#a49b889359fbd004893b121eee25595fa">   43</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_input_manager.html#a49b889359fbd004893b121eee25595fa">InputManager::ResetMouseDeltas</a>() {</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        mMouseDeltaX = 0.0f;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        mMouseDeltaY = 0.0f;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
 </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> InputManager::RegisterLuaGlobals(sol::state&amp; state) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        state[<span class="stringliteral">&quot;KeyCode&quot;</span>]     = state.create_table();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">auto</span> keyCode         = state[<span class="stringliteral">&quot;KeyCode&quot;</span>];</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        keyCode[<span class="stringliteral">&quot;A&quot;</span>]         = Keys::A;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        keyCode[<span class="stringliteral">&quot;B&quot;</span>]         = Keys::B;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        keyCode[<span class="stringliteral">&quot;C&quot;</span>]         = Keys::C;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        keyCode[<span class="stringliteral">&quot;D&quot;</span>]         = Keys::D;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        keyCode[<span class="stringliteral">&quot;E&quot;</span>]         = Keys::E;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        keyCode[<span class="stringliteral">&quot;F&quot;</span>]         = Keys::F;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        keyCode[<span class="stringliteral">&quot;G&quot;</span>]         = Keys::G;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        keyCode[<span class="stringliteral">&quot;H&quot;</span>]         = Keys::H;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        keyCode[<span class="stringliteral">&quot;I&quot;</span>]         = Keys::I;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        keyCode[<span class="stringliteral">&quot;J&quot;</span>]         = Keys::J;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        keyCode[<span class="stringliteral">&quot;K&quot;</span>]         = Keys::K;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        keyCode[<span class="stringliteral">&quot;L&quot;</span>]         = Keys::L;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        keyCode[<span class="stringliteral">&quot;M&quot;</span>]         = Keys::M;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        keyCode[<span class="stringliteral">&quot;N&quot;</span>]         = Keys::N;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        keyCode[<span class="stringliteral">&quot;O&quot;</span>]         = Keys::O;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        keyCode[<span class="stringliteral">&quot;P&quot;</span>]         = Keys::P;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        keyCode[<span class="stringliteral">&quot;Q&quot;</span>]         = Keys::Q;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        keyCode[<span class="stringliteral">&quot;R&quot;</span>]         = Keys::R;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        keyCode[<span class="stringliteral">&quot;S&quot;</span>]         = Keys::S;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        keyCode[<span class="stringliteral">&quot;T&quot;</span>]         = Keys::T;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        keyCode[<span class="stringliteral">&quot;U&quot;</span>]         = Keys::U;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        keyCode[<span class="stringliteral">&quot;V&quot;</span>]         = Keys::V;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        keyCode[<span class="stringliteral">&quot;W&quot;</span>]         = Keys::W;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        keyCode[<span class="stringliteral">&quot;X&quot;</span>]         = Keys::X;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        keyCode[<span class="stringliteral">&quot;Y&quot;</span>]         = Keys::Y;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        keyCode[<span class="stringliteral">&quot;Z&quot;</span>]         = Keys::Z;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        keyCode[<span class="stringliteral">&quot;1&quot;</span>]         = Keys::Num1;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        keyCode[<span class="stringliteral">&quot;2&quot;</span>]         = Keys::Num2;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        keyCode[<span class="stringliteral">&quot;3&quot;</span>]         = Keys::Num3;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        keyCode[<span class="stringliteral">&quot;4&quot;</span>]         = Keys::Num4;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        keyCode[<span class="stringliteral">&quot;5&quot;</span>]         = Keys::Num5;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        keyCode[<span class="stringliteral">&quot;6&quot;</span>]         = Keys::Num6;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        keyCode[<span class="stringliteral">&quot;7&quot;</span>]         = Keys::Num7;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        keyCode[<span class="stringliteral">&quot;8&quot;</span>]         = Keys::Num8;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        keyCode[<span class="stringliteral">&quot;9&quot;</span>]         = Keys::Num9;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        keyCode[<span class="stringliteral">&quot;0&quot;</span>]         = Keys::Num0;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        keyCode[<span class="stringliteral">&quot;Minus&quot;</span>]     = Keys::Minus;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        keyCode[<span class="stringliteral">&quot;Equal&quot;</span>]     = Keys::Equal;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        keyCode[<span class="stringliteral">&quot;Backspace&quot;</span>] = Keys::Backspace;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        keyCode[<span class="stringliteral">&quot;Tab&quot;</span>]       = Keys::Tab;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        keyCode[<span class="stringliteral">&quot;Home&quot;</span>]      = Keys::Home;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        keyCode[<span class="stringliteral">&quot;Left&quot;</span>]      = Keys::Left;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        keyCode[<span class="stringliteral">&quot;Up&quot;</span>]        = Keys::Up;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        keyCode[<span class="stringliteral">&quot;Right&quot;</span>]     = Keys::Right;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        keyCode[<span class="stringliteral">&quot;Down&quot;</span>]      = Keys::Down;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        keyCode[<span class="stringliteral">&quot;Escape&quot;</span>]    = Keys::Escape;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        keyCode[<span class="stringliteral">&quot;Enter&quot;</span>]     = Keys::Enter;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        keyCode[<span class="stringliteral">&quot;Space&quot;</span>]     = Keys::Space;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        keyCode[<span class="stringliteral">&quot;LeftCtrl&quot;</span>]  = Keys::LeftControl;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        keyCode[<span class="stringliteral">&quot;RightCtrl&quot;</span>] = Keys::RightControl;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        keyCode[<span class="stringliteral">&quot;F1&quot;</span>]        = Keys::F1;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        keyCode[<span class="stringliteral">&quot;F2&quot;</span>]        = Keys::F2;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        keyCode[<span class="stringliteral">&quot;F3&quot;</span>]        = Keys::F3;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        keyCode[<span class="stringliteral">&quot;F4&quot;</span>]        = Keys::F4;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        keyCode[<span class="stringliteral">&quot;F5&quot;</span>]        = Keys::F5;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        keyCode[<span class="stringliteral">&quot;F6&quot;</span>]        = Keys::F6;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        keyCode[<span class="stringliteral">&quot;F7&quot;</span>]        = Keys::F7;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        keyCode[<span class="stringliteral">&quot;F8&quot;</span>]        = Keys::F8;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        keyCode[<span class="stringliteral">&quot;F9&quot;</span>]        = Keys::F9;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        keyCode[<span class="stringliteral">&quot;F10&quot;</span>]       = Keys::F10;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        keyCode[<span class="stringliteral">&quot;F11&quot;</span>]       = Keys::F11;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        keyCode[<span class="stringliteral">&quot;F12&quot;</span>]       = Keys::F12;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        state[<span class="stringliteral">&quot;MouseButton&quot;</span>]  = state.create_table();</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keyword">auto</span> mouseButton      = state[<span class="stringliteral">&quot;MouseButton&quot;</span>];</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        mouseButton[<span class="stringliteral">&quot;Left&quot;</span>]   = MouseButtons::Left;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        mouseButton[<span class="stringliteral">&quot;Right&quot;</span>]  = MouseButtons::Right;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        mouseButton[<span class="stringliteral">&quot;Middle&quot;</span>] = MouseButtons::Middle;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        state.new_usertype&lt;<a class="code hl_class" href="class_nth_1_1_input_1_1_input_manager.html">InputManager</a>&gt;(<span class="stringliteral">&quot;InputManager&quot;</span>,</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                                         <span class="stringliteral">&quot;GetKeyDown&quot;</span>,</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#af0bd1a486d193811dd3a274f38d50151">InputManager::GetKeyDown</a>,</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                                         <span class="stringliteral">&quot;GetKeyUp&quot;</span>,</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#ad84f0bdcf24db9a7cb37bc97d45afa8a">InputManager::GetKeyUp</a>,</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                                         <span class="stringliteral">&quot;GetMouseButtonDown&quot;</span>,</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#a6ea7fa0813893b50aa3d229c4019ac35">InputManager::GetMouseButtonDown</a>,</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                                         <span class="stringliteral">&quot;GetMouseButtonUp&quot;</span>,</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#abe1534d7fb14205fa065bbe9841abb89">InputManager::GetMouseButtonUp</a>,</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                                         <span class="stringliteral">&quot;GetMouseX&quot;</span>,</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#a28274483a5990347664e38ec57458fcb">InputManager::GetMouseX</a>,</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                                         <span class="stringliteral">&quot;GetMouseY&quot;</span>,</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#a1b3c015e9731b337a3a30593a6f86dbb">InputManager::GetMouseY</a>,</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                                         <span class="stringliteral">&quot;GetMouseDeltaX&quot;</span>,</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#ae777e9eefdfa309bf88d102d2eda1210">InputManager::GetMouseDeltaX</a>,</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                                         <span class="stringliteral">&quot;GetMouseDeltaY&quot;</span>,</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_1_1_input_manager.html#ae333de8cfb3156044d7c9005e8cc95f3">InputManager::GetMouseDeltaY</a>);</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        state[<span class="stringliteral">&quot;Input&quot;</span>] = <span class="keyword">this</span>;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    }</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordtype">void</span> InputManager::UpdateKeyState(<span class="keyword">const</span> u16 key, <span class="keyword">const</span> <span class="keywordtype">bool</span> pressed) {</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordflow">if</span> (!mEnabled) <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        mKeyStates[key].pressed  = pressed;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        mKeyStates[key].released = !pressed;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    }</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordtype">void</span> InputManager::UpdateMouseButtonState(<span class="keyword">const</span> u16 button, <span class="keyword">const</span> <span class="keywordtype">bool</span> pressed) {</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordflow">if</span> (!mEnabled) <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        mMouseStates[button].pressed  = pressed;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        mMouseStates[button].released = !pressed;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordtype">void</span> InputManager::UpdateMousePosition(<span class="keyword">const</span> f64 x, <span class="keyword">const</span> f64 y) {</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">if</span> (!mEnabled) <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        mMouseDeltaX = CAST&lt;f32&gt;(x);</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        mMouseDeltaY = CAST&lt;f32&gt;(y);</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keyword">constexpr</span> f32 deadZone = 2.5f;  <span class="comment">// Might need to tweak this, also frame-rate dependent :(</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">if</span> (std::abs(mMouseDeltaX) &lt; deadZone) mMouseDeltaX = 0.0f;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordflow">if</span> (std::abs(mMouseDeltaY) &lt; deadZone) mMouseDeltaY = 0.0f;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        mMouseX += x;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        mMouseY += y;</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    }</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordtype">void</span> InputManager::SetEnabled(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled) {</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        mEnabled = enabled;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    }</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>}  <span class="comment">// namespace Nth::Input</span></div>
-</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">using namespace </span>Input;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        state[<span class="stringliteral">&quot;KeyCode&quot;</span>]     = state.create_table();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keyword">auto</span> keyCode         = state[<span class="stringliteral">&quot;KeyCode&quot;</span>];</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        keyCode[<span class="stringliteral">&quot;A&quot;</span>]         = Keys::A;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        keyCode[<span class="stringliteral">&quot;B&quot;</span>]         = Keys::B;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        keyCode[<span class="stringliteral">&quot;C&quot;</span>]         = Keys::C;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        keyCode[<span class="stringliteral">&quot;D&quot;</span>]         = Keys::D;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        keyCode[<span class="stringliteral">&quot;E&quot;</span>]         = Keys::E;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        keyCode[<span class="stringliteral">&quot;F&quot;</span>]         = Keys::F;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        keyCode[<span class="stringliteral">&quot;G&quot;</span>]         = Keys::G;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        keyCode[<span class="stringliteral">&quot;H&quot;</span>]         = Keys::H;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        keyCode[<span class="stringliteral">&quot;I&quot;</span>]         = Keys::I;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        keyCode[<span class="stringliteral">&quot;J&quot;</span>]         = Keys::J;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        keyCode[<span class="stringliteral">&quot;K&quot;</span>]         = Keys::K;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        keyCode[<span class="stringliteral">&quot;L&quot;</span>]         = Keys::L;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        keyCode[<span class="stringliteral">&quot;M&quot;</span>]         = Keys::M;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        keyCode[<span class="stringliteral">&quot;N&quot;</span>]         = Keys::N;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        keyCode[<span class="stringliteral">&quot;O&quot;</span>]         = Keys::O;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        keyCode[<span class="stringliteral">&quot;P&quot;</span>]         = Keys::P;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        keyCode[<span class="stringliteral">&quot;Q&quot;</span>]         = Keys::Q;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        keyCode[<span class="stringliteral">&quot;R&quot;</span>]         = Keys::R;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        keyCode[<span class="stringliteral">&quot;S&quot;</span>]         = Keys::S;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        keyCode[<span class="stringliteral">&quot;T&quot;</span>]         = Keys::T;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        keyCode[<span class="stringliteral">&quot;U&quot;</span>]         = Keys::U;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        keyCode[<span class="stringliteral">&quot;V&quot;</span>]         = Keys::V;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        keyCode[<span class="stringliteral">&quot;W&quot;</span>]         = Keys::W;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        keyCode[<span class="stringliteral">&quot;X&quot;</span>]         = Keys::X;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        keyCode[<span class="stringliteral">&quot;Y&quot;</span>]         = Keys::Y;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        keyCode[<span class="stringliteral">&quot;Z&quot;</span>]         = Keys::Z;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        keyCode[<span class="stringliteral">&quot;1&quot;</span>]         = Keys::Num1;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        keyCode[<span class="stringliteral">&quot;2&quot;</span>]         = Keys::Num2;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        keyCode[<span class="stringliteral">&quot;3&quot;</span>]         = Keys::Num3;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        keyCode[<span class="stringliteral">&quot;4&quot;</span>]         = Keys::Num4;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        keyCode[<span class="stringliteral">&quot;5&quot;</span>]         = Keys::Num5;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        keyCode[<span class="stringliteral">&quot;6&quot;</span>]         = Keys::Num6;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        keyCode[<span class="stringliteral">&quot;7&quot;</span>]         = Keys::Num7;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        keyCode[<span class="stringliteral">&quot;8&quot;</span>]         = Keys::Num8;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        keyCode[<span class="stringliteral">&quot;9&quot;</span>]         = Keys::Num9;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        keyCode[<span class="stringliteral">&quot;0&quot;</span>]         = Keys::Num0;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        keyCode[<span class="stringliteral">&quot;Minus&quot;</span>]     = Keys::Minus;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        keyCode[<span class="stringliteral">&quot;Equal&quot;</span>]     = Keys::Equal;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        keyCode[<span class="stringliteral">&quot;Backspace&quot;</span>] = Keys::Backspace;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        keyCode[<span class="stringliteral">&quot;Tab&quot;</span>]       = Keys::Tab;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        keyCode[<span class="stringliteral">&quot;Home&quot;</span>]      = Keys::Home;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        keyCode[<span class="stringliteral">&quot;Left&quot;</span>]      = Keys::Left;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        keyCode[<span class="stringliteral">&quot;Up&quot;</span>]        = Keys::Up;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        keyCode[<span class="stringliteral">&quot;Right&quot;</span>]     = Keys::Right;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        keyCode[<span class="stringliteral">&quot;Down&quot;</span>]      = Keys::Down;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        keyCode[<span class="stringliteral">&quot;Escape&quot;</span>]    = Keys::Escape;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        keyCode[<span class="stringliteral">&quot;Enter&quot;</span>]     = Keys::Enter;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        keyCode[<span class="stringliteral">&quot;Space&quot;</span>]     = Keys::Space;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        keyCode[<span class="stringliteral">&quot;LeftCtrl&quot;</span>]  = Keys::LeftControl;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        keyCode[<span class="stringliteral">&quot;RightCtrl&quot;</span>] = Keys::RightControl;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        keyCode[<span class="stringliteral">&quot;F1&quot;</span>]        = Keys::F1;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        keyCode[<span class="stringliteral">&quot;F2&quot;</span>]        = Keys::F2;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        keyCode[<span class="stringliteral">&quot;F3&quot;</span>]        = Keys::F3;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        keyCode[<span class="stringliteral">&quot;F4&quot;</span>]        = Keys::F4;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        keyCode[<span class="stringliteral">&quot;F5&quot;</span>]        = Keys::F5;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        keyCode[<span class="stringliteral">&quot;F6&quot;</span>]        = Keys::F6;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        keyCode[<span class="stringliteral">&quot;F7&quot;</span>]        = Keys::F7;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        keyCode[<span class="stringliteral">&quot;F8&quot;</span>]        = Keys::F8;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        keyCode[<span class="stringliteral">&quot;F9&quot;</span>]        = Keys::F9;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        keyCode[<span class="stringliteral">&quot;F10&quot;</span>]       = Keys::F10;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        keyCode[<span class="stringliteral">&quot;F11&quot;</span>]       = Keys::F11;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        keyCode[<span class="stringliteral">&quot;F12&quot;</span>]       = Keys::F12;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        state[<span class="stringliteral">&quot;MouseButton&quot;</span>]  = state.create_table();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keyword">auto</span> mouseButton      = state[<span class="stringliteral">&quot;MouseButton&quot;</span>];</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        mouseButton[<span class="stringliteral">&quot;Left&quot;</span>]   = MouseButtons::Left;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        mouseButton[<span class="stringliteral">&quot;Right&quot;</span>]  = MouseButtons::Right;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        mouseButton[<span class="stringliteral">&quot;Middle&quot;</span>] = MouseButtons::Middle;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        state.new_usertype&lt;<a class="code hl_class" href="class_nth_1_1_input_manager.html">InputManager</a>&gt;(<span class="stringliteral">&quot;InputManager&quot;</span>,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                                         <span class="stringliteral">&quot;GetKeyDown&quot;</span>,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_manager.html#afac5f93309bb8408cf32e860bfd1bb1c">InputManager::GetKeyDown</a>,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                                         <span class="stringliteral">&quot;GetKeyUp&quot;</span>,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_manager.html#ac8f0a307b48032c802f48d00a07e4cc3">InputManager::GetKeyUp</a>,</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                                         <span class="stringliteral">&quot;GetMouseButtonDown&quot;</span>,</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_manager.html#aa570b081bdaa8e2b7d8927b19f38e1fb">InputManager::GetMouseButtonDown</a>,</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                                         <span class="stringliteral">&quot;GetMouseButtonUp&quot;</span>,</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_manager.html#a27d11548cae59dd2b4ce5356f374b5a0">InputManager::GetMouseButtonUp</a>,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                                         <span class="stringliteral">&quot;GetMouseX&quot;</span>,</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_manager.html#a99747008f10c847c35f84967e627fa0f">InputManager::GetMouseX</a>,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                                         <span class="stringliteral">&quot;GetMouseY&quot;</span>,</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_manager.html#ad5d09032e434d2fb87c802567db3cb69">InputManager::GetMouseY</a>,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                                         <span class="stringliteral">&quot;GetMouseDeltaX&quot;</span>,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_manager.html#a402b4eca38b1c0681000e5c4f6d0b450">InputManager::GetMouseDeltaX</a>,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                                         <span class="stringliteral">&quot;GetMouseDeltaY&quot;</span>,</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                                         &amp;<a class="code hl_function" href="class_nth_1_1_input_manager.html#a1768bcdcd403e57283698d540763802f">InputManager::GetMouseDeltaY</a>);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        state[<span class="stringliteral">&quot;Input&quot;</span>] = <span class="keyword">this</span>;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordtype">void</span> InputManager::UpdateKeyState(<span class="keyword">const</span> u16 key, <span class="keyword">const</span> <span class="keywordtype">bool</span> pressed) {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <span class="keywordflow">if</span> (!mEnabled) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        mKeyStates[key].pressed  = pressed;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        mKeyStates[key].released = !pressed;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordtype">void</span> InputManager::UpdateMouseButtonState(<span class="keyword">const</span> u16 button, <span class="keyword">const</span> <span class="keywordtype">bool</span> pressed) {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keywordflow">if</span> (!mEnabled) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        mMouseStates[button].pressed  = pressed;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        mMouseStates[button].released = !pressed;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keywordtype">void</span> InputManager::UpdateMousePosition(<span class="keyword">const</span> f64 x, <span class="keyword">const</span> f64 y) {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordflow">if</span> (!mEnabled) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        mMouseDeltaX = CAST&lt;f32&gt;(x);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        mMouseDeltaY = CAST&lt;f32&gt;(y);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keyword">constexpr</span> f32 deadZone = 2.5f;  <span class="comment">// Might need to tweak this, also frame-rate dependent :(</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keywordflow">if</span> (std::abs(mMouseDeltaX) &lt; deadZone) mMouseDeltaX = 0.0f;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">if</span> (std::abs(mMouseDeltaY) &lt; deadZone) mMouseDeltaY = 0.0f;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        mMouseX += x;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        mMouseY += y;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    }</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordtype">void</span> InputManager::SetEnabled(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled) {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        mEnabled = enabled;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>}  <span class="comment">// namespace Nth</span></div>
 <div class="ttc" id="a_input_8hpp_html"><div class="ttname"><a href="_input_8hpp.html">Input.hpp</a></div></div>
 <div class="ttc" id="a_input_codes_8hpp_html"><div class="ttname"><a href="_input_codes_8hpp.html">InputCodes.hpp</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_input_1_1_input_manager_html"><div class="ttname"><a href="class_nth_1_1_input_1_1_input_manager.html">Nth::Input::InputManager</a></div><div class="ttdef"><b>Definition</b> <a href="_input_8hpp_source.html#l00018">Input.hpp:18</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_input_1_1_input_manager_html_a1b3c015e9731b337a3a30593a6f86dbb"><div class="ttname"><a href="class_nth_1_1_input_1_1_input_manager.html#a1b3c015e9731b337a3a30593a6f86dbb">Nth::Input::InputManager::GetMouseY</a></div><div class="ttdeci">N_ND i32 GetMouseY() const</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00031">Input.cpp:31</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_input_1_1_input_manager_html_a28274483a5990347664e38ec57458fcb"><div class="ttname"><a href="class_nth_1_1_input_1_1_input_manager.html#a28274483a5990347664e38ec57458fcb">Nth::Input::InputManager::GetMouseX</a></div><div class="ttdeci">N_ND i32 GetMouseX() const</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00027">Input.cpp:27</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_input_1_1_input_manager_html_a3d50e1d8b5b90baf7d26e32bedefce7c"><div class="ttname"><a href="class_nth_1_1_input_1_1_input_manager.html#a3d50e1d8b5b90baf7d26e32bedefce7c">Nth::Input::InputManager::ResetMouseDeltas</a></div><div class="ttdeci">void ResetMouseDeltas()</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00043">Input.cpp:43</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_input_1_1_input_manager_html_a6ea7fa0813893b50aa3d229c4019ac35"><div class="ttname"><a href="class_nth_1_1_input_1_1_input_manager.html#a6ea7fa0813893b50aa3d229c4019ac35">Nth::Input::InputManager::GetMouseButtonDown</a></div><div class="ttdeci">bool GetMouseButtonDown(i32 button)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00019">Input.cpp:19</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_input_1_1_input_manager_html_abe1534d7fb14205fa065bbe9841abb89"><div class="ttname"><a href="class_nth_1_1_input_1_1_input_manager.html#abe1534d7fb14205fa065bbe9841abb89">Nth::Input::InputManager::GetMouseButtonUp</a></div><div class="ttdeci">bool GetMouseButtonUp(i32 button)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00023">Input.cpp:23</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_input_1_1_input_manager_html_ad84f0bdcf24db9a7cb37bc97d45afa8a"><div class="ttname"><a href="class_nth_1_1_input_1_1_input_manager.html#ad84f0bdcf24db9a7cb37bc97d45afa8a">Nth::Input::InputManager::GetKeyUp</a></div><div class="ttdeci">bool GetKeyUp(i32 key)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00015">Input.cpp:15</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_input_1_1_input_manager_html_ae333de8cfb3156044d7c9005e8cc95f3"><div class="ttname"><a href="class_nth_1_1_input_1_1_input_manager.html#ae333de8cfb3156044d7c9005e8cc95f3">Nth::Input::InputManager::GetMouseDeltaY</a></div><div class="ttdeci">N_ND f32 GetMouseDeltaY() const</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00039">Input.cpp:39</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_input_1_1_input_manager_html_ae777e9eefdfa309bf88d102d2eda1210"><div class="ttname"><a href="class_nth_1_1_input_1_1_input_manager.html#ae777e9eefdfa309bf88d102d2eda1210">Nth::Input::InputManager::GetMouseDeltaX</a></div><div class="ttdeci">N_ND f32 GetMouseDeltaX() const</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00035">Input.cpp:35</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_input_1_1_input_manager_html_af0bd1a486d193811dd3a274f38d50151"><div class="ttname"><a href="class_nth_1_1_input_1_1_input_manager.html#af0bd1a486d193811dd3a274f38d50151">Nth::Input::InputManager::GetKeyDown</a></div><div class="ttdeci">bool GetKeyDown(i32 key)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00011">Input.cpp:11</a></div></div>
-<div class="ttc" id="anamespace_nth_1_1_input_html"><div class="ttname"><a href="namespace_nth_1_1_input.html">Nth::Input</a></div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00010">Input.cpp:10</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_input_manager_html"><div class="ttname"><a href="class_nth_1_1_input_manager.html">Nth::InputManager</a></div><div class="ttdoc">Manages keyboard and mouse input state for the game.</div><div class="ttdef"><b>Definition</b> <a href="_input_8hpp_source.html#l00020">Input.hpp:20</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_input_manager_html_a1768bcdcd403e57283698d540763802f"><div class="ttname"><a href="class_nth_1_1_input_manager.html#a1768bcdcd403e57283698d540763802f">Nth::InputManager::GetMouseDeltaY</a></div><div class="ttdeci">N_ND f32 GetMouseDeltaY() const</div><div class="ttdoc">Gets the mouse movement delta on the Y axis since last frame.</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00039">Input.cpp:39</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_input_manager_html_a27d11548cae59dd2b4ce5356f374b5a0"><div class="ttname"><a href="class_nth_1_1_input_manager.html#a27d11548cae59dd2b4ce5356f374b5a0">Nth::InputManager::GetMouseButtonUp</a></div><div class="ttdeci">bool GetMouseButtonUp(i32 button)</div><div class="ttdoc">Checks if a mouse button was just released.</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00023">Input.cpp:23</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_input_manager_html_a402b4eca38b1c0681000e5c4f6d0b450"><div class="ttname"><a href="class_nth_1_1_input_manager.html#a402b4eca38b1c0681000e5c4f6d0b450">Nth::InputManager::GetMouseDeltaX</a></div><div class="ttdeci">N_ND f32 GetMouseDeltaX() const</div><div class="ttdoc">Gets the mouse movement delta on the X axis since last frame.</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00035">Input.cpp:35</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_input_manager_html_a49b889359fbd004893b121eee25595fa"><div class="ttname"><a href="class_nth_1_1_input_manager.html#a49b889359fbd004893b121eee25595fa">Nth::InputManager::ResetMouseDeltas</a></div><div class="ttdeci">void ResetMouseDeltas()</div><div class="ttdoc">Resets the mouse delta values to zero.</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00043">Input.cpp:43</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_input_manager_html_a99747008f10c847c35f84967e627fa0f"><div class="ttname"><a href="class_nth_1_1_input_manager.html#a99747008f10c847c35f84967e627fa0f">Nth::InputManager::GetMouseX</a></div><div class="ttdeci">N_ND i32 GetMouseX() const</div><div class="ttdoc">Gets the current mouse X position.</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00027">Input.cpp:27</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_input_manager_html_aa570b081bdaa8e2b7d8927b19f38e1fb"><div class="ttname"><a href="class_nth_1_1_input_manager.html#aa570b081bdaa8e2b7d8927b19f38e1fb">Nth::InputManager::GetMouseButtonDown</a></div><div class="ttdeci">bool GetMouseButtonDown(i32 button)</div><div class="ttdoc">Checks if a mouse button is currently pressed.</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00019">Input.cpp:19</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_input_manager_html_ac8f0a307b48032c802f48d00a07e4cc3"><div class="ttname"><a href="class_nth_1_1_input_manager.html#ac8f0a307b48032c802f48d00a07e4cc3">Nth::InputManager::GetKeyUp</a></div><div class="ttdeci">bool GetKeyUp(i32 key)</div><div class="ttdoc">Checks if a keyboard key was just released.</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00015">Input.cpp:15</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_input_manager_html_ad5d09032e434d2fb87c802567db3cb69"><div class="ttname"><a href="class_nth_1_1_input_manager.html#ad5d09032e434d2fb87c802567db3cb69">Nth::InputManager::GetMouseY</a></div><div class="ttdeci">N_ND i32 GetMouseY() const</div><div class="ttdoc">Gets the current mouse Y position.</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00031">Input.cpp:31</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_input_manager_html_afac5f93309bb8408cf32e860bfd1bb1c"><div class="ttname"><a href="class_nth_1_1_input_manager.html#afac5f93309bb8408cf32e860bfd1bb1c">Nth::InputManager::GetKeyDown</a></div><div class="ttdeci">bool GetKeyDown(i32 key)</div><div class="ttdoc">Checks if a keyboard key is currently pressed.</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00011">Input.cpp:11</a></div></div>
+<div class="ttc" id="anamespace_nth_html"><div class="ttname"><a href="namespace_nth.html">Nth</a></div><div class="ttdef"><b>Definition</b> <a href="_audio_engine_8cpp_source.html#l00010">AudioEngine.cpp:10</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

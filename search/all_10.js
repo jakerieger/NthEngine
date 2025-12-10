@@ -15,7 +15,7 @@ var searchData=
   ['rendercontext_2ehpp_12',['RenderContext.hpp',['../_render_context_8hpp.html',1,'']]],
   ['reserve_13',['Reserve',['../class_nth_1_1_command_queue.html#ad02d076a5cffa8d468997f0de5842356',1,'Nth::CommandQueue']]],
   ['reset_14',['Reset',['../class_nth_1_1_scene_state.html#aaa2b30b5db00f3ea2985f65068f5e79e',1,'Nth::SceneState']]],
-  ['resetmousedeltas_15',['ResetMouseDeltas',['../class_nth_1_1_input_1_1_input_manager.html#a3d50e1d8b5b90baf7d26e32bedefce7c',1,'Nth::Input::InputManager']]],
+  ['resetmousedeltas_15',['ResetMouseDeltas',['../class_nth_1_1_input_manager.html#a49b889359fbd004893b121eee25595fa',1,'Nth::InputManager']]],
   ['resize_16',['resize',['../class_nth_1_1_render_context.html#a664aaad2878229f18ed003491287dfd7',1,'Nth::RenderContext::Resize()'],['../class_nth_1_1_game.html#a54b815529b9c2ad7d4988c1ddd60298c',1,'Nth::Game::Resize()']]],
   ['restitution_17',['restitution',['../struct_nth_1_1_rigidbody2_d.html#a851f9ff3ac0cc3cadc0be709ce964096',1,'Nth::Rigidbody2D::restitution'],['../struct_nth_1_1_rigidbody2_d_descriptor.html#ab419f07fac1bf5427275e27791f375da',1,'Nth::Rigidbody2DDescriptor::restitution']]],
   ['rigidbody2d_18',['rigidbody2d',['../struct_nth_1_1_rigidbody2_d.html',1,'Nth::Rigidbody2D'],['../struct_nth_1_1_entity_descriptor.html#a96053f370252b8be5373c2276c87b31a',1,'Nth::EntityDescriptor::rigidbody2D'],['../struct_nth_1_1_rigidbody2_d.html#a6bcd3bbc20aa187c50982447b3f250c2',1,'Nth::Rigidbody2D::Rigidbody2D()']]],

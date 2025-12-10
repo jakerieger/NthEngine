@@ -1,9 +1,6 @@
 var annotated_dup =
 [
     [ "Nth", "namespace_nth.html", [
-      [ "Input", "namespace_nth_1_1_input.html", [
-        [ "InputManager", "class_nth_1_1_input_1_1_input_manager.html", "class_nth_1_1_input_1_1_input_manager" ]
-      ] ],
       [ "AudioEngine", "class_nth_1_1_audio_engine.html", "class_nth_1_1_audio_engine" ],
       [ "Behavior", "struct_nth_1_1_behavior.html", "struct_nth_1_1_behavior" ],
       [ "BehaviorDescriptor", "struct_nth_1_1_behavior_descriptor.html", "struct_nth_1_1_behavior_descriptor" ],
@@ -28,6 +25,7 @@ var annotated_dup =
       [ "IDebugOverlay", "class_nth_1_1_i_debug_overlay.html", "class_nth_1_1_i_debug_overlay" ],
       [ "ImGuiDebugLayer", "class_nth_1_1_im_gui_debug_layer.html", "class_nth_1_1_im_gui_debug_layer" ],
       [ "IndexBuffer", "class_nth_1_1_index_buffer.html", "class_nth_1_1_index_buffer" ],
+      [ "InputManager", "class_nth_1_1_input_manager.html", "class_nth_1_1_input_manager" ],
       [ "Log", "class_nth_1_1_log.html", "class_nth_1_1_log" ],
       [ "LuaRegisterable", "struct_nth_1_1_lua_registerable.html", "struct_nth_1_1_lua_registerable" ],
       [ "LuaRegistry", "struct_nth_1_1_lua_registry.html", "struct_nth_1_1_lua_registry" ],

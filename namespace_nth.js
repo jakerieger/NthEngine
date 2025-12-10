@@ -30,6 +30,7 @@ var namespace_nth =
     [ "IDebugOverlay", "class_nth_1_1_i_debug_overlay.html", "class_nth_1_1_i_debug_overlay" ],
     [ "ImGuiDebugLayer", "class_nth_1_1_im_gui_debug_layer.html", "class_nth_1_1_im_gui_debug_layer" ],
     [ "IndexBuffer", "class_nth_1_1_index_buffer.html", "class_nth_1_1_index_buffer" ],
+    [ "InputManager", "class_nth_1_1_input_manager.html", "class_nth_1_1_input_manager" ],
     [ "Log", "class_nth_1_1_log.html", "class_nth_1_1_log" ],
     [ "LuaRegisterable", "struct_nth_1_1_lua_registerable.html", "struct_nth_1_1_lua_registerable" ],
     [ "LuaRegistry", "struct_nth_1_1_lua_registry.html", "struct_nth_1_1_lua_registry" ],

@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('class_nth_1_1_game.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
-<p>Base class where all engine systems meet and execute. Owns the system window and handles communication between the OS, graphics API, and game client code (among many other things).  
+<p>Base class where all engine systems meet and execute.  
  <a href="class_nth_1_1_game.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_game_8hpp_source.html">Game.hpp</a>&gt;</code></p>
@@ -118,97 +118,137 @@ Inheritance diagram for Nth::Game:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aac17c0893351f382d24c605478c33787" id="r_aac17c0893351f382d24c605478c33787"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#aac17c0893351f382d24c605478c33787">Game</a> ()</td></tr>
+<tr class="memdesc:aac17c0893351f382d24c605478c33787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor, creates a game with default window settings.  <br /></td></tr>
 <tr class="separator:aac17c0893351f382d24c605478c33787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e37f534e1c398d2d4152c92f93bcbf2" id="r_a8e37f534e1c398d2d4152c92f93bcbf2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a8e37f534e1c398d2d4152c92f93bcbf2">Game</a> (const string &amp;title, u32 width, u32 height)</td></tr>
+<tr class="memdesc:a8e37f534e1c398d2d4152c92f93bcbf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a game with custom window properties.  <br /></td></tr>
 <tr class="separator:a8e37f534e1c398d2d4152c92f93bcbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30ffbbded3be3744c6dc8ec53ec3f1eb" id="r_a30ffbbded3be3744c6dc8ec53ec3f1eb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a30ffbbded3be3744c6dc8ec53ec3f1eb">~Game</a> ()=default</td></tr>
+<tr class="memdesc:a30ffbbded3be3744c6dc8ec53ec3f1eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for proper cleanup of derived classes.  <br /></td></tr>
 <tr class="separator:a30ffbbded3be3744c6dc8ec53ec3f1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81d49b3cad0421e1760b24be2b40674d" id="r_a81d49b3cad0421e1760b24be2b40674d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a81d49b3cad0421e1760b24be2b40674d">Run</a> ()</td></tr>
+<tr class="memdesc:a81d49b3cad0421e1760b24be2b40674d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the main game loop.  <br /></td></tr>
 <tr class="separator:a81d49b3cad0421e1760b24be2b40674d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63de301da300613821b9f999d8dedad1" id="r_a63de301da300613821b9f999d8dedad1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a63de301da300613821b9f999d8dedad1">Quit</a> ()</td></tr>
+<tr class="memdesc:a63de301da300613821b9f999d8dedad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests the game to quit.  <br /></td></tr>
 <tr class="separator:a63de301da300613821b9f999d8dedad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41c6a5336bd38670d1c287d78446b000" id="r_a41c6a5336bd38670d1c287d78446b000"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a41c6a5336bd38670d1c287d78446b000">ToggleFullscreen</a> ()</td></tr>
+<tr class="memdesc:a41c6a5336bd38670d1c287d78446b000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles between fullscreen and windowed mode.  <br /></td></tr>
 <tr class="separator:a41c6a5336bd38670d1c287d78446b000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed3cb6d7e14fc97b29e3dca4c8dc4003" id="r_aed3cb6d7e14fc97b29e3dca4c8dc4003"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#aed3cb6d7e14fc97b29e3dca4c8dc4003">SetTitle</a> (const string &amp;title)</td></tr>
+<tr class="memdesc:aed3cb6d7e14fc97b29e3dca4c8dc4003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the window title.  <br /></td></tr>
 <tr class="separator:aed3cb6d7e14fc97b29e3dca4c8dc4003"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54b815529b9c2ad7d4988c1ddd60298c" id="r_a54b815529b9c2ad7d4988c1ddd60298c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a54b815529b9c2ad7d4988c1ddd60298c">Resize</a> (u32 width, u32 height) const</td></tr>
+<tr class="memdesc:a54b815529b9c2ad7d4988c1ddd60298c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the game window.  <br /></td></tr>
 <tr class="separator:a54b815529b9c2ad7d4988c1ddd60298c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dbee89745c38b076cc6de69a24ccc9d" id="r_a0dbee89745c38b076cc6de69a24ccc9d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a0dbee89745c38b076cc6de69a24ccc9d">OnResize</a> (u32 width, u32 height)</td></tr>
+<tr class="memdesc:a0dbee89745c38b076cc6de69a24ccc9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the window is resized.  <br /></td></tr>
 <tr class="separator:a0dbee89745c38b076cc6de69a24ccc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad72d93b918f2d4bb64ca7f4c423acc0" id="r_aad72d93b918f2d4bb64ca7f4c423acc0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#aad72d93b918f2d4bb64ca7f4c423acc0">OnKeyDown</a> (u32 keyCode)</td></tr>
+<tr class="memdesc:aad72d93b918f2d4bb64ca7f4c423acc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a keyboard key is pressed down.  <br /></td></tr>
 <tr class="separator:aad72d93b918f2d4bb64ca7f4c423acc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f1f05d656a861f703a7d3cd44f041b" id="r_a78f1f05d656a861f703a7d3cd44f041b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a78f1f05d656a861f703a7d3cd44f041b">OnKeyUp</a> (u32 keyCode)</td></tr>
+<tr class="memdesc:a78f1f05d656a861f703a7d3cd44f041b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a keyboard key is released.  <br /></td></tr>
 <tr class="separator:a78f1f05d656a861f703a7d3cd44f041b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a509c1ba2ca7bce9c65aea7a678b3c3a4" id="r_a509c1ba2ca7bce9c65aea7a678b3c3a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a509c1ba2ca7bce9c65aea7a678b3c3a4">OnKey</a> (u32 keyCode)</td></tr>
+<tr class="memdesc:a509c1ba2ca7bce9c65aea7a678b3c3a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called continuously while a key is held down.  <br /></td></tr>
 <tr class="separator:a509c1ba2ca7bce9c65aea7a678b3c3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab78807313b2a5a7c6a00ae7ff93cef47" id="r_ab78807313b2a5a7c6a00ae7ff93cef47"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#ab78807313b2a5a7c6a00ae7ff93cef47">OnMouseButtonDown</a> (u32 button)</td></tr>
+<tr class="memdesc:ab78807313b2a5a7c6a00ae7ff93cef47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a mouse button is pressed down.  <br /></td></tr>
 <tr class="separator:ab78807313b2a5a7c6a00ae7ff93cef47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49fa403fe41a9db72d110cf060d49a8c" id="r_a49fa403fe41a9db72d110cf060d49a8c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a49fa403fe41a9db72d110cf060d49a8c">OnMouseButtonUp</a> (u32 button)</td></tr>
+<tr class="memdesc:a49fa403fe41a9db72d110cf060d49a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a mouse button is released.  <br /></td></tr>
 <tr class="separator:a49fa403fe41a9db72d110cf060d49a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f8f149b061b00c0d7031e0048cba760" id="r_a1f8f149b061b00c0d7031e0048cba760"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a1f8f149b061b00c0d7031e0048cba760">OnMouseButton</a> (u32 button)</td></tr>
+<tr class="memdesc:a1f8f149b061b00c0d7031e0048cba760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called continuously while a mouse button is held down.  <br /></td></tr>
 <tr class="separator:a1f8f149b061b00c0d7031e0048cba760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a944bef76c5780b770817cf99580428f0" id="r_a944bef76c5780b770817cf99580428f0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a944bef76c5780b770817cf99580428f0">OnMouseMove</a> (f64 dX, f64 dY)</td></tr>
+<tr class="memdesc:a944bef76c5780b770817cf99580428f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the mouse cursor moves.  <br /></td></tr>
 <tr class="separator:a944bef76c5780b770817cf99580428f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a163a8ba81ce7e3746a7aa477960107cc" id="r_a163a8ba81ce7e3746a7aa477960107cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a163a8ba81ce7e3746a7aa477960107cc">OnMouseScroll</a> (f64 dX, f64 dY)</td></tr>
+<tr class="memdesc:a163a8ba81ce7e3746a7aa477960107cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the mouse wheel is scrolled.  <br /></td></tr>
 <tr class="separator:a163a8ba81ce7e3746a7aa477960107cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7659c123e2cc165f84c672346078f44" id="r_aa7659c123e2cc165f84c672346078f44"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#aa7659c123e2cc165f84c672346078f44">OnAwake</a> ()</td></tr>
+<tr class="memdesc:aa7659c123e2cc165f84c672346078f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once when the game is initialized, before the main loop starts.  <br /></td></tr>
 <tr class="separator:aa7659c123e2cc165f84c672346078f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21cd032ce160eaf93801011e59e3c9fa" id="r_a21cd032ce160eaf93801011e59e3c9fa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a21cd032ce160eaf93801011e59e3c9fa">OnUpdate</a> (const <a class="el" href="class_nth_1_1_clock.html">Clock</a> &amp;clock)</td></tr>
+<tr class="memdesc:a21cd032ce160eaf93801011e59e3c9fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame during the update phase.  <br /></td></tr>
 <tr class="separator:a21cd032ce160eaf93801011e59e3c9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6ad8097cf55e5b5c1073d81471714aa" id="r_af6ad8097cf55e5b5c1073d81471714aa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#af6ad8097cf55e5b5c1073d81471714aa">OnLateUpdate</a> ()</td></tr>
+<tr class="memdesc:af6ad8097cf55e5b5c1073d81471714aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame after OnUpdate, before rendering.  <br /></td></tr>
 <tr class="separator:af6ad8097cf55e5b5c1073d81471714aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56f208b4078cbf688998acb9f53fb072" id="r_a56f208b4078cbf688998acb9f53fb072"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a56f208b4078cbf688998acb9f53fb072">OnDestroyed</a> ()</td></tr>
+<tr class="memdesc:a56f208b4078cbf688998acb9f53fb072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the game is shutting down.  <br /></td></tr>
 <tr class="separator:a56f208b4078cbf688998acb9f53fb072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ec73eecdf68b56c63bde1d27952445a" id="r_a9ec73eecdf68b56c63bde1d27952445a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a9ec73eecdf68b56c63bde1d27952445a">GetWindowSize</a> (u32 &amp;outWidth, u32 &amp;outHeight) const</td></tr>
+<tr class="memdesc:a9ec73eecdf68b56c63bde1d27952445a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current window dimensions.  <br /></td></tr>
 <tr class="separator:a9ec73eecdf68b56c63bde1d27952445a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8bb36701dc38d381fa56b3a02c4254c" id="r_af8bb36701dc38d381fa56b3a02c4254c"><td class="memItemLeft" align="right" valign="top">N_ND bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#af8bb36701dc38d381fa56b3a02c4254c">GetRunning</a> () const</td></tr>
+<tr class="memdesc:af8bb36701dc38d381fa56b3a02c4254c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the game is currently running.  <br /></td></tr>
 <tr class="separator:af8bb36701dc38d381fa56b3a02c4254c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83035c39bd624542bdd900f3c599526c" id="r_a83035c39bd624542bdd900f3c599526c"><td class="memItemLeft" align="right" valign="top">N_ND bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a83035c39bd624542bdd900f3c599526c">GetFullscreen</a> () const</td></tr>
+<tr class="memdesc:a83035c39bd624542bdd900f3c599526c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the window is in fullscreen mode.  <br /></td></tr>
 <tr class="separator:a83035c39bd624542bdd900f3c599526c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad69591bf6c8ae8a6c4b56b16fbd15b32" id="r_ad69591bf6c8ae8a6c4b56b16fbd15b32"><td class="memItemLeft" align="right" valign="top">N_ND GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#ad69591bf6c8ae8a6c4b56b16fbd15b32">GetWindowHandle</a> ()</td></tr>
+<tr class="memdesc:ad69591bf6c8ae8a6c4b56b16fbd15b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the GLFW window handle.  <br /></td></tr>
 <tr class="separator:ad69591bf6c8ae8a6c4b56b16fbd15b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0562fea5d97b4b68d1f353727171eb3b" id="r_a0562fea5d97b4b68d1f353727171eb3b"><td class="memItemLeft" align="right" valign="top">N_ND std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a0562fea5d97b4b68d1f353727171eb3b">GetWindowTitle</a> () const</td></tr>
+<tr class="memdesc:a0562fea5d97b4b68d1f353727171eb3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the window title.  <br /></td></tr>
 <tr class="separator:a0562fea5d97b4b68d1f353727171eb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fd80fd3ac5a60e167c81d686291188f" id="r_a1fd80fd3ac5a60e167c81d686291188f"><td class="memItemLeft" align="right" valign="top">N_ND <a class="el" href="class_nth_1_1_render_context.html">RenderContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a1fd80fd3ac5a60e167c81d686291188f">GetRenderContext</a> ()</td></tr>
+<tr class="memdesc:a1fd80fd3ac5a60e167c81d686291188f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the render context.  <br /></td></tr>
 <tr class="separator:a1fd80fd3ac5a60e167c81d686291188f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad75d1a7e3f10d7a111ca24f9ad2b7a0a" id="r_ad75d1a7e3f10d7a111ca24f9ad2b7a0a"><td class="memItemLeft" align="right" valign="top">N_ND <a class="el" href="class_nth_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#ad75d1a7e3f10d7a111ca24f9ad2b7a0a">GetActiveScene</a> () const</td></tr>
+<tr class="memdesc:ad75d1a7e3f10d7a111ca24f9ad2b7a0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the currently active scene.  <br /></td></tr>
 <tr class="separator:ad75d1a7e3f10d7a111ca24f9ad2b7a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50732aaf3a721683f60157ffa3d68ca8" id="r_a50732aaf3a721683f60157ffa3d68ca8"><td class="memItemLeft" align="right" valign="top">N_ND bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a50732aaf3a721683f60157ffa3d68ca8">GetVsyncEnabled</a> () const</td></tr>
+<tr class="memdesc:a50732aaf3a721683f60157ffa3d68ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if vertical sync is enabled.  <br /></td></tr>
 <tr class="separator:a50732aaf3a721683f60157ffa3d68ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc86bedec9934d82009ed4649dad4447" id="r_afc86bedec9934d82009ed4649dad4447"><td class="memItemLeft" align="right" valign="top">N_ND <a class="el" href="class_nth_1_1_script_engine.html">ScriptEngine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#afc86bedec9934d82009ed4649dad4447">GetScriptEngine</a> ()</td></tr>
+<tr class="memdesc:afc86bedec9934d82009ed4649dad4447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the script engine.  <br /></td></tr>
 <tr class="separator:afc86bedec9934d82009ed4649dad4447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1762e69af3961adb53ff6a406aeb50cb" id="r_a1762e69af3961adb53ff6a406aeb50cb"><td class="memItemLeft" align="right" valign="top">N_ND <a class="el" href="class_nth_1_1_audio_engine.html">AudioEngine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a1762e69af3961adb53ff6a406aeb50cb">GetAudioEngine</a> ()</td></tr>
+<tr class="memdesc:a1762e69af3961adb53ff6a406aeb50cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the audio engine.  <br /></td></tr>
 <tr class="separator:a1762e69af3961adb53ff6a406aeb50cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:aeb5acaef98a0f624c1a93240debe4bed" id="r_aeb5acaef98a0f624c1a93240debe4bed"><td class="memItemLeft" align="right" valign="top">static constexpr u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#aeb5acaef98a0f624c1a93240debe4bed">kDefaultWidth</a> {800}</td></tr>
+<tr class="memdesc:aeb5acaef98a0f624c1a93240debe4bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default window width in pixels.  <br /></td></tr>
 <tr class="separator:aeb5acaef98a0f624c1a93240debe4bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b6a418447013c3f21134d6a0e3dbf54" id="r_a4b6a418447013c3f21134d6a0e3dbf54"><td class="memItemLeft" align="right" valign="top">static constexpr u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a4b6a418447013c3f21134d6a0e3dbf54">kDefaultHeight</a> {600}</td></tr>
+<tr class="memdesc:a4b6a418447013c3f21134d6a0e3dbf54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default window height in pixels.  <br /></td></tr>
 <tr class="separator:a4b6a418447013c3f21134d6a0e3dbf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5087ae9290b2ef75fc7d2d05b0ace52d" id="r_a5087ae9290b2ef75fc7d2d05b0ace52d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a5087ae9290b2ef75fc7d2d05b0ace52d">Render</a> ()</td></tr>
+<tr class="memdesc:a5087ae9290b2ef75fc7d2d05b0ace52d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the current frame.  <br /></td></tr>
 <tr class="separator:a5087ae9290b2ef75fc7d2d05b0ace52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:af34c4fa402e088ef45802fd1dc021bbb" id="r_af34c4fa402e088ef45802fd1dc021bbb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#af34c4fa402e088ef45802fd1dc021bbb">mTitle</a> {}</td></tr>
+<tr class="memdesc:af34c4fa402e088ef45802fd1dc021bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window title text.  <br /></td></tr>
 <tr class="separator:af34c4fa402e088ef45802fd1dc021bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad892fb717e53733c536b210570f743bc" id="r_ad892fb717e53733c536b210570f743bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#ad892fb717e53733c536b210570f743bc">mRunning</a> {false}</td></tr>
+<tr class="memdesc:ad892fb717e53733c536b210570f743bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the game loop is currently running.  <br /></td></tr>
 <tr class="separator:ad892fb717e53733c536b210570f743bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac251b818484d44b5fd7ead8ac5c2ccc8" id="r_ac251b818484d44b5fd7ead8ac5c2ccc8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#ac251b818484d44b5fd7ead8ac5c2ccc8">mFullscreen</a> {false}</td></tr>
+<tr class="memdesc:ac251b818484d44b5fd7ead8ac5c2ccc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the window is in fullscreen mode.  <br /></td></tr>
 <tr class="separator:ac251b818484d44b5fd7ead8ac5c2ccc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf82138d585d41d950d1ec93730ad817" id="r_aaf82138d585d41d950d1ec93730ad817"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#aaf82138d585d41d950d1ec93730ad817">mWidth</a> {<a class="el" href="class_nth_1_1_game.html#aeb5acaef98a0f624c1a93240debe4bed">kDefaultWidth</a>}</td></tr>
+<tr class="memdesc:aaf82138d585d41d950d1ec93730ad817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current window width in pixels.  <br /></td></tr>
 <tr class="separator:aaf82138d585d41d950d1ec93730ad817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24649cb44c1e27701a8a8e6615a74ee2" id="r_a24649cb44c1e27701a8a8e6615a74ee2"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_game.html#a24649cb44c1e27701a8a8e6615a74ee2">mHeight</a> {<a class="el" href="class_nth_1_1_game.html#a4b6a418447013c3f21134d6a0e3dbf54">kDefaultHeight</a>}</td></tr>
+<tr class="memdesc:a24649cb44c1e27701a8a8e6615a74ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current window height in pixels.  <br /></td></tr>
 <tr class="separator:a24649cb44c1e27701a8a8e6615a74ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class where all engine systems meet and execute. Owns the system window and handles communication between the OS, graphics API, and game client code (among many other things). </p>
+<div class="textblock"><p>Base class where all engine systems meet and execute. </p>
+<p>Central hub for the game engine that owns and manages all core systems including the window, rendering, input, audio, scripting, and scene management. Handles the main game loop and communication between the OS, graphics API, and game client code. User games should inherit from this class and override lifecycle methods to implement custom behavior. </p>
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00021">21</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00026">26</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aac17c0893351f382d24c605478c33787" name="aac17c0893351f382d24c605478c33787"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac17c0893351f382d24c605478c33787">&#9670;&#160;</a></span>Game() <span class="overload">[1/2]</span></h2>
@@ -233,7 +273,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00028">28</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Default constructor, creates a game with default window settings. </p>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00037">37</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -277,7 +319,17 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00029">29</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Constructs a game with custom window properties. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>Window title </td></tr>
+    <tr><td class="paramname">width</td><td>Window width in pixels </td></tr>
+    <tr><td class="paramname">height</td><td>Window height in pixels </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00043">43</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -303,6 +355,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Virtual destructor for proper cleanup of derived classes. </p>
 
 </div>
 </div>
@@ -330,7 +384,10 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00084">84</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Gets the currently active scene. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the active <a class="el" href="class_nth_1_1_scene.html">Scene</a> instance </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00183">183</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -357,7 +414,10 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00096">96</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Gets the audio engine. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the <a class="el" href="class_nth_1_1_audio_engine.html">AudioEngine</a> for audio playback </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00201">201</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -384,7 +444,10 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00068">68</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Checks if the window is in fullscreen mode. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if fullscreen, false if windowed </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00159">159</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -411,7 +474,10 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00080">80</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Gets the render context. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the <a class="el" href="class_nth_1_1_render_context.html">RenderContext</a> managing graphics rendering </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00177">177</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -438,7 +504,10 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00064">64</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Checks if the game is currently running. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the game loop is active, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00153">153</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -465,7 +534,10 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00092">92</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Gets the script engine. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the <a class="el" href="class_nth_1_1_script_engine.html">ScriptEngine</a> for Lua scripting </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00195">195</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -492,7 +564,10 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00088">88</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Checks if vertical sync is enabled. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if VSync is enabled, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00189">189</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -519,7 +594,10 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00072">72</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Gets the GLFW window handle. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the GLFWwindow instance </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00165">165</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -557,7 +635,16 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00059">59</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Gets the current window dimensions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outWidth</td><td>Output parameter for window width </td></tr>
+    <tr><td class="paramname">outHeight</td><td>Output parameter for window height </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00146">146</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -584,7 +671,10 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00076">76</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Gets the window title. </p>
+<dl class="section return"><dt>Returns</dt><dd>String view of the current window title </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00171">171</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -610,6 +700,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Called once when the game is initialized, before the main loop starts. </p>
+<p>Override this to perform initialization tasks such as loading assets, setting up the scene, or configuring systems. </p>
 
 <p>Reimplemented in <a class="el" href="class_nth_1_1_project_runner.html#aaf217b2eb0632fd4a64e60557cf27e5a">Nth::ProjectRunner</a>.</p>
 
@@ -640,6 +733,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Called when the game is shutting down. </p>
+<p>Override this to perform cleanup tasks such as saving data, releasing resources, or logging final state. </p>
+
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00124">124</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
 </div>
@@ -668,6 +764,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Called continuously while a key is held down. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td>The key code of the held key </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00076">76</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
 </div>
@@ -695,6 +799,14 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Called when a keyboard key is pressed down. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td>The key code of the pressed key </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Reimplemented in <a class="el" href="class_nth_1_1_project_runner.html#ab8e1559bd21d27674c9d1ae4b5940933">Nth::ProjectRunner</a>.</p>
 
@@ -726,6 +838,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Called when a keyboard key is released. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td>The key code of the released key </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00072">72</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
 </div>
@@ -752,6 +872,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Called every frame after OnUpdate, before rendering. </p>
+<p>Override this for operations that need to happen after all game logic has been updated but before rendering (e.g., camera updates, final transforms). </p>
 
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00120">120</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
@@ -781,6 +904,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Called continuously while a mouse button is held down. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">button</td><td>Mouse button code (0 = left, 1 = right, 2 = middle) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00086">86</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
 </div>
@@ -809,6 +940,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Called when a mouse button is pressed down. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">button</td><td>Mouse button code (0 = left, 1 = right, 2 = middle) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00078">78</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
 </div>
@@ -836,6 +975,14 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Called when a mouse button is released. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">button</td><td>Mouse button code (0 = left, 1 = right, 2 = middle) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00082">82</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
@@ -875,6 +1022,15 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Called when the mouse cursor moves. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dX</td><td>Horizontal movement delta in pixels </td></tr>
+    <tr><td class="paramname">dY</td><td>Vertical movement delta in pixels </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00091">91</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
 </div>
@@ -912,6 +1068,15 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Called when the mouse wheel is scrolled. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dX</td><td>Horizontal scroll delta </td></tr>
+    <tr><td class="paramname">dY</td><td>Vertical scroll delta </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00095">95</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
@@ -951,6 +1116,15 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Called when the window is resized. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>New window width in pixels </td></tr>
+    <tr><td class="paramname">height</td><td>New window height in pixels </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00063">63</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
 </div>
@@ -979,6 +1153,15 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Called every frame during the update phase. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clock</td><td><a class="el" href="class_nth_1_1_clock.html" title="High-precision clock for timing and frame rate tracking.">Clock</a> instance providing delta time and timing information</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Override this to implement per-frame game logic, physics updates, AI behavior, and other time-dependent operations. </p>
+
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00105">105</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
 </div>
@@ -997,6 +1180,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Requests the game to quit. </p>
+<p>Sets the running flag to false, which will exit the main loop and trigger cleanup on the next iteration. </p>
 
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00041">41</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
@@ -1024,6 +1210,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Renders the current frame. </p>
+<p>Called internally each frame to render the scene, debug layers, and swap buffers. </p>
 
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00231">231</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
@@ -1055,6 +1244,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Resizes the game window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>New window width in pixels </td></tr>
+    <tr><td class="paramname">height</td><td>New window height in pixels </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00059">59</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
 </div>
@@ -1073,6 +1271,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Starts the main game loop. </p>
+<p>Initializes all engine systems, enters the main loop that handles input, updates, and rendering, then cleans up on exit. </p>
 
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00018">18</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
@@ -1094,6 +1295,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the window title. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>New window title text </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00054">54</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
 </div>
@@ -1112,6 +1321,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Toggles between fullscreen and windowed mode. </p>
 
 <p class="definition">Definition at line <a class="el" href="_game_8cpp_source.html#l00045">45</a> of file <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
 
@@ -1138,7 +1349,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00024">24</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Default window height in pixels. </p>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00032">32</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -1162,7 +1375,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00023">23</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Default window width in pixels. </p>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00029">29</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -1186,7 +1401,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00104">104</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Whether the window is in fullscreen mode. </p>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00215">215</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -1210,7 +1427,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00106">106</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Current window height in pixels. </p>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00221">221</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -1234,7 +1453,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00103">103</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Whether the game loop is currently running. </p>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00212">212</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -1258,7 +1479,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00102">102</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Window title text. </p>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00209">209</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>
@@ -1282,7 +1505,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00105">105</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+<p>Current window width in pixels. </p>
+
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00218">218</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>

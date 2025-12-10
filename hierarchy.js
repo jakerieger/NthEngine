@@ -31,7 +31,7 @@ var hierarchy =
       [ "Nth::ImGuiDebugLayer", "class_nth_1_1_im_gui_debug_layer.html", null ],
       [ "Nth::PhysicsDebugLayer", "class_nth_1_1_physics_debug_layer.html", null ]
     ] ],
-    [ "Nth::Input::InputManager", "class_nth_1_1_input_1_1_input_manager.html", null ],
+    [ "Nth::InputManager", "class_nth_1_1_input_manager.html", null ],
     [ "Nth::Log", "class_nth_1_1_log.html", null ],
     [ "Nth::LuaRegisterable", "struct_nth_1_1_lua_registerable.html", [
       [ "Nth::LuaRegistry< T >", "struct_nth_1_1_lua_registry.html", null ]

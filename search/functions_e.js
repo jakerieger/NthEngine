@@ -12,7 +12,7 @@ var searchData=
   ['rendercontext_9',['RenderContext',['../class_nth_1_1_render_context.html#a915487f601f91fea5a5be1c950048160',1,'Nth::RenderContext']]],
   ['reserve_10',['Reserve',['../class_nth_1_1_command_queue.html#ad02d076a5cffa8d468997f0de5842356',1,'Nth::CommandQueue']]],
   ['reset_11',['Reset',['../class_nth_1_1_scene_state.html#aaa2b30b5db00f3ea2985f65068f5e79e',1,'Nth::SceneState']]],
-  ['resetmousedeltas_12',['ResetMouseDeltas',['../class_nth_1_1_input_1_1_input_manager.html#a3d50e1d8b5b90baf7d26e32bedefce7c',1,'Nth::Input::InputManager']]],
+  ['resetmousedeltas_12',['ResetMouseDeltas',['../class_nth_1_1_input_manager.html#a49b889359fbd004893b121eee25595fa',1,'Nth::InputManager']]],
   ['resize_13',['resize',['../class_nth_1_1_game.html#a54b815529b9c2ad7d4988c1ddd60298c',1,'Nth::Game::Resize()'],['../class_nth_1_1_render_context.html#a664aaad2878229f18ed003491287dfd7',1,'Nth::RenderContext::Resize()']]],
   ['rigidbody2d_14',['Rigidbody2D',['../struct_nth_1_1_rigidbody2_d.html#a6bcd3bbc20aa187c50982447b3f250c2',1,'Nth::Rigidbody2D']]],
   ['rotate_15',['Rotate',['../struct_nth_1_1_transform.html#a4d8a2562916d879702e409b812c6c331',1,'Nth::Transform']]],
