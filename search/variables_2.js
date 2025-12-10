@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['cleardepth_0',['clearDepth',['../struct_nth_1_1_clear_command.html#ad73a5efa85a1f9d2e984cdb9b8922fd9',1,'Nth::ClearCommand']]],
-  ['clearstencil_1',['clearStencil',['../struct_nth_1_1_clear_command.html#a5231a6ad19116dbca61dc13d8f1fd826',1,'Nth::ClearCommand']]],
-  ['color_2',['color',['../struct_nth_1_1_clear_command.html#aa0e92abea3799d77ed6093fa01e446cd',1,'Nth::ClearCommand']]],
-  ['contentpath_3',['contentPath',['../struct_nth_1_1_project_descriptor.html#a3d5e646a2d0989ea30779411464a09b8',1,'Nth::ProjectDescriptor']]]
+  ['cleardepth_0',['clearDepth',['../struct_astera_1_1_clear_command.html#ad7e730dd2017c219ed510bc42cb704db',1,'Astera::ClearCommand']]],
+  ['clearstencil_1',['clearStencil',['../struct_astera_1_1_clear_command.html#a0c5ab66d935f7f4d5dbc1f978572685e',1,'Astera::ClearCommand']]],
+  ['color_2',['color',['../struct_astera_1_1_clear_command.html#abddfce2051a920c5ee81dc80676893d9',1,'Astera::ClearCommand']]]
 ];

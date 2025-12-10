@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dynamic_0',['dynamic',['../namespace_nth.html#a59c6d192350f4834efa8a7236d2f29c8a971fd8cc345d8bd9f92e9f7d88fdf20c',1,'Nth::Dynamic'],['../namespace_nth.html#a35e71e18ce939b8fa75ed8cad5cc3f78a971fd8cc345d8bd9f92e9f7d88fdf20c',1,'Nth::Dynamic']]]
+  ['dynamic_0',['dynamic',['../namespace_astera.html#a7a21d0e3701237e0c6db7e9977279e04a971fd8cc345d8bd9f92e9f7d88fdf20c',1,'Astera::Dynamic'],['../namespace_astera.html#ab99263b7ecc43ec8ed6f22cc3166690ea971fd8cc345d8bd9f92e9f7d88fdf20c',1,'Astera::Dynamic']]]
 ];

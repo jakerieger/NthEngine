@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['offset_0',['offset',['../struct_nth_1_1_update_vertex_buffer_command.html#a914e6bad5b61541de82862f60d7378c9',1,'Nth::UpdateVertexBufferCommand::offset'],['../struct_nth_1_1_update_index_buffer_command.html#a4e43b4ad49f2046dbbeb195fea929650',1,'Nth::UpdateIndexBufferCommand::offset']]],
-  ['onawake_1',['OnAwake',['../struct_nth_1_1_behavior_script_context.html#a3e3aca627d52f17eac1f52da2b5fdb3f',1,'Nth::BehaviorScriptContext']]],
-  ['ondestroyed_2',['OnDestroyed',['../struct_nth_1_1_behavior_script_context.html#a902a8162a9b7963a6b9532601eb4ec83',1,'Nth::BehaviorScriptContext']]],
-  ['onlateupdate_3',['OnLateUpdate',['../struct_nth_1_1_behavior_script_context.html#adbbe24c7b599e972135e498431c05766',1,'Nth::BehaviorScriptContext']]],
-  ['onupdate_4',['OnUpdate',['../struct_nth_1_1_behavior_script_context.html#a4f759e5dccdec18e09a94727265f8c12',1,'Nth::BehaviorScriptContext']]]
+  ['offset_0',['offset',['../struct_astera_1_1_update_vertex_buffer_command.html#ac14d39dd62fd55c45dc4e15b3e096f47',1,'Astera::UpdateVertexBufferCommand::offset'],['../struct_astera_1_1_update_index_buffer_command.html#a5736b1385f47d1a3d88b0e9db64065b0',1,'Astera::UpdateIndexBufferCommand::offset']]],
+  ['onawake_1',['OnAwake',['../struct_astera_1_1_behavior_script_context.html#a6f258845dab8be45bc8a12db1ff16414',1,'Astera::BehaviorScriptContext']]],
+  ['ondestroyed_2',['OnDestroyed',['../struct_astera_1_1_behavior_script_context.html#ac230ec1a43968bc56f20c886f98a3387',1,'Astera::BehaviorScriptContext']]],
+  ['onlateupdate_3',['OnLateUpdate',['../struct_astera_1_1_behavior_script_context.html#abafeb46db97d029588d437f4c284202b',1,'Astera::BehaviorScriptContext']]],
+  ['onupdate_4',['OnUpdate',['../struct_astera_1_1_behavior_script_context.html#afff87fb1263affabf18548d4a2d60725',1,'Astera::BehaviorScriptContext']]]
 ];

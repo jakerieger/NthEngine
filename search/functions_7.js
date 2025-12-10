@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['handleevent_0',['HandleEvent',['../class_nth_1_1_debug_manager.html#ace3c18e1ece62d4ec20fac674fba1962',1,'Nth::DebugManager']]],
-  ['hardlight_1',['HardLight',['../class_nth_1_1_color.html#a2371579771e8d8e1e9e0469c6aa0f582',1,'Nth::Color']]]
+  ['handleevent_0',['HandleEvent',['../class_astera_1_1_debug_manager.html#aa5573d8eb131842e32cbb1ad88fae835',1,'Astera::DebugManager']]],
+  ['hardlight_1',['HardLight',['../class_astera_1_1_color.html#af3de901adac6617f6411bb23cf037295',1,'Astera::Color']]]
 ];

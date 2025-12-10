@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['vec2_0',['Vec2',['../namespace_nth.html#a9bdca0262a36c99ac72cf7d6737c161e',1,'Nth']]],
-  ['vec3_1',['Vec3',['../namespace_nth.html#a0ef9a1c10f968317607d0717e4cb7027',1,'Nth']]],
-  ['vec4_2',['Vec4',['../namespace_nth.html#a71efd1833f81e79bab4f7ab78ae54e5b',1,'Nth']]]
+  ['vec2_0',['Vec2',['../namespace_astera.html#a32228f3a61c481af9c7e8925045a7c34',1,'Astera']]],
+  ['vec3_1',['Vec3',['../namespace_astera.html#abac28202be698be873bf0781ff8e7585',1,'Astera']]],
+  ['vec4_2',['Vec4',['../namespace_astera.html#af422fe38ab663b130303af1cfd38b61a',1,'Astera']]]
 ];

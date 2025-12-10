@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['kdefaultheight_0',['kDefaultHeight',['../class_nth_1_1_game.html#a4b6a418447013c3f21134d6a0e3dbf54',1,'Nth::Game']]],
-  ['kdefaultwidth_1',['kDefaultWidth',['../class_nth_1_1_game.html#aeb5acaef98a0f624c1a93240debe4bed',1,'Nth::Game']]],
-  ['keuler_2',['kEuler',['../class_nth_1_1_math.html#a459029a3233f87858e3f09e315962664',1,'Nth::Math']]],
-  ['kpi_3',['kPi',['../class_nth_1_1_math.html#a3aec14be2d17df29bd2599f6388d6879',1,'Nth::Math']]],
-  ['ktau_4',['kTau',['../class_nth_1_1_math.html#a178b20cb5e604c949ca615974fabcc9a',1,'Nth::Math']]]
+  ['kdefaultheight_0',['kDefaultHeight',['../class_astera_1_1_game.html#ad28b36c6fa1965a492d7c5325c61e13c',1,'Astera::Game']]],
+  ['kdefaultwidth_1',['kDefaultWidth',['../class_astera_1_1_game.html#a9bf4b024fa001c0b9abd3de3c8cd4448',1,'Astera::Game']]],
+  ['keuler_2',['kEuler',['../class_astera_1_1_math.html#a18b002982c3567d4f20955b10f1cf899',1,'Astera::Math']]],
+  ['kpi_3',['kPi',['../class_astera_1_1_math.html#a5cfba90521a8c32574e57495d1f692a8',1,'Astera::Math']]],
+  ['ktau_4',['kTau',['../class_astera_1_1_math.html#a017063cc28b4bcdae4ffbe1ec8c36845',1,'Astera::Math']]]
 ];

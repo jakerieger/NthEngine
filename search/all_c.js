@@ -3,17 +3,7 @@ var searchData=
   ['n_5fcolor_5fhash_5fspecialization_0',['N_COLOR_HASH_SPECIALIZATION',['../_color_8hpp.html#a69fabe98eb0681c6e200480c6533a769',1,'Color.hpp']]],
   ['n_5fentrypoint_1',['N_ENTRYPOINT',['../_game_8hpp.html#aaebd423f67eddfbdf1386c76679609be',1,'Game.hpp']]],
   ['n_5fnot_5fimplemented_2',['N_NOT_IMPLEMENTED',['../_engine_common_8hpp.html#a54675d89cd8fb98b3e5ffbec8898258b',1,'EngineCommon.hpp']]],
-  ['name_3',['name',['../struct_nth_1_1_set_uniform_command.html#abffa76dfc00318438c3d42d0b5680f8c',1,'Nth::SetUniformCommand::name'],['../struct_nth_1_1_project_descriptor.html#a71fcb39960bea97366b16e6ca86bb22a',1,'Nth::ProjectDescriptor::name'],['../struct_nth_1_1_behavior_entity.html#a279db5bad4913475f13e8bb7f9608bac',1,'Nth::BehaviorEntity::name'],['../struct_nth_1_1_scene_descriptor.html#a412afd1c90e9292e48d5f60579458c7b',1,'Nth::SceneDescriptor::name'],['../struct_nth_1_1_entity_descriptor.html#af6ae042870db2423dfd174fddccfd87f',1,'Nth::EntityDescriptor::name'],['../struct_nth_1_1_vertex_attribute.html#a093b1e9913116ec1b885bb4d51d0e656',1,'Nth::VertexAttribute::name']]],
-  ['normalized_4',['normalized',['../struct_nth_1_1_vertex_attribute.html#ae5498563f28f2d216dee998f77c3a0fd',1,'Nth::VertexAttribute']]],
-  ['notimplemented_5',['notimplemented',['../class_nth_1_1_not_implemented.html',1,'Nth::NotImplemented'],['../class_nth_1_1_not_implemented.html#ab6e71daa0b2ba186815e17eb653e7fa1',1,'Nth::NotImplemented::NotImplemented()']]],
-  ['nth_6',['Nth',['../namespace_nth.html',1,'']]],
-  ['nth_3a_3acolors_7',['Colors',['../namespace_nth_1_1_colors.html',1,'Nth']]],
-  ['nth_3a_3acommandhelpers_8',['CommandHelpers',['../namespace_nth_1_1_command_helpers.html',1,'Nth']]],
-  ['nth_3a_3acoordinates_9',['Coordinates',['../namespace_nth_1_1_coordinates.html',1,'Nth']]],
-  ['nth_3a_3ainput_10',['Input',['../namespace_nth_1_1_input.html',1,'Nth']]],
-  ['nth_3a_3ainput_3a_3akeys_11',['Keys',['../namespace_nth_1_1_input_1_1_keys.html',1,'Nth::Input']]],
-  ['nth_3a_3ainput_3a_3amousebuttons_12',['MouseButtons',['../namespace_nth_1_1_input_1_1_mouse_buttons.html',1,'Nth::Input']]],
-  ['nth_3a_3ashaders_13',['Shaders',['../namespace_nth_1_1_shaders.html',1,'Nth']]],
-  ['nth_3a_3avalidcomponent_14',['ValidComponent',['../concept_nth_1_1_valid_component.html',1,'Nth']]],
-  ['nthengine_2ehpp_15',['NthEngine.hpp',['../_nth_engine_8hpp.html',1,'']]]
+  ['name_3',['name',['../struct_astera_1_1_set_uniform_command.html#af3bfd5136c704f99ef80c68a8ec2bd99',1,'Astera::SetUniformCommand::name'],['../struct_astera_1_1_vertex_attribute.html#a38b2739b79517fa6f3d9e4542de1a905',1,'Astera::VertexAttribute::name'],['../struct_astera_1_1_entity_descriptor.html#ad71894aed833c1edbdd094156da799f6',1,'Astera::EntityDescriptor::name'],['../struct_astera_1_1_scene_descriptor.html#ac958acb09f1ef14b62f829f58e4ce8c7',1,'Astera::SceneDescriptor::name'],['../struct_astera_1_1_behavior_entity.html#a8c762c6daf73e6f54457236b41aca6a1',1,'Astera::BehaviorEntity::name']]],
+  ['normalized_4',['normalized',['../struct_astera_1_1_vertex_attribute.html#a2be1db4a373ba0d43009139387ee0c41',1,'Astera::VertexAttribute']]],
+  ['notimplemented_5',['notimplemented',['../class_astera_1_1_not_implemented.html',1,'Astera::NotImplemented'],['../class_astera_1_1_not_implemented.html#a5f51c4c676c491643d22e88ae3a2b0fa',1,'Astera::NotImplemented::NotImplemented()']]]
 ];

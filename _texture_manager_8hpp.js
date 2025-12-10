@@ -1,5 +1,5 @@
 var _texture_manager_8hpp =
 [
-    [ "Nth::TextureManager", "class_nth_1_1_texture_manager.html", null ],
-    [ "TextureID", "_texture_manager_8hpp.html#a4def248c22ed75cd1e606c7d62f3ddf6", null ]
+    [ "Astera::TextureManager", "class_astera_1_1_texture_manager.html", null ],
+    [ "TextureID", "_texture_manager_8hpp.html#af96c987d0dc9d11151498453356bf775", null ]
 ];

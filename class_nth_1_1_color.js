@@ -23,8 +23,6 @@ var class_nth_1_1_color =
     [ "R", "class_nth_1_1_color.html#a1670d1f6693c8d47c19b74a63e09030b", null ],
     [ "Saturate", "class_nth_1_1_color.html#a123ceb9383ba3e660776dd6748a0863a", null ],
     [ "To", "class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98", null ],
-    [ "To", "class_nth_1_1_color.html#a20c63207d596be6fd957dc65a1f1d02a", null ],
-    [ "To", "class_nth_1_1_color.html#a9dc7c62138722e0d46f6ad14eb08478b", null ],
     [ "To", "class_nth_1_1_color.html#a9bd85a25645dcf04a6cf68883f7f1eb6", null ],
     [ "ToFloatArray", "class_nth_1_1_color.html#ae3fcc93ce900bf0acc37f4416d582f79", null ],
     [ "ToHSV", "class_nth_1_1_color.html#a045ca18e148af05b8b31d5008ec868de", null ],

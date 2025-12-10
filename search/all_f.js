@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['quadvao_0',['quadVAO',['../struct_nth_1_1_sprite_batch.html#a26da6af8d9918da01b00c268c902c290',1,'Nth::SpriteBatch']]],
-  ['quat_1',['Quat',['../namespace_nth.html#ab8b9bc8cfdcf351a5778e40334d055f4',1,'Nth']]],
-  ['quit_2',['Quit',['../class_nth_1_1_game.html#a63de301da300613821b9f999d8dedad1',1,'Nth::Game']]]
+  ['quadvao_0',['quadVAO',['../struct_astera_1_1_sprite_batch.html#a983801e216ebf2d98860283522de1046',1,'Astera::SpriteBatch']]],
+  ['quat_1',['Quat',['../namespace_astera.html#a23db947ef2c34866124299ec2cdf7e93',1,'Astera']]],
+  ['quit_2',['Quit',['../class_astera_1_1_game.html#ae619a5b539ae4a5a962ddaad096ebe72',1,'Astera::Game']]]
 ];

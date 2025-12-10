@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data_0',['data',['../struct_nth_1_1_update_vertex_buffer_command.html#ade144615e6bcae8500354f2c64298fdf',1,'Nth::UpdateVertexBufferCommand']]]
+  ['data_0',['data',['../struct_astera_1_1_update_vertex_buffer_command.html#aa76a8f81b0abe21e97de8b0101caeca8',1,'Astera::UpdateVertexBufferCommand']]]
 ];

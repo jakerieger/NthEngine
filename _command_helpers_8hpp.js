@@ -1,5 +1,5 @@
 var _command_helpers_8hpp =
 [
-    [ "CreateIndexBufferUpdate", "_command_helpers_8hpp.html#abc4ec5310652f81117ebe34f2bddfc7d", null ],
-    [ "CreateVertexBufferUpdate", "_command_helpers_8hpp.html#ae9c3f199fd778f0cd2338b44d6a68a98", null ]
+    [ "CreateIndexBufferUpdate", "_command_helpers_8hpp.html#ae88a30808b47f05ec75f7ddf79c4b6af", null ],
+    [ "CreateVertexBufferUpdate", "_command_helpers_8hpp.html#ad91672e00eba5ff2475303c7896b09ca", null ]
 ];

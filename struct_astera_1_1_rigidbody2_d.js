@@ -1,0 +1,27 @@
+var struct_astera_1_1_rigidbody2_d =
+[
+    [ "Rigidbody2D", "struct_astera_1_1_rigidbody2_d.html#a3d2a1f422fbc36d09df0e789b3da5f36", null ],
+    [ "ApplyForce", "struct_astera_1_1_rigidbody2_d.html#af9121e5a118bb158a2cbf389c12c08c0", null ],
+    [ "ApplyImpulse", "struct_astera_1_1_rigidbody2_d.html#abc955eb766137ee7c372f9d93a5a0e7b", null ],
+    [ "ApplyImpulseAtPoint", "struct_astera_1_1_rigidbody2_d.html#aaeeec381a400fc210fa6749df45eed9c", null ],
+    [ "ApplyTorque", "struct_astera_1_1_rigidbody2_d.html#a38c69e702db5dafb3e6e0fa0db0aa540", null ],
+    [ "ClearForces", "struct_astera_1_1_rigidbody2_d.html#aa026c28fa9cc43e7489a6574c40f8343", null ],
+    [ "UpdateMass", "struct_astera_1_1_rigidbody2_d.html#ae8833fea8471600b977483bdb326ee6d", null ],
+    [ "acceleration", "struct_astera_1_1_rigidbody2_d.html#acc36d0514b02e62aaa4b1c2d9290b876", null ],
+    [ "angularAcceleration", "struct_astera_1_1_rigidbody2_d.html#a748f32f5b71edf2ad0dc03aa316ced08", null ],
+    [ "angularDamping", "struct_astera_1_1_rigidbody2_d.html#aceda5e413e7fd3f40c81ec32b7fa9de9", null ],
+    [ "angularVelocity", "struct_astera_1_1_rigidbody2_d.html#a23782abe06105512839ccd9498badc78", null ],
+    [ "force", "struct_astera_1_1_rigidbody2_d.html#abb8acb3003364bccb2101985b1913014", null ],
+    [ "friction", "struct_astera_1_1_rigidbody2_d.html#a824d9e3a0ae88d16a6211f0129526381", null ],
+    [ "gravityScale", "struct_astera_1_1_rigidbody2_d.html#a87081fd87669d518c5412c73f3a1e25f", null ],
+    [ "inertia", "struct_astera_1_1_rigidbody2_d.html#afdf3258b06bab61b00b84ae6816978e5", null ],
+    [ "inverseInertia", "struct_astera_1_1_rigidbody2_d.html#af0567395f766348513378bb741236393", null ],
+    [ "inverseMass", "struct_astera_1_1_rigidbody2_d.html#ae1bc06d49105b19c48011e4a926ff999", null ],
+    [ "linearDamping", "struct_astera_1_1_rigidbody2_d.html#ae99eb385b80affe7352bbcac2afb1201", null ],
+    [ "lockRotation", "struct_astera_1_1_rigidbody2_d.html#ad251eb4811fcdd88dc881f25f862182e", null ],
+    [ "mass", "struct_astera_1_1_rigidbody2_d.html#a533caa174af342b14aa9c2e91c443211", null ],
+    [ "restitution", "struct_astera_1_1_rigidbody2_d.html#a369b6a28ff9c62a8bc3a2172312c11eb", null ],
+    [ "torque", "struct_astera_1_1_rigidbody2_d.html#a633cfca12b613f02d8b15219a894631d", null ],
+    [ "type", "struct_astera_1_1_rigidbody2_d.html#a82a9689fc90352748930f8b29c4e1a4d", null ],
+    [ "velocity", "struct_astera_1_1_rigidbody2_d.html#a6600ffc3ebaef8409d83770ec0f3f28f", null ]
+];

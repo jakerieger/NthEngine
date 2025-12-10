@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['lateupdate_0',['LateUpdate',['../class_nth_1_1_scene.html#a119e29ddb84dd14b624f8ee8d6b1410d',1,'Nth::Scene']]],
-  ['lerp_1',['lerp',['../class_nth_1_1_color.html#a9b2110787375786712fbb7adc4779c96',1,'Nth::Color::Lerp()'],['../class_nth_1_1_math.html#a66da0fb45a6f843864d02b6c48203d5e',1,'Nth::Math::Lerp()']]],
-  ['load_2',['load',['../class_nth_1_1_scene.html#a44865c7e86d36b08e997083d00f59c8a',1,'Nth::Scene::Load(const fs::path &amp;filename, ScriptEngine &amp;scriptEngine)'],['../class_nth_1_1_scene.html#a48071c920fac1f38990a138182fe678a',1,'Nth::Scene::Load(const string &amp;source, ScriptEngine &amp;scriptEngine)'],['../class_nth_1_1_texture_manager.html#ab65dc4770c96907cc657a56743430994',1,'Nth::TextureManager::Load()']]],
-  ['loadscript_3',['loadscript',['../class_nth_1_1_script_engine.html#aefc794a9a62c92eecbe3d6f2cc9685dd',1,'Nth::ScriptEngine::LoadScript(const string &amp;source, ScriptID scriptId, ScriptType type=ScriptType::Behavior)'],['../class_nth_1_1_script_engine.html#a48c000d8d98bd1d0aa21bd1a179ff237',1,'Nth::ScriptEngine::LoadScript(const vector&lt; u8 &gt; &amp;bytecode, ScriptID scriptId, ScriptType type=ScriptType::Behavior)']]],
-  ['loadsound_4',['LoadSound',['../class_nth_1_1_audio_engine.html#a3bd2079e7ef8a81ea493644bc5030fad',1,'Nth::AudioEngine']]],
-  ['luminance_5',['Luminance',['../class_nth_1_1_color.html#a5f792a754dd314019ad5745458df268a',1,'Nth::Color']]]
+  ['lateupdate_0',['LateUpdate',['../class_astera_1_1_scene.html#a4d7bbb18185443b9049448172cf259c1',1,'Astera::Scene']]],
+  ['lerp_1',['lerp',['../class_astera_1_1_color.html#adcd2165a0e915be4348ac4ab9396da41',1,'Astera::Color::Lerp()'],['../class_astera_1_1_math.html#ae29f94410203f63e79dd0755ac6ccc20',1,'Astera::Math::Lerp()']]],
+  ['load_2',['load',['../class_astera_1_1_scene.html#a608475348a68c76318394273634ad693',1,'Astera::Scene::Load(const fs::path &amp;filename, ScriptEngine &amp;scriptEngine)'],['../class_astera_1_1_scene.html#aece7dd5d9b0e10a3a43023b17201069e',1,'Astera::Scene::Load(const string &amp;source, ScriptEngine &amp;scriptEngine)'],['../class_astera_1_1_texture_manager.html#aea021abaee10b713a7dcf8f48c5ebaaf',1,'Astera::TextureManager::Load()']]],
+  ['loadscript_3',['loadscript',['../class_astera_1_1_script_engine.html#aafc409546518f18cb899239d489e4278',1,'Astera::ScriptEngine::LoadScript(const string &amp;source, ScriptID scriptId, ScriptType type=ScriptType::Behavior)'],['../class_astera_1_1_script_engine.html#a248bbec8ea01c2551f2c4c1e2b6c138a',1,'Astera::ScriptEngine::LoadScript(const vector&lt; u8 &gt; &amp;bytecode, ScriptID scriptId, ScriptType type=ScriptType::Behavior)']]],
+  ['loadsound_4',['LoadSound',['../class_astera_1_1_audio_engine.html#a8c66d0e73a0d94b8a4a7ae26acb47829',1,'Astera::AudioEngine']]],
+  ['luminance_5',['Luminance',['../class_astera_1_1_color.html#a3f9d3a9b58dc536ba774702810fbcd44',1,'Astera::Color']]]
 ];

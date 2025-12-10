@@ -5,9 +5,7 @@ var class_nth_1_1_command_queue =
     [ "Clear", "class_nth_1_1_command_queue.html#a8ae1a0540674b4ab14b69d1dc9baabf1", null ],
     [ "Enqueue", "class_nth_1_1_command_queue.html#a83022f709d10cfb351020a211fefbbe4", null ],
     [ "ExecuteQueue", "class_nth_1_1_command_queue.html#a39ca28dbaa2aed59d3141591634334de", null ],
-    [ "ExecuteQueueBatched", "class_nth_1_1_command_queue.html#a8a4e0f0641dd9760cd2be042e1d9fc51", null ],
     [ "IsEmpty", "class_nth_1_1_command_queue.html#ade72ba1944913191499492afc3d683b7", null ],
     [ "Reserve", "class_nth_1_1_command_queue.html#ad02d076a5cffa8d468997f0de5842356", null ],
-    [ "Size", "class_nth_1_1_command_queue.html#aff31d85c0ff3ed96dead8f2b7e7653de", null ],
-    [ "Game", "class_nth_1_1_command_queue.html#aa2fab026580d6f14280c2ffb8063a314", null ]
+    [ "Size", "class_nth_1_1_command_queue.html#aff31d85c0ff3ed96dead8f2b7e7653de", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quat_0',['Quat',['../namespace_nth.html#ab8b9bc8cfdcf351a5778e40334d055f4',1,'Nth']]]
+  ['quat_0',['Quat',['../namespace_astera.html#a23db947ef2c34866124299ec2cdf7e93',1,'Astera']]]
 ];

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['warn_0',['Warn',['../class_nth_1_1_log.html#af6c9139785d6c5637bc146d48cff0083',1,'Nth::Log']]],
-  ['what_1',['what',['../class_nth_1_1_not_implemented.html#a9df789ee3860444a464b0aa3987a2913',1,'Nth::NotImplemented']]],
-  ['withalpha_2',['WithAlpha',['../class_nth_1_1_color.html#a764ed3763139f79a0014264612e5c6e3',1,'Nth::Color']]],
-  ['withblue_3',['WithBlue',['../class_nth_1_1_color.html#a0c0c7482feaa9e8338a72e3ca4bf3cd6',1,'Nth::Color']]],
-  ['withgreen_4',['WithGreen',['../class_nth_1_1_color.html#a4c8543eb5652e5062cc91fcb3c10a2b7',1,'Nth::Color']]],
-  ['withred_5',['WithRed',['../class_nth_1_1_color.html#ad237b5f452925f057371301cf2706f17',1,'Nth::Color']]]
+  ['warn_0',['Warn',['../class_astera_1_1_log.html#ac63dd9da98aa8a9440777cdc0b0b75b7',1,'Astera::Log']]],
+  ['what_1',['what',['../class_astera_1_1_not_implemented.html#ab80fad579868372827fbcada1043dd44',1,'Astera::NotImplemented']]],
+  ['withalpha_2',['WithAlpha',['../class_astera_1_1_color.html#ae4f9bc19733a9e1ec360695638ffdc0a',1,'Astera::Color']]],
+  ['withblue_3',['WithBlue',['../class_astera_1_1_color.html#a7a7925db6e475e74bdfca205ccab6491',1,'Astera::Color']]],
+  ['withgreen_4',['WithGreen',['../class_astera_1_1_color.html#ab8fd137dbe76a89f7b5b25573b70366d',1,'Astera::Color']]],
+  ['withred_5',['WithRed',['../class_astera_1_1_color.html#a0d154aa4615fc9d16a651da275459e14',1,'Astera::Color']]]
 ];

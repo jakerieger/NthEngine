@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['u_0',['u',['../struct_nth_1_1_sprite_vertex.html#a2b797820d8fcc0130aa3d3cad7c4acc5',1,'Nth::SpriteVertex']]]
+  ['u_0',['u',['../struct_astera_1_1_sprite_vertex.html#a35133be0aba6f3e25e68d95dbc2409a9',1,'Astera::SpriteVertex']]]
 ];

@@ -1,16 +1,15 @@
 var searchData=
 [
-  ['a_0',['A',['../class_nth_1_1_color.html#a7e806e690a3ee26554d9b01195fb212d',1,'Nth::Color']]],
-  ['addattribute_1',['AddAttribute',['../class_nth_1_1_vertex_layout.html#ae8586b4f0f80675a0c33bf8ca8c68a11',1,'Nth::VertexLayout']]],
-  ['addcomponent_2',['AddComponent',['../class_nth_1_1_scene_state.html#a64fd0273f091849d9ffded5c197374e0',1,'Nth::SceneState']]],
-  ['addmacro_3',['AddMacro',['../class_nth_1_1_xml_macro_expander.html#a9696125392f493df9f665507beba6dd5',1,'Nth::XmlMacroExpander']]],
-  ['addvertexbuffer_4',['AddVertexBuffer',['../class_nth_1_1_vertex_array.html#ac871f10bb436c2b92552bb5f3368118f',1,'Nth::VertexArray']]],
-  ['alphablend_5',['AlphaBlend',['../class_nth_1_1_color.html#a48b92d27b7ea75452d390a4e1b82093b',1,'Nth::Color']]],
-  ['applyforce_6',['ApplyForce',['../struct_nth_1_1_rigidbody2_d.html#acb181fa12ee21ace4b64aaeebf60a236',1,'Nth::Rigidbody2D']]],
-  ['applyimpulse_7',['ApplyImpulse',['../struct_nth_1_1_rigidbody2_d.html#a174a331f196d8d9426a44d709baf5496',1,'Nth::Rigidbody2D']]],
-  ['applyimpulseatpoint_8',['ApplyImpulseAtPoint',['../struct_nth_1_1_rigidbody2_d.html#acb76c14429b9c298b66e96b1b78430a2',1,'Nth::Rigidbody2D']]],
-  ['applytorque_9',['ApplyTorque',['../struct_nth_1_1_rigidbody2_d.html#a21bb5806938d0c16a327bcee9fbe58a9',1,'Nth::Rigidbody2D']]],
-  ['attachoverlay_10',['AttachOverlay',['../class_nth_1_1_debug_manager.html#abdb5ad9510f6937fd335b91f971e217c',1,'Nth::DebugManager']]],
-  ['audioengine_11',['AudioEngine',['../class_nth_1_1_audio_engine.html#a29e1bca28cae0230a5b6b69915c864c7',1,'Nth::AudioEngine']]],
-  ['awake_12',['Awake',['../class_nth_1_1_scene.html#a8bc6eee6b7b03529620eb72a277bb105',1,'Nth::Scene']]]
+  ['a_0',['A',['../class_astera_1_1_color.html#a07517bc95d00c8d5588b514b6121c389',1,'Astera::Color']]],
+  ['addattribute_1',['AddAttribute',['../class_astera_1_1_vertex_layout.html#a21a1214fe80834df679b07b1605bc0a7',1,'Astera::VertexLayout']]],
+  ['addcomponent_2',['AddComponent',['../class_astera_1_1_scene_state.html#a787c2557ee6f248ffddfa9d8674ae4fe',1,'Astera::SceneState']]],
+  ['addvertexbuffer_3',['AddVertexBuffer',['../class_astera_1_1_vertex_array.html#aa4dd18c2d54cc5029f4db9f13fb86a4d',1,'Astera::VertexArray']]],
+  ['alphablend_4',['AlphaBlend',['../class_astera_1_1_color.html#a1c2b3b4cf2bb9b5ade61535315d6a3e4',1,'Astera::Color']]],
+  ['applyforce_5',['ApplyForce',['../struct_astera_1_1_rigidbody2_d.html#af9121e5a118bb158a2cbf389c12c08c0',1,'Astera::Rigidbody2D']]],
+  ['applyimpulse_6',['ApplyImpulse',['../struct_astera_1_1_rigidbody2_d.html#abc955eb766137ee7c372f9d93a5a0e7b',1,'Astera::Rigidbody2D']]],
+  ['applyimpulseatpoint_7',['ApplyImpulseAtPoint',['../struct_astera_1_1_rigidbody2_d.html#aaeeec381a400fc210fa6749df45eed9c',1,'Astera::Rigidbody2D']]],
+  ['applytorque_8',['ApplyTorque',['../struct_astera_1_1_rigidbody2_d.html#a38c69e702db5dafb3e6e0fa0db0aa540',1,'Astera::Rigidbody2D']]],
+  ['attachoverlay_9',['AttachOverlay',['../class_astera_1_1_debug_manager.html#a39a5b7b915b13c3a9b810636e5d59c72',1,'Astera::DebugManager']]],
+  ['audioengine_10',['AudioEngine',['../class_astera_1_1_audio_engine.html#abbbc12a3c782607303f9c339593cadb5',1,'Astera::AudioEngine']]],
+  ['awake_11',['Awake',['../class_astera_1_1_scene.html#a8a18951d78034165c9df51790589147b',1,'Astera::Scene']]]
 ];

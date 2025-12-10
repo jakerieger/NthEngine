@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('_log_8cpp_source.html',''); initResiza
 <div class="contents">
 <a href="_log_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *  Filename: Log.cpp</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *  This code is part of the Nth Engine core library</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *  This code is part of the Astera core library</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *  Copyright 2025 Jake Rieger</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
@@ -131,11 +131,11 @@ $(document).ready(function(){initNavTree('_log_8cpp_source.html',''); initResiza
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;sol/sol.hpp&gt;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_nth.html">Nth</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_astera.html">Astera</a> {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    shared_ptr&lt;spdlog::logger&gt; Log::sLogger;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_nth_1_1_log.html#a4eeba89ecd9910f0b5e9814a9d9cdc89">   36</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_log.html#a4eeba89ecd9910f0b5e9814a9d9cdc89">Log::Initialize</a>() {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_astera_1_1_log.html#ab504928c9b5274a67b13f9435b569b97">   36</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_astera_1_1_log.html#ab504928c9b5274a67b13f9435b569b97">Log::Initialize</a>() {</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#ifdef _WIN32</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="comment">// Enable ANSI escape codes on Windows 10+</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);</div>
@@ -167,14 +167,14 @@ $(document).ready(function(){initNavTree('_log_8cpp_source.html',''); initResiza
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        spdlog::register_logger(sLogger);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        spdlog::set_default_logger(sLogger);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <a class="code hl_function" href="class_nth_1_1_log.html#ad387a416f2413b52514e28cceb73abff">Info</a>(<span class="stringliteral">&quot;Log&quot;</span>, <span class="stringliteral">&quot;Logging system initialized&quot;</span>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <a class="code hl_function" href="class_astera_1_1_log.html#a1e008def5936d4f6cbdba1387685aca8">Info</a>(<span class="stringliteral">&quot;Log&quot;</span>, <span class="stringliteral">&quot;Logging system initialized&quot;</span>);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
 </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_nth_1_1_log.html#a5ef9a971757b6b554e3b9358b5461398">   71</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_log.html#a5ef9a971757b6b554e3b9358b5461398">Log::Shutdown</a>() {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_astera_1_1_log.html#a2e1612d0d1bbbf9c45f4c461357bbd1d">   71</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_astera_1_1_log.html#a2e1612d0d1bbbf9c45f4c461357bbd1d">Log::Shutdown</a>() {</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">if</span> (sLogger) {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_function" href="class_nth_1_1_log.html#ad387a416f2413b52514e28cceb73abff">Info</a>(<span class="stringliteral">&quot;Log&quot;</span>, <span class="stringliteral">&quot;Shutting down logging system&quot;</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_function" href="class_astera_1_1_log.html#a1e008def5936d4f6cbdba1387685aca8">Info</a>(<span class="stringliteral">&quot;Log&quot;</span>, <span class="stringliteral">&quot;Shutting down logging system&quot;</span>);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            sLogger-&gt;flush();</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            spdlog::drop_all();</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            sLogger.reset();</div>
@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('_log_8cpp_source.html',''); initResiza
 </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    shared_ptr&lt;spdlog::logger&gt; Log::GetLogger() {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">if</span> (!sLogger) { <a class="code hl_function" href="class_nth_1_1_log.html#a4eeba89ecd9910f0b5e9814a9d9cdc89">Initialize</a>(); }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">if</span> (!sLogger) { <a class="code hl_function" href="class_astera_1_1_log.html#ab504928c9b5274a67b13f9435b569b97">Initialize</a>(); }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">return</span> sLogger;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
@@ -206,12 +206,12 @@ $(document).ready(function(){initNavTree('_log_8cpp_source.html',''); initResiza
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            Log::GetLogger()-&gt;critical(<span class="stringliteral">&quot;\033[1m{}\033[0m: {}&quot;</span>, <span class="stringliteral">&quot;LuaInterpreter&quot;</span>, msg.as&lt;<span class="keywordtype">string</span>&gt;());</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        };</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}  <span class="comment">// namespace Nth</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}  <span class="comment">// namespace Astera</span></div>
 <div class="ttc" id="a_log_8hpp_html"><div class="ttname"><a href="_log_8hpp.html">Log.hpp</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_log_html_a4eeba89ecd9910f0b5e9814a9d9cdc89"><div class="ttname"><a href="class_nth_1_1_log.html#a4eeba89ecd9910f0b5e9814a9d9cdc89">Nth::Log::Initialize</a></div><div class="ttdeci">static void Initialize()</div><div class="ttdef"><b>Definition</b> <a href="_log_8cpp_source.html#l00036">Log.cpp:36</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_log_html_a5ef9a971757b6b554e3b9358b5461398"><div class="ttname"><a href="class_nth_1_1_log.html#a5ef9a971757b6b554e3b9358b5461398">Nth::Log::Shutdown</a></div><div class="ttdeci">static void Shutdown()</div><div class="ttdef"><b>Definition</b> <a href="_log_8cpp_source.html#l00071">Log.cpp:71</a></div></div>
-<div class="ttc" id="aclass_nth_1_1_log_html_ad387a416f2413b52514e28cceb73abff"><div class="ttname"><a href="class_nth_1_1_log.html#ad387a416f2413b52514e28cceb73abff">Nth::Log::Info</a></div><div class="ttdeci">static void Info(const std::string &amp;subsystem, fmt::format_string&lt; Args... &gt; fmt, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="_log_8hpp_source.html#l00054">Log.hpp:54</a></div></div>
-<div class="ttc" id="anamespace_nth_html"><div class="ttname"><a href="namespace_nth.html">Nth</a></div><div class="ttdoc">Root namespace containing all Nth Engine code.</div><div class="ttdef"><b>Definition</b> <a href="_audio_engine_8cpp_source.html#l00034">AudioEngine.cpp:34</a></div></div>
+<div class="ttc" id="aclass_astera_1_1_log_html_a1e008def5936d4f6cbdba1387685aca8"><div class="ttname"><a href="class_astera_1_1_log.html#a1e008def5936d4f6cbdba1387685aca8">Astera::Log::Info</a></div><div class="ttdeci">static void Info(const std::string &amp;subsystem, fmt::format_string&lt; Args... &gt; fmt, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="_log_8hpp_source.html#l00054">Log.hpp:54</a></div></div>
+<div class="ttc" id="aclass_astera_1_1_log_html_a2e1612d0d1bbbf9c45f4c461357bbd1d"><div class="ttname"><a href="class_astera_1_1_log.html#a2e1612d0d1bbbf9c45f4c461357bbd1d">Astera::Log::Shutdown</a></div><div class="ttdeci">static void Shutdown()</div><div class="ttdef"><b>Definition</b> <a href="_log_8cpp_source.html#l00071">Log.cpp:71</a></div></div>
+<div class="ttc" id="aclass_astera_1_1_log_html_ab504928c9b5274a67b13f9435b569b97"><div class="ttname"><a href="class_astera_1_1_log.html#ab504928c9b5274a67b13f9435b569b97">Astera::Log::Initialize</a></div><div class="ttdeci">static void Initialize()</div><div class="ttdef"><b>Definition</b> <a href="_log_8cpp_source.html#l00036">Log.cpp:36</a></div></div>
+<div class="ttc" id="anamespace_astera_html"><div class="ttname"><a href="namespace_astera.html">Astera</a></div><div class="ttdoc">Root namespace of all Astera components.</div><div class="ttdef"><b>Definition</b> <a href="_astera_core_8hpp_source.html#l00041">AsteraCore.hpp:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

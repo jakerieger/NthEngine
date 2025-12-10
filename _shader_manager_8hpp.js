@@ -1,6 +1,6 @@
 var _shader_manager_8hpp =
 [
-    [ "Nth::ShaderManager", "class_nth_1_1_shader_manager.html", null ],
-    [ "Sprite", "_shader_manager_8hpp.html#a596edcfeeadcfcff558b6be87803bad9", null ],
-    [ "SpriteInstanced", "_shader_manager_8hpp.html#a5d2a6fd85cfdfecbd563c0dc389d786a", null ]
+    [ "Astera::ShaderManager", "class_astera_1_1_shader_manager.html", null ],
+    [ "Sprite", "_shader_manager_8hpp.html#afb3068be83fab10dd365fb7145d32440", null ],
+    [ "SpriteInstanced", "_shader_manager_8hpp.html#af4d7f94242ee69e049bda1f0a75670eb", null ]
 ];

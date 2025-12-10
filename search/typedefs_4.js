@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['mat3_0',['Mat3',['../namespace_nth.html#a390aa9ad0ab4afd20e503155113528c2',1,'Nth']]],
-  ['mat4_1',['Mat4',['../namespace_nth.html#af893605bd4a613350c7ed6bc9879732a',1,'Nth']]]
+  ['mat3_0',['Mat3',['../namespace_astera.html#aa9241995679ee52c1d21a4d3b3483e1a',1,'Astera']]],
+  ['mat4_1',['Mat4',['../namespace_astera.html#a7027406a136a3233ea643b26b70b4ab3',1,'Astera']]]
 ];

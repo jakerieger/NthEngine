@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notimplemented_0',['NotImplemented',['../class_nth_1_1_not_implemented.html#ab6e71daa0b2ba186815e17eb653e7fa1',1,'Nth::NotImplemented']]]
+  ['notimplemented_0',['NotImplemented',['../class_astera_1_1_not_implemented.html#a5f51c4c676c491643d22e88ae3a2b0fa',1,'Astera::NotImplemented']]]
 ];

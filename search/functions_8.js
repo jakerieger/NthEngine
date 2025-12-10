@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['ibuffer_0',['ibuffer',['../class_nth_1_1_i_buffer.html#ac236c6a3bee57ff194d8bf8728ad972f',1,'Nth::IBuffer::IBuffer()'],['../class_nth_1_1_i_buffer.html#a85b3e0d901f305eef63a382270abaded',1,'Nth::IBuffer::IBuffer(IBuffer &amp;&amp;other) noexcept']]],
-  ['imguidebuglayer_1',['ImGuiDebugLayer',['../class_nth_1_1_im_gui_debug_layer.html#a179b3d1b04d72838970e846ed66a6be1',1,'Nth::ImGuiDebugLayer']]],
-  ['info_2',['Info',['../class_nth_1_1_log.html#ad387a416f2413b52514e28cceb73abff',1,'Nth::Log']]],
-  ['initialize_3',['initialize',['../class_nth_1_1_audio_engine.html#aec8113329daf48286f5dc42dbf1fd6c6',1,'Nth::AudioEngine::Initialize()'],['../class_nth_1_1_log.html#a4eeba89ecd9910f0b5e9814a9d9cdc89',1,'Nth::Log::Initialize()'],['../class_nth_1_1_render_context.html#abe1c21349c3aafa36c3bdb45e505d2cf',1,'Nth::RenderContext::Initialize()'],['../class_nth_1_1_script_engine.html#aaa17ae3446142c100a39f92ab05145e5',1,'Nth::ScriptEngine::Initialize()'],['../class_nth_1_1_shader_manager.html#a0e2ef5972bfc5d0f4f4ffef5fd4337ce',1,'Nth::ShaderManager::Initialize()'],['../class_nth_1_1_texture_manager.html#ae84e0718e3fa6ed84527a87495e4e87e',1,'Nth::TextureManager::Initialize()']]],
-  ['inputmanager_4',['InputManager',['../class_nth_1_1_input_manager.html#a7349b25fa10ecf72204203dfda1226d7',1,'Nth::InputManager']]],
-  ['isempty_5',['IsEmpty',['../class_nth_1_1_command_queue.html#ade72ba1944913191499492afc3d683b7',1,'Nth::CommandQueue']]],
-  ['isinitialized_6',['isinitialized',['../class_nth_1_1_audio_engine.html#afd1c51ab885d2af4e31c493b5b62b1c0',1,'Nth::AudioEngine::IsInitialized()'],['../class_nth_1_1_script_engine.html#a35449d33963ec4e5cee40d7f6438d59a',1,'Nth::ScriptEngine::IsInitialized()']]]
+  ['ibuffer_0',['ibuffer',['../class_astera_1_1_i_buffer.html#abd24b554e8d445ba185e68af8f76eea9',1,'Astera::IBuffer::IBuffer()'],['../class_astera_1_1_i_buffer.html#a6084e293d26267291ea2552a118dbdda',1,'Astera::IBuffer::IBuffer(IBuffer &amp;&amp;other) noexcept']]],
+  ['imguidebuglayer_1',['ImGuiDebugLayer',['../class_astera_1_1_im_gui_debug_layer.html#a7a7c1f7c3935897540173a36f958f7bd',1,'Astera::ImGuiDebugLayer']]],
+  ['info_2',['Info',['../class_astera_1_1_log.html#a1e008def5936d4f6cbdba1387685aca8',1,'Astera::Log']]],
+  ['initialize_3',['initialize',['../class_astera_1_1_audio_engine.html#a67f42f86bce92cb5efaeedfa070ac96a',1,'Astera::AudioEngine::Initialize()'],['../class_astera_1_1_log.html#ab504928c9b5274a67b13f9435b569b97',1,'Astera::Log::Initialize()'],['../class_astera_1_1_render_context.html#a949952e1ad6a3e0205f84bf63818e7db',1,'Astera::RenderContext::Initialize()'],['../class_astera_1_1_script_engine.html#a5e2a7f0b733addd6fa4c379b5e9f3a3a',1,'Astera::ScriptEngine::Initialize()'],['../class_astera_1_1_shader_manager.html#a4601d5c4436b640f731200f189b0bddc',1,'Astera::ShaderManager::Initialize()'],['../class_astera_1_1_texture_manager.html#af78396467b5227c163a9c49dd12a2003',1,'Astera::TextureManager::Initialize()']]],
+  ['inputmanager_4',['InputManager',['../class_astera_1_1_input_manager.html#a3e66bf5b22b0f7e1d789cd7bbcd5f7e4',1,'Astera::InputManager']]],
+  ['isempty_5',['IsEmpty',['../class_astera_1_1_command_queue.html#a48bd7c9aeddf45856209a7f1f6545084',1,'Astera::CommandQueue']]],
+  ['isinitialized_6',['isinitialized',['../class_astera_1_1_audio_engine.html#a64d5bf63102858e16ab629f92515a79f',1,'Astera::AudioEngine::IsInitialized()'],['../class_astera_1_1_script_engine.html#a5359d00f48b506406770b1753942b91b',1,'Astera::ScriptEngine::IsInitialized()']]]
 ];
