@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['ibuffer_0',['IBuffer',['../class_nth_1_1_i_buffer.html#ac236c6a3bee57ff194d8bf8728ad972f',1,'Nth::IBuffer::IBuffer()'],['../class_nth_1_1_i_buffer.html#a85b3e0d901f305eef63a382270abaded',1,'Nth::IBuffer::IBuffer(IBuffer &amp;&amp;other) noexcept']]],
-  ['info_1',['Info',['../class_nth_1_1_log.html#ad387a416f2413b52514e28cceb73abff',1,'Nth::Log']]],
-  ['initialize_2',['Initialize',['../class_nth_1_1_log.html#a4eeba89ecd9910f0b5e9814a9d9cdc89',1,'Nth::Log::Initialize()'],['../class_nth_1_1_render_context.html#abe1c21349c3aafa36c3bdb45e505d2cf',1,'Nth::RenderContext::Initialize()'],['../class_nth_1_1_script_engine.html#aaa17ae3446142c100a39f92ab05145e5',1,'Nth::ScriptEngine::Initialize()'],['../class_nth_1_1_shader_manager.html#a0e2ef5972bfc5d0f4f4ffef5fd4337ce',1,'Nth::ShaderManager::Initialize()'],['../class_nth_1_1_texture_manager.html#ae84e0718e3fa6ed84527a87495e4e87e',1,'Nth::TextureManager::Initialize()']]],
-  ['inputmanager_3',['InputManager',['../class_nth_1_1_input_1_1_input_manager.html#a89563c6132ace70ce0d597fb6c946196',1,'Nth::Input::InputManager']]],
-  ['isempty_4',['IsEmpty',['../class_nth_1_1_command_queue.html#ade72ba1944913191499492afc3d683b7',1,'Nth::CommandQueue']]],
-  ['isinitialized_5',['IsInitialized',['../class_nth_1_1_script_engine.html#a35449d33963ec4e5cee40d7f6438d59a',1,'Nth::ScriptEngine']]]
+  ['handleevent_0',['HandleEvent',['../class_nth_1_1_debug_manager.html#ace3c18e1ece62d4ec20fac674fba1962',1,'Nth::DebugManager']]],
+  ['hardlight_1',['HardLight',['../class_nth_1_1_color.html#a2371579771e8d8e1e9e0469c6aa0f582',1,'Nth::Color']]]
 ];

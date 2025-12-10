@@ -1,6 +1,14 @@
 var searchData=
 [
-  ['unbind_0',['Unbind',['../class_nth_1_1_i_buffer.html#abca490ccd0875a92bf2be23330aea8b7',1,'Nth::IBuffer::Unbind()'],['../class_nth_1_1_vertex_buffer.html#a10c2faee86bc5a3a1df982f3e82f79d2',1,'Nth::VertexBuffer::Unbind()'],['../class_nth_1_1_index_buffer.html#a0d8d8e55ec8d6cf55875426b268ef63a',1,'Nth::IndexBuffer::Unbind()'],['../class_nth_1_1_geometry.html#a117d26852f20ff4ab3ec621962f2f294',1,'Nth::Geometry::Unbind()'],['../class_nth_1_1_shader.html#ab74b6f8cda821687776aa89db8c4d58f',1,'Nth::Shader::Unbind()'],['../class_nth_1_1_vertex_array.html#ab8db068bcc3fc43b49e9f59b7cbe9c60',1,'Nth::VertexArray::Unbind()']]],
-  ['update_1',['Update',['../class_nth_1_1_scene.html#a75144b2dfa295e2e23847d0b0b79443d',1,'Nth::Scene']]],
-  ['updatedata_2',['UpdateData',['../class_nth_1_1_i_buffer.html#a17cb82fa70e1f2e9f5b68456906dabac',1,'Nth::IBuffer::UpdateData()'],['../class_nth_1_1_vertex_buffer.html#a3f645ab25493be4568badb08b8137169',1,'Nth::VertexBuffer::UpdateData()'],['../class_nth_1_1_index_buffer.html#a7d9401a479b5a6532a8690966344a1bc',1,'Nth::IndexBuffer::UpdateData()']]]
+  ['tan_0',['Tan',['../class_nth_1_1_math.html#ad448c6638fd7c2f950bc45a8176c404f',1,'Nth::Math']]],
+  ['tick_1',['Tick',['../class_nth_1_1_clock.html#a216cf37aa34c4db3959c6d85fe92ec21',1,'Nth::Clock']]],
+  ['to_2',['To',['../class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98',1,'Nth::Color::To() const'],['../class_nth_1_1_color.html#a9bd85a25645dcf04a6cf68883f7f1eb6',1,'Nth::Color::To() const']]],
+  ['tofloatarray_3',['ToFloatArray',['../class_nth_1_1_color.html#ae3fcc93ce900bf0acc37f4416d582f79',1,'Nth::Color']]],
+  ['togglefullscreen_4',['ToggleFullscreen',['../class_nth_1_1_game.html#a41c6a5336bd38670d1c287d78446b000',1,'Nth::Game']]],
+  ['tohsv_5',['ToHSV',['../class_nth_1_1_color.html#a045ca18e148af05b8b31d5008ec868de',1,'Nth::Color']]],
+  ['tostring_6',['ToString',['../class_nth_1_1_color.html#a1de636012ca3e8a565678be1fa9f7e41',1,'Nth::Color']]],
+  ['tou32_7',['ToU32',['../class_nth_1_1_color.html#ac62e57ff7def4792755aedaf91423014',1,'Nth::Color']]],
+  ['tou32_5fabgr_8',['ToU32_ABGR',['../class_nth_1_1_color.html#a58c9680e886e5b0d230abb21e77970a1',1,'Nth::Color']]],
+  ['trace_9',['Trace',['../class_nth_1_1_log.html#ab4870c08436486501434f7ac56e703e8',1,'Nth::Log']]],
+  ['translate_10',['Translate',['../struct_nth_1_1_transform.html#a296d303dde3b9393b277c48a124453be',1,'Nth::Transform']]]
 ];

@@ -4,6 +4,7 @@ var annotated_dup =
       [ "Input", "namespace_nth_1_1_input.html", [
         [ "InputManager", "class_nth_1_1_input_1_1_input_manager.html", "class_nth_1_1_input_1_1_input_manager" ]
       ] ],
+      [ "AudioEngine", "class_nth_1_1_audio_engine.html", "class_nth_1_1_audio_engine" ],
       [ "Behavior", "struct_nth_1_1_behavior.html", "struct_nth_1_1_behavior" ],
       [ "BehaviorDescriptor", "struct_nth_1_1_behavior_descriptor.html", "struct_nth_1_1_behavior_descriptor" ],
       [ "BehaviorEntity", "struct_nth_1_1_behavior_entity.html", "struct_nth_1_1_behavior_entity" ],
@@ -12,14 +13,20 @@ var annotated_dup =
       [ "Camera", "struct_nth_1_1_camera.html", null ],
       [ "ClearCommand", "struct_nth_1_1_clear_command.html", "struct_nth_1_1_clear_command" ],
       [ "Clock", "class_nth_1_1_clock.html", "class_nth_1_1_clock" ],
+      [ "Collider2D", "struct_nth_1_1_collider2_d.html", null ],
+      [ "CollisionDetection", "class_nth_1_1_collision_detection.html", null ],
+      [ "Color", "class_nth_1_1_color.html", "class_nth_1_1_color" ],
       [ "CommandExecutor", "class_nth_1_1_command_executor.html", "class_nth_1_1_command_executor" ],
       [ "CommandQueue", "class_nth_1_1_command_queue.html", "class_nth_1_1_command_queue" ],
       [ "Content", "class_nth_1_1_content.html", null ],
+      [ "DebugManager", "class_nth_1_1_debug_manager.html", "class_nth_1_1_debug_manager" ],
       [ "DrawSpriteCommand", "struct_nth_1_1_draw_sprite_command.html", "struct_nth_1_1_draw_sprite_command" ],
       [ "EntityDescriptor", "struct_nth_1_1_entity_descriptor.html", "struct_nth_1_1_entity_descriptor" ],
       [ "Game", "class_nth_1_1_game.html", "class_nth_1_1_game" ],
       [ "Geometry", "class_nth_1_1_geometry.html", "class_nth_1_1_geometry" ],
       [ "IBuffer", "class_nth_1_1_i_buffer.html", "class_nth_1_1_i_buffer" ],
+      [ "IDebugOverlay", "class_nth_1_1_i_debug_overlay.html", "class_nth_1_1_i_debug_overlay" ],
+      [ "ImGuiDebugLayer", "class_nth_1_1_im_gui_debug_layer.html", "class_nth_1_1_im_gui_debug_layer" ],
       [ "IndexBuffer", "class_nth_1_1_index_buffer.html", "class_nth_1_1_index_buffer" ],
       [ "Log", "class_nth_1_1_log.html", "class_nth_1_1_log" ],
       [ "LuaRegisterable", "struct_nth_1_1_lua_registerable.html", "struct_nth_1_1_lua_registerable" ],
@@ -32,9 +39,13 @@ var annotated_dup =
       [ "LuaTypeTraits< Vec2 >", "struct_nth_1_1_lua_type_traits_3_01_vec2_01_4.html", null ],
       [ "Math", "class_nth_1_1_math.html", "class_nth_1_1_math" ],
       [ "OpenGLException", "struct_nth_1_1_open_g_l_exception.html", "struct_nth_1_1_open_g_l_exception" ],
+      [ "PhysicsDebugLayer", "class_nth_1_1_physics_debug_layer.html", "class_nth_1_1_physics_debug_layer" ],
+      [ "PhysicsEngine", "class_nth_1_1_physics_engine.html", null ],
       [ "ProjectDescriptor", "struct_nth_1_1_project_descriptor.html", "struct_nth_1_1_project_descriptor" ],
       [ "ProjectRunner", "class_nth_1_1_project_runner.html", "class_nth_1_1_project_runner" ],
       [ "RenderContext", "class_nth_1_1_render_context.html", "class_nth_1_1_render_context" ],
+      [ "Rigidbody2D", "struct_nth_1_1_rigidbody2_d.html", "struct_nth_1_1_rigidbody2_d" ],
+      [ "Rigidbody2DDescriptor", "struct_nth_1_1_rigidbody2_d_descriptor.html", "struct_nth_1_1_rigidbody2_d_descriptor" ],
       [ "Scene", "class_nth_1_1_scene.html", "class_nth_1_1_scene" ],
       [ "SceneDescriptor", "struct_nth_1_1_scene_descriptor.html", "struct_nth_1_1_scene_descriptor" ],
       [ "SceneParser", "class_nth_1_1_scene_parser.html", null ],
@@ -55,5 +66,8 @@ var annotated_dup =
       [ "VertexBuffer", "class_nth_1_1_vertex_buffer.html", "class_nth_1_1_vertex_buffer" ],
       [ "VertexLayout", "class_nth_1_1_vertex_layout.html", "class_nth_1_1_vertex_layout" ],
       [ "XmlMacroExpander", "class_nth_1_1_xml_macro_expander.html", "class_nth_1_1_xml_macro_expander" ]
+    ] ],
+    [ "std", null, [
+      [ "hash< Nth::Color >", "structstd_1_1hash_3_01_nth_1_1_color_01_4.html", "structstd_1_1hash_3_01_nth_1_1_color_01_4" ]
     ] ]
 ];

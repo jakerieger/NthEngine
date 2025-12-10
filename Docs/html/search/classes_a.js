@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rendercontext_0',['RenderContext',['../class_nth_1_1_render_context.html',1,'Nth']]]
+  ['openglexception_0',['OpenGLException',['../struct_nth_1_1_open_g_l_exception.html',1,'Nth']]]
 ];

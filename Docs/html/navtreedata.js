@@ -45,7 +45,7 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
-        [ "Related Symbols", "functions_rela.html", null ]
+        [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -61,10 +61,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_behavior_8hpp.html",
-"class_nth_1_1_game.html#a83035c39bd624542bdd900f3c599526c",
-"class_nth_1_1_shader.html#a0229e704f806a30691758cb76183104a",
-"struct_nth_1_1_clear_command.html#aa0e92abea3799d77ed6093fa01e446cd"
+"_audio_engine_8cpp.html",
+"class_nth_1_1_color.html",
+"class_nth_1_1_im_gui_debug_layer.html#a5c694d671d7cb3a95d2b16d0be338b47",
+"class_nth_1_1_vertex_array.html#a8d659c566d8ce90fa6803862a278d705",
+"struct_nth_1_1_lua_type_traits_3_01_transform_01_4.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

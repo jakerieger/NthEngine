@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['mbufferid_0',['mBufferID',['../class_nth_1_1_i_buffer.html#ac16384dbe811cac0c1eb7a45b64fdad0',1,'Nth::IBuffer']]],
-  ['mfullscreen_1',['mFullscreen',['../class_nth_1_1_game.html#ac251b818484d44b5fd7ead8ac5c2ccc8',1,'Nth::Game']]],
-  ['mheight_2',['mHeight',['../class_nth_1_1_game.html#a24649cb44c1e27701a8a8e6615a74ee2',1,'Nth::Game']]],
-  ['mrunning_3',['mRunning',['../class_nth_1_1_game.html#ad892fb717e53733c536b210570f743bc',1,'Nth::Game']]],
-  ['msize_4',['mSize',['../class_nth_1_1_i_buffer.html#a39f83082e95474691fe147702aecd6b7',1,'Nth::IBuffer']]],
-  ['mtitle_5',['mTitle',['../class_nth_1_1_game.html#af34c4fa402e088ef45802fd1dc021bbb',1,'Nth::Game']]],
-  ['mwidth_6',['mWidth',['../class_nth_1_1_game.html#aaf82138d585d41d950d1ec93730ad817',1,'Nth::Game']]]
+  ['id_0',['id',['../struct_nth_1_1_behavior.html#a0c7f977539eb6e78a1e9fb1ad6c051b6',1,'Nth::Behavior::id()'],['../struct_nth_1_1_behavior_descriptor.html#a6ffe778924776b92ff631570ecb1c05f',1,'Nth::BehaviorDescriptor::id()'],['../struct_nth_1_1_entity_descriptor.html#a45961292ae1338087fc1791e6a455ad7',1,'Nth::EntityDescriptor::id()']]],
+  ['inertia_1',['inertia',['../struct_nth_1_1_rigidbody2_d.html#a970f32a982c6e165c506cae3d5ec1087',1,'Nth::Rigidbody2D::inertia()'],['../struct_nth_1_1_rigidbody2_d_descriptor.html#a35ad986a3c976769ff2089465e184628',1,'Nth::Rigidbody2DDescriptor::inertia()']]],
+  ['inverseinertia_2',['inverseInertia',['../struct_nth_1_1_rigidbody2_d.html#af52bf33bebf45e42b4b6113420f2874e',1,'Nth::Rigidbody2D::inverseInertia()'],['../struct_nth_1_1_rigidbody2_d_descriptor.html#a40efacce5159962978df990173b5a54c',1,'Nth::Rigidbody2DDescriptor::inverseInertia()']]],
+  ['inversemass_3',['inverseMass',['../struct_nth_1_1_rigidbody2_d.html#a1e0eca8155ecf40e6dbb02de2e4f7b61',1,'Nth::Rigidbody2D::inverseMass()'],['../struct_nth_1_1_rigidbody2_d_descriptor.html#a38f0ef1f5241a1e3dd5f5b83e858604c',1,'Nth::Rigidbody2DDescriptor::inverseMass()']]]
 ];

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['onawake_0',['onAwake',['../struct_nth_1_1_behavior_script_context.html#af3468a5f7e814fb1604e2d28e649759f',1,'Nth::BehaviorScriptContext']]],
-  ['ondestroyed_1',['onDestroyed',['../struct_nth_1_1_behavior_script_context.html#a1a30802954d338c9764aa2505fead583',1,'Nth::BehaviorScriptContext']]],
-  ['onlateupdate_2',['onLateUpdate',['../struct_nth_1_1_behavior_script_context.html#ace4dbd15cc40a5f4688b8f6d1ae07949',1,'Nth::BehaviorScriptContext']]],
-  ['onupdate_3',['onUpdate',['../struct_nth_1_1_behavior_script_context.html#aba6f961f7781d70f717cb48cdeac0e74',1,'Nth::BehaviorScriptContext']]]
+  ['lineardamping_0',['linearDamping',['../struct_nth_1_1_rigidbody2_d.html#a986bf0083a25999f0ad06e84e2c820cc',1,'Nth::Rigidbody2D::linearDamping()'],['../struct_nth_1_1_rigidbody2_d_descriptor.html#aee3ce57aa03a92e361e905d0b24bdab9',1,'Nth::Rigidbody2DDescriptor::linearDamping()']]],
+  ['lockrotation_1',['lockRotation',['../struct_nth_1_1_rigidbody2_d.html#a921db9416c0d7247187aa9ba18b2b9f3',1,'Nth::Rigidbody2D::lockRotation()'],['../struct_nth_1_1_rigidbody2_d_descriptor.html#a92cb84781cf07a143def820b517dca30',1,'Nth::Rigidbody2DDescriptor::lockRotation()']]]
 ];

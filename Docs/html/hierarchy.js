@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "Nth::AudioEngine", "class_nth_1_1_audio_engine.html", null ],
     [ "Nth::Behavior", "struct_nth_1_1_behavior.html", null ],
     [ "Nth::BehaviorDescriptor", "struct_nth_1_1_behavior_descriptor.html", null ],
     [ "Nth::BehaviorEntity", "struct_nth_1_1_behavior_entity.html", null ],
@@ -8,18 +9,27 @@ var hierarchy =
     [ "Nth::Camera", "struct_nth_1_1_camera.html", null ],
     [ "Nth::ClearCommand", "struct_nth_1_1_clear_command.html", null ],
     [ "Nth::Clock", "class_nth_1_1_clock.html", null ],
+    [ "Nth::Collider2D", "struct_nth_1_1_collider2_d.html", null ],
+    [ "Nth::CollisionDetection", "class_nth_1_1_collision_detection.html", null ],
+    [ "Nth::Color", "class_nth_1_1_color.html", null ],
     [ "Nth::CommandExecutor", "class_nth_1_1_command_executor.html", null ],
     [ "Nth::CommandQueue", "class_nth_1_1_command_queue.html", null ],
     [ "Nth::Content", "class_nth_1_1_content.html", null ],
+    [ "Nth::DebugManager", "class_nth_1_1_debug_manager.html", null ],
     [ "Nth::DrawSpriteCommand", "struct_nth_1_1_draw_sprite_command.html", null ],
     [ "Nth::EntityDescriptor", "struct_nth_1_1_entity_descriptor.html", null ],
     [ "Nth::Game", "class_nth_1_1_game.html", [
       [ "Nth::ProjectRunner", "class_nth_1_1_project_runner.html", null ]
     ] ],
     [ "Nth::Geometry", "class_nth_1_1_geometry.html", null ],
+    [ "std::hash< Nth::Color >", "structstd_1_1hash_3_01_nth_1_1_color_01_4.html", null ],
     [ "Nth::IBuffer", "class_nth_1_1_i_buffer.html", [
       [ "Nth::IndexBuffer", "class_nth_1_1_index_buffer.html", null ],
       [ "Nth::VertexBuffer", "class_nth_1_1_vertex_buffer.html", null ]
+    ] ],
+    [ "Nth::IDebugOverlay", "class_nth_1_1_i_debug_overlay.html", [
+      [ "Nth::ImGuiDebugLayer", "class_nth_1_1_im_gui_debug_layer.html", null ],
+      [ "Nth::PhysicsDebugLayer", "class_nth_1_1_physics_debug_layer.html", null ]
     ] ],
     [ "Nth::Input::InputManager", "class_nth_1_1_input_1_1_input_manager.html", null ],
     [ "Nth::Log", "class_nth_1_1_log.html", null ],
@@ -33,8 +43,11 @@ var hierarchy =
     [ "Nth::LuaTypeTraits< Transform >", "struct_nth_1_1_lua_type_traits_3_01_transform_01_4.html", null ],
     [ "Nth::LuaTypeTraits< Vec2 >", "struct_nth_1_1_lua_type_traits_3_01_vec2_01_4.html", null ],
     [ "Nth::Math", "class_nth_1_1_math.html", null ],
+    [ "Nth::PhysicsEngine", "class_nth_1_1_physics_engine.html", null ],
     [ "Nth::ProjectDescriptor", "struct_nth_1_1_project_descriptor.html", null ],
     [ "Nth::RenderContext", "class_nth_1_1_render_context.html", null ],
+    [ "Nth::Rigidbody2D", "struct_nth_1_1_rigidbody2_d.html", null ],
+    [ "Nth::Rigidbody2DDescriptor", "struct_nth_1_1_rigidbody2_d_descriptor.html", null ],
     [ "std::runtime_error", null, [
       [ "Nth::OpenGLException", "struct_nth_1_1_open_g_l_exception.html", null ]
     ] ],

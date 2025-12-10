@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['id_0',['id',['../struct_nth_1_1_behavior.html#a0c7f977539eb6e78a1e9fb1ad6c051b6',1,'Nth::Behavior::id'],['../struct_nth_1_1_behavior_descriptor.html#a6ffe778924776b92ff631570ecb1c05f',1,'Nth::BehaviorDescriptor::id'],['../struct_nth_1_1_entity_descriptor.html#a45961292ae1338087fc1791e6a455ad7',1,'Nth::EntityDescriptor::id']]]
+  ['geometry_0',['geometry',['../struct_nth_1_1_sprite_renderer.html#a17e13dd037e4868e8741e8fc8e5a677d',1,'Nth::SpriteRenderer']]],
+  ['gravityscale_1',['gravityScale',['../struct_nth_1_1_rigidbody2_d.html#afd1168a899bb5917a10a4c97f273b84d',1,'Nth::Rigidbody2D::gravityScale()'],['../struct_nth_1_1_rigidbody2_d_descriptor.html#a2a6d6a71d43f316f5082261a31c5fe2f',1,'Nth::Rigidbody2DDescriptor::gravityScale()']]]
 ];

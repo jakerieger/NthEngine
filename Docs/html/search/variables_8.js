@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['name_0',['name',['../struct_nth_1_1_set_uniform_command.html#abffa76dfc00318438c3d42d0b5680f8c',1,'Nth::SetUniformCommand::name'],['../struct_nth_1_1_vertex_attribute.html#a093b1e9913116ec1b885bb4d51d0e656',1,'Nth::VertexAttribute::name'],['../struct_nth_1_1_entity_descriptor.html#af6ae042870db2423dfd174fddccfd87f',1,'Nth::EntityDescriptor::name'],['../struct_nth_1_1_scene_descriptor.html#a412afd1c90e9292e48d5f60579458c7b',1,'Nth::SceneDescriptor::name'],['../struct_nth_1_1_behavior_entity.html#a279db5bad4913475f13e8bb7f9608bac',1,'Nth::BehaviorEntity::name'],['../struct_nth_1_1_project_descriptor.html#a71fcb39960bea97366b16e6ca86bb22a',1,'Nth::ProjectDescriptor::name']]],
-  ['normalized_1',['normalized',['../struct_nth_1_1_vertex_attribute.html#ae5498563f28f2d216dee998f77c3a0fd',1,'Nth::VertexAttribute']]]
+  ['kdefaultheight_0',['kDefaultHeight',['../class_nth_1_1_game.html#a4b6a418447013c3f21134d6a0e3dbf54',1,'Nth::Game']]],
+  ['kdefaultwidth_1',['kDefaultWidth',['../class_nth_1_1_game.html#aeb5acaef98a0f624c1a93240debe4bed',1,'Nth::Game']]],
+  ['keuler_2',['kEuler',['../class_nth_1_1_math.html#a459029a3233f87858e3f09e315962664',1,'Nth::Math']]],
+  ['kpi_3',['kPi',['../class_nth_1_1_math.html#a3aec14be2d17df29bd2599f6388d6879',1,'Nth::Math']]],
+  ['ktau_4',['kTau',['../class_nth_1_1_math.html#a178b20cb5e604c949ca615974fabcc9a',1,'Nth::Math']]]
 ];

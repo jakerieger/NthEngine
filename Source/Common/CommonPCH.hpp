@@ -10,6 +10,9 @@
 #include <utility>
 #include <string_view>
 #include <source_location>
+#include <charconv>
+#include <system_error>
+#include <exception>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -111,5 +114,26 @@ namespace Nth {
     template<std::ranges::view Iterable>
     auto Distance(const Iterable& container) {
         return std::ranges::distance(container);
+    }
+
+    inline f32 StringToF32(const string& str) {
+        f32 result;
+        auto [ptr, ec] = std::from_chars(str.data(), str.data() + str.size(), result);
+
+        if (ec == std::errc()) {
+            // Success - also check if entire string was consumed
+            if (ptr == str.data() + str.size()) {
+                return result;
+            } else {
+                // Partial parse - trailing characters exist
+                throw std::invalid_argument("Trailing characters in string");
+            }
+        } else if (ec == std::errc::invalid_argument) {
+            throw std::invalid_argument("Invalid float format");
+        } else if (ec == std::errc::result_out_of_range) {
+            throw std::range_error("Float value out of range");
+        }
+
+        throw std::runtime_error("Unknown conversion error");
     }
 }  // namespace Nth

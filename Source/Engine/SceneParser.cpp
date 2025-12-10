@@ -3,18 +3,69 @@
 ///
 
 #include "SceneParser.hpp"
-
 #include "Content.hpp"
+#include "Log.hpp"
 #include "SceneDescriptor.hpp"
 #include "SceneState.hpp"
 #include "TextureManager.hpp"
+#include "ScriptEngine.hpp"
+#include "Components/Behavior.hpp"
+#include "Components/Rigidbody2D.hpp"
 
 #include <pugixml.hpp>
 
-#include "ScriptEngine.hpp"
-#include "Components/Behavior.hpp"
-
 namespace Nth {
+    static Rigidbody2DDescriptor ParseRigidbodyComponent(const pugi::xml_node& rigidbodyNode) {
+        Rigidbody2DDescriptor rigidbody {};
+
+        if (const auto node = rigidbodyNode.child("BodyType")) { rigidbody.type = node.child_value(); }
+        if (const auto node = rigidbodyNode.child("Velocity")) {
+            rigidbody.velocity.x = node.attribute("x").as_float();
+            rigidbody.velocity.y = node.attribute("y").as_float();
+        }
+        if (const auto node = rigidbodyNode.child("Acceleration")) {
+            rigidbody.acceleration.x = node.attribute("x").as_float();
+            rigidbody.acceleration.y = node.attribute("y").as_float();
+        }
+        if (const auto node = rigidbodyNode.child("Force")) {
+            rigidbody.force.x = node.attribute("x").as_float();
+            rigidbody.force.y = node.attribute("y").as_float();
+        }
+        if (const auto node = rigidbodyNode.child("AngularVelocity")) {
+            rigidbody.angularVelocity = StringToF32(node.child_value());
+        }
+        if (const auto node = rigidbodyNode.child("AngularAcceleration")) {
+            rigidbody.angularAcceleration = StringToF32(node.child_value());
+        }
+        if (const auto node = rigidbodyNode.child("Torque")) { rigidbody.torque = StringToF32(node.child_value()); }
+        if (const auto node = rigidbodyNode.child("Mass")) { rigidbody.mass = StringToF32(node.child_value()); }
+        if (const auto node = rigidbodyNode.child("InverseMass")) {
+            rigidbody.inverseMass = StringToF32(node.child_value());
+        }
+        if (const auto node = rigidbodyNode.child("Inertia")) { rigidbody.inertia = StringToF32(node.child_value()); }
+        if (const auto node = rigidbodyNode.child("InverseInertia")) {
+            rigidbody.inverseInertia = StringToF32(node.child_value());
+        }
+        if (const auto node = rigidbodyNode.child("Restitution")) {
+            rigidbody.restitution = StringToF32(node.child_value());
+        }
+        if (const auto node = rigidbodyNode.child("Friction")) { rigidbody.friction = StringToF32(node.child_value()); }
+        if (const auto node = rigidbodyNode.child("LinearDamping")) {
+            rigidbody.linearDamping = StringToF32(node.child_value());
+        }
+        if (const auto node = rigidbodyNode.child("AngularDamping")) {
+            rigidbody.angularDamping = StringToF32(node.child_value());
+        }
+        if (const auto node = rigidbodyNode.child("GravityScale")) {
+            rigidbody.gravityScale = StringToF32(node.child_value());
+        }
+        if (const auto node = rigidbodyNode.child("LockRotation")) {
+            rigidbody.lockRotation = (strcmp(node.child_value(), "true") == 0) ? true : false;
+        }
+
+        return rigidbody;
+    }
+
     static TransformDescriptor ParseTransformComponent(const pugi::xml_node& transformNode) {
         TransformDescriptor transform {};
 
@@ -70,6 +121,10 @@ namespace Nth {
             entity.spriteRenderer = ParseSpriteRendererComponent(node);
         }
 
+        if (const auto node = componentsNode.child("Rigidbody2D")) {
+            entity.rigidbody2D = ParseRigidbodyComponent(node);
+        }
+
         if (const auto node = componentsNode.child("Behavior")) { entity.behavior = ParseBehaviorComponent(node); }
     }
 
@@ -102,6 +157,39 @@ namespace Nth {
                 auto& [id, script] = outState.AddComponent<Behavior>(newEntity);
                 id                 = entity.behavior->id;
                 script             = entity.behavior->script;
+            }
+
+            if (entity.rigidbody2D.has_value()) {
+                auto desc = *entity.rigidbody2D;
+                // Load rigidbody
+                auto& rigidbody = outState.AddComponent<Rigidbody2D>(newEntity);
+                if (desc.type == "Static") {
+                    rigidbody.type = BodyType::Static;
+                } else if (desc.type == "Dynamic") {
+                    rigidbody.type = BodyType::Dynamic;
+                } else if (desc.type == "Kinematic") {
+                    rigidbody.type = BodyType::Kinematic;
+                } else {
+                    Log::Error("SceneParser", "BodyType incorrect for Rigidbody2D component: {}", desc.type);
+                    return;
+                }
+
+                rigidbody.velocity            = desc.velocity;
+                rigidbody.acceleration        = desc.acceleration;
+                rigidbody.force               = desc.force;
+                rigidbody.angularVelocity     = desc.angularVelocity;
+                rigidbody.angularAcceleration = desc.angularAcceleration;
+                rigidbody.torque              = desc.torque;
+                rigidbody.mass                = desc.mass;
+                rigidbody.inverseMass         = desc.inverseMass;
+                rigidbody.inertia             = desc.inertia;
+                rigidbody.inverseInertia      = desc.inverseInertia;
+                rigidbody.restitution         = desc.restitution;
+                rigidbody.friction            = desc.friction;
+                rigidbody.linearDamping       = desc.linearDamping;
+                rigidbody.angularDamping      = desc.angularDamping;
+                rigidbody.gravityScale        = desc.gravityScale;
+                rigidbody.lockRotation        = desc.lockRotation;
             }
         }
     }
