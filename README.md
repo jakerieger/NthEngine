@@ -1,3 +1,5 @@
+![](Docs/Images/banner.png)
+
 # Astera
 
 Astera is a cross-platform, 2D game engine written in C++. It uses OpenGL for rendering, Lua for
