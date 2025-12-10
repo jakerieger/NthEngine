@@ -32,6 +32,7 @@ var class_nth_1_1_game =
     [ "Resize", "class_nth_1_1_game.html#a54b815529b9c2ad7d4988c1ddd60298c", null ],
     [ "Run", "class_nth_1_1_game.html#a81d49b3cad0421e1760b24be2b40674d", null ],
     [ "SetTitle", "class_nth_1_1_game.html#aed3cb6d7e14fc97b29e3dca4c8dc4003", null ],
+    [ "SetWindowIcon", "class_nth_1_1_game.html#a2746d2787483e7b356c2074726118c07", null ],
     [ "ToggleFullscreen", "class_nth_1_1_game.html#a41c6a5336bd38670d1c287d78446b000", null ],
     [ "mFullscreen", "class_nth_1_1_game.html#ac251b818484d44b5fd7ead8ac5c2ccc8", null ],
     [ "mHeight", "class_nth_1_1_game.html#a24649cb44c1e27701a8a8e6615a74ee2", null ],

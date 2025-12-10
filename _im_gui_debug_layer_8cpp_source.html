@@ -172,39 +172,40 @@ $(document).ready(function(){initNavTree('_im_gui_debug_layer_8cpp_source.html',
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        ImGui::CreateContext();</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        ImGuiIO&amp; io = ImGui::GetIO();</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        ImGui_ImplGlfw_InitForOpenGL(window, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        ImGui_ImplOpenGL3_Init(<span class="stringliteral">&quot;#version 460&quot;</span>);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <a class="code hl_function" href="class_nth_1_1_log.html#ad387a416f2413b52514e28cceb73abff">Log::Info</a>(<span class="stringliteral">&quot;ImGuiDebugLayer&quot;</span>, <span class="stringliteral">&quot;Debug layer initialized&quot;</span>);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> ImGuiDebugLayer::ShutdownImGui()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        N_UNUSED(<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        ImGui_ImplOpenGL3_Shutdown();</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        ImGui_ImplGlfw_Shutdown();</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        ImGui::DestroyContext();</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">void</span> ImGuiDebugLayer::DrawPerformanceOverlay() {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        ImGui::SetNextWindowPos({0, 0});</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        ImGui::Begin(<span class="stringliteral">&quot;Performance&quot;</span>,</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                     <span class="keyword">nullptr</span>,</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                     ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoMove |</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                       ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoBackground);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        ImGui::Text(<span class="stringliteral">&quot;%.1f FPS&quot;</span>, ImGui::GetIO().Framerate);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keyword">static</span> <span class="keywordtype">float</span> values[90]  = {};</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keyword">static</span> <span class="keywordtype">int</span> values_offset = 0;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        values[values_offset]    = ImGui::GetIO().Framerate;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        values_offset            = (values_offset + 1) % IM_ARRAYSIZE(values);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        ImGui::PlotLines(<span class="stringliteral">&quot;FPS&quot;</span>, values, IM_ARRAYSIZE(values), values_offset, <span class="keyword">nullptr</span>, 0.0f, 100.0f, ImVec2(0, 80));</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        ImGui::End();</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}  <span class="comment">// namespace Nth</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        io.IniFilename = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        ImGui_ImplGlfw_InitForOpenGL(window, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        ImGui_ImplOpenGL3_Init(<span class="stringliteral">&quot;#version 460&quot;</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <a class="code hl_function" href="class_nth_1_1_log.html#ad387a416f2413b52514e28cceb73abff">Log::Info</a>(<span class="stringliteral">&quot;ImGuiDebugLayer&quot;</span>, <span class="stringliteral">&quot;Debug layer initialized&quot;</span>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">void</span> ImGuiDebugLayer::ShutdownImGui()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        N_UNUSED(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        ImGui_ImplOpenGL3_Shutdown();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        ImGui_ImplGlfw_Shutdown();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        ImGui::DestroyContext();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> ImGuiDebugLayer::DrawPerformanceOverlay() {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        ImGui::SetNextWindowPos({0, 0});</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        ImGui::Begin(<span class="stringliteral">&quot;Performance&quot;</span>,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                     <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                     ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoMove |</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                       ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoBackground);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        ImGui::Text(<span class="stringliteral">&quot;%.1f FPS&quot;</span>, ImGui::GetIO().Framerate);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keyword">static</span> <span class="keywordtype">float</span> values[90]  = {};</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keyword">static</span> <span class="keywordtype">int</span> values_offset = 0;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        values[values_offset]    = ImGui::GetIO().Framerate;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        values_offset            = (values_offset + 1) % IM_ARRAYSIZE(values);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        ImGui::PlotLines(<span class="stringliteral">&quot;FPS&quot;</span>, values, IM_ARRAYSIZE(values), values_offset, <span class="keyword">nullptr</span>, 0.0f, 100.0f, ImVec2(0, 80));</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        ImGui::End();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}  <span class="comment">// namespace Nth</span></div>
 <div class="ttc" id="a_im_gui_debug_layer_8hpp_html"><div class="ttname"><a href="_im_gui_debug_layer_8hpp.html">ImGuiDebugLayer.hpp</a></div></div>
 <div class="ttc" id="a_log_8hpp_html"><div class="ttname"><a href="_log_8hpp.html">Log.hpp</a></div></div>
 <div class="ttc" id="aclass_nth_1_1_im_gui_debug_layer_html_a179b3d1b04d72838970e846ed66a6be1"><div class="ttname"><a href="class_nth_1_1_im_gui_debug_layer.html#a179b3d1b04d72838970e846ed66a6be1">Nth::ImGuiDebugLayer::ImGuiDebugLayer</a></div><div class="ttdeci">ImGuiDebugLayer(GLFWwindow *window)</div><div class="ttdef"><b>Definition</b> <a href="_im_gui_debug_layer_8cpp_source.html#l00038">ImGuiDebugLayer.cpp:38</a></div></div>

@@ -1,5 +1,6 @@
 var class_nth_1_1_debug_manager =
 [
+    [ "DebugManager", "class_nth_1_1_debug_manager.html#a1b739bf8663beb6b3b3746401eab1a39", null ],
     [ "~DebugManager", "class_nth_1_1_debug_manager.html#afdac52ac895364bb74f2abce124797dc", null ],
     [ "AttachOverlay", "class_nth_1_1_debug_manager.html#abdb5ad9510f6937fd335b91f971e217c", null ],
     [ "DetachOverlays", "class_nth_1_1_debug_manager.html#ad5edce6a728e6fa86c14a46afe398d69", null ],

@@ -3,7 +3,7 @@ var searchData=
   ['debug_0',['Debug',['../class_nth_1_1_log.html#ae0272636802a7da7ae86032bb33d5b7d',1,'Nth::Log']]],
   ['debuginterface_2ecpp_1',['DebugInterface.cpp',['../_debug_interface_8cpp.html',1,'']]],
   ['debuginterface_2ehpp_2',['DebugInterface.hpp',['../_debug_interface_8hpp.html',1,'']]],
-  ['debugmanager_3',['DebugManager',['../class_nth_1_1_debug_manager.html',1,'Nth']]],
+  ['debugmanager_3',['debugmanager',['../class_nth_1_1_debug_manager.html',1,'Nth::DebugManager'],['../class_nth_1_1_debug_manager.html#a1b739bf8663beb6b3b3746401eab1a39',1,'Nth::DebugManager::DebugManager()']]],
   ['degtorad_4',['DegToRad',['../class_nth_1_1_math.html#af6e9633116c288911c3cd1a3d74e0521',1,'Nth::Math']]],
   ['desaturate_5',['Desaturate',['../class_nth_1_1_color.html#add3e951a719e9a1acc3ee499a7f9473c',1,'Nth::Color']]],
   ['descriptortostate_6',['DescriptorToState',['../class_nth_1_1_scene_parser.html#a40664b72c50799d80ec5098172110eaf',1,'Nth::SceneParser']]],

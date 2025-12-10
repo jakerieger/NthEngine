@@ -18,7 +18,7 @@ var searchData=
   ['resetmousedeltas_15',['ResetMouseDeltas',['../class_nth_1_1_input_manager.html#a49b889359fbd004893b121eee25595fa',1,'Nth::InputManager']]],
   ['resize_16',['resize',['../class_nth_1_1_render_context.html#a664aaad2878229f18ed003491287dfd7',1,'Nth::RenderContext::Resize()'],['../class_nth_1_1_game.html#a54b815529b9c2ad7d4988c1ddd60298c',1,'Nth::Game::Resize()']]],
   ['restitution_17',['restitution',['../struct_nth_1_1_rigidbody2_d.html#a851f9ff3ac0cc3cadc0be709ce964096',1,'Nth::Rigidbody2D::restitution'],['../struct_nth_1_1_rigidbody2_d_descriptor.html#ab419f07fac1bf5427275e27791f375da',1,'Nth::Rigidbody2DDescriptor::restitution']]],
-  ['rigidbody2d_18',['rigidbody2d',['../struct_nth_1_1_rigidbody2_d.html',1,'Nth::Rigidbody2D'],['../struct_nth_1_1_rigidbody2_d.html#a6bcd3bbc20aa187c50982447b3f250c2',1,'Nth::Rigidbody2D::Rigidbody2D()'],['../struct_nth_1_1_entity_descriptor.html#a96053f370252b8be5373c2276c87b31a',1,'Nth::EntityDescriptor::rigidbody2D']]],
+  ['rigidbody2d_18',['rigidbody2d',['../struct_nth_1_1_rigidbody2_d.html',1,'Nth::Rigidbody2D'],['../struct_nth_1_1_entity_descriptor.html#a96053f370252b8be5373c2276c87b31a',1,'Nth::EntityDescriptor::rigidbody2D'],['../struct_nth_1_1_rigidbody2_d.html#a6bcd3bbc20aa187c50982447b3f250c2',1,'Nth::Rigidbody2D::Rigidbody2D()']]],
   ['rigidbody2d_2ecpp_19',['Rigidbody2D.cpp',['../_rigidbody2_d_8cpp.html',1,'']]],
   ['rigidbody2d_2ehpp_20',['Rigidbody2D.hpp',['../_rigidbody2_d_8hpp.html',1,'']]],
   ['rigidbody2ddescriptor_21',['Rigidbody2DDescriptor',['../struct_nth_1_1_rigidbody2_d_descriptor.html',1,'Nth']]],

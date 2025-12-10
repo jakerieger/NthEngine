@@ -152,36 +152,38 @@ $(document).ready(function(){initNavTree('_debug_interface_8hpp_source.html','')
 <div class="foldopen" id="foldopen00057" data-start="{" data-end="};">
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_nth_1_1_debug_manager.html">   57</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_nth_1_1_debug_manager.html">DebugManager</a> {</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_function" href="class_nth_1_1_debug_manager.html#afdac52ac895364bb74f2abce124797dc">~DebugManager</a>();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        N_CLASS_PREVENT_MOVES_COPIES(<a class="code hl_class" href="class_nth_1_1_debug_manager.html">DebugManager</a>)</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_debug_manager.html#abdb5ad9510f6937fd335b91f971e217c">AttachOverlay</a>(<span class="keyword">const</span> std::string&amp; name, <a class="code hl_class" href="class_nth_1_1_i_debug_overlay.html">IDebugOverlay</a>* overlay);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_debug_manager.html#ad5edce6a728e6fa86c14a46afe398d69">DetachOverlays</a>();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_debug_manager.html#af263b7acdad51a38ce696a8b81128057">SetOverlayEnabled</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_nth_1_1_debug_manager.html#afd733b8554b5b7db0e6ae6c6fb82844e">GetOverlayEnabled</a>(<span class="keyword">const</span> std::string&amp; name) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_debug_manager.html#a458df2c61d9029127e0eb967ca110678">Update</a>(<span class="keywordtype">float</span> deltaTime) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_debug_manager.html#a87d6287e22c433e6e40f4999a5f0fb9a">Render</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_debug_manager.html#ace3c18e1ece62d4ec20fac674fba1962">HandleEvent</a>(<span class="keyword">const</span> Event&amp; event) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keyword">struct </span>Overlay {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <a class="code hl_class" href="class_nth_1_1_i_debug_overlay.html">IDebugOverlay</a>* overlay {<span class="keyword">nullptr</span>};</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordtype">bool</span> enabled {<span class="keyword">true</span>};</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        };</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        std::unordered_map&lt;std::string, Overlay&gt; mOverlays;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    };</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_nth_1_1_debug_manager.html#a1b739bf8663beb6b3b3746401eab1a39">   59</a></span>        <a class="code hl_function" href="class_nth_1_1_debug_manager.html#a1b739bf8663beb6b3b3746401eab1a39">DebugManager</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <a class="code hl_function" href="class_nth_1_1_debug_manager.html#afdac52ac895364bb74f2abce124797dc">~DebugManager</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        N_CLASS_PREVENT_MOVES_COPIES(<a class="code hl_class" href="class_nth_1_1_debug_manager.html">DebugManager</a>)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_debug_manager.html#abdb5ad9510f6937fd335b91f971e217c">AttachOverlay</a>(<span class="keyword">const</span> std::string&amp; name, <a class="code hl_class" href="class_nth_1_1_i_debug_overlay.html">IDebugOverlay</a>* overlay);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_debug_manager.html#ad5edce6a728e6fa86c14a46afe398d69">DetachOverlays</a>();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_debug_manager.html#af263b7acdad51a38ce696a8b81128057">SetOverlayEnabled</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_nth_1_1_debug_manager.html#afd733b8554b5b7db0e6ae6c6fb82844e">GetOverlayEnabled</a>(<span class="keyword">const</span> std::string&amp; name) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_debug_manager.html#a458df2c61d9029127e0eb967ca110678">Update</a>(<span class="keywordtype">float</span> deltaTime) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_debug_manager.html#a87d6287e22c433e6e40f4999a5f0fb9a">Render</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_debug_manager.html#ace3c18e1ece62d4ec20fac674fba1962">HandleEvent</a>(<span class="keyword">const</span> Event&amp; event) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keyword">struct </span>Overlay {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <a class="code hl_class" href="class_nth_1_1_i_debug_overlay.html">IDebugOverlay</a>* overlay {<span class="keyword">nullptr</span>};</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordtype">bool</span> enabled {<span class="keyword">true</span>};</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        };</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        std::unordered_map&lt;std::string, Overlay&gt; mOverlays;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    };</div>
 </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}  <span class="comment">// namespace Nth</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}  <span class="comment">// namespace Nth</span></div>
 <div class="ttc" id="aclass_nth_1_1_debug_manager_html"><div class="ttname"><a href="class_nth_1_1_debug_manager.html">Nth::DebugManager</a></div><div class="ttdoc">Manages debug overlays for the engine.</div><div class="ttdef"><b>Definition</b> <a href="_debug_interface_8hpp_source.html#l00057">DebugInterface.hpp:57</a></div></div>
+<div class="ttc" id="aclass_nth_1_1_debug_manager_html_a1b739bf8663beb6b3b3746401eab1a39"><div class="ttname"><a href="class_nth_1_1_debug_manager.html#a1b739bf8663beb6b3b3746401eab1a39">Nth::DebugManager::DebugManager</a></div><div class="ttdeci">DebugManager()=default</div></div>
 <div class="ttc" id="aclass_nth_1_1_debug_manager_html_a458df2c61d9029127e0eb967ca110678"><div class="ttname"><a href="class_nth_1_1_debug_manager.html#a458df2c61d9029127e0eb967ca110678">Nth::DebugManager::Update</a></div><div class="ttdeci">void Update(float deltaTime) const</div><div class="ttdoc">Updates all enabled debug overlays.</div><div class="ttdef"><b>Definition</b> <a href="_debug_interface_8cpp_source.html#l00058">DebugInterface.cpp:58</a></div></div>
 <div class="ttc" id="aclass_nth_1_1_debug_manager_html_a87d6287e22c433e6e40f4999a5f0fb9a"><div class="ttname"><a href="class_nth_1_1_debug_manager.html#a87d6287e22c433e6e40f4999a5f0fb9a">Nth::DebugManager::Render</a></div><div class="ttdeci">void Render() const</div><div class="ttdoc">Renders all enabled debug overlays.</div><div class="ttdef"><b>Definition</b> <a href="_debug_interface_8cpp_source.html#l00064">DebugInterface.cpp:64</a></div></div>
 <div class="ttc" id="aclass_nth_1_1_debug_manager_html_abdb5ad9510f6937fd335b91f971e217c"><div class="ttname"><a href="class_nth_1_1_debug_manager.html#abdb5ad9510f6937fd335b91f971e217c">Nth::DebugManager::AttachOverlay</a></div><div class="ttdeci">void AttachOverlay(const std::string &amp;name, IDebugOverlay *overlay)</div><div class="ttdoc">Attaches a debug overlay to the manager.</div><div class="ttdef"><b>Definition</b> <a href="_debug_interface_8cpp_source.html#l00037">DebugInterface.cpp:37</a></div></div>
