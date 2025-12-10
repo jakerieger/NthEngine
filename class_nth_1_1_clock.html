@@ -98,30 +98,43 @@ $(document).ready(function(){initNavTree('class_nth_1_1_clock.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
+<p>High-precision clock for timing and frame rate tracking.  
+ <a href="class_nth_1_1_clock.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_clock_8hpp_source.html">Clock.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a45325b414d3a15c198862b6584124bf6" id="r_a45325b414d3a15c198862b6584124bf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_clock.html#a45325b414d3a15c198862b6584124bf6">Clock</a> ()</td></tr>
+<tr class="memdesc:a45325b414d3a15c198862b6584124bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs and initializes the clock.  <br /></td></tr>
 <tr class="separator:a45325b414d3a15c198862b6584124bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a216cf37aa34c4db3959c6d85fe92ec21" id="r_a216cf37aa34c4db3959c6d85fe92ec21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_clock.html#a216cf37aa34c4db3959c6d85fe92ec21">Tick</a> ()</td></tr>
+<tr class="memdesc:a216cf37aa34c4db3959c6d85fe92ec21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the clock and calculates time deltas.  <br /></td></tr>
 <tr class="separator:a216cf37aa34c4db3959c6d85fe92ec21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe4ac2b110c6ab550c1cd81e72a60780" id="r_afe4ac2b110c6ab550c1cd81e72a60780"><td class="memItemLeft" align="right" valign="top">N_ND f64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_clock.html#afe4ac2b110c6ab550c1cd81e72a60780">GetDeltaTimePrecise</a> () const</td></tr>
+<tr class="memdesc:afe4ac2b110c6ab550c1cd81e72a60780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the precise time elapsed since the last tick.  <br /></td></tr>
 <tr class="separator:afe4ac2b110c6ab550c1cd81e72a60780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0285004652d6f1a6a7b8b34a0f9fbf0" id="r_af0285004652d6f1a6a7b8b34a0f9fbf0"><td class="memItemLeft" align="right" valign="top">N_ND f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_clock.html#af0285004652d6f1a6a7b8b34a0f9fbf0">GetDeltaTime</a> () const</td></tr>
+<tr class="memdesc:af0285004652d6f1a6a7b8b34a0f9fbf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the time elapsed since the last tick.  <br /></td></tr>
 <tr class="separator:af0285004652d6f1a6a7b8b34a0f9fbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae439681590d1123f33436f108f9c0060" id="r_ae439681590d1123f33436f108f9c0060"><td class="memItemLeft" align="right" valign="top">N_ND f64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_clock.html#ae439681590d1123f33436f108f9c0060">GetTotalTime</a> () const</td></tr>
+<tr class="memdesc:ae439681590d1123f33436f108f9c0060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the total time elapsed since clock creation.  <br /></td></tr>
 <tr class="separator:ae439681590d1123f33436f108f9c0060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cd9fb3ae6a50a606628a7712cfe3d0b" id="r_a8cd9fb3ae6a50a606628a7712cfe3d0b"><td class="memItemLeft" align="right" valign="top">N_ND f64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_clock.html#a8cd9fb3ae6a50a606628a7712cfe3d0b">GetFramesPerSecond</a> () const</td></tr>
+<tr class="memdesc:a8cd9fb3ae6a50a606628a7712cfe3d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current frames per second.  <br /></td></tr>
 <tr class="separator:a8cd9fb3ae6a50a606628a7712cfe3d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ce74379371ff366e163918ffa06865f" id="r_a4ce74379371ff366e163918ffa06865f"><td class="memItemLeft" align="right" valign="top">N_ND u64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_clock.html#a4ce74379371ff366e163918ffa06865f">GetRawCounter</a> () const</td></tr>
+<tr class="memdesc:a4ce74379371ff366e163918ffa06865f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the raw high-resolution counter value.  <br /></td></tr>
 <tr class="separator:a4ce74379371ff366e163918ffa06865f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16eca9d3d7531ead66ad5a42ba33dcea" id="r_a16eca9d3d7531ead66ad5a42ba33dcea"><td class="memItemLeft" align="right" valign="top">N_ND u64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_clock.html#a16eca9d3d7531ead66ad5a42ba33dcea">GetCounterFrequency</a> () const</td></tr>
+<tr class="memdesc:a16eca9d3d7531ead66ad5a42ba33dcea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the frequency of the high-resolution counter.  <br /></td></tr>
 <tr class="separator:a16eca9d3d7531ead66ad5a42ba33dcea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_clock_8hpp_source.html#l00016">16</a> of file <a class="el" href="_clock_8hpp_source.html">Clock.hpp</a>.</p>
+<div class="textblock"><p>High-precision clock for timing and frame rate tracking. </p>
+<p>Provides accurate time measurements for delta time calculation, frame rate monitoring, and total elapsed time tracking. Uses platform-specific high-resolution timers (QueryPerformanceCounter on Windows, clock_gettime on other platforms). </p>
+
+<p class="definition">Definition at line <a class="el" href="_clock_8hpp_source.html#l00021">21</a> of file <a class="el" href="_clock_8hpp_source.html">Clock.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a45325b414d3a15c198862b6584124bf6" name="a45325b414d3a15c198862b6584124bf6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a45325b414d3a15c198862b6584124bf6">&#9670;&#160;</a></span>Clock()</h2>
@@ -137,6 +150,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructs and initializes the clock. </p>
+<p>Queries the system's high-resolution timer frequency and sets the initial time. </p>
 
 <p class="definition">Definition at line <a class="el" href="_clock_8cpp_source.html#l00007">7</a> of file <a class="el" href="_clock_8cpp_source.html">Clock.cpp</a>.</p>
 
@@ -158,6 +174,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gets the frequency of the high-resolution counter. </p>
+<dl class="section return"><dt>Returns</dt><dd>Counter frequency in ticks per second </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_clock_8cpp_source.html#l00084">84</a> of file <a class="el" href="_clock_8cpp_source.html">Clock.cpp</a>.</p>
 
 </div>
@@ -176,6 +195,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the time elapsed since the last tick. </p>
+<dl class="section return"><dt>Returns</dt><dd>Delta time in seconds as a single-precision value </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_clock_8cpp_source.html#l00059">59</a> of file <a class="el" href="_clock_8cpp_source.html">Clock.cpp</a>.</p>
 
@@ -196,6 +218,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gets the precise time elapsed since the last tick. </p>
+<dl class="section return"><dt>Returns</dt><dd>Delta time in seconds as a double-precision value </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_clock_8cpp_source.html#l00055">55</a> of file <a class="el" href="_clock_8cpp_source.html">Clock.cpp</a>.</p>
 
 </div>
@@ -214,6 +239,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the current frames per second. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current FPS (updated at regular intervals, not every frame) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_clock_8cpp_source.html#l00067">67</a> of file <a class="el" href="_clock_8cpp_source.html">Clock.cpp</a>.</p>
 
@@ -234,6 +262,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gets the raw high-resolution counter value. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current counter value in platform-specific ticks </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_clock_8cpp_source.html#l00072">72</a> of file <a class="el" href="_clock_8cpp_source.html">Clock.cpp</a>.</p>
 
 </div>
@@ -253,6 +284,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gets the total time elapsed since clock creation. </p>
+<dl class="section return"><dt>Returns</dt><dd>Total elapsed time in seconds </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_clock_8cpp_source.html#l00063">63</a> of file <a class="el" href="_clock_8cpp_source.html">Clock.cpp</a>.</p>
 
 </div>
@@ -271,6 +305,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Updates the clock and calculates time deltas. </p>
+<p>Should be called once per frame to update delta time, total time, and FPS. Automatically tracks frame count and updates FPS at regular intervals. </p>
 
 <p class="definition">Definition at line <a class="el" href="_clock_8cpp_source.html#l00028">28</a> of file <a class="el" href="_clock_8cpp_source.html">Clock.cpp</a>.</p>
 
