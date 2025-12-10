@@ -346,37 +346,39 @@ $(document).ready(function(){initNavTree('_scene_parser_8cpp_source.html',''); i
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> entitiesNode = sceneNode.child(<span class="stringliteral">&quot;Entities&quot;</span>)) {</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> entityNode : entitiesNode.children(<span class="stringliteral">&quot;Entity&quot;</span>)) {</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                <a class="code hl_struct" href="struct_nth_1_1_entity_descriptor.html">EntityDescriptor</a> entity {};</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                ParseEntity(entityNode, entity);</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                outDescriptor.<a class="code hl_variable" href="struct_nth_1_1_scene_descriptor.html#a1210e789dc8851d1b7fa0cd8e0af946c">entities</a>.push_back(entity);</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            }</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        }</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    }</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                entity.<a class="code hl_variable" href="struct_nth_1_1_entity_descriptor.html#a45961292ae1338087fc1791e6a455ad7">id</a> = entityNode.attribute(<span class="stringliteral">&quot;id&quot;</span>).as_int();</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                ParseEntity(entityNode, entity);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                outDescriptor.<a class="code hl_variable" href="struct_nth_1_1_scene_descriptor.html#a1210e789dc8851d1b7fa0cd8e0af946c">entities</a>.push_back(entity);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            }</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        }</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    }</div>
 </div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="foldopen" id="foldopen00247" data-start="{" data-end="}">
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_parser.html#a1cffca0dbb6c34c351ab476728831b76">  247</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_scene_parser.html#a9889f27e6ece6f5919a57422dae2f1d8">SceneParser::DeserializeDescriptor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; source, <a class="code hl_struct" href="struct_nth_1_1_scene_descriptor.html">SceneDescriptor</a>&amp; outDescriptor) {</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        pugi::xml_document doc;</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <span class="keyword">const</span> pugi::xml_parse_result result = doc.load_string(source.c_str());</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordflow">if</span> (!result) { <span class="keywordflow">throw</span> std::runtime_error(fmt::format(<span class="stringliteral">&quot;XML parsing error: {}&quot;</span>, result.description())); }</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        <span class="keyword">const</span> <span class="keyword">auto</span> sceneNode = doc.child(<span class="stringliteral">&quot;Scene&quot;</span>);</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        <span class="keywordflow">if</span> (!sceneNode) { <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;No scene node found&quot;</span>); }</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        <span class="comment">// Parse scene name</span></div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        outDescriptor.<a class="code hl_variable" href="struct_nth_1_1_scene_descriptor.html#a412afd1c90e9292e48d5f60579458c7b">name</a> = sceneNode.attribute(<span class="stringliteral">&quot;name&quot;</span>).as_string();</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        <span class="comment">// Parse entities</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> entitiesNode = sceneNode.child(<span class="stringliteral">&quot;Entities&quot;</span>)) {</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <span class="keywordflow">for</span> (pugi::xml_node entityNode : entitiesNode.children(<span class="stringliteral">&quot;Entity&quot;</span>)) {</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>                <a class="code hl_struct" href="struct_nth_1_1_entity_descriptor.html">EntityDescriptor</a> entity {};</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                ParseEntity(entityNode, entity);</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                outDescriptor.<a class="code hl_variable" href="struct_nth_1_1_scene_descriptor.html#a1210e789dc8851d1b7fa0cd8e0af946c">entities</a>.push_back(entity);</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            }</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        }</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    }</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="foldopen" id="foldopen00248" data-start="{" data-end="}">
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="class_nth_1_1_scene_parser.html#a1cffca0dbb6c34c351ab476728831b76">  248</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_nth_1_1_scene_parser.html#a9889f27e6ece6f5919a57422dae2f1d8">SceneParser::DeserializeDescriptor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; source, <a class="code hl_struct" href="struct_nth_1_1_scene_descriptor.html">SceneDescriptor</a>&amp; outDescriptor) {</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        pugi::xml_document doc;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        <span class="keyword">const</span> pugi::xml_parse_result result = doc.load_string(source.c_str());</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        <span class="keywordflow">if</span> (!result) { <span class="keywordflow">throw</span> std::runtime_error(fmt::format(<span class="stringliteral">&quot;XML parsing error: {}&quot;</span>, result.description())); }</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        <span class="keyword">const</span> <span class="keyword">auto</span> sceneNode = doc.child(<span class="stringliteral">&quot;Scene&quot;</span>);</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <span class="keywordflow">if</span> (!sceneNode) { <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;No scene node found&quot;</span>); }</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <span class="comment">// Parse scene name</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        outDescriptor.<a class="code hl_variable" href="struct_nth_1_1_scene_descriptor.html#a412afd1c90e9292e48d5f60579458c7b">name</a> = sceneNode.attribute(<span class="stringliteral">&quot;name&quot;</span>).as_string();</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <span class="comment">// Parse entities</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> entitiesNode = sceneNode.child(<span class="stringliteral">&quot;Entities&quot;</span>)) {</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            <span class="keywordflow">for</span> (pugi::xml_node entityNode : entitiesNode.children(<span class="stringliteral">&quot;Entity&quot;</span>)) {</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                <a class="code hl_struct" href="struct_nth_1_1_entity_descriptor.html">EntityDescriptor</a> entity {};</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                entity.<a class="code hl_variable" href="struct_nth_1_1_entity_descriptor.html#a45961292ae1338087fc1791e6a455ad7">id</a> = entityNode.attribute(<span class="stringliteral">&quot;id&quot;</span>).as_int();</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                ParseEntity(entityNode, entity);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                outDescriptor.<a class="code hl_variable" href="struct_nth_1_1_scene_descriptor.html#a1210e789dc8851d1b7fa0cd8e0af946c">entities</a>.push_back(entity);</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            }</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        }</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    }</div>
 </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>}  <span class="comment">// namespace Nth</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>}  <span class="comment">// namespace Nth</span></div>
 <div class="ttc" id="a_behavior_8hpp_html"><div class="ttname"><a href="_behavior_8hpp.html">Behavior.hpp</a></div></div>
 <div class="ttc" id="a_content_8hpp_html"><div class="ttname"><a href="_content_8hpp.html">Content.hpp</a></div></div>
 <div class="ttc" id="a_log_8hpp_html"><div class="ttname"><a href="_log_8hpp.html">Log.hpp</a></div></div>
@@ -407,6 +409,7 @@ $(document).ready(function(){initNavTree('_scene_parser_8cpp_source.html',''); i
 <div class="ttc" id="astruct_nth_1_1_behavior_html"><div class="ttname"><a href="struct_nth_1_1_behavior.html">Nth::Behavior</a></div><div class="ttdef"><b>Definition</b> <a href="_behavior_8hpp_source.html#l00034">Behavior.hpp:34</a></div></div>
 <div class="ttc" id="astruct_nth_1_1_behavior_html_a0c7f977539eb6e78a1e9fb1ad6c051b6"><div class="ttname"><a href="struct_nth_1_1_behavior.html#a0c7f977539eb6e78a1e9fb1ad6c051b6">Nth::Behavior::id</a></div><div class="ttdeci">u64 id</div><div class="ttdef"><b>Definition</b> <a href="_behavior_8hpp_source.html#l00035">Behavior.hpp:35</a></div></div>
 <div class="ttc" id="astruct_nth_1_1_entity_descriptor_html"><div class="ttname"><a href="struct_nth_1_1_entity_descriptor.html">Nth::EntityDescriptor</a></div><div class="ttdef"><b>Definition</b> <a href="_scene_descriptor_8hpp_source.html#l00069">SceneDescriptor.hpp:69</a></div></div>
+<div class="ttc" id="astruct_nth_1_1_entity_descriptor_html_a45961292ae1338087fc1791e6a455ad7"><div class="ttname"><a href="struct_nth_1_1_entity_descriptor.html#a45961292ae1338087fc1791e6a455ad7">Nth::EntityDescriptor::id</a></div><div class="ttdeci">u32 id</div><div class="ttdef"><b>Definition</b> <a href="_scene_descriptor_8hpp_source.html#l00070">SceneDescriptor.hpp:70</a></div></div>
 <div class="ttc" id="astruct_nth_1_1_rigidbody2_d_descriptor_html_ac2b6ff324893dbdfe8ef98c840ef1189"><div class="ttname"><a href="struct_nth_1_1_rigidbody2_d_descriptor.html#ac2b6ff324893dbdfe8ef98c840ef1189">Nth::Rigidbody2DDescriptor::type</a></div><div class="ttdeci">string type</div><div class="ttdef"><b>Definition</b> <a href="_scene_descriptor_8hpp_source.html#l00035">SceneDescriptor.hpp:35</a></div></div>
 <div class="ttc" id="astruct_nth_1_1_rigidbody2_d_html"><div class="ttname"><a href="struct_nth_1_1_rigidbody2_d.html">Nth::Rigidbody2D</a></div><div class="ttdoc">2D rigid body physics component for dynamic simulation</div><div class="ttdef"><b>Definition</b> <a href="_rigidbody2_d_8hpp_source.html#l00045">Rigidbody2D.hpp:45</a></div></div>
 <div class="ttc" id="astruct_nth_1_1_rigidbody2_d_html_a4432c663c279c75dc90f872200ad7dea"><div class="ttname"><a href="struct_nth_1_1_rigidbody2_d.html#a4432c663c279c75dc90f872200ad7dea">Nth::Rigidbody2D::type</a></div><div class="ttdeci">BodyType type</div><div class="ttdoc">Type of physics body (Dynamic, Kinematic, or Static)</div><div class="ttdef"><b>Definition</b> <a href="_rigidbody2_d_8hpp_source.html#l00047">Rigidbody2D.hpp:47</a></div></div>
