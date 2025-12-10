@@ -98,16 +98,22 @@ $(document).ready(function(){initNavTree('structstd_1_1hash_3_01_nth_1_1_color_0
 </div><!--header-->
 <div class="contents">
 
+<p>std::hash specialization for Color to allow usage in unordered containers  
+ <a href="structstd_1_1hash_3_01_nth_1_1_color_01_4.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_color_8hpp_source.html">Color.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af673578f4ebf68cf2c9e38435a0f1c3b" id="r_af673578f4ebf68cf2c9e38435a0f1c3b"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01_nth_1_1_color_01_4.html#af673578f4ebf68cf2c9e38435a0f1c3b">operator()</a> (const <a class="el" href="class_nth_1_1_color.html">Nth::Color</a> &amp;color) const noexcept</td></tr>
+<tr class="memdesc:af673578f4ebf68cf2c9e38435a0f1c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes hash value for a Color.  <br /></td></tr>
 <tr class="separator:af673578f4ebf68cf2c9e38435a0f1c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_color_8hpp_source.html#l00143">143</a> of file <a class="el" href="_color_8hpp_source.html">Color.hpp</a>.</p>
+<div class="textblock"><p>std::hash specialization for Color to allow usage in unordered containers </p>
+<p>Enables Color to be used as a key in std::unordered_map, std::unordered_set, etc. Hash is computed from the 32-bit ARGB representation. </p>
+
+<p class="definition">Definition at line <a class="el" href="_color_8hpp_source.html#l00372">372</a> of file <a class="el" href="_color_8hpp_source.html">Color.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af673578f4ebf68cf2c9e38435a0f1c3b" name="af673578f4ebf68cf2c9e38435a0f1c3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af673578f4ebf68cf2c9e38435a0f1c3b">&#9670;&#160;</a></span>operator()()</h2>
@@ -133,7 +139,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8hpp_source.html#l00144">144</a> of file <a class="el" href="_color_8hpp_source.html">Color.hpp</a>.</p>
+<p>Computes hash value for a Color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>Color to hash </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Hash value based on 32-bit ARGB representation </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_color_8hpp_source.html#l00376">376</a> of file <a class="el" href="_color_8hpp_source.html">Color.hpp</a>.</p>
 
 </div>
 </div>

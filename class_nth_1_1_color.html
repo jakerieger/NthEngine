@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('class_nth_1_1_color.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
-<p>Encapsulation for representing colors.  
+<p>Encapsulation for representing and manipulating colors.  
  <a href="class_nth_1_1_color.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_color_8hpp_source.html">Color.hpp</a>&gt;</code></p>
@@ -107,108 +107,153 @@ $(document).ready(function(){initNavTree('class_nth_1_1_color.html',''); initRes
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a36d6f21ea84f0d4be5885582011e6342" id="r_a36d6f21ea84f0d4be5885582011e6342"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a36d6f21ea84f0d4be5885582011e6342">Color</a> ()=<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">default</a></td></tr>
+<tr class="memdesc:a36d6f21ea84f0d4be5885582011e6342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor, creates a transparent black color (0, 0, 0, 1)  <br /></td></tr>
 <tr class="separator:a36d6f21ea84f0d4be5885582011e6342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43f61fd476f0003ab6678bd59bdd5ef0" id="r_a43f61fd476f0003ab6678bd59bdd5ef0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a43f61fd476f0003ab6678bd59bdd5ef0">Color</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">r</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">g</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">b</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">a</a>=1.0f)</td></tr>
+<tr class="memdesc:a43f61fd476f0003ab6678bd59bdd5ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a color from normalized RGBA components.  <br /></td></tr>
 <tr class="separator:a43f61fd476f0003ab6678bd59bdd5ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95ad529ee94c784ef56628bce789792e" id="r_a95ad529ee94c784ef56628bce789792e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a95ad529ee94c784ef56628bce789792e">Color</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> v, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">a</a>=1.0f)</td></tr>
+<tr class="memdesc:a95ad529ee94c784ef56628bce789792e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a grayscale color.  <br /></td></tr>
 <tr class="separator:a95ad529ee94c784ef56628bce789792e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c4b956222dbff8c82606ac5264d86ef" id="r_a7c4b956222dbff8c82606ac5264d86ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a7c4b956222dbff8c82606ac5264d86ef">Color</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">u32</a> color)</td></tr>
+<tr class="memdesc:a7c4b956222dbff8c82606ac5264d86ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a color from a 32-bit ARGB packed integer.  <br /></td></tr>
 <tr class="separator:a7c4b956222dbff8c82606ac5264d86ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fe6c8b7e4540c6a37d96c732b225944" id="r_a6fe6c8b7e4540c6a37d96c732b225944"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a6fe6c8b7e4540c6a37d96c732b225944">Color</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">string</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">hex</a>)</td></tr>
+<tr class="memdesc:a6fe6c8b7e4540c6a37d96c732b225944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a color from a hexadecimal string.  <br /></td></tr>
 <tr class="separator:a6fe6c8b7e4540c6a37d96c732b225944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeed92bfbdbd04e586b40cf11cf7740fb" id="r_aeed92bfbdbd04e586b40cf11cf7740fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#aeed92bfbdbd04e586b40cf11cf7740fb">Color</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">u8</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">r</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">u8</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">g</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">u8</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">b</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">u8</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">a</a>=255)</td></tr>
+<tr class="memdesc:aeed92bfbdbd04e586b40cf11cf7740fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a color from 8-bit RGBA components.  <br /></td></tr>
 <tr class="separator:aeed92bfbdbd04e586b40cf11cf7740fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a524f281f5385228861f7e317c32db23b" id="r_a524f281f5385228861f7e317c32db23b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a524f281f5385228861f7e317c32db23b">Color</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> *color)</td></tr>
+<tr class="memdesc:a524f281f5385228861f7e317c32db23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a color from a float array.  <br /></td></tr>
 <tr class="separator:a524f281f5385228861f7e317c32db23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9b1af62f90090e27ed918cd7b082596" id="r_ab9b1af62f90090e27ed918cd7b082596"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#ab9b1af62f90090e27ed918cd7b082596">Color</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">other</a>)</td></tr>
+<tr class="memdesc:ab9b1af62f90090e27ed918cd7b082596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <br /></td></tr>
 <tr class="separator:ab9b1af62f90090e27ed918cd7b082596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dcac105c78aafffbc2a86086f27139f" id="r_a8dcac105c78aafffbc2a86086f27139f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a8dcac105c78aafffbc2a86086f27139f">operator=</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">other</a>)</td></tr>
+<tr class="memdesc:a8dcac105c78aafffbc2a86086f27139f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator.  <br /></td></tr>
 <tr class="separator:a8dcac105c78aafffbc2a86086f27139f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8e276f117ac851feb73f7e9ffeb33c7" id="r_aa8e276f117ac851feb73f7e9ffeb33c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#aa8e276f117ac851feb73f7e9ffeb33c7">Color</a> (<a class="el" href="class_nth_1_1_color.html">Color</a> &amp;&amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">other</a>) <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">noexcept</a></td></tr>
+<tr class="memdesc:aa8e276f117ac851feb73f7e9ffeb33c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <br /></td></tr>
 <tr class="separator:aa8e276f117ac851feb73f7e9ffeb33c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e777a9c9693a65ad6898c89f4c481d5" id="r_a2e777a9c9693a65ad6898c89f4c481d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a2e777a9c9693a65ad6898c89f4c481d5">operator=</a> (<a class="el" href="class_nth_1_1_color.html">Color</a> &amp;&amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">other</a>) <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">noexcept</a></td></tr>
+<tr class="memdesc:a2e777a9c9693a65ad6898c89f4c481d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <br /></td></tr>
 <tr class="separator:a2e777a9c9693a65ad6898c89f4c481d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf45b6ac3e01e2553da01a8b858c7cd0" id="r_abf45b6ac3e01e2553da01a8b858c7cd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#abf45b6ac3e01e2553da01a8b858c7cd0">operator==</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">other</a>) <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:abf45b6ac3e01e2553da01a8b858c7cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality comparison operator.  <br /></td></tr>
 <tr class="separator:abf45b6ac3e01e2553da01a8b858c7cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a321480f76fd901d07805d6dbad87fcd1" id="r_a321480f76fd901d07805d6dbad87fcd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a321480f76fd901d07805d6dbad87fcd1">operator!=</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">other</a>) <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:a321480f76fd901d07805d6dbad87fcd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality comparison operator.  <br /></td></tr>
 <tr class="separator:a321480f76fd901d07805d6dbad87fcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a764ed3763139f79a0014264612e5c6e3" id="r_a764ed3763139f79a0014264612e5c6e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a764ed3763139f79a0014264612e5c6e3">WithAlpha</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">a</a>) <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:a764ed3763139f79a0014264612e5c6e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new color with modified alpha channel.  <br /></td></tr>
 <tr class="separator:a764ed3763139f79a0014264612e5c6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c0c7482feaa9e8338a72e3ca4bf3cd6" id="r_a0c0c7482feaa9e8338a72e3ca4bf3cd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a0c0c7482feaa9e8338a72e3ca4bf3cd6">WithBlue</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">b</a>) <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:a0c0c7482feaa9e8338a72e3ca4bf3cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new color with modified blue channel.  <br /></td></tr>
 <tr class="separator:a0c0c7482feaa9e8338a72e3ca4bf3cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c8543eb5652e5062cc91fcb3c10a2b7" id="r_a4c8543eb5652e5062cc91fcb3c10a2b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a4c8543eb5652e5062cc91fcb3c10a2b7">WithGreen</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">g</a>) <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:a4c8543eb5652e5062cc91fcb3c10a2b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new color with modified green channel.  <br /></td></tr>
 <tr class="separator:a4c8543eb5652e5062cc91fcb3c10a2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad237b5f452925f057371301cf2706f17" id="r_ad237b5f452925f057371301cf2706f17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#ad237b5f452925f057371301cf2706f17">WithRed</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">r</a>) <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:ad237b5f452925f057371301cf2706f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new color with modified red channel.  <br /></td></tr>
 <tr class="separator:ad237b5f452925f057371301cf2706f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96ecb9b5dd89df526a2232931e9c080f" id="r_a96ecb9b5dd89df526a2232931e9c080f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a96ecb9b5dd89df526a2232931e9c080f">Brightness</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">factor</a>) <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:a96ecb9b5dd89df526a2232931e9c080f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts the brightness of the color.  <br /></td></tr>
 <tr class="separator:a96ecb9b5dd89df526a2232931e9c080f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e4702e8a609fa4b4d21bc3dff1ec261" id="r_a5e4702e8a609fa4b4d21bc3dff1ec261"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a5e4702e8a609fa4b4d21bc3dff1ec261">Greyscale</a> () <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:a5e4702e8a609fa4b4d21bc3dff1ec261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the color to grayscale.  <br /></td></tr>
 <tr class="separator:a5e4702e8a609fa4b4d21bc3dff1ec261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a123ceb9383ba3e660776dd6748a0863a" id="r_a123ceb9383ba3e660776dd6748a0863a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a123ceb9383ba3e660776dd6748a0863a">Saturate</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">factor</a>) <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:a123ceb9383ba3e660776dd6748a0863a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the saturation of the color.  <br /></td></tr>
 <tr class="separator:a123ceb9383ba3e660776dd6748a0863a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add3e951a719e9a1acc3ee499a7f9473c" id="r_add3e951a719e9a1acc3ee499a7f9473c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#add3e951a719e9a1acc3ee499a7f9473c">Desaturate</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">factor</a>) <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:add3e951a719e9a1acc3ee499a7f9473c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases the saturation of the color.  <br /></td></tr>
 <tr class="separator:add3e951a719e9a1acc3ee499a7f9473c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1de636012ca3e8a565678be1fa9f7e41" id="r_a1de636012ca3e8a565678be1fa9f7e41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a1de636012ca3e8a565678be1fa9f7e41">ToString</a> () <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:a1de636012ca3e8a565678be1fa9f7e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the color to a hexadecimal string.  <br /></td></tr>
 <tr class="separator:a1de636012ca3e8a565678be1fa9f7e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac62e57ff7def4792755aedaf91423014" id="r_ac62e57ff7def4792755aedaf91423014"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#ac62e57ff7def4792755aedaf91423014">ToU32</a> () <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:ac62e57ff7def4792755aedaf91423014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the color to a 32-bit ARGB packed integer.  <br /></td></tr>
 <tr class="separator:ac62e57ff7def4792755aedaf91423014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58c9680e886e5b0d230abb21e77970a1" id="r_a58c9680e886e5b0d230abb21e77970a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a58c9680e886e5b0d230abb21e77970a1">ToU32_ABGR</a> () <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
-<tr class="memdesc:a58c9680e886e5b0d230abb21e77970a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">For ImGui 32-bit unsigned color representations.  <br /></td></tr>
+<tr class="memdesc:a58c9680e886e5b0d230abb21e77970a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the color to a 32-bit ABGR packed integer.  <br /></td></tr>
 <tr class="separator:a58c9680e886e5b0d230abb21e77970a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3fcc93ce900bf0acc37f4416d582f79" id="r_ae3fcc93ce900bf0acc37f4416d582f79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#ae3fcc93ce900bf0acc37f4416d582f79">ToFloatArray</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> *color) <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:ae3fcc93ce900bf0acc37f4416d582f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the color components to a float array.  <br /></td></tr>
 <tr class="separator:ae3fcc93ce900bf0acc37f4416d582f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a045ca18e148af05b8b31d5008ec868de" id="r_a045ca18e148af05b8b31d5008ec868de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a045ca18e148af05b8b31d5008ec868de">ToHSV</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">h</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">s</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> &amp;v) <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:a045ca18e148af05b8b31d5008ec868de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the color to HSV color space.  <br /></td></tr>
 <tr class="separator:a045ca18e148af05b8b31d5008ec868de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa34e51ccebc210a8d5ad894a09b5fe98" id="r_aa34e51ccebc210a8d5ad894a09b5fe98"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa34e51ccebc210a8d5ad894a09b5fe98"><td class="memTemplItemLeft" align="right" valign="top">N_ND T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">To</a> () const</td></tr>
+<tr class="memdesc:aa34e51ccebc210a8d5ad894a09b5fe98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic template conversion method.  <br /></td></tr>
 <tr class="separator:aa34e51ccebc210a8d5ad894a09b5fe98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1670d1f6693c8d47c19b74a63e09030b" id="r_a1670d1f6693c8d47c19b74a63e09030b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a1670d1f6693c8d47c19b74a63e09030b">R</a> () <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:a1670d1f6693c8d47c19b74a63e09030b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the red component.  <br /></td></tr>
 <tr class="separator:a1670d1f6693c8d47c19b74a63e09030b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58e05108af1ab66df9c8a404d3cd7ade" id="r_a58e05108af1ab66df9c8a404d3cd7ade"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a58e05108af1ab66df9c8a404d3cd7ade">G</a> () <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:a58e05108af1ab66df9c8a404d3cd7ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the green component.  <br /></td></tr>
 <tr class="separator:a58e05108af1ab66df9c8a404d3cd7ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22dd8d30e6f3e3925e0525652a9c9154" id="r_a22dd8d30e6f3e3925e0525652a9c9154"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a22dd8d30e6f3e3925e0525652a9c9154">B</a> () <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:a22dd8d30e6f3e3925e0525652a9c9154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the blue component.  <br /></td></tr>
 <tr class="separator:a22dd8d30e6f3e3925e0525652a9c9154"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e806e690a3ee26554d9b01195fb212d" id="r_a7e806e690a3ee26554d9b01195fb212d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a7e806e690a3ee26554d9b01195fb212d">A</a> () <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:a7e806e690a3ee26554d9b01195fb212d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the alpha component.  <br /></td></tr>
 <tr class="separator:a7e806e690a3ee26554d9b01195fb212d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f792a754dd314019ad5745458df268a" id="r_a5f792a754dd314019ad5745458df268a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">N_ND</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a5f792a754dd314019ad5745458df268a">Luminance</a> () <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a></td></tr>
+<tr class="memdesc:a5f792a754dd314019ad5745458df268a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the perceived luminance of the color.  <br /></td></tr>
 <tr class="separator:a5f792a754dd314019ad5745458df268a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20c63207d596be6fd957dc65a1f1d02a" id="r_a20c63207d596be6fd957dc65a1f1d02a"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:a20c63207d596be6fd957dc65a1f1d02a"><td class="memTemplItemLeft" align="right" valign="top">N_ND u32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a20c63207d596be6fd957dc65a1f1d02a">To</a> () const</td></tr>
+<tr class="memdesc:a20c63207d596be6fd957dc65a1f1d02a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization to convert <a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> to 32-bit ARGB packed integer.  <br /></td></tr>
 <tr class="separator:a20c63207d596be6fd957dc65a1f1d02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dc7c62138722e0d46f6ad14eb08478b" id="r_a9dc7c62138722e0d46f6ad14eb08478b"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:a9dc7c62138722e0d46f6ad14eb08478b"><td class="memTemplItemLeft" align="right" valign="top">N_ND string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a9dc7c62138722e0d46f6ad14eb08478b">To</a> () const</td></tr>
+<tr class="memdesc:a9dc7c62138722e0d46f6ad14eb08478b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization to convert <a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> to hexadecimal string.  <br /></td></tr>
 <tr class="separator:a9dc7c62138722e0d46f6ad14eb08478b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bd85a25645dcf04a6cf68883f7f1eb6" id="r_a9bd85a25645dcf04a6cf68883f7f1eb6"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:a9bd85a25645dcf04a6cf68883f7f1eb6"><td class="memTemplItemLeft" align="right" valign="top">N_ND ImVec4&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a9bd85a25645dcf04a6cf68883f7f1eb6">To</a> () const</td></tr>
+<tr class="memdesc:a9bd85a25645dcf04a6cf68883f7f1eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization to convert <a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> to ImGui's ImVec4 format.  <br /></td></tr>
 <tr class="separator:a9bd85a25645dcf04a6cf68883f7f1eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a48b92d27b7ea75452d390a4e1b82093b" id="r_a48b92d27b7ea75452d390a4e1b82093b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">static</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a48b92d27b7ea75452d390a4e1b82093b">AlphaBlend</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">foreground</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">background</a>)</td></tr>
+<tr class="memdesc:a48b92d27b7ea75452d390a4e1b82093b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blends two colors using alpha compositing.  <br /></td></tr>
 <tr class="separator:a48b92d27b7ea75452d390a4e1b82093b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b2110787375786712fbb7adc4779c96" id="r_a9b2110787375786712fbb7adc4779c96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">static</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a9b2110787375786712fbb7adc4779c96">Lerp</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">a</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">b</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">t</a>)</td></tr>
+<tr class="memdesc:a9b2110787375786712fbb7adc4779c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linear interpolation between two colors.  <br /></td></tr>
 <tr class="separator:a9b2110787375786712fbb7adc4779c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9511b27fe608843bf1663bbec30e8e7" id="r_ae9511b27fe608843bf1663bbec30e8e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">static</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#ae9511b27fe608843bf1663bbec30e8e7">Multiply</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">a</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">b</a>)</td></tr>
+<tr class="memdesc:ae9511b27fe608843bf1663bbec30e8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply blend mode.  <br /></td></tr>
 <tr class="separator:ae9511b27fe608843bf1663bbec30e8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3ccc97b650593540e21a001ab4d7d9b" id="r_ad3ccc97b650593540e21a001ab4d7d9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">static</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#ad3ccc97b650593540e21a001ab4d7d9b">Screen</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">a</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">b</a>)</td></tr>
+<tr class="memdesc:ad3ccc97b650593540e21a001ab4d7d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screen blend mode.  <br /></td></tr>
 <tr class="separator:ad3ccc97b650593540e21a001ab4d7d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf6b50112538014568da3b30ab71ba0d" id="r_adf6b50112538014568da3b30ab71ba0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">static</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#adf6b50112538014568da3b30ab71ba0d">Overlay</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">a</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">b</a>)</td></tr>
+<tr class="memdesc:adf6b50112538014568da3b30ab71ba0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overlay blend mode.  <br /></td></tr>
 <tr class="separator:adf6b50112538014568da3b30ab71ba0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9402a15d2ffb310dae3b30eff649fb7" id="r_ac9402a15d2ffb310dae3b30eff649fb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">static</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#ac9402a15d2ffb310dae3b30eff649fb7">SoftLight</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">a</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">b</a>)</td></tr>
+<tr class="memdesc:ac9402a15d2ffb310dae3b30eff649fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Soft light blend mode.  <br /></td></tr>
 <tr class="separator:ac9402a15d2ffb310dae3b30eff649fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2371579771e8d8e1e9e0469c6aa0f582" id="r_a2371579771e8d8e1e9e0469c6aa0f582"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">static</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a2371579771e8d8e1e9e0469c6aa0f582">HardLight</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">a</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">b</a>)</td></tr>
+<tr class="memdesc:a2371579771e8d8e1e9e0469c6aa0f582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hard light blend mode.  <br /></td></tr>
 <tr class="separator:a2371579771e8d8e1e9e0469c6aa0f582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1166cd94f82cdfd9091d01f035dda43" id="r_ae1166cd94f82cdfd9091d01f035dda43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">static</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#ae1166cd94f82cdfd9091d01f035dda43">ColorDodge</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">a</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">b</a>)</td></tr>
+<tr class="memdesc:ae1166cd94f82cdfd9091d01f035dda43"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> dodge blend mode.  <br /></td></tr>
 <tr class="separator:ae1166cd94f82cdfd9091d01f035dda43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44af0642c7669626bed1f999bee91f15" id="r_a44af0642c7669626bed1f999bee91f15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">static</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a44af0642c7669626bed1f999bee91f15">ColorBurn</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">a</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">const</a> <a class="el" href="class_nth_1_1_color.html">Color</a> &amp;<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">b</a>)</td></tr>
+<tr class="memdesc:a44af0642c7669626bed1f999bee91f15"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> burn blend mode.  <br /></td></tr>
 <tr class="separator:a44af0642c7669626bed1f999bee91f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66d6ff79a8bf45644ca6b1eec39ea5ab" id="r_a66d6ff79a8bf45644ca6b1eec39ea5ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">static</a> <a class="el" href="class_nth_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nth_1_1_color.html#a66d6ff79a8bf45644ca6b1eec39ea5ab">FromHSV</a> (<a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">h</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">s</a>, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> v, <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">f32</a> <a class="el" href="class_nth_1_1_color.html#aa34e51ccebc210a8d5ad894a09b5fe98">a</a>=1.0f)</td></tr>
+<tr class="memdesc:a66d6ff79a8bf45644ca6b1eec39ea5ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a color from HSV color space.  <br /></td></tr>
 <tr class="separator:a66d6ff79a8bf45644ca6b1eec39ea5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Encapsulation for representing colors. </p>
+<div class="textblock"><p>Encapsulation for representing and manipulating colors. </p>
+<p>Provides a comprehensive color class supporting multiple color spaces (RGB, HSV), various construction methods (float, int, hex), color operations (blending, lerping), and conversions to different formats. <a class="el" href="namespace_nth_1_1_colors.html" title="Namespace containing predefined color constants.">Colors</a> are stored internally as normalized floating-point RGBA values in the range [0.0, 1.0]. </p>
 
-<p class="definition">Definition at line <a class="el" href="_color_8hpp_source.html#l00015">15</a> of file <a class="el" href="_color_8hpp_source.html">Color.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_color_8hpp_source.html#l00020">20</a> of file <a class="el" href="_color_8hpp_source.html">Color.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a36d6f21ea84f0d4be5885582011e6342" name="a36d6f21ea84f0d4be5885582011e6342"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a36d6f21ea84f0d4be5885582011e6342">&#9670;&#160;</a></span>Color() <span class="overload">[1/9]</span></h2>
@@ -232,6 +277,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Default constructor, creates a transparent black color (0, 0, 0, 1) </p>
 
 </div>
 </div>
@@ -273,6 +320,17 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructs a color from normalized RGBA components. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Red component [0.0, 1.0] </td></tr>
+    <tr><td class="paramname">g</td><td>Green component [0.0, 1.0] </td></tr>
+    <tr><td class="paramname">b</td><td>Blue component [0.0, 1.0] </td></tr>
+    <tr><td class="paramname">a</td><td>Alpha component [0.0, 1.0], defaults to 1.0 (opaque) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00016">16</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -311,6 +369,15 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Constructs a grayscale color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Grayscale value [0.0, 1.0] applied to R, G, and B </td></tr>
+    <tr><td class="paramname">a</td><td>Alpha component [0.0, 1.0], defaults to 1.0 (opaque) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00009">9</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -339,6 +406,14 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Constructs a color from a 32-bit ARGB packed integer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>32-bit color value in ARGB format (0xAARRGGBB) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00023">23</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -366,6 +441,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructs a color from a hexadecimal string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hex</td><td>Hex color string (e.g., "#FF5733" or "FF5733") </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00030">30</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -417,6 +500,17 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Constructs a color from 8-bit RGBA components. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Red component [0, 255] </td></tr>
+    <tr><td class="paramname">g</td><td>Green component [0, 255] </td></tr>
+    <tr><td class="paramname">b</td><td>Blue component [0, 255] </td></tr>
+    <tr><td class="paramname">a</td><td>Alpha component [0, 255], defaults to 255 (opaque) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00046">46</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -444,6 +538,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructs a color from a float array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>Float array containing RGBA values [0.0, 1.0] </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00053">53</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -473,6 +575,14 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Copy constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td><a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aa8e276f117ac851feb73f7e9ffeb33c7" name="aa8e276f117ac851feb73f7e9ffeb33c7"></a>
@@ -499,6 +609,14 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Move constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td><a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> to move from </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00073">73</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -518,6 +636,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the alpha component. </p>
+<dl class="section return"><dt>Returns</dt><dd>Alpha value [0.0, 1.0] </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00240">240</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -557,6 +678,16 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Blends two colors using alpha compositing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">foreground</td><td>Foreground color with alpha </td></tr>
+    <tr><td class="paramname">background</td><td>Background color </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Blended color result </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00244">244</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -575,6 +706,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the blue component. </p>
+<dl class="section return"><dt>Returns</dt><dd>Blue value [0.0, 1.0] </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00236">236</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -595,6 +729,15 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Adjusts the brightness of the color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">factor</td><td>Brightness multiplier (1.0 = no change, &gt;1.0 brighter, &lt;1.0 darker) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New color with adjusted brightness </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00111">111</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -634,6 +777,16 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> burn blend mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>First color </td></tr>
+    <tr><td class="paramname">b</td><td>Second color </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> burn result (darkens based on blend color) </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00340">340</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -672,6 +825,16 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> dodge blend mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>First color </td></tr>
+    <tr><td class="paramname">b</td><td>Second color </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> dodge result (brightens based on blend color) </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00325">325</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -691,6 +854,15 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Decreases the saturation of the color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">factor</td><td>Desaturation factor (1.0 = no change, &gt;1.0 more desaturated) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New color with decreased saturation </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00141">141</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -742,6 +914,18 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Creates a color from HSV color space. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>Hue [0.0, 360.0] </td></tr>
+    <tr><td class="paramname">s</td><td>Saturation [0.0, 1.0] </td></tr>
+    <tr><td class="paramname">v</td><td>Value/brightness [0.0, 1.0] </td></tr>
+    <tr><td class="paramname">a</td><td>Alpha [0.0, 1.0], defaults to 1.0 (opaque) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> created from HSV values </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00201">201</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -761,6 +945,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gets the green component. </p>
+<dl class="section return"><dt>Returns</dt><dd>Green value [0.0, 1.0] </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00232">232</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -779,6 +966,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Converts the color to grayscale. </p>
+<dl class="section return"><dt>Returns</dt><dd>Grayscale version of the color </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00123">123</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -817,6 +1007,16 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Hard light blend mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>First color </td></tr>
+    <tr><td class="paramname">b</td><td>Second color </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Hard light blended color (strong lighting effect) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00320">320</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -862,6 +1062,17 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Linear interpolation between two colors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Start color </td></tr>
+    <tr><td class="paramname">b</td><td>End color </td></tr>
+    <tr><td class="paramname">t</td><td>Interpolation factor [0.0, 1.0] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Interpolated color </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00266">266</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -880,6 +1091,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Calculates the perceived luminance of the color. </p>
+<dl class="section return"><dt>Returns</dt><dd>Luminance value [0.0, 1.0] using relative luminance formula </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00127">127</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -919,6 +1133,16 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Multiply blend mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>First color </td></tr>
+    <tr><td class="paramname">b</td><td>Second color </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Multiplied color (darker result) </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00273">273</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -938,6 +1162,15 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Inequality comparison operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td><a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> to compare against </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if colors are not equal, false otherwise </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00091">91</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -967,6 +1200,15 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Move assignment operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td><a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> to move from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to this color </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00077">77</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -987,6 +1229,15 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Copy assignment operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td><a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to this color </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00063">63</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -1006,6 +1257,15 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Equality comparison operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td><a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> to compare against </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if colors are equal, false otherwise </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00087">87</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -1045,6 +1305,16 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Overlay blend mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>First color </td></tr>
+    <tr><td class="paramname">b</td><td>Second color </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Overlay blended color (combines multiply and screen) </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00284">284</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -1063,6 +1333,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the red component. </p>
+<dl class="section return"><dt>Returns</dt><dd>Red value [0.0, 1.0] </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00228">228</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -1083,6 +1356,15 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Increases the saturation of the color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">factor</td><td>Saturation factor (1.0 = no change, &gt;1.0 more saturated) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New color with increased saturation </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00134">134</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -1122,6 +1404,16 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Screen blend mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>First color </td></tr>
+    <tr><td class="paramname">b</td><td>Second color </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Screened color (lighter result) </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00277">277</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -1160,6 +1452,16 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Soft light blend mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>First color </td></tr>
+    <tr><td class="paramname">b</td><td>Second color </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Soft light blended color (subtle lighting effect) </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00299">299</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -1189,7 +1491,16 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8hpp_source.html#l00055">55</a> of file <a class="el" href="_color_8hpp_source.html">Color.hpp</a>.</p>
+<p>Generic template conversion method. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Target type to convert to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Converted color value </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_color_8hpp_source.html#l00155">155</a> of file <a class="el" href="_color_8hpp_source.html">Color.hpp</a>.</p>
 
 </div>
 </div>
@@ -1218,7 +1529,10 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8hpp_source.html#l00093">93</a> of file <a class="el" href="_color_8hpp_source.html">Color.hpp</a>.</p>
+<p>Specialization to convert <a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> to 32-bit ARGB packed integer. </p>
+<dl class="section return"><dt>Returns</dt><dd>32-bit color value in ARGB format (0xAARRGGBB) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_color_8hpp_source.html#l00279">279</a> of file <a class="el" href="_color_8hpp_source.html">Color.hpp</a>.</p>
 
 </div>
 </div>
@@ -1247,7 +1561,10 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8hpp_source.html#l00102">102</a> of file <a class="el" href="_color_8hpp_source.html">Color.hpp</a>.</p>
+<p>Specialization to convert <a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> to hexadecimal string. </p>
+<dl class="section return"><dt>Returns</dt><dd>Hex color string (e.g., "#FF5733") </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_color_8hpp_source.html#l00290">290</a> of file <a class="el" href="_color_8hpp_source.html">Color.hpp</a>.</p>
 
 </div>
 </div>
@@ -1276,7 +1593,10 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8hpp_source.html#l00113">113</a> of file <a class="el" href="_color_8hpp_source.html">Color.hpp</a>.</p>
+<p>Specialization to convert <a class="el" href="class_nth_1_1_color.html" title="Encapsulation for representing and manipulating colors.">Color</a> to ImGui's ImVec4 format. </p>
+<dl class="section return"><dt>Returns</dt><dd>ImVec4 containing RGBA components </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_color_8hpp_source.html#l00303">303</a> of file <a class="el" href="_color_8hpp_source.html">Color.hpp</a>.</p>
 
 </div>
 </div>
@@ -1295,6 +1615,14 @@ template&lt;&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Writes the color components to a float array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>Output float array (must have space for 4 floats: RGBA) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00169">169</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -1332,6 +1660,16 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Converts the color to HSV color space. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>Output hue value [0.0, 360.0] </td></tr>
+    <tr><td class="paramname">s</td><td>Output saturation value [0.0, 1.0] </td></tr>
+    <tr><td class="paramname">v</td><td>Output value/brightness [0.0, 1.0] </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00176">176</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -1350,6 +1688,9 @@ template&lt;&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Converts the color to a hexadecimal string. </p>
+<dl class="section return"><dt>Returns</dt><dd>Hex color string (e.g., "#FF5733") </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00148">148</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -1370,6 +1711,9 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Converts the color to a 32-bit ARGB packed integer. </p>
+<dl class="section return"><dt>Returns</dt><dd>32-bit color value in ARGB format (0xAARRGGBB) </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00152">152</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -1389,7 +1733,9 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>For ImGui 32-bit unsigned color representations. </p>
+<p>Converts the color to a 32-bit ABGR packed integer. </p>
+<p>For ImGui 32-bit unsigned color representations.</p>
+<dl class="section return"><dt>Returns</dt><dd>32-bit color value in ABGR format (0xAABBGGRR) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00161">161</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -1411,6 +1757,15 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Creates a new color with modified alpha channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>New alpha value [0.0, 1.0] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New color with modified alpha </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00095">95</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -1430,6 +1785,15 @@ template&lt;&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Creates a new color with modified blue channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>New blue value [0.0, 1.0] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New color with modified blue </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00099">99</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
@@ -1451,6 +1815,15 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Creates a new color with modified green channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>New green value [0.0, 1.0] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New color with modified green </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00103">103</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
 </div>
@@ -1470,6 +1843,15 @@ template&lt;&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Creates a new color with modified red channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>New red value [0.0, 1.0] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New color with modified red </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_color_8cpp_source.html#l00107">107</a> of file <a class="el" href="_color_8cpp_source.html">Color.cpp</a>.</p>
 
