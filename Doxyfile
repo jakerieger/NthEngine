@@ -124,7 +124,8 @@ WARN_LOGFILE =
 #---------------------------------------------------------------------------
 INPUT = ./Source/Engine \
         ./Source/Tools \
-        ./EngineContent/Scripts/types
+        ./EngineContent/Scripts/types \
+        ./Docs/Markdown
 INPUT_ENCODING = UTF-8
 FILE_PATTERNS = *.c \
                 *.cc \
