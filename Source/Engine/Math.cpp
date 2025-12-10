@@ -78,25 +78,26 @@ namespace Nth {
     }
 
     void Math::RegisterLuaGlobals(sol::state& lua) {
-        lua["Math"]      = lua.create_table();
-        auto math        = lua["Math"];
-        math["Pi"]       = kPi;
-        math["Tau"]      = kTau;
-        math["E"]        = kEuler;
-        math["Min"]      = [](const sol::object&, f32 a, f32 b) -> f32 { return Min(a, b); };
-        math["Max"]      = [](const sol::object&, f32 a, f32 b) -> f32 { return Max(a, b); };
-        math["Clamp"]    = [](const sol::object&, f32 a, f32 b) -> f32 { return Clamp(a, b); };
-        math["Sqrt"]     = [](const sol::object&, f32 a) -> f32 { return Sqrt(a); };
-        math["Pow"]      = [](const sol::object&, f32 a, f32 b) -> f32 { return Pow(a, b); };
-        math["Sin"]      = [](const sol::object&, f32 a) -> f32 { return Sin(a); };
-        math["Cos"]      = [](const sol::object&, f32 a) -> f32 { return Cos(a); };
-        math["Tan"]      = [](const sol::object&, f32 a) -> f32 { return Tan(a); };
-        math["Floor"]    = [](const sol::object&, f32 a) -> f32 { return Floor(a); };
-        math["Ceil"]     = [](const sol::object&, f32 a) -> f32 { return Ceil(a); };
-        math["Round"]    = [](const sol::object&, f32 a) -> f32 { return Round(a); };
-        math["DegToRad"] = [](const sol::object&, f32 a) -> f32 { return DegToRad(a); };
-        math["RadToDeg"] = [](const sol::object&, f32 a) -> f32 { return RadToDeg(a); };
-        math["Random"]   = [](const sol::object&) -> f32 { return Random(); };
-        math["Lerp"]     = [](const sol::object&, f32 a, f32 b, f32 t) -> f32 { return Lerp(a, b, t); };
+        lua["Math"]       = lua.create_table();
+        auto math         = lua["Math"];
+        math["Pi"]        = kPi;
+        math["Tau"]       = kTau;
+        math["E"]         = kEuler;
+        math["Min"]       = [](const sol::object&, f32 a, f32 b) -> f32 { return Min(a, b); };
+        math["Max"]       = [](const sol::object&, f32 a, f32 b) -> f32 { return Max(a, b); };
+        math["Clamp"]     = [](const sol::object&, f32 a, f32 b) -> f32 { return Clamp(a, b); };
+        math["Sqrt"]      = [](const sol::object&, f32 a) -> f32 { return Sqrt(a); };
+        math["Pow"]       = [](const sol::object&, f32 a, f32 b) -> f32 { return Pow(a, b); };
+        math["Sin"]       = [](const sol::object&, f32 a) -> f32 { return Sin(a); };
+        math["Cos"]       = [](const sol::object&, f32 a) -> f32 { return Cos(a); };
+        math["Tan"]       = [](const sol::object&, f32 a) -> f32 { return Tan(a); };
+        math["Floor"]     = [](const sol::object&, f32 a) -> f32 { return Floor(a); };
+        math["Ceil"]      = [](const sol::object&, f32 a) -> f32 { return Ceil(a); };
+        math["Round"]     = [](const sol::object&, f32 a) -> f32 { return Round(a); };
+        math["DegToRad"]  = [](const sol::object&, f32 a) -> f32 { return DegToRad(a); };
+        math["RadToDeg"]  = [](const sol::object&, f32 a) -> f32 { return RadToDeg(a); };
+        math["Random"]    = [](const sol::object&) -> f32 { return Random(); };
+        math["RandomInt"] = [](const sol::object&, i32 a, i32 b) -> i32 { return RandomInt(a, b); };
+        math["Lerp"]      = [](const sol::object&, f32 a, f32 b, f32 t) -> f32 { return Lerp(a, b, t); };
     }
 }  // namespace Nth

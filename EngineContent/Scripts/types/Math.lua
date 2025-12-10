@@ -98,6 +98,13 @@ end
 function Math:Random()
 end
 
+---Generate random number between min and max
+---@param min number
+---@param max number
+---@return number Random value [min, max]
+function Math:RandomInt(min, max)
+end
+
 ---Linear interpolation between two values
 ---@param a number Start value
 ---@param b number End value

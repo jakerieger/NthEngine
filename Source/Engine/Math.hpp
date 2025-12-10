@@ -93,6 +93,8 @@ namespace Nth {
         /// @return A random float value
         static f32 Random();
 
+        /// @brief Generates a random integer between min and max
+        /// @return A random signed integer value
         static i32 RandomInt(i32 min, i32 max);
 
         /// @brief Linearly interpolates between two values
