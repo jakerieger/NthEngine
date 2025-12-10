@@ -7,7 +7,7 @@
 
 #include <sol/sol.hpp>
 
-namespace Nth::Input {
+namespace Nth {
     bool InputManager::GetKeyDown(i32 key) {
         return mKeyStates[key].pressed;
     }
@@ -46,6 +46,8 @@ namespace Nth::Input {
     }
 
     void InputManager::RegisterLuaGlobals(sol::state& state) {
+        using namespace Input;
+
         state["KeyCode"]     = state.create_table();
         auto keyCode         = state["KeyCode"];
         keyCode["A"]         = Keys::A;
@@ -168,4 +170,4 @@ namespace Nth::Input {
     void InputManager::SetEnabled(const bool enabled) {
         mEnabled = enabled;
     }
-}  // namespace Nth::Input
+}  // namespace Nth
