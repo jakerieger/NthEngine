@@ -4,9 +4,9 @@
 # Project related configuration options
 #---------------------------------------------------------------------------
 DOXYFILE_ENCODING = UTF-8
-PROJECT_NAME = Nth Engine
-PROJECT_NUMBER = 0.0.1
-PROJECT_BRIEF = "Open source 2D game engine"
+PROJECT_NAME = Astera
+PROJECT_NUMBER = 1.0.0
+PROJECT_BRIEF = "Open source 2D game engine for Windows and Linux"
 PROJECT_LOGO =
 OUTPUT_DIRECTORY = Docs
 CREATE_SUBDIRS = NO
