@@ -124,12 +124,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acdf74d6d00de281d444e09f593a0728e" id="r_acdf74d6d00de281d444e09f593a0728e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_command_queue.html#acdf74d6d00de281d444e09f593a0728e">Clear</a> ()</td></tr>
 <tr class="memdesc:acdf74d6d00de281d444e09f593a0728e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all queued commands without executing them.  <br /></td></tr>
 <tr class="separator:acdf74d6d00de281d444e09f593a0728e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c7450f7709550922e7a2f45855a0028" id="r_a0c7450f7709550922e7a2f45855a0028"><td class="memItemLeft" align="right" valign="top">N_ND size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_command_queue.html#a0c7450f7709550922e7a2f45855a0028">Size</a> () const</td></tr>
-<tr class="memdesc:a0c7450f7709550922e7a2f45855a0028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of commands in the queue.  <br /></td></tr>
-<tr class="separator:a0c7450f7709550922e7a2f45855a0028"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48bd7c9aeddf45856209a7f1f6545084" id="r_a48bd7c9aeddf45856209a7f1f6545084"><td class="memItemLeft" align="right" valign="top">N_ND bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_command_queue.html#a48bd7c9aeddf45856209a7f1f6545084">IsEmpty</a> () const</td></tr>
-<tr class="memdesc:a48bd7c9aeddf45856209a7f1f6545084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the queue is empty.  <br /></td></tr>
-<tr class="separator:a48bd7c9aeddf45856209a7f1f6545084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d00397b4a2f61bc61c203b1737cde30" id="r_a5d00397b4a2f61bc61c203b1737cde30"><td class="memItemLeft" align="right" valign="top">ASTERA_KEEP size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_command_queue.html#a5d00397b4a2f61bc61c203b1737cde30">Size</a> () const</td></tr>
+<tr class="memdesc:a5d00397b4a2f61bc61c203b1737cde30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of commands in the queue.  <br /></td></tr>
+<tr class="separator:a5d00397b4a2f61bc61c203b1737cde30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e3b9e1e3fa9c5dab0b9d0f4685c759" id="r_a76e3b9e1e3fa9c5dab0b9d0f4685c759"><td class="memItemLeft" align="right" valign="top">ASTERA_KEEP bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_command_queue.html#a76e3b9e1e3fa9c5dab0b9d0f4685c759">IsEmpty</a> () const</td></tr>
+<tr class="memdesc:a76e3b9e1e3fa9c5dab0b9d0f4685c759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the queue is empty.  <br /></td></tr>
+<tr class="separator:a76e3b9e1e3fa9c5dab0b9d0f4685c759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5825bef41388e69cdc74f5f805221947" id="r_a5825bef41388e69cdc74f5f805221947"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_command_queue.html#a5825bef41388e69cdc74f5f805221947">Reserve</a> (size_t capacity)</td></tr>
 <tr class="memdesc:a5825bef41388e69cdc74f5f805221947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve space for a specific number of commands.  <br /></td></tr>
 <tr class="separator:a5825bef41388e69cdc74f5f805221947"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,8 +302,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a48bd7c9aeddf45856209a7f1f6545084" name="a48bd7c9aeddf45856209a7f1f6545084"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48bd7c9aeddf45856209a7f1f6545084">&#9670;&#160;</a></span>IsEmpty()</h2>
+<a id="a76e3b9e1e3fa9c5dab0b9d0f4685c759" name="a76e3b9e1e3fa9c5dab0b9d0f4685c759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76e3b9e1e3fa9c5dab0b9d0f4685c759">&#9670;&#160;</a></span>IsEmpty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,7 +312,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">N_ND bool Astera::CommandQueue::IsEmpty </td>
+          <td class="memname">ASTERA_KEEP bool Astera::CommandQueue::IsEmpty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -361,8 +361,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a0c7450f7709550922e7a2f45855a0028" name="a0c7450f7709550922e7a2f45855a0028"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c7450f7709550922e7a2f45855a0028">&#9670;&#160;</a></span>Size()</h2>
+<a id="a5d00397b4a2f61bc61c203b1737cde30" name="a5d00397b4a2f61bc61c203b1737cde30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d00397b4a2f61bc61c203b1737cde30">&#9670;&#160;</a></span>Size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -371,7 +371,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">N_ND size_t Astera::CommandQueue::Size </td>
+          <td class="memname">ASTERA_KEEP size_t Astera::CommandQueue::Size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

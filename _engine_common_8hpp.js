@@ -1,10 +1,10 @@
 var _engine_common_8hpp =
 [
     [ "Astera::NotImplemented", "class_astera_1_1_not_implemented.html", "class_astera_1_1_not_implemented" ],
+    [ "ASTERA_NOT_IMPLEMENTED", "_engine_common_8hpp.html#a2b22eddf36ba8f4d1adec2197e3cde20", null ],
     [ "CAST", "_engine_common_8hpp.html#a8b6956a3b15c98d5016a0cfc601b47bd", null ],
     [ "CCAST", "_engine_common_8hpp.html#a50accaada9f2ad4dda80dfa5faf784ee", null ],
     [ "DCAST", "_engine_common_8hpp.html#a8ad793d1ed6361f5dddf4eebc8937e93", null ],
-    [ "N_NOT_IMPLEMENTED", "_engine_common_8hpp.html#a54675d89cd8fb98b3e5ffbec8898258b", null ],
     [ "RCAST", "_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89", null ],
     [ "f32", "_engine_common_8hpp.html#a1497ad301831eaf81d23049a462d28f6", null ],
     [ "f64", "_engine_common_8hpp.html#a865f9f3fe1a617d8fdeaeab77029fb27", null ],

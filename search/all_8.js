@@ -32,6 +32,6 @@ var searchData=
   ['inverseinertia_29',['inverseinertia',['../struct_astera_1_1_rigidbody2_d_descriptor.html#af2f246bdaf2da28bce2ab7c2910cc343',1,'Astera::Rigidbody2DDescriptor::inverseInertia'],['../struct_astera_1_1_rigidbody2_d.html#af0567395f766348513378bb741236393',1,'Astera::Rigidbody2D::inverseInertia']]],
   ['inversemass_30',['inversemass',['../struct_astera_1_1_rigidbody2_d_descriptor.html#a6dea28bb9300703fdd5f51b2df30676d',1,'Astera::Rigidbody2DDescriptor::inverseMass'],['../struct_astera_1_1_rigidbody2_d.html#ae1bc06d49105b19c48011e4a926ff999',1,'Astera::Rigidbody2D::inverseMass']]],
   ['iptr_31',['iptr',['../namespace_astera.html#af99125950fae339ec2b225db3c41dc78',1,'Astera']]],
-  ['isempty_32',['IsEmpty',['../class_astera_1_1_command_queue.html#a48bd7c9aeddf45856209a7f1f6545084',1,'Astera::CommandQueue']]],
-  ['isinitialized_33',['isinitialized',['../class_astera_1_1_script_engine.html#a5359d00f48b506406770b1753942b91b',1,'Astera::ScriptEngine::IsInitialized()'],['../class_astera_1_1_audio_engine.html#a64d5bf63102858e16ab629f92515a79f',1,'Astera::AudioEngine::IsInitialized()']]]
+  ['isempty_32',['IsEmpty',['../class_astera_1_1_command_queue.html#a76e3b9e1e3fa9c5dab0b9d0f4685c759',1,'Astera::CommandQueue']]],
+  ['isinitialized_33',['isinitialized',['../class_astera_1_1_script_engine.html#a5359d00f48b506406770b1753942b91b',1,'Astera::ScriptEngine::IsInitialized()'],['../class_astera_1_1_audio_engine.html#ae23d1da42c529c7f6ed7de272a5adbda',1,'Astera::AudioEngine::IsInitialized()']]]
 ];

@@ -6,8 +6,8 @@ var class_astera_1_1_command_queue =
     [ "Enqueue", "class_astera_1_1_command_queue.html#ab3c167e12e606dbe301ab1e0b79c1d26", null ],
     [ "ExecuteQueue", "class_astera_1_1_command_queue.html#a0dd465a1bb568034e3d05206a43fbcbc", null ],
     [ "ExecuteQueueBatched", "class_astera_1_1_command_queue.html#a90a8586d2e9935558f1a47eabe7dfc3f", null ],
-    [ "IsEmpty", "class_astera_1_1_command_queue.html#a48bd7c9aeddf45856209a7f1f6545084", null ],
+    [ "IsEmpty", "class_astera_1_1_command_queue.html#a76e3b9e1e3fa9c5dab0b9d0f4685c759", null ],
     [ "Reserve", "class_astera_1_1_command_queue.html#a5825bef41388e69cdc74f5f805221947", null ],
-    [ "Size", "class_astera_1_1_command_queue.html#a0c7450f7709550922e7a2f45855a0028", null ],
+    [ "Size", "class_astera_1_1_command_queue.html#a5d00397b4a2f61bc61c203b1737cde30", null ],
     [ "Game", "class_astera_1_1_command_queue.html#aa2fab026580d6f14280c2ffb8063a314", null ]
 ];

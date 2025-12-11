@@ -4,7 +4,7 @@ var class_astera_1_1_scene =
     [ "~Scene", "class_astera_1_1_scene.html#aec021c1b155171f3120736560a8efc68", null ],
     [ "Awake", "class_astera_1_1_scene.html#a8a18951d78034165c9df51790589147b", null ],
     [ "Destroyed", "class_astera_1_1_scene.html#a8d6c7edc75a7489e3b1479574054bf29", null ],
-    [ "GetState", "class_astera_1_1_scene.html#a42b1b55f9578fc3ccf84e034b0e41b8b", null ],
+    [ "GetState", "class_astera_1_1_scene.html#aef9916e2676be692730ff8401d3f7b86", null ],
     [ "LateUpdate", "class_astera_1_1_scene.html#a4d7bbb18185443b9049448172cf259c1", null ],
     [ "Load", "class_astera_1_1_scene.html#a608475348a68c76318394273634ad693", null ],
     [ "Load", "class_astera_1_1_scene.html#aece7dd5d9b0e10a3a43023b17201069e", null ],

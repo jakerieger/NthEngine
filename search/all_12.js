@@ -8,7 +8,7 @@ var searchData=
   ['texturemanager_2ehpp_5',['TextureManager.hpp',['../_texture_manager_8hpp.html',1,'']]],
   ['tick_6',['Tick',['../class_astera_1_1_clock.html#ac0bec751252d3524b857e348d7b004d7',1,'Astera::Clock']]],
   ['tintcolor_7',['tintcolor',['../struct_astera_1_1_draw_sprite_command.html#acc37eef18fa9cf79789644ccbd27aaa3',1,'Astera::DrawSpriteCommand::tintColor'],['../struct_astera_1_1_sprite_instance_data.html#a2dc01c849254b263bb12f8f44023a887',1,'Astera::SpriteInstanceData::tintColor']]],
-  ['to_8',['to',['../class_astera_1_1_color.html#a58f7b7870d9b3681ef7bafafed1b0904',1,'Astera::Color::To() const'],['../class_astera_1_1_color.html#a6ca43d33d14634b821b15aa41fba66b2',1,'Astera::Color::To() const'],['../class_astera_1_1_color.html#a4700b81925461d6a98c49982b593ec2b',1,'Astera::Color::To() const'],['../class_astera_1_1_color.html#a0225bf1765615483aa889e6147a80989',1,'Astera::Color::To() const']]],
+  ['to_8',['to',['../class_astera_1_1_color.html#a6ea311c5312b552444b875b9f4ebae0b',1,'Astera::Color::To() const'],['../class_astera_1_1_color.html#ad873dc63cf57a0e9eeca16c9a64d6aeb',1,'Astera::Color::To() const'],['../class_astera_1_1_color.html#a84d442e4ec42329990a42d0562d94577',1,'Astera::Color::To() const'],['../class_astera_1_1_color.html#a0a9817af74277174a103f18d23acff98',1,'Astera::Color::To() const']]],
   ['tofloatarray_9',['ToFloatArray',['../class_astera_1_1_color.html#a7012549c43a5129c9395d6581026eb83',1,'Astera::Color']]],
   ['togglefullscreen_10',['ToggleFullscreen',['../class_astera_1_1_game.html#ad7df3cf728dae4f69bf3faff80ffee33',1,'Astera::Game']]],
   ['tohsv_11',['ToHSV',['../class_astera_1_1_color.html#ae88710e6054e99c8b64d6ffd03f60eaa',1,'Astera::Color']]],

@@ -233,7 +233,7 @@ $(document).ready(function(){initNavTree('_game_8cpp_source.html',''); initResiz
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
 <div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_astera_1_1_game.html#a8684142dd8bd32113775c7e2023fc69d">  112</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_astera_1_1_game.html#a8684142dd8bd32113775c7e2023fc69d">Game::OnMouseButton</a>(<a class="code hl_typedef" href="namespace_astera.html#af76bf8cc1b4c1304679e2ea9ae13ac11">u32</a> button) {</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        N_UNUSED(button);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        ASTERA_UNUSED(button);</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="comment">// TODO: Implement</span></div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
 </div>
@@ -246,8 +246,8 @@ $(document).ready(function(){initNavTree('_game_8cpp_source.html',''); initResiz
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
 <div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="class_astera_1_1_game.html#aa3aff0cf1ce3532c1b2a8584dc6b3008">  121</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_astera_1_1_game.html#aa3aff0cf1ce3532c1b2a8584dc6b3008">Game::OnMouseScroll</a>(<a class="code hl_typedef" href="namespace_astera.html#a865f9f3fe1a617d8fdeaeab77029fb27">f64</a> dX, <a class="code hl_typedef" href="namespace_astera.html#a865f9f3fe1a617d8fdeaeab77029fb27">f64</a> dY) {</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        N_UNUSED(dX);</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        N_UNUSED(dY);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        ASTERA_UNUSED(dX);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        ASTERA_UNUSED(dY);</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="comment">// TODO: Implement</span></div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
 </div>
@@ -288,182 +288,177 @@ $(document).ready(function(){initNavTree('_game_8cpp_source.html',''); initResiz
 </div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordtype">bool</span> Game::Initialize() {</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="comment">// Enforce X11 on Wayland systems for debugging support (RenderDoc doens&#39;t support Wayland)</span></div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="preprocessor">#if defined(N_ENGINE_PLATFORM_LINUX_WAYLAND) || defined(N_ENGINE_PLATFORM_LINUX_X11)</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        glfwInitHint(GLFW_PLATFORM, GLFW_PLATFORM_X11);</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">if</span> (!glfwInit()) {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <a class="code hl_function" href="class_astera_1_1_log.html#a48a9ad4a5326cc0038b847126ad9c480">Log::Critical</a>(<span class="stringliteral">&quot;Game&quot;</span>, <span class="stringliteral">&quot;Failed to initialize GLFW&quot;</span>);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        }</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">if</span> (!glfwInit()) {</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <a class="code hl_function" href="class_astera_1_1_log.html#a48a9ad4a5326cc0038b847126ad9c480">Log::Critical</a>(<span class="stringliteral">&quot;Game&quot;</span>, <span class="stringliteral">&quot;Failed to initialize GLFW&quot;</span>);</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        }</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="preprocessor">#ifdef __APPLE__</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        mWindow = glfwCreateWindow((<a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a>)<a class="code hl_variable" href="class_astera_1_1_game.html#a5f5980304e7bfe0aca2f7f0c3620c75c">mWidth</a>, (<a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a>)<a class="code hl_variable" href="class_astera_1_1_game.html#ae5ff7498fb1859d80df4f6834b89bfe9">mHeight</a>, <a class="code hl_variable" href="class_astera_1_1_game.html#abe36cd3d9ea5ae1385ab862c55e9f442">mTitle</a>.c_str(), <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordflow">if</span> (!mWindow) {</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            glfwTerminate();</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <a class="code hl_function" href="class_astera_1_1_log.html#a48a9ad4a5326cc0038b847126ad9c480">Log::Critical</a>(<span class="stringliteral">&quot;Game&quot;</span>, <span class="stringliteral">&quot;Failed to create GLFW mWindow&quot;</span>);</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        }</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        glfwMakeContextCurrent(mWindow);</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        glfwSetWindowUserPointer(mWindow, <span class="keyword">this</span>);</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        glfwSetFramebufferSizeCallback(mWindow, GLFWResizeCallback);</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        glfwSetKeyCallback(mWindow, GLFWKeyCallback);</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        glfwSetMouseButtonCallback(mWindow, GLFWMouseButtonCallback);</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        glfwSetCursorPosCallback(mWindow, GLFWMouseCursorCallback);</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        glfwSetScrollCallback(mWindow, GLFWMouseScrollCallback);</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <span class="keywordflow">if</span> (mVsync) glfwSwapInterval(1);</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <span class="keywordflow">else</span> glfwSwapInterval(0);</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">if</span> (!mRenderContext.<a class="code hl_function" href="class_astera_1_1_render_context.html#a949952e1ad6a3e0205f84bf63818e7db">Initialize</a>(<a class="code hl_variable" href="class_astera_1_1_game.html#a5f5980304e7bfe0aca2f7f0c3620c75c">mWidth</a>, <a class="code hl_variable" href="class_astera_1_1_game.html#ae5ff7498fb1859d80df4f6834b89bfe9">mHeight</a>)) {</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            glfwDestroyWindow(mWindow);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            glfwTerminate();</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            <a class="code hl_function" href="class_astera_1_1_log.html#a48a9ad4a5326cc0038b847126ad9c480">Log::Critical</a>(<span class="stringliteral">&quot;Game&quot;</span>, <span class="stringliteral">&quot;Failed to initialize render context&quot;</span>);</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        }</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        mRenderContext.<a class="code hl_function" href="class_astera_1_1_render_context.html#abc4212a975eff258a3410bd45918c7ed">GetCommandQueue</a>().InitializeBatchResources();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="preprocessor">#ifdef __APPLE__</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        mWindow = glfwCreateWindow((<a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a>)<a class="code hl_variable" href="class_astera_1_1_game.html#a5f5980304e7bfe0aca2f7f0c3620c75c">mWidth</a>, (<a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a>)<a class="code hl_variable" href="class_astera_1_1_game.html#ae5ff7498fb1859d80df4f6834b89bfe9">mHeight</a>, <a class="code hl_variable" href="class_astera_1_1_game.html#abe36cd3d9ea5ae1385ab862c55e9f442">mTitle</a>.c_str(), <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="keywordflow">if</span> (!mWindow) {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            glfwTerminate();</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            <a class="code hl_function" href="class_astera_1_1_log.html#a48a9ad4a5326cc0038b847126ad9c480">Log::Critical</a>(<span class="stringliteral">&quot;Game&quot;</span>, <span class="stringliteral">&quot;Failed to create GLFW mWindow&quot;</span>);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        }</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        glfwMakeContextCurrent(mWindow);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        glfwSetWindowUserPointer(mWindow, <span class="keyword">this</span>);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        glfwSetFramebufferSizeCallback(mWindow, GLFWResizeCallback);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        glfwSetKeyCallback(mWindow, GLFWKeyCallback);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        glfwSetMouseButtonCallback(mWindow, GLFWMouseButtonCallback);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        glfwSetCursorPosCallback(mWindow, GLFWMouseCursorCallback);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        glfwSetScrollCallback(mWindow, GLFWMouseScrollCallback);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <span class="keywordflow">if</span> (mVsync) glfwSwapInterval(1);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <span class="keywordflow">else</span> glfwSwapInterval(0);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keywordflow">if</span> (!mRenderContext.<a class="code hl_function" href="class_astera_1_1_render_context.html#a949952e1ad6a3e0205f84bf63818e7db">Initialize</a>(<a class="code hl_variable" href="class_astera_1_1_game.html#a5f5980304e7bfe0aca2f7f0c3620c75c">mWidth</a>, <a class="code hl_variable" href="class_astera_1_1_game.html#ae5ff7498fb1859d80df4f6834b89bfe9">mHeight</a>)) {</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            glfwDestroyWindow(mWindow);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            glfwTerminate();</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            <a class="code hl_function" href="class_astera_1_1_log.html#a48a9ad4a5326cc0038b847126ad9c480">Log::Critical</a>(<span class="stringliteral">&quot;Game&quot;</span>, <span class="stringliteral">&quot;Failed to initialize render context&quot;</span>);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        }</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        mRenderContext.<a class="code hl_function" href="class_astera_1_1_render_context.html#ad9dd0e783403a85e6658da06190d0691">GetCommandQueue</a>().InitializeBatchResources();</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <a class="code hl_function" href="class_astera_1_1_texture_manager.html#af78396467b5227c163a9c49dd12a2003">TextureManager::Initialize</a>();</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <a class="code hl_function" href="class_astera_1_1_shader_manager.html#a4601d5c4436b640f731200f189b0bddc">ShaderManager::Initialize</a>();</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        mAudioEngine.<a class="code hl_function" href="class_astera_1_1_audio_engine.html#a67f42f86bce92cb5efaeedfa070ac96a">Initialize</a>();</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        InitializeScriptEngine();</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <a class="code hl_function" href="class_astera_1_1_texture_manager.html#af78396467b5227c163a9c49dd12a2003">TextureManager::Initialize</a>();</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        <a class="code hl_function" href="class_astera_1_1_shader_manager.html#a4601d5c4436b640f731200f189b0bddc">ShaderManager::Initialize</a>();</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        mAudioEngine.<a class="code hl_function" href="class_astera_1_1_audio_engine.html#a67f42f86bce92cb5efaeedfa070ac96a">Initialize</a>();</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        InitializeScriptEngine();</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <span class="comment">// Debug layers</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        mImGuiDebugLayer = make_unique&lt;ImGuiDebugLayer&gt;(<a class="code hl_function" href="class_astera_1_1_game.html#a9222cdd7cb9bae76ff94e8205bb0d426">GetWindowHandle</a>());</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        mDebugManager.<a class="code hl_function" href="class_astera_1_1_debug_manager.html#a39a5b7b915b13c3a9b810636e5d59c72">AttachOverlay</a>(<span class="stringliteral">&quot;ImGuiDebugLayer&quot;</span>, mImGuiDebugLayer.get());</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        mPhysicsDebugLayer = make_unique&lt;PhysicsDebugLayer&gt;(<a class="code hl_variable" href="class_astera_1_1_game.html#a5f5980304e7bfe0aca2f7f0c3620c75c">mWidth</a>, <a class="code hl_variable" href="class_astera_1_1_game.html#ae5ff7498fb1859d80df4f6834b89bfe9">mHeight</a>);</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        mDebugManager.<a class="code hl_function" href="class_astera_1_1_debug_manager.html#a39a5b7b915b13c3a9b810636e5d59c72">AttachOverlay</a>(<span class="stringliteral">&quot;PhysicsDebugLayer&quot;</span>, mPhysicsDebugLayer.get());</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <a class="code hl_function" href="class_astera_1_1_log.html#af8b0a34cb00b54589ffb54f5b248ca73">Log::Debug</a>(<span class="stringliteral">&quot;Game&quot;</span>,</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                   <span class="stringliteral">&quot;Successfully initialized game instance:\n-- Dimensions: {}x{}\n-- V-Sync: {}&quot;</span>,</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                   <a class="code hl_variable" href="class_astera_1_1_game.html#a5f5980304e7bfe0aca2f7f0c3620c75c">mWidth</a>,</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>                   <a class="code hl_variable" href="class_astera_1_1_game.html#ae5ff7498fb1859d80df4f6834b89bfe9">mHeight</a>,</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                   mVsync ? <span class="stringliteral">&quot;On&quot;</span> : <span class="stringliteral">&quot;Off&quot;</span>);</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    }</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keywordtype">void</span> Game::Shutdown() {</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        mDebugManager.<a class="code hl_function" href="class_astera_1_1_debug_manager.html#a07076f6f5c5631d875c7705a7debd53f">DetachOverlays</a>();</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        mImGuiDebugLayer.reset();</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        mPhysicsDebugLayer.reset();</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <a class="code hl_function" href="class_astera_1_1_texture_manager.html#aba017000eaddf6e312c7dded9887197b">TextureManager::Shutdown</a>();</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        <a class="code hl_function" href="class_astera_1_1_shader_manager.html#aa4906e5fea5bd01cd55e16069aa3ee09">ShaderManager::Shutdown</a>();</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        mAudioEngine.<a class="code hl_function" href="class_astera_1_1_audio_engine.html#a08dabe503a1bf9112747e707447e74bd">Shutdown</a>();</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        mActiveScene.reset();</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        mRenderContext.<a class="code hl_function" href="class_astera_1_1_render_context.html#a2172f0aab039629b1e8cf5ee9bcb452c">Shutdown</a>();</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        <span class="keywordflow">if</span> (mWindow) glfwDestroyWindow(mWindow);</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        glfwTerminate();</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        <a class="code hl_function" href="class_astera_1_1_log.html#a2e1612d0d1bbbf9c45f4c461357bbd1d">Log::Shutdown</a>();</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    }</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keywordtype">bool</span> Game::InitializeScriptEngine() {</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        mScriptEngine.<a class="code hl_function" href="class_astera_1_1_script_engine.html#a5e2a7f0b733addd6fa4c379b5e9f3a3a">Initialize</a>();</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="keywordflow">if</span> (!mScriptEngine.<a class="code hl_function" href="class_astera_1_1_script_engine.html#a5359d00f48b506406770b1753942b91b">IsInitialized</a>()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <span class="comment">// Register globals</span></div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        <span class="keyword">auto</span>&amp; lua                   = mScriptEngine.<a class="code hl_function" href="class_astera_1_1_script_engine.html#a8406d2f2e7e008eda25c7eb9de29c4f2">GetLuaState</a>();</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <span class="keyword">auto</span> gameGlobal             = lua.new_usertype&lt;<a class="code hl_function" href="class_astera_1_1_game.html#a32c2c2b95138688417f854433fd8bd10">Game</a>&gt;(<span class="stringliteral">&quot;Game&quot;</span>);</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        gameGlobal[<span class="stringliteral">&quot;Quit&quot;</span>]          = [<span class="keyword">this</span>] { <a class="code hl_function" href="class_astera_1_1_game.html#ae619a5b539ae4a5a962ddaad096ebe72">Quit</a>(); };</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        gameGlobal[<span class="stringliteral">&quot;GetScreenSize&quot;</span>] = [<span class="keyword">this</span>]() -&gt; <a class="code hl_typedef" href="namespace_astera.html#a32228f3a61c481af9c7e8925045a7c34">Vec2</a> { <span class="keywordflow">return</span> {<a class="code hl_variable" href="class_astera_1_1_game.html#a5f5980304e7bfe0aca2f7f0c3620c75c">mWidth</a>, <a class="code hl_variable" href="class_astera_1_1_game.html#ae5ff7498fb1859d80df4f6834b89bfe9">mHeight</a>}; };</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        lua[<span class="stringliteral">&quot;Scene&quot;</span>] = &amp;mActiveScene-&gt;GetState();</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <span class="comment">// Register globals</span></div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        Log::RegisterLuaGlobals(lua);</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        Math::RegisterLuaGlobals(lua);</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        Coordinates::RegisterLuaGlobals(lua);</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        mInputManager.RegisterLuaGlobals(lua);</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        mAudioEngine.RegisterLuaGlobals(lua);</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        <a class="code hl_function" href="class_astera_1_1_script_type_registry.html#afe147c790429d2f7089a56253b009bd7">ScriptTypeRegistry::RegisterTypes</a>(mScriptEngine);</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    }</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
-<div class="foldopen" id="foldopen00258" data-start="{" data-end="}">
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="class_astera_1_1_game.html#af905e019f1b320c37b3293fa695ec4dc">  258</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_astera_1_1_game.html#af905e019f1b320c37b3293fa695ec4dc">Game::Render</a>() {</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        mRenderContext.<a class="code hl_function" href="class_astera_1_1_render_context.html#a7ec87708d772589d385ee27f15ee78f7">BeginFrame</a>();</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        {</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <span class="comment">// Submit drawing commands here</span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            <span class="keywordflow">if</span> (mActiveScene) { mActiveScene-&gt;Render(mRenderContext); }</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        }</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        mRenderContext.<a class="code hl_function" href="class_astera_1_1_render_context.html#afa6866246c01178c0450d1537ca7c7c3">EndFrame</a>();</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        mDebugManager.<a class="code hl_function" href="class_astera_1_1_debug_manager.html#af5cf53596292a8552973b6857f3a5b3d">Render</a>();</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        glfwSwapBuffers(mWindow);</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="comment">// Debug layers</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        mImGuiDebugLayer = make_unique&lt;ImGuiDebugLayer&gt;(<a class="code hl_function" href="class_astera_1_1_game.html#a7769b46a09af36df5621b2d466f2855a">GetWindowHandle</a>());</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        mDebugManager.<a class="code hl_function" href="class_astera_1_1_debug_manager.html#a39a5b7b915b13c3a9b810636e5d59c72">AttachOverlay</a>(<span class="stringliteral">&quot;ImGuiDebugLayer&quot;</span>, mImGuiDebugLayer.get());</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        mPhysicsDebugLayer = make_unique&lt;PhysicsDebugLayer&gt;(<a class="code hl_variable" href="class_astera_1_1_game.html#a5f5980304e7bfe0aca2f7f0c3620c75c">mWidth</a>, <a class="code hl_variable" href="class_astera_1_1_game.html#ae5ff7498fb1859d80df4f6834b89bfe9">mHeight</a>);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        mDebugManager.<a class="code hl_function" href="class_astera_1_1_debug_manager.html#a39a5b7b915b13c3a9b810636e5d59c72">AttachOverlay</a>(<span class="stringliteral">&quot;PhysicsDebugLayer&quot;</span>, mPhysicsDebugLayer.get());</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <a class="code hl_function" href="class_astera_1_1_log.html#af8b0a34cb00b54589ffb54f5b248ca73">Log::Debug</a>(<span class="stringliteral">&quot;Game&quot;</span>,</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                   <span class="stringliteral">&quot;Successfully initialized game instance:\n-- Dimensions: {}x{}\n-- V-Sync: {}&quot;</span>,</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                   <a class="code hl_variable" href="class_astera_1_1_game.html#a5f5980304e7bfe0aca2f7f0c3620c75c">mWidth</a>,</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                   <a class="code hl_variable" href="class_astera_1_1_game.html#ae5ff7498fb1859d80df4f6834b89bfe9">mHeight</a>,</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                   mVsync ? <span class="stringliteral">&quot;On&quot;</span> : <span class="stringliteral">&quot;Off&quot;</span>);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    }</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="keywordtype">void</span> Game::Shutdown() {</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        mDebugManager.<a class="code hl_function" href="class_astera_1_1_debug_manager.html#a07076f6f5c5631d875c7705a7debd53f">DetachOverlays</a>();</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        mImGuiDebugLayer.reset();</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        mPhysicsDebugLayer.reset();</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        <a class="code hl_function" href="class_astera_1_1_texture_manager.html#aba017000eaddf6e312c7dded9887197b">TextureManager::Shutdown</a>();</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <a class="code hl_function" href="class_astera_1_1_shader_manager.html#aa4906e5fea5bd01cd55e16069aa3ee09">ShaderManager::Shutdown</a>();</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        mAudioEngine.<a class="code hl_function" href="class_astera_1_1_audio_engine.html#a08dabe503a1bf9112747e707447e74bd">Shutdown</a>();</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        mActiveScene.reset();</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        mRenderContext.<a class="code hl_function" href="class_astera_1_1_render_context.html#a2172f0aab039629b1e8cf5ee9bcb452c">Shutdown</a>();</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="keywordflow">if</span> (mWindow) glfwDestroyWindow(mWindow);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        glfwTerminate();</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <a class="code hl_function" href="class_astera_1_1_log.html#a2e1612d0d1bbbf9c45f4c461357bbd1d">Log::Shutdown</a>();</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    }</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordtype">bool</span> Game::InitializeScriptEngine() {</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        mScriptEngine.<a class="code hl_function" href="class_astera_1_1_script_engine.html#a5e2a7f0b733addd6fa4c379b5e9f3a3a">Initialize</a>();</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        <span class="keywordflow">if</span> (!mScriptEngine.<a class="code hl_function" href="class_astera_1_1_script_engine.html#a5359d00f48b506406770b1753942b91b">IsInitialized</a>()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        <span class="comment">// Register globals</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <span class="keyword">auto</span>&amp; lua                   = mScriptEngine.<a class="code hl_function" href="class_astera_1_1_script_engine.html#a8406d2f2e7e008eda25c7eb9de29c4f2">GetLuaState</a>();</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="keyword">auto</span> gameGlobal             = lua.new_usertype&lt;<a class="code hl_function" href="class_astera_1_1_game.html#a32c2c2b95138688417f854433fd8bd10">Game</a>&gt;(<span class="stringliteral">&quot;Game&quot;</span>);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        gameGlobal[<span class="stringliteral">&quot;Quit&quot;</span>]          = [<span class="keyword">this</span>] { <a class="code hl_function" href="class_astera_1_1_game.html#ae619a5b539ae4a5a962ddaad096ebe72">Quit</a>(); };</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        gameGlobal[<span class="stringliteral">&quot;GetScreenSize&quot;</span>] = [<span class="keyword">this</span>]() -&gt; <a class="code hl_typedef" href="namespace_astera.html#a32228f3a61c481af9c7e8925045a7c34">Vec2</a> { <span class="keywordflow">return</span> {<a class="code hl_variable" href="class_astera_1_1_game.html#a5f5980304e7bfe0aca2f7f0c3620c75c">mWidth</a>, <a class="code hl_variable" href="class_astera_1_1_game.html#ae5ff7498fb1859d80df4f6834b89bfe9">mHeight</a>}; };</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        lua[<span class="stringliteral">&quot;Scene&quot;</span>] = &amp;mActiveScene-&gt;GetState();</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        <span class="comment">// Register globals</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        Log::RegisterLuaGlobals(lua);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        Math::RegisterLuaGlobals(lua);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        Coordinates::RegisterLuaGlobals(lua);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        mInputManager.RegisterLuaGlobals(lua);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        mAudioEngine.RegisterLuaGlobals(lua);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        <a class="code hl_function" href="class_astera_1_1_script_type_registry.html#afe147c790429d2f7089a56253b009bd7">ScriptTypeRegistry::RegisterTypes</a>(mScriptEngine);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="foldopen" id="foldopen00253" data-start="{" data-end="}">
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="class_astera_1_1_game.html#af905e019f1b320c37b3293fa695ec4dc">  253</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_astera_1_1_game.html#af905e019f1b320c37b3293fa695ec4dc">Game::Render</a>() {</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        mRenderContext.<a class="code hl_function" href="class_astera_1_1_render_context.html#a7ec87708d772589d385ee27f15ee78f7">BeginFrame</a>();</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        {</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            <span class="comment">// Submit drawing commands here</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            <span class="keywordflow">if</span> (mActiveScene) { mActiveScene-&gt;Render(mRenderContext); }</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        }</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        mRenderContext.<a class="code hl_function" href="class_astera_1_1_render_context.html#afa6866246c01178c0450d1537ca7c7c3">EndFrame</a>();</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        mDebugManager.<a class="code hl_function" href="class_astera_1_1_debug_manager.html#af5cf53596292a8552973b6857f3a5b3d">Render</a>();</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        glfwSwapBuffers(mWindow);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
 </div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
-<div class="foldopen" id="foldopen00270" data-start="{" data-end="}">
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno"><a class="line" href="class_astera_1_1_game.html#ae141f8e96b5de4f444538770ccda9de9">  270</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_astera_1_1_game.html#ae141f8e96b5de4f444538770ccda9de9">Game::SetWindowIcon</a>(<span class="keyword">const</span> fs::path&amp; filename)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> width, height, channels;</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        <a class="code hl_typedef" href="namespace_astera.html#a4fa33b880ef4545b39e7b108c4adad14">u8</a>* pixels = stbi_load(filename.string().c_str(), &amp;width, &amp;height, &amp;channels, 4);  <span class="comment">// Force RGBA</span></div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keywordflow">if</span> (pixels) {</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            GLFWimage icon;</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            icon.width  = width;</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            icon.height = height;</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            icon.pixels = pixels;</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            glfwSetWindowIcon(mWindow, 1, &amp;icon);</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            stbi_image_free(pixels);</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            <a class="code hl_function" href="class_astera_1_1_log.html#ae021e46e6f91bbc7f8807f377b72e139">Log::Error</a>(<span class="stringliteral">&quot;Game&quot;</span>, <span class="stringliteral">&quot;Failed to load window icon: {}&quot;</span>, filename.string());</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        }</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    }</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
+<div class="foldopen" id="foldopen00265" data-start="{" data-end="}">
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="class_astera_1_1_game.html#ae141f8e96b5de4f444538770ccda9de9">  265</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_astera_1_1_game.html#ae141f8e96b5de4f444538770ccda9de9">Game::SetWindowIcon</a>(<span class="keyword">const</span> fs::path&amp; filename)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> width, height, channels;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <a class="code hl_typedef" href="namespace_astera.html#a4fa33b880ef4545b39e7b108c4adad14">u8</a>* pixels = stbi_load(filename.string().c_str(), &amp;width, &amp;height, &amp;channels, 4);  <span class="comment">// Force RGBA</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="keywordflow">if</span> (pixels) {</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            GLFWimage icon;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            icon.width  = width;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            icon.height = height;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>            icon.pixels = pixels;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            glfwSetWindowIcon(mWindow, 1, &amp;icon);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            stbi_image_free(pixels);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            <a class="code hl_function" href="class_astera_1_1_log.html#ae021e46e6f91bbc7f8807f377b72e139">Log::Error</a>(<span class="stringliteral">&quot;Game&quot;</span>, <span class="stringliteral">&quot;Failed to load window icon: {}&quot;</span>, filename.string());</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        }</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    }</div>
 </div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <span class="keywordtype">void</span> Game::GLFWResizeCallback(GLFWwindow* mWindow, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> width, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> height) {</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        <span class="keyword">auto</span>* game = CAST&lt;Game*&gt;(glfwGetWindowUserPointer(mWindow));</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        <span class="keywordflow">if</span> (game) {</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            game-&gt;GetRenderContext().Resize(width, height);</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            game-&gt;OnResize(width, height);</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        }</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    }</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="keywordtype">void</span> Game::GLFWKeyCallback(GLFWwindow* mWindow, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> key, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> scancode, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> action, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> mods) {</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        N_UNUSED(scancode);</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        N_UNUSED(mods);</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        <span class="keyword">auto</span>* game = CAST&lt;Game*&gt;(glfwGetWindowUserPointer(mWindow));</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        <span class="keywordflow">if</span> (game) {</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>            game-&gt;OnKey(key);</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            <span class="keywordflow">if</span> (action == GLFW_PRESS) game-&gt;OnKeyDown(key);</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (action == GLFW_RELEASE) game-&gt;OnKeyUp(key);</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        }</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    }</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keywordtype">void</span> Game::GLFWMouseButtonCallback(GLFWwindow* mWindow, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> button, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> action, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> mods) {</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        N_UNUSED(mods);</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        <span class="keyword">auto</span>* game = CAST&lt;Game*&gt;(glfwGetWindowUserPointer(mWindow));</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        <span class="keywordflow">if</span> (game) {</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            game-&gt;OnMouseButton(button);</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            <span class="keywordflow">if</span> (action == GLFW_PRESS) game-&gt;OnMouseButtonDown(button);</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (action == GLFW_RELEASE) game-&gt;OnMouseButtonUp(button);</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        }</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keywordtype">void</span> Game::GLFWResizeCallback(GLFWwindow* mWindow, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> width, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> height) {</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        <span class="keyword">auto</span>* game = CAST&lt;Game*&gt;(glfwGetWindowUserPointer(mWindow));</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        <span class="keywordflow">if</span> (game) {</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            game-&gt;GetRenderContext().Resize(width, height);</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            game-&gt;OnResize(width, height);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        }</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    }</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    <span class="keywordtype">void</span> Game::GLFWKeyCallback(GLFWwindow* mWindow, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> key, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> scancode, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> action, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> mods) {</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        ASTERA_UNUSED(scancode);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        ASTERA_UNUSED(mods);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        <span class="keyword">auto</span>* game = CAST&lt;Game*&gt;(glfwGetWindowUserPointer(mWindow));</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        <span class="keywordflow">if</span> (game) {</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            game-&gt;OnKey(key);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            <span class="keywordflow">if</span> (action == GLFW_PRESS) game-&gt;OnKeyDown(key);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (action == GLFW_RELEASE) game-&gt;OnKeyUp(key);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        }</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    }</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="keywordtype">void</span> Game::GLFWMouseButtonCallback(GLFWwindow* mWindow, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> button, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> action, <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> mods) {</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        ASTERA_UNUSED(mods);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        <span class="keyword">auto</span>* game = CAST&lt;Game*&gt;(glfwGetWindowUserPointer(mWindow));</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        <span class="keywordflow">if</span> (game) {</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            game-&gt;OnMouseButton(button);</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>            <span class="keywordflow">if</span> (action == GLFW_PRESS) game-&gt;OnMouseButtonDown(button);</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (action == GLFW_RELEASE) game-&gt;OnMouseButtonUp(button);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        }</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    }</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    <span class="keywordtype">void</span> Game::GLFWMouseCursorCallback(GLFWwindow* mWindow, <a class="code hl_typedef" href="namespace_astera.html#a865f9f3fe1a617d8fdeaeab77029fb27">f64</a> xpos, <a class="code hl_typedef" href="namespace_astera.html#a865f9f3fe1a617d8fdeaeab77029fb27">f64</a> ypos) {</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        <span class="keyword">auto</span>* game = CAST&lt;Game*&gt;(glfwGetWindowUserPointer(mWindow));</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        <span class="keywordflow">if</span> (game) { game-&gt;OnMouseMove(xpos, ypos); }</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    }</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    <span class="keywordtype">void</span> Game::GLFWMouseCursorCallback(GLFWwindow* mWindow, <a class="code hl_typedef" href="namespace_astera.html#a865f9f3fe1a617d8fdeaeab77029fb27">f64</a> xpos, <a class="code hl_typedef" href="namespace_astera.html#a865f9f3fe1a617d8fdeaeab77029fb27">f64</a> ypos) {</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    <span class="keywordtype">void</span> Game::GLFWMouseScrollCallback(GLFWwindow* mWindow, <a class="code hl_typedef" href="namespace_astera.html#a865f9f3fe1a617d8fdeaeab77029fb27">f64</a> xoffset, <a class="code hl_typedef" href="namespace_astera.html#a865f9f3fe1a617d8fdeaeab77029fb27">f64</a> yoffset) {</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        <span class="keyword">auto</span>* game = CAST&lt;Game*&gt;(glfwGetWindowUserPointer(mWindow));</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <span class="keywordflow">if</span> (game) { game-&gt;OnMouseMove(xpos, ypos); }</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <span class="keywordflow">if</span> (game) { game-&gt;OnMouseScroll(xoffset, yoffset); }</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    }</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <span class="keywordtype">void</span> Game::GLFWMouseScrollCallback(GLFWwindow* mWindow, <a class="code hl_typedef" href="namespace_astera.html#a865f9f3fe1a617d8fdeaeab77029fb27">f64</a> xoffset, <a class="code hl_typedef" href="namespace_astera.html#a865f9f3fe1a617d8fdeaeab77029fb27">f64</a> yoffset) {</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        <span class="keyword">auto</span>* game = CAST&lt;Game*&gt;(glfwGetWindowUserPointer(mWindow));</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        <span class="keywordflow">if</span> (game) { game-&gt;OnMouseScroll(xoffset, yoffset); }</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    }</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>}  <span class="comment">// namespace Astera</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>}  <span class="comment">// namespace Astera</span></div>
 <div class="ttc" id="a_coordinates_8hpp_html"><div class="ttname"><a href="_coordinates_8hpp.html">Coordinates.hpp</a></div></div>
 <div class="ttc" id="a_game_8hpp_html"><div class="ttname"><a href="_game_8hpp.html">Game.hpp</a></div></div>
 <div class="ttc" id="a_im_gui_debug_layer_8hpp_html"><div class="ttname"><a href="_im_gui_debug_layer_8hpp.html">ImGuiDebugLayer.hpp</a></div></div>
@@ -476,7 +471,7 @@ $(document).ready(function(){initNavTree('_game_8cpp_source.html',''); initResiz
 <div class="ttc" id="aclass_astera_1_1_audio_engine_html_a08dabe503a1bf9112747e707447e74bd"><div class="ttname"><a href="class_astera_1_1_audio_engine.html#a08dabe503a1bf9112747e707447e74bd">Astera::AudioEngine::Shutdown</a></div><div class="ttdeci">void Shutdown()</div><div class="ttdoc">Shuts down the audio engine and releases all resources.</div><div class="ttdef"><b>Definition</b> <a href="_audio_engine_8cpp_source.html#l00058">AudioEngine.cpp:58</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_audio_engine_html_a67f42f86bce92cb5efaeedfa070ac96a"><div class="ttname"><a href="class_astera_1_1_audio_engine.html#a67f42f86bce92cb5efaeedfa070ac96a">Astera::AudioEngine::Initialize</a></div><div class="ttdeci">bool Initialize()</div><div class="ttdoc">Initializes the audio engine and underlying miniaudio engine.</div><div class="ttdef"><b>Definition</b> <a href="_audio_engine_8cpp_source.html#l00041">AudioEngine.cpp:41</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_clock_html"><div class="ttname"><a href="class_astera_1_1_clock.html">Astera::Clock</a></div><div class="ttdoc">High-precision clock for timing and frame rate tracking.</div><div class="ttdef"><b>Definition</b> <a href="_clock_8hpp_source.html#l00045">Clock.hpp:45</a></div></div>
-<div class="ttc" id="aclass_astera_1_1_clock_html_a83359664bc0790d6036102938eb76258"><div class="ttname"><a href="class_astera_1_1_clock.html#a83359664bc0790d6036102938eb76258">Astera::Clock::GetDeltaTime</a></div><div class="ttdeci">N_ND f32 GetDeltaTime() const</div><div class="ttdoc">Gets the time elapsed since the last tick.</div><div class="ttdef"><b>Definition</b> <a href="_clock_8cpp_source.html#l00084">Clock.cpp:84</a></div></div>
+<div class="ttc" id="aclass_astera_1_1_clock_html_a83359664bc0790d6036102938eb76258"><div class="ttname"><a href="class_astera_1_1_clock.html#a83359664bc0790d6036102938eb76258">Astera::Clock::GetDeltaTime</a></div><div class="ttdeci">ASTERA_KEEP f32 GetDeltaTime() const</div><div class="ttdoc">Gets the time elapsed since the last tick.</div><div class="ttdef"><b>Definition</b> <a href="_clock_8cpp_source.html#l00084">Clock.cpp:84</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_clock_html_ac0bec751252d3524b857e348d7b004d7"><div class="ttname"><a href="class_astera_1_1_clock.html#ac0bec751252d3524b857e348d7b004d7">Astera::Clock::Tick</a></div><div class="ttdeci">void Tick()</div><div class="ttdoc">Updates the clock and calculates time deltas.</div><div class="ttdef"><b>Definition</b> <a href="_clock_8cpp_source.html#l00053">Clock.cpp:53</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_debug_manager_html_a07076f6f5c5631d875c7705a7debd53f"><div class="ttname"><a href="class_astera_1_1_debug_manager.html#a07076f6f5c5631d875c7705a7debd53f">Astera::DebugManager::DetachOverlays</a></div><div class="ttdeci">void DetachOverlays()</div><div class="ttdoc">Detaches all registered debug overlays.</div><div class="ttdef"><b>Definition</b> <a href="_debug_interface_8cpp_source.html#l00041">DebugInterface.cpp:41</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_debug_manager_html_a39a5b7b915b13c3a9b810636e5d59c72"><div class="ttname"><a href="class_astera_1_1_debug_manager.html#a39a5b7b915b13c3a9b810636e5d59c72">Astera::DebugManager::AttachOverlay</a></div><div class="ttdeci">void AttachOverlay(const std::string &amp;name, IDebugOverlay *overlay)</div><div class="ttdoc">Attaches a debug overlay to the manager.</div><div class="ttdef"><b>Definition</b> <a href="_debug_interface_8cpp_source.html#l00037">DebugInterface.cpp:37</a></div></div>
@@ -492,9 +487,9 @@ $(document).ready(function(){initNavTree('_game_8cpp_source.html',''); initResiz
 <div class="ttc" id="aclass_astera_1_1_game_html_a643936fbd2df7813d61c736f7fa158d3"><div class="ttname"><a href="class_astera_1_1_game.html#a643936fbd2df7813d61c736f7fa158d3">Astera::Game::Run</a></div><div class="ttdeci">void Run()</div><div class="ttdoc">Starts the main game loop.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00044">Game.cpp:44</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_game_html_a67e55b03d3ff223ba927df638e6de372"><div class="ttname"><a href="class_astera_1_1_game.html#a67e55b03d3ff223ba927df638e6de372">Astera::Game::OnMouseButtonUp</a></div><div class="ttdeci">virtual void OnMouseButtonUp(u32 button)</div><div class="ttdoc">Called when a mouse button is released.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00108">Game.cpp:108</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_game_html_a6952d973553a765f698af574394f49e0"><div class="ttname"><a href="class_astera_1_1_game.html#a6952d973553a765f698af574394f49e0">Astera::Game::OnLateUpdate</a></div><div class="ttdeci">virtual void OnLateUpdate()</div><div class="ttdoc">Called every frame after OnUpdate, before rendering.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00146">Game.cpp:146</a></div></div>
+<div class="ttc" id="aclass_astera_1_1_game_html_a7769b46a09af36df5621b2d466f2855a"><div class="ttname"><a href="class_astera_1_1_game.html#a7769b46a09af36df5621b2d466f2855a">Astera::Game::GetWindowHandle</a></div><div class="ttdeci">ASTERA_KEEP GLFWwindow * GetWindowHandle()</div><div class="ttdoc">Gets the GLFW window handle.</div><div class="ttdef"><b>Definition</b> <a href="_game_8hpp_source.html#l00189">Game.hpp:189</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_game_html_a8684142dd8bd32113775c7e2023fc69d"><div class="ttname"><a href="class_astera_1_1_game.html#a8684142dd8bd32113775c7e2023fc69d">Astera::Game::OnMouseButton</a></div><div class="ttdeci">virtual void OnMouseButton(u32 button)</div><div class="ttdoc">Called continuously while a mouse button is held down.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00112">Game.cpp:112</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_game_html_a91718d6c1387348a5cd555f96f0b94cf"><div class="ttname"><a href="class_astera_1_1_game.html#a91718d6c1387348a5cd555f96f0b94cf">Astera::Game::OnKey</a></div><div class="ttdeci">virtual void OnKey(u32 keyCode)</div><div class="ttdoc">Called continuously while a key is held down.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00102">Game.cpp:102</a></div></div>
-<div class="ttc" id="aclass_astera_1_1_game_html_a9222cdd7cb9bae76ff94e8205bb0d426"><div class="ttname"><a href="class_astera_1_1_game.html#a9222cdd7cb9bae76ff94e8205bb0d426">Astera::Game::GetWindowHandle</a></div><div class="ttdeci">N_ND GLFWwindow * GetWindowHandle()</div><div class="ttdoc">Gets the GLFW window handle.</div><div class="ttdef"><b>Definition</b> <a href="_game_8hpp_source.html#l00189">Game.hpp:189</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_game_html_a9305a162abb5e4b3f588b1ef2d28b759"><div class="ttname"><a href="class_astera_1_1_game.html#a9305a162abb5e4b3f588b1ef2d28b759">Astera::Game::OnKeyUp</a></div><div class="ttdeci">virtual void OnKeyUp(u32 keyCode)</div><div class="ttdoc">Called when a keyboard key is released.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00098">Game.cpp:98</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_game_html_a99b2dcd030d25627d9a17aac30f7e861"><div class="ttname"><a href="class_astera_1_1_game.html#a99b2dcd030d25627d9a17aac30f7e861">Astera::Game::Resize</a></div><div class="ttdeci">void Resize(u32 width, u32 height) const</div><div class="ttdoc">Resizes the game window.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00085">Game.cpp:85</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_game_html_aa327de1a86e69ea29395388c1f14912b"><div class="ttname"><a href="class_astera_1_1_game.html#aa327de1a86e69ea29395388c1f14912b">Astera::Game::OnResize</a></div><div class="ttdeci">virtual void OnResize(u32 width, u32 height)</div><div class="ttdoc">Called when the window is resized.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00089">Game.cpp:89</a></div></div>
@@ -505,10 +500,10 @@ $(document).ready(function(){initNavTree('_game_8cpp_source.html',''); initResiz
 <div class="ttc" id="aclass_astera_1_1_game_html_ac4ac608ada60c59528f091d2d2910b8d"><div class="ttname"><a href="class_astera_1_1_game.html#ac4ac608ada60c59528f091d2d2910b8d">Astera::Game::OnMouseButtonDown</a></div><div class="ttdeci">virtual void OnMouseButtonDown(u32 button)</div><div class="ttdoc">Called when a mouse button is pressed down.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00104">Game.cpp:104</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_game_html_ad0a55a49d924339b7321d938ba98a629"><div class="ttname"><a href="class_astera_1_1_game.html#ad0a55a49d924339b7321d938ba98a629">Astera::Game::OnUpdate</a></div><div class="ttdeci">virtual void OnUpdate(const Clock &amp;clock)</div><div class="ttdoc">Called every frame during the update phase.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00131">Game.cpp:131</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_game_html_ad7df3cf728dae4f69bf3faff80ffee33"><div class="ttname"><a href="class_astera_1_1_game.html#ad7df3cf728dae4f69bf3faff80ffee33">Astera::Game::ToggleFullscreen</a></div><div class="ttdeci">void ToggleFullscreen()</div><div class="ttdoc">Toggles between fullscreen and windowed mode.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00071">Game.cpp:71</a></div></div>
-<div class="ttc" id="aclass_astera_1_1_game_html_ae141f8e96b5de4f444538770ccda9de9"><div class="ttname"><a href="class_astera_1_1_game.html#ae141f8e96b5de4f444538770ccda9de9">Astera::Game::SetWindowIcon</a></div><div class="ttdeci">void SetWindowIcon(const fs::path &amp;filename) const</div><div class="ttdoc">Sets the game window icon to the specified image file.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00270">Game.cpp:270</a></div></div>
+<div class="ttc" id="aclass_astera_1_1_game_html_ae141f8e96b5de4f444538770ccda9de9"><div class="ttname"><a href="class_astera_1_1_game.html#ae141f8e96b5de4f444538770ccda9de9">Astera::Game::SetWindowIcon</a></div><div class="ttdeci">void SetWindowIcon(const fs::path &amp;filename) const</div><div class="ttdoc">Sets the game window icon to the specified image file.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00265">Game.cpp:265</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_game_html_ae5ff7498fb1859d80df4f6834b89bfe9"><div class="ttname"><a href="class_astera_1_1_game.html#ae5ff7498fb1859d80df4f6834b89bfe9">Astera::Game::mHeight</a></div><div class="ttdeci">u32 mHeight</div><div class="ttdoc">Current window height in pixels.</div><div class="ttdef"><b>Definition</b> <a href="_game_8hpp_source.html#l00251">Game.hpp:251</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_game_html_ae619a5b539ae4a5a962ddaad096ebe72"><div class="ttname"><a href="class_astera_1_1_game.html#ae619a5b539ae4a5a962ddaad096ebe72">Astera::Game::Quit</a></div><div class="ttdeci">void Quit()</div><div class="ttdoc">Requests the game to quit.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00067">Game.cpp:67</a></div></div>
-<div class="ttc" id="aclass_astera_1_1_game_html_af905e019f1b320c37b3293fa695ec4dc"><div class="ttname"><a href="class_astera_1_1_game.html#af905e019f1b320c37b3293fa695ec4dc">Astera::Game::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdoc">Renders the current frame.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00258">Game.cpp:258</a></div></div>
+<div class="ttc" id="aclass_astera_1_1_game_html_af905e019f1b320c37b3293fa695ec4dc"><div class="ttname"><a href="class_astera_1_1_game.html#af905e019f1b320c37b3293fa695ec4dc">Astera::Game::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdoc">Renders the current frame.</div><div class="ttdef"><b>Definition</b> <a href="_game_8cpp_source.html#l00253">Game.cpp:253</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_log_html"><div class="ttname"><a href="class_astera_1_1_log.html">Astera::Log</a></div><div class="ttdef"><b>Definition</b> <a href="_log_8hpp_source.html#l00038">Log.hpp:38</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_log_html_a2e1612d0d1bbbf9c45f4c461357bbd1d"><div class="ttname"><a href="class_astera_1_1_log.html#a2e1612d0d1bbbf9c45f4c461357bbd1d">Astera::Log::Shutdown</a></div><div class="ttdeci">static void Shutdown()</div><div class="ttdef"><b>Definition</b> <a href="_log_8cpp_source.html#l00071">Log.cpp:71</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_log_html_a48a9ad4a5326cc0038b847126ad9c480"><div class="ttname"><a href="class_astera_1_1_log.html#a48a9ad4a5326cc0038b847126ad9c480">Astera::Log::Critical</a></div><div class="ttdeci">static void Critical(const std::string &amp;subsystem, fmt::format_string&lt; Args... &gt; fmt, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="_log_8hpp_source.html#l00069">Log.hpp:69</a></div></div>
@@ -517,7 +512,7 @@ $(document).ready(function(){initNavTree('_game_8cpp_source.html',''); initResiz
 <div class="ttc" id="aclass_astera_1_1_render_context_html_a2172f0aab039629b1e8cf5ee9bcb452c"><div class="ttname"><a href="class_astera_1_1_render_context.html#a2172f0aab039629b1e8cf5ee9bcb452c">Astera::RenderContext::Shutdown</a></div><div class="ttdeci">void Shutdown() const</div><div class="ttdef"><b>Definition</b> <a href="_render_context_8cpp_source.html#l00060">RenderContext.cpp:60</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_render_context_html_a7ec87708d772589d385ee27f15ee78f7"><div class="ttname"><a href="class_astera_1_1_render_context.html#a7ec87708d772589d385ee27f15ee78f7">Astera::RenderContext::BeginFrame</a></div><div class="ttdeci">void BeginFrame()</div><div class="ttdef"><b>Definition</b> <a href="_render_context_8cpp_source.html#l00064">RenderContext.cpp:64</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_render_context_html_a949952e1ad6a3e0205f84bf63818e7db"><div class="ttname"><a href="class_astera_1_1_render_context.html#a949952e1ad6a3e0205f84bf63818e7db">Astera::RenderContext::Initialize</a></div><div class="ttdeci">bool Initialize(u32 width, u32 height)</div><div class="ttdef"><b>Definition</b> <a href="_render_context_8cpp_source.html#l00034">RenderContext.cpp:34</a></div></div>
-<div class="ttc" id="aclass_astera_1_1_render_context_html_abc4212a975eff258a3410bd45918c7ed"><div class="ttname"><a href="class_astera_1_1_render_context.html#abc4212a975eff258a3410bd45918c7ed">Astera::RenderContext::GetCommandQueue</a></div><div class="ttdeci">N_ND CommandQueue &amp; GetCommandQueue()</div><div class="ttdef"><b>Definition</b> <a href="_render_context_8hpp_source.html#l00050">RenderContext.hpp:50</a></div></div>
+<div class="ttc" id="aclass_astera_1_1_render_context_html_ad9dd0e783403a85e6658da06190d0691"><div class="ttname"><a href="class_astera_1_1_render_context.html#ad9dd0e783403a85e6658da06190d0691">Astera::RenderContext::GetCommandQueue</a></div><div class="ttdeci">ASTERA_KEEP CommandQueue &amp; GetCommandQueue()</div><div class="ttdef"><b>Definition</b> <a href="_render_context_8hpp_source.html#l00050">RenderContext.hpp:50</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_render_context_html_afa6866246c01178c0450d1537ca7c7c3"><div class="ttname"><a href="class_astera_1_1_render_context.html#afa6866246c01178c0450d1537ca7c7c3">Astera::RenderContext::EndFrame</a></div><div class="ttdeci">void EndFrame()</div><div class="ttdef"><b>Definition</b> <a href="_render_context_8cpp_source.html#l00069">RenderContext.cpp:69</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_script_engine_html_a5359d00f48b506406770b1753942b91b"><div class="ttname"><a href="class_astera_1_1_script_engine.html#a5359d00f48b506406770b1753942b91b">Astera::ScriptEngine::IsInitialized</a></div><div class="ttdeci">bool IsInitialized() const</div><div class="ttdoc">Checks if the script engine has been initialized.</div><div class="ttdef"><b>Definition</b> <a href="_script_engine_8hpp_source.html#l00184">ScriptEngine.hpp:184</a></div></div>
 <div class="ttc" id="aclass_astera_1_1_script_engine_html_a5e2a7f0b733addd6fa4c379b5e9f3a3a"><div class="ttname"><a href="class_astera_1_1_script_engine.html#a5e2a7f0b733addd6fa4c379b5e9f3a3a">Astera::ScriptEngine::Initialize</a></div><div class="ttdeci">void Initialize()</div><div class="ttdoc">Initializes the script engine and Lua state.</div><div class="ttdef"><b>Definition</b> <a href="_script_engine_8cpp_source.html#l00042">ScriptEngine.cpp:42</a></div></div>
