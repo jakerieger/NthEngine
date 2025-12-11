@@ -110,6 +110,7 @@ var NAVTREEINDEX0 =
 "_game_8cpp_source.html":[3,0,1,0,13],
 "_game_8hpp.html":[3,0,1,0,14],
 "_game_8hpp.html#ac6b42827b3058614e3b70e712af5d2e9":[3,0,1,0,14,1],
+"_game_8hpp.html#af96862b2f0b8135b49d0ffe8a2506ea0":[3,0,1,0,14,2],
 "_game_8hpp_source.html":[3,0,1,0,14],
 "_game_8lua.html":[3,0,0,0,0,4],
 "_game_8lua_source.html":[3,0,0,0,0,4],
@@ -237,10 +238,10 @@ var NAVTREEINDEX0 =
 "class_astera_1_1_audio_engine.html#a08dabe503a1bf9112747e707447e74bd":[0,0,0,5,8],
 "class_astera_1_1_audio_engine.html#a3592b1bef250d74d3389ede062748d84":[2,0,0,0,5],
 "class_astera_1_1_audio_engine.html#a3592b1bef250d74d3389ede062748d84":[0,0,0,5,5],
-"class_astera_1_1_audio_engine.html#a40b4662596954eda0b6dd5d8f90e4fbf":[2,0,0,0,6],
 "class_astera_1_1_audio_engine.html#a40b4662596954eda0b6dd5d8f90e4fbf":[0,0,0,5,6],
-"class_astera_1_1_audio_engine.html#a5451718849cea61f2284207be89362cd":[0,0,0,5,9],
+"class_astera_1_1_audio_engine.html#a40b4662596954eda0b6dd5d8f90e4fbf":[2,0,0,0,6],
 "class_astera_1_1_audio_engine.html#a5451718849cea61f2284207be89362cd":[2,0,0,0,9],
+"class_astera_1_1_audio_engine.html#a5451718849cea61f2284207be89362cd":[0,0,0,5,9],
 "class_astera_1_1_audio_engine.html#a67f42f86bce92cb5efaeedfa070ac96a":[2,0,0,0,2],
 "class_astera_1_1_audio_engine.html#a67f42f86bce92cb5efaeedfa070ac96a":[0,0,0,5,2],
 "class_astera_1_1_audio_engine.html#a8c66d0e73a0d94b8a4a7ae26acb47829":[2,0,0,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "class_astera_1_1_audio_engine.html#a8e161cd8d1096a4c4fd22be4e6041610":[0,0,0,5,1],
 "class_astera_1_1_audio_engine.html#a8e161cd8d1096a4c4fd22be4e6041610":[2,0,0,0,1],
 "class_astera_1_1_audio_engine.html#a935779e8a47e7c969ba8191f8a25ff1f":[0,0,0,5,7],
-"class_astera_1_1_audio_engine.html#a935779e8a47e7c969ba8191f8a25ff1f":[2,0,0,0,7],
-"class_astera_1_1_audio_engine.html#a987cb012fa4c59d7b5ac472544a154ad":[0,0,0,5,10]
+"class_astera_1_1_audio_engine.html#a935779e8a47e7c969ba8191f8a25ff1f":[2,0,0,0,7]
 };

@@ -342,7 +342,15 @@ $(document).ready(function(){initNavTree('_game_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno"><a class="line" href="_game_8hpp.html#ac6b42827b3058614e3b70e712af5d2e9">  358</a></span><span class="preprocessor">    #define ASTERA_ENTRYPOINT int main(int argc, char* argv[])</span></div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>}  <span class="comment">// namespace Astera</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
+<div class="foldopen" id="foldopen00361" data-start="" data-end="">
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno"><a class="line" href="_game_8hpp.html#af96862b2f0b8135b49d0ffe8a2506ea0">  361</a></span><span class="preprocessor">#define ASTERA_RUN_GAME(GAME_CLASS)                                                                                    \</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="preprocessor">    ASTERA_ENTRYPOINT {                                                                                                \</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="preprocessor">        Content::SetRuntimeDefaults();                                                                                 \</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="preprocessor">        GAME_CLASS().Run();                                                                                            \</span></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="preprocessor">    }</span></div>
+</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>}  <span class="comment">// namespace Astera</span></div>
 <div class="ttc" id="a_audio_engine_8hpp_html"><div class="ttname"><a href="_audio_engine_8hpp.html">AudioEngine.hpp</a></div></div>
 <div class="ttc" id="a_clock_8hpp_html"><div class="ttname"><a href="_clock_8hpp.html">Clock.hpp</a></div></div>
 <div class="ttc" id="a_debug_interface_8hpp_html"><div class="ttname"><a href="_debug_interface_8hpp.html">DebugInterface.hpp</a></div></div>

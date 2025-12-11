@@ -127,8 +127,10 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ac6b42827b3058614e3b70e712af5d2e9" id="r_ac6b42827b3058614e3b70e712af5d2e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_8hpp.html#ac6b42827b3058614e3b70e712af5d2e9">ASTERA_ENTRYPOINT</a>&#160;&#160;&#160;int <a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(int argc, char* argv[])</td></tr>
-<tr class="memdesc:ac6b42827b3058614e3b70e712af5d2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard entry point macro for all other configurations Uses standard main function with command-line arguments.  <br /></td></tr>
+<tr class="memdesc:ac6b42827b3058614e3b70e712af5d2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard entry point macro for all other configurations. Uses standard main function with command-line arguments.  <br /></td></tr>
 <tr class="separator:ac6b42827b3058614e3b70e712af5d2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af96862b2f0b8135b49d0ffe8a2506ea0" id="r_af96862b2f0b8135b49d0ffe8a2506ea0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_8hpp.html#af96862b2f0b8135b49d0ffe8a2506ea0">ASTERA_RUN_GAME</a>(GAME_CLASS)</td></tr>
+<tr class="separator:af96862b2f0b8135b49d0ffe8a2506ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ac6b42827b3058614e3b70e712af5d2e9" name="ac6b42827b3058614e3b70e712af5d2e9"></a>
@@ -143,9 +145,34 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Standard entry point macro for all other configurations Uses standard main function with command-line arguments. </p>
+<p>Standard entry point macro for all other configurations. Uses standard main function with command-line arguments. </p>
 
 <p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00358">358</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af96862b2f0b8135b49d0ffe8a2506ea0" name="af96862b2f0b8135b49d0ffe8a2506ea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af96862b2f0b8135b49d0ffe8a2506ea0">&#9670;&#160;</a></span>ASTERA_RUN_GAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASTERA_RUN_GAME</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">GAME_CLASS</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_define" href="_game_8hpp.html#ac6b42827b3058614e3b70e712af5d2e9">ASTERA_ENTRYPOINT</a> {                                                                                                \</div>
+<div class="line">        Content::SetRuntimeDefaults();                                                                                 \</div>
+<div class="line">        GAME_CLASS().Run();                                                                                            \</div>
+<div class="line">    }</div>
+<div class="ttc" id="a_game_8hpp_html_ac6b42827b3058614e3b70e712af5d2e9"><div class="ttname"><a href="_game_8hpp.html#ac6b42827b3058614e3b70e712af5d2e9">ASTERA_ENTRYPOINT</a></div><div class="ttdeci">#define ASTERA_ENTRYPOINT</div><div class="ttdoc">Standard entry point macro for all other configurations. Uses standard main function with command-lin...</div><div class="ttdef"><b>Definition</b> <a href="_game_8hpp_source.html#l00358">Game.hpp:358</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_game_8hpp_source.html#l00361">361</a> of file <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
 
 </div>
 </div>

@@ -65,8 +65,8 @@ var NAVTREEINDEX =
 "class_astera_1_1_audio_engine.html#a987cb012fa4c59d7b5ac472544a154ad",
 "class_astera_1_1_geometry.html",
 "class_astera_1_1_shader.html",
-"struct_astera_1_1_behavior_entity.html",
-"struct_astera_1_1_sprite_instance_data.html#a2dc01c849254b263bb12f8f44023a887"
+"struct_astera_1_1_behavior_descriptor.html#aead15f253888e6fa1d0082e1f97eb1be",
+"struct_astera_1_1_sprite_instance_data.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
