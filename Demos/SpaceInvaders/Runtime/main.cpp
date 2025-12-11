@@ -24,7 +24,4 @@ public:
     }
 };
 
-ASTERA_ENTRYPOINT {
-    Content::SetRuntimeDefaults();
-    SpaceInvadersDemo().Run();
-}
+ASTERA_RUN_GAME(SpaceInvadersDemo)

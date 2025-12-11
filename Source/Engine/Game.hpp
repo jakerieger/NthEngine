@@ -348,13 +348,19 @@ namespace Astera {
     };
 
 #if defined(ASTERA_PLATFORM_WINDOWS) && defined(NDEBUG)
-    /// @brief Platform-specific entry point macro for Windows release builds
+    /// @brief Platform-specific entry point macro for Windows release builds.
     /// Uses WinMain for GUI applications without a console window
     #define ASTERA_ENTRYPOINT                                                                                          \
         int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, int nCmdShow)
 #else
-    /// @brief Standard entry point macro for all other configurations
+    /// @brief Standard entry point macro for all other configurations.
     /// Uses standard main function with command-line arguments
     #define ASTERA_ENTRYPOINT int main(int argc, char* argv[])
 #endif
+
+#define ASTERA_RUN_GAME(GAME_CLASS)                                                                                    \
+    ASTERA_ENTRYPOINT {                                                                                                \
+        Content::SetRuntimeDefaults();                                                                                 \
+        GAME_CLASS().Run();                                                                                            \
+    }
 }  // namespace Astera
