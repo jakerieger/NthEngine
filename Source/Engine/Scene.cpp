@@ -36,35 +36,35 @@ namespace Astera {
         mState.Reset();
     }
 
-    void Scene::Awake(ScriptEngine& scriptEngine) {
+    void Scene::Awake(ScriptEngine& engine) {
         const auto iter = mState.View<Transform, Behavior>().each();
         for (auto [entity, transform, behavior] : iter) {
             BehaviorEntity behaviorEntity((u32)entity, mState.GetEntityName(entity), &transform);
-            scriptEngine.CallAwakeBehavior(behavior.id, behaviorEntity);
+            engine.CallAwakeBehavior(behavior.id, behaviorEntity);
         }
     }
 
-    void Scene::Update(ScriptEngine& scriptEngine, const Clock& clock) {
+    void Scene::Update(const Clock& clock, ScriptEngine& engine) {
         const auto iter = mState.View<Transform, Behavior>().each();
         for (auto [entity, transform, behavior] : iter) {
             BehaviorEntity behaviorEntity((u32)entity, mState.GetEntityName(entity), &transform);
-            scriptEngine.CallUpdateBehavior(behavior.id, behaviorEntity, clock);
+            engine.CallUpdateBehavior(behavior.id, behaviorEntity, clock);
         }
     }
 
-    void Scene::LateUpdate(ScriptEngine& scriptEngine) {
+    void Scene::LateUpdate(ScriptEngine& engine) {
         const auto iter = mState.View<Transform, Behavior>().each();
         for (auto [entity, transform, behavior] : iter) {
             BehaviorEntity behaviorEntity((u32)entity, mState.GetEntityName(entity), &transform);
-            scriptEngine.CallLateUpdateBehavior(behavior.id, behaviorEntity);
+            engine.CallLateUpdateBehavior(behavior.id, behaviorEntity);
         }
     }
 
-    void Scene::Destroyed(ScriptEngine& scriptEngine) {
+    void Scene::Destroyed(ScriptEngine& engine) {
         const auto iter = mState.View<Transform, Behavior>().each();
         for (auto [entity, transform, behavior] : iter) {
             BehaviorEntity behaviorEntity((u32)entity, mState.GetEntityName(entity), &transform);
-            scriptEngine.CallDestroyedBehavior(behavior.id, behaviorEntity);
+            engine.CallDestroyedBehavior(behavior.id, behaviorEntity);
         }
     }
 
@@ -78,23 +78,27 @@ namespace Astera {
         }
     }
 
-    void Scene::Load(const fs::path& filename, ScriptEngine& scriptEngine) {
+    void Scene::Load(const fs::path& filename, ScriptEngine& engine) {
         mState.Reset();
+        mResourceManager.Clear();
+
         SceneDescriptor descriptor;
         SceneParser::DeserializeDescriptor(filename, descriptor);
-        SceneParser::DescriptorToState(descriptor, mState, scriptEngine);
+        SceneParser::DescriptorToState(descriptor, mState, engine);
 
-        Awake(scriptEngine);
         Log::Debug("Scene", "Loaded scene: `{}`", descriptor.name);
+        Awake(engine);
     }
 
-    void Scene::Load(const string& source, ScriptEngine& scriptEngine) {
+    void Scene::Load(const string& source, ScriptEngine& engine) {
         mState.Reset();
+        mResourceManager.Clear();
+
         SceneDescriptor descriptor;
         SceneParser::DeserializeDescriptor(source, descriptor);
-        SceneParser::DescriptorToState(descriptor, mState, scriptEngine);
+        SceneParser::DescriptorToState(descriptor, mState, engine);
 
-        Awake(scriptEngine);
         Log::Debug("Scene", "Loaded scene: `{}`", descriptor.name);
+        Awake(engine);
     }
 }  // namespace Astera

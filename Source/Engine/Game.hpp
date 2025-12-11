@@ -31,6 +31,7 @@
 #include "EngineCommon.hpp"
 #include "AudioEngine.hpp"
 #include "Clock.hpp"
+#include "FrameAllocator.hpp"
 #include "Input.hpp"
 #include "Scene.hpp"
 #include "ScriptEngine.hpp"
@@ -57,15 +58,15 @@ namespace Astera {
 
         ASTERA_CLASS_PREVENT_MOVES_COPIES(Game)
 
-        /// @brief Default constructor, creates a game with default window settings
-        Game() : mActiveScene(make_unique<Scene>()) {}
+        /// @brief Default constructor - creates a game with default window settings
+        Game() : mFrameAllocator(1_MB) {}
 
         /// @brief Constructs a game with custom window properties
         /// @param title Window title
         /// @param width Window width in pixels
         /// @param height Window height in pixels
         Game(const string& title, u32 width, u32 height)
-            : mTitle(title), mWidth(width), mHeight(height), mActiveScene(make_unique<Scene>()) {}
+            : mTitle(title), mWidth(width), mHeight(height), mFrameAllocator(1_MB) {}
 
         /// @brief Virtual destructor for proper cleanup of derived classes
         virtual ~Game() = default;
@@ -232,6 +233,12 @@ namespace Astera {
             return mDebugManager;
         }
 
+        /// @brief Gets the frame allocator
+        /// @return Reference to the frame allocator instance
+        ASTERA_KEEP FrameAllocator& GetFrameAllocator() {
+            return mFrameAllocator;
+        }
+
     protected:
         // Subclass-accessible window properties. Use provided getters for the others.
 
@@ -334,6 +341,9 @@ namespace Astera {
 
         /// @brief Audio playback and management engine
         AudioEngine mAudioEngine;
+
+        /// @brief Frame allocator for temporary, fast allocations
+        FrameAllocator mFrameAllocator;
 
         // Client systems
 

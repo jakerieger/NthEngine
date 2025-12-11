@@ -12,11 +12,7 @@ end
 ---@param this Entity
 ---@param clock Clock
 function OnUpdate(this, clock)
-    if Input:GetKeyDown(KeyCode.Space) then
-        if AudioPlayer:IsInitialized() then
-            AudioPlayer:PlaySound(1)
-        end
-    end
+
 end
 
 ---Called every frame, after rendering

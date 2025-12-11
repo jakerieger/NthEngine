@@ -1,5 +1,5 @@
 /*
- *  Filename: Coordinates.hpp
+ *  Filename: Coordinates.inl
  *  This code is part of the Astera core library
  *  Copyright 2025 Jake Rieger
  *

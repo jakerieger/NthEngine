@@ -1,6 +1,6 @@
 # Third Party Licenses
 
-CLI11 — BSD 3-Clause License
+- CLI11 — BSD 3-Clause License
 
 BSD 3-Clause License
 
@@ -27,13 +27,14 @@ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
 DAMAGES...
 
 -----------------------------------------------------------------------
-EnTT — MIT License
-{fmt} — MIT License
-Dear ImGui — MIT License
-LuaJIT — MIT License
-pugixml — MIT License
-Sol2 — MIT License
-spdlog — MIT License
+
+- EnTT — MIT License
+- {fmt} — MIT License
+- Dear ImGui — MIT License
+- LuaJIT — MIT License
+- pugixml — MIT License
+- Sol2 — MIT License
+- spdlog — MIT License
 
 MIT License
 
@@ -46,7 +47,8 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software...
 
 -----------------------------------------------------------------------
-GLFW — zlib/libpng License
+
+- GLFW — zlib/libpng License
 
 zlib/libpng License
 

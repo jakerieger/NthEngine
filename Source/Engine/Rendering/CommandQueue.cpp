@@ -28,7 +28,7 @@
 
 #include "CommandQueue.hpp"
 
-#include "Coordinates.hpp"
+#include "Coordinates.inl"
 #include "Geometry.hpp"
 #include "Log.hpp"
 #include "ShaderManager.hpp"

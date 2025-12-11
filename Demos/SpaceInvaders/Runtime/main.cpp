@@ -19,7 +19,6 @@ public:
 
     void OnKeyDown(u32 keyCode) override {
         using namespace Input;
-
         if (keyCode == Keys::Escape) { Quit(); }
     }
 };

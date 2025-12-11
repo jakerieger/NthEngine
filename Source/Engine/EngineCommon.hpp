@@ -53,7 +53,7 @@
 
 #include <fmt/format.h>
 
-#include "Vendor/glad.h"
+#include <glad.h>
 #include <GLFW/glfw3.h>
 
 #if defined(ASTERA_PLATFORM_WINDOWS)
@@ -67,6 +67,7 @@
 
 #include "Common/Macros.hpp"
 #include "Common/IO.hpp"
+#include "Memory.hpp"
 
 #define CAST static_cast
 #define CCAST const_cast

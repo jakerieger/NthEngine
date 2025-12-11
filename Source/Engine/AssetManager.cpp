@@ -1,5 +1,5 @@
 /*
- *  Filename: Astera.hpp
+ *  Filename: AssetManager.cpp
  *  This code is part of the Astera core library
  *  Copyright 2025 Jake Rieger
  *
@@ -26,16 +26,6 @@
  *  of the possibility of such damages.
  */
 
-#pragma once
+#include "AssetManager.hpp"
 
-#include "EngineCommon.hpp"
-#include "Game.hpp"
-#include "InputCodes.hpp"
-#include "Coordinates.inl"
-#include "Content.hpp"
-#include "Color.hpp"
-#include "Math.hpp"
-#include "Log.hpp"
-
-/// @brief Root namespace of all Astera components
-namespace Astera {}
+namespace Astera {}  // namespace Astera

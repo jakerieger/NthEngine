@@ -1,5 +1,5 @@
 /*
- *  Filename: SceneState.cpp
+ *  Filename: AssetManager.hpp
  *  This code is part of the Astera core library
  *  Copyright 2025 Jake Rieger
  *
@@ -26,52 +26,11 @@
  *  of the possibility of such damages.
  */
 
-#include "SceneState.hpp"
-#include "Log.hpp"
+#pragma once
 
 namespace Astera {
-    SceneState::SceneState() = default;
-    SceneState::SceneState(SceneState&& other) noexcept : mRegistry(std::exchange(other.mRegistry, {})) {}
-
-    SceneState& SceneState::operator=(SceneState&& other) noexcept {
-        if (this != &other) { mRegistry = std::exchange(other.mRegistry, {}); }
-        return *this;
-    }
-
-    Entity SceneState::CreateEntity(const string& name) {
-        ASTERA_ASSERT(!name.empty());
-        const auto entity = mRegistry.create();
-        mRegistry.emplace<Transform>(entity);
-
-        mEntityNames[entity] = name;
-
-        return entity;
-    }
-
-    void SceneState::DestroyEntity(Entity entity) {
-        mRegistry.destroy(entity);
-        mEntityNames.erase(entity);
-    }
-
-    size_t SceneState::GetEntityCount() const {
-        const auto iter = mRegistry.view<Transform>().each();
-        return CAST<size_t>(Astera::Distance(iter));
-    }
-
-    Transform& SceneState::GetTransform(Entity entity) {
-        return GetComponent<Transform>(entity);
-    }
-
-    const string& SceneState::GetEntityName(Entity entity) const {
-        return mEntityNames.at(entity);
-    }
-
-    SceneState::~SceneState() {
-        Reset();
-    }
-
-    void SceneState::Reset() {
-        mRegistry.clear();
-        mEntityNames.clear();
-    }
+    class AssetManager {
+    public:
+        AssetManager() = default;
+    };
 }  // namespace Astera

@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <AsteraProject name="SpaceInvaders" engine_version="1">
     <StartupScene>Main</StartupScene>
+    <DistributionConfig>
+        <ProductName>Space Invaders</ProductName>
+        <ProductAuthor>Jake Rieger</ProductAuthor>
+        <ProductCopyright>Copyright (c) 2025 Jake Rieger</ProductCopyright>
+        <ProductIcon>Runtime/res/icon.png</ProductIcon>
+    </DistributionConfig>
 </AsteraProject>

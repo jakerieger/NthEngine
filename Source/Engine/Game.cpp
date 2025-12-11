@@ -27,7 +27,7 @@
  */
 
 #include "Game.hpp"
-#include "Coordinates.hpp"
+#include "Coordinates.inl"
 #include "Log.hpp"
 #include "TextureManager.hpp"
 #include "ShaderManager.hpp"
@@ -56,6 +56,8 @@ namespace Astera {
 
                 OnLateUpdate();
                 glfwPollEvents();
+
+                mFrameAllocator.NextFrame();
             }
 
             mRunning = false;
@@ -125,14 +127,14 @@ namespace Astera {
     }
 
     void Game::OnAwake() {
-        if (mActiveScene) mActiveScene->Awake(mScriptEngine);
+        if (mActiveScene) mActiveScene->Awake(GetScriptEngine());
     }
 
     void Game::OnUpdate(const Clock& clock) {
         mDebugManager.Update(clock.GetDeltaTime());
 
         if (mActiveScene) {
-            mActiveScene->Update(mScriptEngine, clock);
+            mActiveScene->Update(clock, GetScriptEngine());
 
             vector<Transform> transforms;
             const auto iter = mActiveScene->GetState().View<Transform>().each();
@@ -144,11 +146,11 @@ namespace Astera {
     }
 
     void Game::OnLateUpdate() {
-        if (mActiveScene) mActiveScene->LateUpdate(mScriptEngine);
+        if (mActiveScene) mActiveScene->LateUpdate(GetScriptEngine());
     }
 
     void Game::OnDestroyed() {
-        if (mActiveScene) mActiveScene->Destroyed(mScriptEngine);
+        if (mActiveScene) mActiveScene->Destroyed(GetScriptEngine());
     }
 
     bool Game::Initialize() {
@@ -202,6 +204,9 @@ namespace Astera {
         mPhysicsDebugLayer = make_unique<PhysicsDebugLayer>(mWidth, mHeight);
         mDebugManager.AttachOverlay("PhysicsDebugLayer", mPhysicsDebugLayer.get());
 
+        // Create the initial scene
+        mActiveScene = make_unique<Scene>(GetRenderContext());
+
         Log::Debug("Game",
                    "Successfully initialized game instance:\n-- Dimensions: {}x{}\n-- V-Sync: {}",
                    mWidth,
@@ -253,7 +258,7 @@ namespace Astera {
         mRenderContext.BeginFrame();
         {
             // Submit drawing commands here
-            if (mActiveScene) { mActiveScene->Render(mRenderContext); }
+            if (mActiveScene) { mActiveScene->Render(GetRenderContext()); }
         }
         mRenderContext.EndFrame();
 
