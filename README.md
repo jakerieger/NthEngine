@@ -1,5 +1,9 @@
 ![](Docs/Images/banner.png)
 
+<p align="center">
+    <img src="https://github.com/jakerieger/Astera/actions/workflows/BuildLinux.yaml/badge.svg?branch=master&event=push"/>
+</p>
+
 # Astera
 
 Astera is a cross-platform, 2D game engine written in C++. It uses OpenGL for rendering, Lua for
