@@ -1,4 +1,4 @@
-name: CMake Build (Windows)
+name: Build (Windows)
 
 on:
   push:
@@ -10,33 +10,34 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    env:
+      VCPKG_ROOT: ${{ github.workspace }}/vcpkg
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           submodules: recursive
 
-      - name: Setup vcpkg
-        uses: microsoft/setup-vcpkg@v1
+      - name: Checkout vcpkg
+        uses: actions/checkout@v4
         with:
-          vcpkg-version: 'latest'
+          repository: microsoft/vcpkg
+          path: vcpkg
+
+      - name: Bootstrap vcpkg
+        run: .\vcpkg\bootstrap-vcpkg.bat
 
       - name: Install dependencies via vcpkg
-        run: |
-          vcpkg install fmt spdlog pugixml cli11 glfw3 luajit --triplet x64-windows
+        run: .\vcpkg\vcpkg install fmt spdlog pugixml cli11 glfw3 luajit --triplet x64-windows
 
       - name: Configure CMake
         run: |
-          mkdir build
-          cd build
-          cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=$env:VCPKG_INSTALLATION_ROOT/scripts/buildsystems/vcpkg.cmake
+          cmake -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=${{ env.VCPKG_ROOT }}/scripts/buildsystems/vcpkg.cmake
 
       - name: Build
-        run: |
-          cd build
-          cmake --build . --config Release -j $env:NUMBER_OF_PROCESSORS
+        run: cmake --build build --config Release -j $env:NUMBER_OF_PROCESSORS
 
-      # Optional: Upload build artifacts
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         if: success()

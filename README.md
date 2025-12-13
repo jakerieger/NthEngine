@@ -2,6 +2,7 @@
 
 <p align="center">
     <img src="https://github.com/jakerieger/Astera/actions/workflows/BuildLinux.yaml/badge.svg?branch=master&event=push"/>
+    <img src="https://github.com/jakerieger/Astera/actions/workflows/BuildWindows.yaml/badge.svg" />
 </p>
 
 <p align="center">
