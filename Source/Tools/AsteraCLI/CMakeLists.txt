@@ -6,7 +6,7 @@ target_link_libraries(astera-cli PRIVATE
     OpenSSL::SSL
     OpenSSL::Crypto
     CLI11::CLI11
-    pugixml::static
+    pugixml
     Astera::Static
 )
 
