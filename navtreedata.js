@@ -45,6 +45,7 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
         [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -62,12 +63,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_arena_allocator_8cpp.html",
-"_texture_manager_8cpp_source.html",
-"class_astera_1_1_frame_allocator.html#a187dec4d5e80122878a98b7d77952ef0",
-"class_astera_1_1_render_context.html#a6155bed7a0798e9915ad377679875fc4",
-"concept_astera_1_1_valid_component.html",
-"struct_astera_1_1_draw_indexed_command.html#ad1d6f638c6cb48796f4c96e25ff157c3",
-"struct_astera_1_1_unbind_vertex_array_command.html"
+"_macros_8hpp.html#ac0e4294ab8d9b0c146834655d097e94b",
+"class_astera_1_1_binary_writer.html#ae3e58b544255b3902cb43b6595c153fea925641e0b76c28cc940e8f3ca178d826",
+"class_astera_1_1_game.html#a91718d6c1387348a5cd555f96f0b94cf",
+"class_astera_1_1_scene.html",
+"globals_func.html",
+"struct_astera_1_1_open_g_l_exception.html#aa673fbd22544e71ba7a3847beaeb88c2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

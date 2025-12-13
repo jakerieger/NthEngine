@@ -93,13 +93,14 @@ $(document).ready(function(){initNavTree('class_astera_1_1_scene_parser.html',''
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_astera_1_1_scene_parser-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Astera::SceneParser Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Utility class for converting between scene states and descriptors, and handling serialization.  
+<p>Utility class for converting between scene states and descriptors and handling serialization.  
  <a href="class_astera_1_1_scene_parser.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_scene_parser_8hpp_source.html">SceneParser.hpp</a>&gt;</code></p>
@@ -112,18 +113,21 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c814c880de219e5dd6c7cb471ea41ce" id="r_a4c814c880de219e5dd6c7cb471ea41ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">static</a> <a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_scene_parser.html#a4c814c880de219e5dd6c7cb471ea41ce">DescriptorToState</a> (<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> <a class="el" href="struct_astera_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">descriptor</a>, <a class="el" href="class_astera_1_1_scene_state.html">SceneState</a> &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">outState</a>, <a class="el" href="class_astera_1_1_script_engine.html">ScriptEngine</a> &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">scriptEngine</a>)</td></tr>
 <tr class="memdesc:a4c814c880de219e5dd6c7cb471ea41ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a scene descriptor to a scene state.  <br /></td></tr>
 <tr class="separator:a4c814c880de219e5dd6c7cb471ea41ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca0fac44f4fef283e70d8d0249898e70" id="r_aca0fac44f4fef283e70d8d0249898e70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">static</a> <a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_scene_parser.html#aca0fac44f4fef283e70d8d0249898e70">SerializeDescriptor</a> (<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> <a class="el" href="struct_astera_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">descriptor</a>)</td></tr>
-<tr class="memdesc:aca0fac44f4fef283e70d8d0249898e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a scene descriptor to disk.  <br /></td></tr>
-<tr class="separator:aca0fac44f4fef283e70d8d0249898e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c3c670845c4138f00ae5cec2cd4d334" id="r_a1c3c670845c4138f00ae5cec2cd4d334"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">static</a> <a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_scene_parser.html#a1c3c670845c4138f00ae5cec2cd4d334">DeserializeDescriptor</a> (<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> fs::path &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">filename</a>, <a class="el" href="struct_astera_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">outDescriptor</a>)</td></tr>
-<tr class="memdesc:a1c3c670845c4138f00ae5cec2cd4d334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a scene descriptor from a file.  <br /></td></tr>
-<tr class="separator:a1c3c670845c4138f00ae5cec2cd4d334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63367d8e355fed0b8e5a980b225147fe" id="r_a63367d8e355fed0b8e5a980b225147fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">static</a> <a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_scene_parser.html#a63367d8e355fed0b8e5a980b225147fe">DeserializeDescriptor</a> (<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> string &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">source</a>, <a class="el" href="struct_astera_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">outDescriptor</a>)</td></tr>
-<tr class="memdesc:a63367d8e355fed0b8e5a980b225147fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a scene descriptor from a string source.  <br /></td></tr>
-<tr class="separator:a63367d8e355fed0b8e5a980b225147fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2104ddd9b3cf0f2892c198f07e6a92" id="r_a7d2104ddd9b3cf0f2892c198f07e6a92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">static</a> <a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_scene_parser.html#a7d2104ddd9b3cf0f2892c198f07e6a92">SerializeDescriptorXML</a> (<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> <a class="el" href="struct_astera_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">descriptor</a>, <a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> fs::path &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">filename</a>)</td></tr>
+<tr class="memdesc:a7d2104ddd9b3cf0f2892c198f07e6a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a scene descriptor to XML.  <br /></td></tr>
+<tr class="separator:a7d2104ddd9b3cf0f2892c198f07e6a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c8aebf6bb30f285943dfd3ae43fcd6" id="r_a96c8aebf6bb30f285943dfd3ae43fcd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">static</a> <a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_scene_parser.html#a96c8aebf6bb30f285943dfd3ae43fcd6">SerializeDescriptorBytes</a> (<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> <a class="el" href="struct_astera_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">descriptor</a>, <a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> fs::path &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">filename</a>)</td></tr>
+<tr class="memdesc:a96c8aebf6bb30f285943dfd3ae43fcd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a scene descriptor to binary data (.scene)  <br /></td></tr>
+<tr class="separator:a96c8aebf6bb30f285943dfd3ae43fcd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a051362f39220e90ae85e10c98ab5cca4" id="r_a051362f39220e90ae85e10c98ab5cca4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">static</a> <a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_scene_parser.html#a051362f39220e90ae85e10c98ab5cca4">DeserializeDescriptorXML</a> (<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> fs::path &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">filename</a>, <a class="el" href="struct_astera_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">outDescriptor</a>)</td></tr>
+<tr class="memdesc:a051362f39220e90ae85e10c98ab5cca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a scene descriptor from a file.  <br /></td></tr>
+<tr class="separator:a051362f39220e90ae85e10c98ab5cca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d71169af0145857db161b9be9ce675" id="r_a00d71169af0145857db161b9be9ce675"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">static</a> <a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_scene_parser.html#a00d71169af0145857db161b9be9ce675">DeserializeDescriptorBytes</a> (<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> vector&lt; <a class="el" href="namespace_astera.html#a4fa33b880ef4545b39e7b108c4adad14">u8</a> &gt; &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">bytes</a>, <a class="el" href="struct_astera_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">outDescriptor</a>)</td></tr>
+<tr class="memdesc:a00d71169af0145857db161b9be9ce675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a scene descriptor from a string source.  <br /></td></tr>
+<tr class="separator:a00d71169af0145857db161b9be9ce675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Utility class for converting between scene states and descriptors, and handling serialization. </p>
+<div class="textblock"><p>Utility class for converting between scene states and descriptors and handling serialization. </p>
 
 <p class="definition">Definition at line <a class="el" href="_scene_parser_8hpp_source.html#l00040">40</a> of file <a class="el" href="_scene_parser_8hpp_source.html">SceneParser.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -177,12 +181,12 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_scene_parser_8cpp_source.html#l00159">159</a> of file <a class="el" href="_scene_parser_8cpp_source.html">SceneParser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_parser_8cpp_source.html#l00180">180</a> of file <a class="el" href="_scene_parser_8cpp_source.html">SceneParser.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a1c3c670845c4138f00ae5cec2cd4d334" name="a1c3c670845c4138f00ae5cec2cd4d334"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c3c670845c4138f00ae5cec2cd4d334">&#9670;&#160;</a></span>DeserializeDescriptor() <span class="overload">[1/2]</span></h2>
+<a id="a00d71169af0145857db161b9be9ce675" name="a00d71169af0145857db161b9be9ce675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00d71169af0145857db161b9be9ce675">&#9670;&#160;</a></span>DeserializeDescriptorBytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +195,54 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a> Astera::SceneParser::DeserializeDescriptor </td>
+          <td class="memname"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a> Astera::SceneParser::DeserializeDescriptorBytes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> vector&lt; <a class="el" href="namespace_astera.html#a4fa33b880ef4545b39e7b108c4adad14">u8</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_astera_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;&#160;</td>
+          <td class="paramname"><em>outDescriptor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deserializes a scene descriptor from a string source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bytes</td><td>Vector containing the serialized descriptor data </td></tr>
+    <tr><td class="paramname">outDescriptor</td><td>The descriptor to populate with deserialized data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_scene_parser_8cpp_source.html#l00331">331</a> of file <a class="el" href="_scene_parser_8cpp_source.html">SceneParser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a051362f39220e90ae85e10c98ab5cca4" name="a051362f39220e90ae85e10c98ab5cca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a051362f39220e90ae85e10c98ab5cca4">&#9670;&#160;</a></span>DeserializeDescriptorXML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a> Astera::SceneParser::DeserializeDescriptorXML </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> fs::path &amp;&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
@@ -224,12 +275,12 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_scene_parser_8cpp_source.html#l00225">225</a> of file <a class="el" href="_scene_parser_8cpp_source.html">SceneParser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_parser_8cpp_source.html#l00304">304</a> of file <a class="el" href="_scene_parser_8cpp_source.html">SceneParser.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a63367d8e355fed0b8e5a980b225147fe" name="a63367d8e355fed0b8e5a980b225147fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63367d8e355fed0b8e5a980b225147fe">&#9670;&#160;</a></span>DeserializeDescriptor() <span class="overload">[2/2]</span></h2>
+<a id="a96c8aebf6bb30f285943dfd3ae43fcd6" name="a96c8aebf6bb30f285943dfd3ae43fcd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96c8aebf6bb30f285943dfd3ae43fcd6">&#9670;&#160;</a></span>SerializeDescriptorBytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,16 +289,16 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a> Astera::SceneParser::DeserializeDescriptor </td>
+          <td class="memname"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a> Astera::SceneParser::SerializeDescriptorBytes </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> string &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramtype"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> <a class="el" href="struct_astera_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;&#160;</td>
+          <td class="paramname"><em>descriptor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_astera_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;&#160;</td>
-          <td class="paramname"><em>outDescriptor</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> fs::path &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -262,21 +313,21 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Deserializes a scene descriptor from a string source. </p>
+<p>Serializes a scene descriptor to binary data (.scene) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">source</td><td>String containing the serialized descriptor data </td></tr>
-    <tr><td class="paramname">outDescriptor</td><td>The descriptor to populate with deserialized data </td></tr>
+    <tr><td class="paramname">descriptor</td><td>The descriptor to serialize </td></tr>
+    <tr><td class="paramname">filename</td><td>Output file to save to </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_scene_parser_8cpp_source.html#l00248">248</a> of file <a class="el" href="_scene_parser_8cpp_source.html">SceneParser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_parser_8cpp_source.html#l00267">267</a> of file <a class="el" href="_scene_parser_8cpp_source.html">SceneParser.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aca0fac44f4fef283e70d8d0249898e70" name="aca0fac44f4fef283e70d8d0249898e70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca0fac44f4fef283e70d8d0249898e70">&#9670;&#160;</a></span>SerializeDescriptor()</h2>
+<a id="a7d2104ddd9b3cf0f2892c198f07e6a92" name="a7d2104ddd9b3cf0f2892c198f07e6a92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d2104ddd9b3cf0f2892c198f07e6a92">&#9670;&#160;</a></span>SerializeDescriptorXML()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,11 +336,21 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a> Astera::SceneParser::SerializeDescriptor </td>
+          <td class="memname"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a> Astera::SceneParser::SerializeDescriptorXML </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> <a class="el" href="struct_astera_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;&#160;</td>
-          <td class="paramname"><em>descriptor</em></td><td>)</td>
+          <td class="paramname"><em>descriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> fs::path &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -299,15 +360,16 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Serializes a scene descriptor to disk. </p>
+<p>Serializes a scene descriptor to XML. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">descriptor</td><td>The descriptor to serialize </td></tr>
+    <tr><td class="paramname">filename</td><td>Output file to save to </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_scene_parser_8cpp_source.html#l00221">221</a> of file <a class="el" href="_scene_parser_8cpp_source.html">SceneParser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_parser_8cpp_source.html#l00245">245</a> of file <a class="el" href="_scene_parser_8cpp_source.html">SceneParser.cpp</a>.</p>
 
 </div>
 </div>
@@ -354,7 +416,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_scene_parser_8cpp_source.html#l00155">155</a> of file <a class="el" href="_scene_parser_8cpp_source.html">SceneParser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_parser_8cpp_source.html#l00176">176</a> of file <a class="el" href="_scene_parser_8cpp_source.html">SceneParser.cpp</a>.</p>
 
 </div>
 </div>

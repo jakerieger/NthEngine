@@ -1,7 +1,8 @@
 var searchData=
 [
   ['name_0',['name',['../struct_astera_1_1_set_uniform_command.html#af3bfd5136c704f99ef80c68a8ec2bd99',1,'Astera::SetUniformCommand::name'],['../struct_astera_1_1_vertex_attribute.html#a38b2739b79517fa6f3d9e4542de1a905',1,'Astera::VertexAttribute::name'],['../struct_astera_1_1_entity_descriptor.html#ad71894aed833c1edbdd094156da799f6',1,'Astera::EntityDescriptor::name'],['../struct_astera_1_1_scene_descriptor.html#ac958acb09f1ef14b62f829f58e4ce8c7',1,'Astera::SceneDescriptor::name'],['../struct_astera_1_1_behavior_entity.html#a8c762c6daf73e6f54457236b41aca6a1',1,'Astera::BehaviorEntity::name']]],
-  ['nextframe_1',['NextFrame',['../class_astera_1_1_frame_allocator.html#ac46900adc54367ba8d20aa6743677ff1',1,'Astera::FrameAllocator']]],
-  ['normalized_2',['normalized',['../struct_astera_1_1_vertex_attribute.html#a2be1db4a373ba0d43009139387ee0c41',1,'Astera::VertexAttribute']]],
-  ['notimplemented_3',['notimplemented',['../class_astera_1_1_not_implemented.html',1,'Astera::NotImplemented'],['../class_astera_1_1_not_implemented.html#a5f51c4c676c491643d22e88ae3a2b0fa',1,'Astera::NotImplemented::NotImplemented()']]]
+  ['native_1',['Native',['../class_astera_1_1_binary_writer.html#ae3e58b544255b3902cb43b6595c153fea925641e0b76c28cc940e8f3ca178d826',1,'Astera::BinaryWriter']]],
+  ['nextframe_2',['NextFrame',['../class_astera_1_1_frame_allocator.html#ac46900adc54367ba8d20aa6743677ff1',1,'Astera::FrameAllocator']]],
+  ['normalized_3',['normalized',['../struct_astera_1_1_vertex_attribute.html#a2be1db4a373ba0d43009139387ee0c41',1,'Astera::VertexAttribute']]],
+  ['notimplemented_4',['notimplemented',['../class_astera_1_1_not_implemented.html',1,'Astera::NotImplemented'],['../class_astera_1_1_not_implemented.html#a5f51c4c676c491643d22e88ae3a2b0fa',1,'Astera::NotImplemented::NotImplemented()']]]
 ];

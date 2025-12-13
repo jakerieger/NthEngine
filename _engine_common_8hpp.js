@@ -17,6 +17,7 @@ var _engine_common_8hpp =
     [ "Mat3", "_engine_common_8hpp.html#aa9241995679ee52c1d21a4d3b3483e1a", null ],
     [ "Mat4", "_engine_common_8hpp.html#a7027406a136a3233ea643b26b70b4ab3", null ],
     [ "Quat", "_engine_common_8hpp.html#a23db947ef2c34866124299ec2cdf7e93", null ],
+    [ "Result", "_engine_common_8hpp.html#acd1a44433b72def744c95631c5ee03b9", null ],
     [ "u128", "_engine_common_8hpp.html#ac24c9d612c99e45a2b3a4bd3d1fca7f9", null ],
     [ "u16", "_engine_common_8hpp.html#a227c1ff926eb07a5628100f5db134659", null ],
     [ "u32", "_engine_common_8hpp.html#af76bf8cc1b4c1304679e2ea9ae13ac11", null ],

@@ -8,6 +8,7 @@ var hierarchy =
     [ "Astera::BehaviorDescriptor", "struct_astera_1_1_behavior_descriptor.html", null ],
     [ "Astera::BehaviorEntity", "struct_astera_1_1_behavior_entity.html", null ],
     [ "Astera::BehaviorScriptContext", "struct_astera_1_1_behavior_script_context.html", null ],
+    [ "Astera::BinaryWriter", "class_astera_1_1_binary_writer.html", null ],
     [ "Astera::BindShaderCommand", "struct_astera_1_1_bind_shader_command.html", null ],
     [ "Astera::BindVertexArrayCommand", "struct_astera_1_1_bind_vertex_array_command.html", null ],
     [ "Astera::Camera", "struct_astera_1_1_camera.html", null ],
@@ -41,6 +42,7 @@ var hierarchy =
       [ "Astera::PhysicsDebugLayer", "class_astera_1_1_physics_debug_layer.html", null ]
     ] ],
     [ "Astera::InputManager", "class_astera_1_1_input_manager.html", null ],
+    [ "Astera::IO", "class_astera_1_1_i_o.html", null ],
     [ "Astera::Log", "class_astera_1_1_log.html", null ],
     [ "Astera::LuaRegisterable", "struct_astera_1_1_lua_registerable.html", [
       [ "Astera::LuaRegistry< T >", "struct_astera_1_1_lua_registry.html", null ]
