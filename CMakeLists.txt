@@ -19,14 +19,9 @@ find_package(spdlog REQUIRED)
 find_package(CLI11 REQUIRED)
 find_package(OpenSSL REQUIRED)
 
-if (MSVC)
-    find_package(GLFW REQUIRED)
-    find_package(LUAJIT REQUIRED)
-else ()
-    find_package(PkgConfig REQUIRED)
-    pkg_check_modules(LUAJIT REQUIRED luajit)
-    pkg_check_modules(GLFW REQUIRED glfw3)
-endif ()
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(LUAJIT REQUIRED luajit)
+pkg_check_modules(GLFW REQUIRED glfw3)
 
 set(ASTERA_LIBS
     fmt::fmt
