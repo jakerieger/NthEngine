@@ -54,7 +54,7 @@ var searchData=
   ['getmousedeltay_51',['GetMouseDeltaY',['../class_astera_1_1_input_manager.html#adf6111ba8261c300f737a82555385f0a',1,'Astera::InputManager']]],
   ['getmousex_52',['GetMouseX',['../class_astera_1_1_input_manager.html#a6b2735795c77454e7ee32343c700cfd9',1,'Astera::InputManager']]],
   ['getmousey_53',['GetMouseY',['../class_astera_1_1_input_manager.html#a07d4a010070e746dfbe69fef13e6cfb5',1,'Astera::InputManager']]],
-  ['getoverlayenabled_54',['GetOverlayEnabled',['../class_astera_1_1_debug_manager.html#a9f50c2f8f4ffc3ca61f45bf51faff7d8',1,'Astera::DebugManager']]],
+  ['getoverlayenabled_54',['GetOverlayEnabled',['../class_astera_1_1_debug_manager.html#aa0f34623ab41170d9e281f4b8efa646d',1,'Astera::DebugManager']]],
   ['getpeakmemoryusage_55',['GetPeakMemoryUsage',['../class_astera_1_1_frame_allocator.html#ae2df6710bbd960e18b567701d53a17fc',1,'Astera::FrameAllocator']]],
   ['getprogramid_56',['GetProgramID',['../class_astera_1_1_shader.html#a7caea9f43e4b3e2d17cc439322e5682b',1,'Astera::Shader']]],
   ['getrawcounter_57',['GetRawCounter',['../class_astera_1_1_clock.html#aacbe52c2f74c799227a4b2a4ee0f6d3f',1,'Astera::Clock']]],

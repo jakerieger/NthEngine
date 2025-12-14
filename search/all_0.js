@@ -139,7 +139,7 @@ var searchData=
   ['astera_5fzero_5farray_136',['ASTERA_ZERO_ARRAY',['../_macros_8hpp.html#a63585650d65de9003a53e9b35a2f81b1',1,'Macros.hpp']]],
   ['astera_5fzero_5fstruct_137',['ASTERA_ZERO_STRUCT',['../_macros_8hpp.html#a6fb96dd29a6e23a1651256c4add2d840',1,'Macros.hpp']]],
   ['asteracore_2ehpp_138',['AsteraCore.hpp',['../_astera_core_8hpp.html',1,'']]],
-  ['attachoverlay_139',['AttachOverlay',['../class_astera_1_1_debug_manager.html#a39a5b7b915b13c3a9b810636e5d59c72',1,'Astera::DebugManager']]],
+  ['attachoverlay_139',['AttachOverlay',['../class_astera_1_1_debug_manager.html#aa6f2e970bbe28b86b47b2084dd18d6c1',1,'Astera::DebugManager']]],
   ['attributetype_140',['AttributeType',['../namespace_astera.html#a20f0df955e322a9b3ca7866de516ceeb',1,'Astera']]],
   ['audio_141',['audio',['../namespace_astera.html#affcc4f831bca1e4b5448519bb50c5f50ab22f0418e8ac915eb66f829d262d14a2',1,'Astera::Audio'],['../namespace_astera.html#a56fe2366139e5889dfac7fea1b30c3c5ab22f0418e8ac915eb66f829d262d14a2',1,'Astera::Audio']]],
   ['audioengine_142',['audioengine',['../class_astera_1_1_audio_engine.html',1,'Astera::AudioEngine'],['../class_astera_1_1_audio_engine.html#abbbc12a3c782607303f9c339593cadb5',1,'Astera::AudioEngine::AudioEngine()']]],

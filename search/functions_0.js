@@ -15,7 +15,7 @@ var searchData=
   ['arenaallocator_12',['arenaallocator',['../class_astera_1_1_arena_allocator.html#a19e38a6b413b7cb01d0e625ea9d54e9f',1,'Astera::ArenaAllocator::ArenaAllocator(size_t size)'],['../class_astera_1_1_arena_allocator.html#a95b3a575545852a3e11eb27de685cfa8',1,'Astera::ArenaAllocator::ArenaAllocator(ArenaAllocator &amp;&amp;other) noexcept']]],
   ['assetmanager_13',['AssetManager',['../class_astera_1_1_asset_manager.html#ac7fcdd0304a21ab82e45ed8fb575f238',1,'Astera::AssetManager']]],
   ['assettypefromid_14',['AssetTypeFromID',['../namespace_astera.html#a6b02f52e3fddbfe3fb12464bd4a88fe5',1,'Astera']]],
-  ['attachoverlay_15',['AttachOverlay',['../class_astera_1_1_debug_manager.html#a39a5b7b915b13c3a9b810636e5d59c72',1,'Astera::DebugManager']]],
+  ['attachoverlay_15',['AttachOverlay',['../class_astera_1_1_debug_manager.html#aa6f2e970bbe28b86b47b2084dd18d6c1',1,'Astera::DebugManager']]],
   ['audioengine_16',['AudioEngine',['../class_astera_1_1_audio_engine.html#abbbc12a3c782607303f9c339593cadb5',1,'Astera::AudioEngine']]],
   ['awake_17',['Awake',['../class_astera_1_1_scene.html#a8ccb345e5871be6d7077b50a860a1ae3',1,'Astera::Scene']]]
 ];

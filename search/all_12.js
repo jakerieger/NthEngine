@@ -36,7 +36,7 @@ var searchData=
   ['setindexbuffer_33',['SetIndexBuffer',['../class_astera_1_1_vertex_array.html#a980c5246415b991e9cafd79e901dca1f',1,'Astera::VertexArray']]],
   ['setindices_34',['SetIndices',['../class_astera_1_1_index_buffer.html#a2023ba5b2a74d154d9210bae25d821d9',1,'Astera::IndexBuffer']]],
   ['setmastervolume_35',['SetMasterVolume',['../class_astera_1_1_audio_engine.html#a40b4662596954eda0b6dd5d8f90e4fbf',1,'Astera::AudioEngine']]],
-  ['setoverlayenabled_36',['SetOverlayEnabled',['../class_astera_1_1_debug_manager.html#a182c1011fe991988b05c9306d80c09c8',1,'Astera::DebugManager']]],
+  ['setoverlayenabled_36',['SetOverlayEnabled',['../class_astera_1_1_debug_manager.html#a403cffa3f2c4cdd404d107f0a2cf551f',1,'Astera::DebugManager']]],
   ['setruntimedefaults_37',['SetRuntimeDefaults',['../class_astera_1_1_content.html#a847ba44976bed5399dcad8b571aefb7c',1,'Astera::Content']]],
   ['setsoundvolume_38',['SetSoundVolume',['../class_astera_1_1_audio_engine.html#a935779e8a47e7c969ba8191f8a25ff1f',1,'Astera::AudioEngine']]],
   ['settitle_39',['SetTitle',['../class_astera_1_1_game.html#aa815d5b284e080daa88032af6a022b7c',1,'Astera::Game']]],
