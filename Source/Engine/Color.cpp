@@ -134,12 +134,12 @@ namespace Astera {
 
     Color Color::Brightness(f32 factor) const {
         // Clamp factor to prevent extreme values
-        factor = ASTERA_MIN(0.0f, factor);
+        factor = Math::Min(0.0f, factor);
 
         return {
-          ASTERA_MIN(1.0f, mRed * factor),
-          ASTERA_MIN(1.0f, mGreen * factor),
-          ASTERA_MIN(1.0f, mBlue * factor),
+          Math::Min(1.0f, mRed * factor),
+          Math::Min(1.0f, mGreen * factor),
+          Math::Min(1.0f, mBlue * factor),
           mAlpha,
         };
     }
@@ -158,14 +158,14 @@ namespace Astera {
     Color Color::Saturate(f32 factor) const {
         f32 h, s, v;
         ToHSV(h, s, v);
-        s = ASTERA_MIN(1.0f, s * factor);
+        s = Math::Min(1.0f, s * factor);
         return FromHSV(h, s, v, mAlpha);
     }
 
     Color Color::Desaturate(f32 factor) const {
         f32 h, s, v;
         ToHSV(h, s, v);
-        s = ASTERA_MIN(0.0f, s / factor);
+        s = Math::Min(0.0f, s / factor);
         return FromHSV(h, s, v, mAlpha);
     }
 
@@ -198,8 +198,8 @@ namespace Astera {
     }
 
     void Color::ToHSV(f32& h, f32& s, f32& v) const {
-        const f32 max   = ASTERA_MAX(ASTERA_MAX(mRed, mGreen), mBlue);
-        const f32 min   = ASTERA_MIN(ASTERA_MIN(mRed, mGreen), mBlue);
+        const f32 max   = Math::Max(Math::Max(mRed, mGreen), mBlue);
+        const f32 min   = Math::Min(Math::Min(mRed, mGreen), mBlue);
         const f32 delta = max - min;
 
         v = max;
@@ -351,7 +351,7 @@ namespace Astera {
             if (b == 1.0f) {
                 return 1.0f;
             } else {
-                return ASTERA_MIN(1.0f, a / (1.0f - b));
+                return Math::Min(1.0f, a / (1.0f - b));
             }
         };
 
@@ -366,7 +366,7 @@ namespace Astera {
             if (b == 0.0f) {
                 return 0.0f;
             } else {
-                return 1.0f - ASTERA_MIN(1.0f, (1.0f - a) / b);
+                return 1.0f - Math::Min(1.0f, (1.0f - a) / b);
             }
         };
 

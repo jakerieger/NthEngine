@@ -26,7 +26,12 @@
  *  of the possibility of such damages.
  */
 
+// TODO: Add this to definitions in CMake config
+#pragma warning(disable: 4244)
+
 #include "BinaryWriter.hpp"
+#include "Math.hpp"
+
 #include <fstream>
 
 namespace Astera {
@@ -89,7 +94,7 @@ namespace Astera {
     }
 
     void BinaryWriter::WriteFixedString(const std::string& str, size_t fixedLength) {
-        const size_t writeLen = std::min(str.size(), fixedLength);
+        const size_t writeLen = Math::Min(str.size(), fixedLength);
         WriteRaw(str.data(), writeLen);
 
         for (size_t i = writeLen; i < fixedLength; ++i) {
@@ -168,7 +173,7 @@ namespace Astera {
         if (mWritePos < mBuffer.size()) {
             // Overwriting existing data
             const size_t available = mBuffer.size() - mWritePos;
-            const size_t toCopy    = std::min(size, available);
+            const size_t toCopy    = Math::Min(size, available);
             std::memcpy(mBuffer.data() + mWritePos, byteData, toCopy);
             mWritePos += toCopy;
             if (toCopy < size) {

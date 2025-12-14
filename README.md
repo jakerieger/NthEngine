@@ -22,55 +22,12 @@ for graphics rendering, Lua for gameplay scripting, and implements an Entity Com
 architecture for efficient scene management. Whether you're prototyping a new game concept or
 building a complete project, Astera provides the tools you need.
 
-## Key Features
-
-### Architecture
+## Architecture
 
 - **Entity Component System (ECS)** - Flexible, composition-based entity management
 - **Cross-platform** - Supports Windows and Linux
 - **OpenGL Rendering** - Hardware-accelerated 2D graphics with sprite batching
 - **Lua Scripting** - Full engine API exposed to Lua with complete type definitions
-
-### Scripting
-
-- Fully typed Lua API with IntelliSense support
-- Entity lifecycle callbacks (OnAwake, OnUpdate, OnDestroyed)
-- Direct access to engine systems (Input, Audio, Transform, etc.)
-- Type stubs included for enhanced IDE support
-
-### Rendering
-
-- Sprite rendering with texture support
-- Transform system (position, rotation, scale)
-- Component-based renderer architecture
-
-### Physics
-
-- 2D Rigidbody physics
-- Support for dynamic and static bodies
-- Configurable mass, inertia, friction, and restitution
-- Gravity and damping controls
-
-### Scene Management
-
-- XML-based scene serialization
-- Component composition system
-- Entity hierarchy support
-- Hot-reloadable assets
-
-### Audio
-
-- Sound playback with looping support
-- Volume controls
-- Background music and sound effects
-
-### Input
-
-- Keyboard input system
-- Polling-based input handling
-- *Configurable key mappings
-
-> * work in progress
 
 ## Getting Started
 
@@ -88,6 +45,28 @@ Clone the repository:
 ```bash
 git clone https://github.com/jakerieger/Astera.git
 cd Astera
+```
+
+Install library dependencies:
+
+**Linux:**
+
+```bash
+sudo apt install libglew-dev libglfw3-dev libglm-dev lua5.1 liblua5.1-0-dev
+```
+
+**Windows:**
+
+> [!IMPORTANT]
+> Windows requires the use of [vcpkg](https://github.com/microsoft/vcpkg) to install dependencies.
+
+In the project root run this:
+
+```powershell
+git clone https://github.com/microsoft/vcpkg.git
+cd vcpkg
+./bootstrap-vcpkg.sh
+./vcpkg install pkgconf fmt spdlog pugixml cli11 glfw3 luajit --triplet x64-windows
 ```
 
 Build using CMake:

@@ -32,7 +32,7 @@ target_compile_definitions(Astera_Objects PUBLIC
 
 target_compile_options(Astera_Objects PRIVATE
     $<$<OR:$<CXX_COMPILER_ID:GNU>,$<CXX_COMPILER_ID:Clang>>:-Wno-deprecated-declarations>
-    $<$<CXX_COMPILER_ID:MSVC>:/wd4996>
+    $<$<CXX_COMPILER_ID:MSVC>:/wd4996 /wd4244 /wd4267 /wd4018>
 )
 
 # CRITICAL: Enable PIC for the object library

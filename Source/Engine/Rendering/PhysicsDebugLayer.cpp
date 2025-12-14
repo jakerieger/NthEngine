@@ -202,7 +202,7 @@ namespace Astera {
             vertices.push_back(ScreenToClipY(y));
 
             for (int i = 0; i <= segments; ++i) {
-                const f32 angle = 2.0f * M_PI * i / segments;
+                const f32 angle = 2.0f * Math::kPi * i / segments;
                 vertices.push_back(ScreenToClipX(x + radius * cos(angle)));
                 vertices.push_back(ScreenToClipY(y + radius * sin(angle)));
             }
@@ -212,7 +212,7 @@ namespace Astera {
         } else {
             // Line loop for outline
             for (int i = 0; i < segments; ++i) {
-                const f32 angle = 2.0f * M_PI * i / segments;
+                const f32 angle = 2.0f * Math::kPi * i / segments;
                 vertices.push_back(ScreenToClipX(x + radius * cos(angle)));
                 vertices.push_back(ScreenToClipY(y + radius * sin(angle)));
             }

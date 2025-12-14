@@ -110,7 +110,7 @@ namespace Astera {
         mTotalJobsSubmitted.fetch_add(1, std::memory_order_relaxed);
 
         {
-            std::lock_guard<std::mutex> lock(mGlobalMutex);
+            std::lock_guard lock(mGlobalMutex);
             mGlobalQueue.push(std::move(job));
         }
 
@@ -164,13 +164,13 @@ namespace Astera {
 
         // Auto-determine chunk size
         if (chunkSize == 0) {
-            chunkSize = std::max(size_t(1), jobs.size() / (mWorkers.size() * 2));
-            chunkSize = std::min(chunkSize, kDefaultChunkSize);
+            chunkSize = Math::Max(size_t(1), jobs.size() / (mWorkers.size() * 2));
+            chunkSize = Math::Min(chunkSize, kDefaultChunkSize);
         }
 
         vector<Job> chunkedJobs;
         for (size_t i = 0; i < jobs.size(); i += chunkSize) {
-            size_t end = std::min(i + chunkSize, jobs.size());
+            size_t end = Math::Min(i + chunkSize, jobs.size());
 
             // Create a job that executes a chunk
             chunkedJobs.push_back([&jobs, i, end]() {

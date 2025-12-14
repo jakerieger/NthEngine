@@ -28,6 +28,7 @@
 
 #include "AudioEngine.hpp"
 #include "Log.hpp"
+#include "Math.hpp"
 
 #include <sol/sol.hpp>
 
@@ -107,9 +108,8 @@ namespace Astera {
 
         ma_sound_seek_to_pcm_frame(&sound->sound, 0);
 
-        const ma_result result = ma_sound_start(&sound->sound);
-        if (result != MA_SUCCESS) {
-            Log::Error("AudioEngine", "Failed to play sound ID {} (error: {})", id, (i32)result);
+        if (const ma_result result = ma_sound_start(&sound->sound); result != MA_SUCCESS) {
+            Log::Error("AudioEngine", "Failed to play sound ID {} (error: {})", id, CAST<i32>(result));
             return false;
         }
 
@@ -127,15 +127,15 @@ namespace Astera {
     }
 
     void AudioEngine::StopAllSounds() const {
-        for (const auto& pair : mSounds) {
-            if (pair.second && pair.second->loaded) { ma_sound_stop(&pair.second->sound); }
+        for (const auto& val : mSounds | std::views::values) {
+            if (val && val->loaded) { ma_sound_stop(&val->sound); }
         }
     }
 
     void AudioEngine::SetMasterVolume(f32 vol) {
         if (!mInitialized) { Initialize(); }
 
-        vol = std::max(0.0f, std::min(1.0f, vol));
+        vol = Math::Max(0.0f, Math::Min(1.0f, vol));
         ma_engine_set_volume(&mEngine, vol);
     }
 
@@ -146,7 +146,7 @@ namespace Astera {
             return;
         }
 
-        vol = std::max(0.0f, std::min(1.0f, vol));
+        vol = Math::Max(0.0f, Math::Min(1.0f, vol));
         ma_sound_set_volume(&sound->sound, vol);
     }
 

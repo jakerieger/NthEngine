@@ -21,7 +21,12 @@ find_package(OpenSSL REQUIRED)
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(LUAJIT REQUIRED luajit)
-pkg_check_modules(GLFW REQUIRED glfw3)
+
+if (MSVC)
+    find_package(glfw3 REQUIRED)
+else ()
+    pkg_check_modules(GLFW REQUIRED glfw3)
+endif ()
 
 set(ASTERA_LIBS
     fmt::fmt

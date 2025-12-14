@@ -28,7 +28,7 @@
 
 #pragma once
 
-#include "Macros.hpp"
+#include "EngineCommon.hpp"
 #include <memory>
 #include <unordered_map>
 
@@ -43,7 +43,7 @@ namespace Astera {
 
         /// @brief Updates the debug overlay state
         /// @param deltaTime Time elapsed since the last update in seconds
-        virtual void OnUpdate(float deltaTime) = 0;
+        virtual void OnUpdate(f32 deltaTime) = 0;
 
         /// @brief Renders the debug overlay to the screen
         virtual void OnRender() = 0;
@@ -64,7 +64,7 @@ namespace Astera {
         /// @brief Attaches a debug overlay to the manager
         /// @param name Unique identifier for the overlay
         /// @param overlay Pointer to the overlay instance to attach
-        void AttachOverlay(const std::string& name, IDebugOverlay* overlay);
+        void AttachOverlay(const string& name, IDebugOverlay* overlay);
 
         /// @brief Detaches all registered debug overlays
         void DetachOverlays();
@@ -72,12 +72,12 @@ namespace Astera {
         /// @brief Enables or disables a specific debug overlay
         /// @param name The identifier of the overlay to modify
         /// @param enabled True to enable the overlay, false to disable
-        void SetOverlayEnabled(const std::string& name, bool enabled);
+        void SetOverlayEnabled(const string& name, bool enabled);
 
         /// @brief Checks if a specific debug overlay is enabled
         /// @param name The identifier of the overlay to check
         /// @return True if the overlay is enabled, false otherwise
-        bool GetOverlayEnabled(const std::string& name) const;
+        bool GetOverlayEnabled(const string& name) const;
 
         /// @brief Updates all enabled debug overlays
         /// @param deltaTime Time elapsed since the last update in seconds
@@ -100,6 +100,6 @@ namespace Astera {
         };
 
         /// @brief Map of overlay names to their corresponding overlay data
-        std::unordered_map<std::string, Overlay> mOverlays;
+        unordered_map<string, Overlay> mOverlays;
     };
 }  // namespace Astera

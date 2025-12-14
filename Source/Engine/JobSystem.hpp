@@ -19,6 +19,8 @@
 #pragma once
 
 #include "EngineCommon.hpp"
+#include "Math.hpp"
+
 #include <thread>
 #include <mutex>
 #include <condition_variable>
@@ -222,12 +224,12 @@ namespace Astera {
         // Auto-determine chunk size
         if (chunkSize == 0) {
             const size_t numWorkers = gJobSystem->GetWorkerCount();
-            chunkSize               = std::max(size_t(1), count / (numWorkers * 4));
+            chunkSize               = Math::Max(size_t(1), count / (numWorkers * 4));
         }
 
         vector<JobSystem::Job> jobs;
         for (size_t i = start; i < end; i += chunkSize) {
-            size_t chunkEnd = std::min(i + chunkSize, end);
+            size_t chunkEnd = Math::Min(i + chunkSize, end);
             jobs.push_back([i, chunkEnd, &func]() {
                 for (size_t j = i; j < chunkEnd; ++j) {
                     func(j);
@@ -256,12 +258,12 @@ namespace Astera {
 
         if (chunkSize == 0) {
             const size_t numWorkers = gJobSystem->GetWorkerCount();
-            chunkSize               = std::max(size_t(1), count / (numWorkers * 4));
+            chunkSize               = Math::Max(size_t(1), count / (numWorkers * 4));
         }
 
         vector<JobSystem::Job> jobs;
         for (size_t i = start; i < end; i += chunkSize) {
-            size_t chunkEnd = std::min(i + chunkSize, end);
+            size_t chunkEnd = Math::Min(i + chunkSize, end);
             jobs.push_back([i, chunkEnd, &func]() {
                 i32 workerID       = gJobSystem->GetCurrentWorkerID();
                 size_t workerIndex = workerID >= 0 ? static_cast<size_t>(workerID) : 0;
