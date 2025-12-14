@@ -28,6 +28,7 @@
 
 #pragma once
 
+#include "BinaryWriter.hpp"
 #include "EngineCommon.hpp"
 #include "SceneDescriptor.hpp"
 
@@ -80,5 +81,7 @@ namespace Astera {
             const u32 sceneNameLength;
             const char* sceneName;
         };
+
+        static void WriteEntityBytes(BinaryWriter& writer, const EntityDescriptor& entity);
     };
 }  // namespace Astera

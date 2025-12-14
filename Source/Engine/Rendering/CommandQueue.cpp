@@ -56,7 +56,9 @@ namespace Astera {
 
         // Execute non-sprite commands first
         for (const auto& command : mCommands) {
-            if (!std::holds_alternative<DrawSpriteCommand>(command)) { std::visit(executor, command); }
+            if (!std::holds_alternative<DrawSpriteCommand>(command)) {
+                std::visit(executor, command);
+            }
         }
 
         // Batch and render sprites
@@ -84,10 +86,13 @@ namespace Astera {
         // Extract sprite commands and sort by texture
         vector<size_t> spriteIndices;
         for (size_t i = 0; i < mCommands.size(); ++i) {
-            if (std::holds_alternative<DrawSpriteCommand>(mCommands[i])) { spriteIndices.push_back(i); }
+            if (std::holds_alternative<DrawSpriteCommand>(mCommands[i])) {
+                spriteIndices.push_back(i);
+            }
         }
 
-        if (spriteIndices.empty()) return;
+        if (spriteIndices.empty())
+            return;
 
         // Stable sort to maintain draw order for same texture
         std::ranges::stable_sort(spriteIndices, [this](size_t a, size_t b) {
@@ -126,13 +131,16 @@ namespace Astera {
         }
 
         // Add final batch
-        if (!currentBatch.instances.empty()) { mBatches.push_back(std::move(currentBatch)); }
+        if (!currentBatch.instances.empty()) {
+            mBatches.push_back(std::move(currentBatch));
+        }
 
         // Log::Debug("CommandQueue", "Batched {} sprites into {} draw calls", spriteIndices.size(), mBatches.size());
     }
 
     void CommandQueue::RenderBatch(const SpriteBatch& batch) const {
-        if (batch.instances.empty()) return;
+        if (batch.instances.empty())
+            return;
 
         ASTERA_ASSERT(mBatchResourcesInitialized);
         ASTERA_ASSERT(batch.SpriteCount() <= kMaxSpritesPerBatch);
@@ -164,7 +172,8 @@ namespace Astera {
     }
 
     void CommandQueue::InitializeBatchResources() {
-        if (mBatchResourcesInitialized) return;
+        if (mBatchResourcesInitialized)
+            return;
 
         Log::Debug("CommandQueue", "Initializing sprite batching resources...");
 
@@ -265,9 +274,13 @@ namespace Astera {
 
         GLCall(glClearColor, cmd.color.r, cmd.color.g, cmd.color.b, cmd.color.a);
 
-        if (cmd.clearDepth) { clearFlags |= GL_DEPTH_BUFFER_BIT; }
+        if (cmd.clearDepth) {
+            clearFlags |= GL_DEPTH_BUFFER_BIT;
+        }
 
-        if (cmd.clearStencil) { clearFlags |= GL_STENCIL_BUFFER_BIT; }
+        if (cmd.clearStencil) {
+            clearFlags |= GL_STENCIL_BUFFER_BIT;
+        }
 
         GLCall(glClear, clearFlags);
     }

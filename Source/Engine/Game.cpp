@@ -35,6 +35,7 @@
 #include "Input.hpp"
 #include "Math.hpp"
 #include "AssetManager.hpp"
+#include "JobSystem.hpp"
 #include "Rendering/ImGuiDebugLayer.hpp"
 
 #include <stb_image.h>
@@ -226,11 +227,16 @@ namespace Astera {
         // Create the initial scene
         mActiveScene = make_unique<Scene>(GetRenderContext());
 
-        Log::Debug("Game",
-                   "Successfully initialized game instance:\n-- Dimensions: {}x{}\n-- V-Sync: {}",
-                   mWidth,
-                   mHeight,
-                   mVsync ? "On" : "Off");
+        gJobSystem = make_unique<JobSystem>();
+        gJobSystem->Initialize();
+
+        Log::Debug(
+          "Game",
+          "Successfully initialized game instance:\n-- Dimensions: {}x{}\n-- V-Sync: {}\n-- Worker Threads: {}",
+          mWidth,
+          mHeight,
+          mVsync ? "On" : "Off",
+          gJobSystem->GetWorkerCount());
 
         return true;
     }
@@ -244,6 +250,12 @@ namespace Astera {
         mAudioEngine.Shutdown();
         mActiveScene.reset();
         mRenderContext.Shutdown();
+
+        if (gJobSystem) {
+            gJobSystem->Shutdown();
+            gJobSystem.reset();
+        }
+
         if (mWindow)
             glfwDestroyWindow(mWindow);
         glfwTerminate();

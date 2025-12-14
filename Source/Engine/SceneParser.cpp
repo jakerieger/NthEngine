@@ -246,6 +246,36 @@ namespace Astera {
         throw ASTERA_NOT_IMPLEMENTED;
     }
 
+    void SceneParser::WriteEntityBytes(BinaryWriter& writer, const EntityDescriptor& entity) {
+        writer.WriteUInt32(entity.id);
+        writer.WriteString(entity.name);
+
+        u32 componentCount           = 1;  // transform is always present
+        const auto componentCountPos = writer.Tell();
+        writer.WriteUInt32(componentCount);  // write initial count
+
+        if (entity.spriteRenderer.has_value()) {
+            componentCount++;
+            writer.WriteUInt32(u32(ComponentType::SpriteRenderer));
+            writer.WriteString(entity.spriteRenderer->texture);
+        }
+        if (entity.rigidbody2D.has_value()) {
+            componentCount++;
+            writer.WriteUInt32(u32(ComponentType::Rigidbody2D));
+            writer.WriteUInt32(8);
+        }
+        if (entity.behavior.has_value()) {
+            componentCount++;
+            writer.WriteUInt32(u32(ComponentType::Behavior));
+            writer.WriteUInt32(8 + CAST<u32>(entity.behavior->script.size()));
+            writer.WriteUInt32(entity.behavior->id);
+            writer.WriteString(entity.behavior->script);
+        }
+
+        // update count
+        writer.UpdateAt(componentCountPos, componentCount);
+    }
+
     // [Header]
     // - Magic Number (4 bytes): "SCNE" - for file validation
     // - Version (4 bytes): Format version for compatibility
@@ -271,29 +301,12 @@ namespace Astera {
         BinaryWriter writer(2_KB);
         writer.WriteBytes(header.magic, sizeof(header.magic));
         writer.WriteUInt32(header.version);
-        writer.WriteUInt32(header.sceneNameLength);
-        writer.WriteString(descriptor.name);
+        writer.WriteString(
+          descriptor.name);  // WriteString writes the size prefix for us so we can omit writing it here
         writer.WriteUInt32(descriptor.entities.size());
 
         for (const auto& entity : descriptor.entities) {
-            writer.WriteUInt32(entity.id);
-            writer.WriteUInt32(CAST<u32>(entity.name.length()));
-            writer.WriteString(entity.name);
-
-            u32 componentCount = 1;  // transform is always present
-            if (entity.spriteRenderer.has_value()) {
-                componentCount++;
-            }
-            if (entity.rigidbody2D.has_value()) {
-                componentCount++;
-            }
-            if (entity.behavior.has_value()) {
-                componentCount++;
-            }
-
-            writer.WriteUInt32(componentCount);
-
-            // TODO: Write components
+            WriteEntityBytes(writer, entity);
         }
 
         if (!writer.SaveToFile(filename)) {

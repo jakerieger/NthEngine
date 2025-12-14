@@ -86,7 +86,7 @@ namespace Astera {
         SceneParser::DeserializeDescriptorXML(filename, descriptor);
         SceneParser::DescriptorToState(descriptor, mState, engine);
 
-        // test code, remove later
+        // TODO: test code, remove later
         SceneParser::SerializeDescriptorBytes(descriptor, filename.parent_path() / "test.scene");
 
         Log::Debug("Scene", "Loaded scene: `{}`", descriptor.name);

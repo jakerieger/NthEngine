@@ -79,7 +79,7 @@ namespace Astera {
     }
 
     void BinaryWriter::WriteCString(const char* str) {
-        size_t len = std::strlen(str) + 1;
+        const size_t len = std::strlen(str) + 1;
         WriteRaw(str, len);
     }
 
@@ -89,7 +89,7 @@ namespace Astera {
     }
 
     void BinaryWriter::WriteFixedString(const std::string& str, size_t fixedLength) {
-        size_t writeLen = std::min(str.size(), fixedLength);
+        const size_t writeLen = std::min(str.size(), fixedLength);
         WriteRaw(str.data(), writeLen);
 
         for (size_t i = writeLen; i < fixedLength; ++i) {
@@ -112,8 +112,8 @@ namespace Astera {
     }
 
     void BinaryWriter::AlignTo(size_t alignment) {
-        size_t currentPos = mBuffer.size();
-        size_t padding    = (alignment - (currentPos % alignment)) % alignment;
+        const size_t currentPos = mBuffer.size();
+        const size_t padding    = (alignment - (currentPos % alignment)) % alignment;
         WritePadding(padding);
     }
 
@@ -150,7 +150,7 @@ namespace Astera {
         if (!file) {
             return false;
         }
-        file.write(reinterpret_cast<const char*>(mBuffer.data()), mBuffer.size());
+        file.write(RCAST<const char*>(mBuffer.data()), mBuffer.size());
         return file.good();
     }
 
@@ -163,12 +163,12 @@ namespace Astera {
     }
 
     void BinaryWriter::WriteRaw(const void* data, size_t size) {
-        const u8* byteData = static_cast<const u8*>(data);
+        const auto byteData = CAST<const u8*>(data);
 
         if (mWritePos < mBuffer.size()) {
             // Overwriting existing data
-            size_t available = mBuffer.size() - mWritePos;
-            size_t toCopy    = std::min(size, available);
+            const size_t available = mBuffer.size() - mWritePos;
+            const size_t toCopy    = std::min(size, available);
             std::memcpy(mBuffer.data() + mWritePos, byteData, toCopy);
             mWritePos += toCopy;
             if (toCopy < size) {
@@ -185,6 +185,6 @@ namespace Astera {
 
     bool BinaryWriter::IsLittleEndian() {
         u16 test = 0x0001;
-        return *reinterpret_cast<u8*>(&test) == 0x01;
+        return *RCAST<u8*>(&test) == 0x01;
     }
 }  // namespace Astera
