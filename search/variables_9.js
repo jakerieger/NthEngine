@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['kdefaultheight_0',['kDefaultHeight',['../class_astera_1_1_game.html#ad28b36c6fa1965a492d7c5325c61e13c',1,'Astera::Game']]],
-  ['kdefaultwidth_1',['kDefaultWidth',['../class_astera_1_1_game.html#a9bf4b024fa001c0b9abd3de3c8cd4448',1,'Astera::Game']]],
-  ['keuler_2',['kEuler',['../class_astera_1_1_math.html#a18b002982c3567d4f20955b10f1cf899',1,'Astera::Math']]],
-  ['kpi_3',['kPi',['../class_astera_1_1_math.html#a5cfba90521a8c32574e57495d1f692a8',1,'Astera::Math']]],
-  ['ktau_4',['kTau',['../class_astera_1_1_math.html#a017063cc28b4bcdae4ffbe1ec8c36845',1,'Astera::Math']]]
+  ['jobsinglobalqueue_0',['jobsInGlobalQueue',['../struct_astera_1_1_job_system_1_1_statistics.html#a3c8e11e648a58265c9a596d78f193224',1,'Astera::JobSystem::Statistics']]],
+  ['jobsinlocalqueues_1',['jobsInLocalQueues',['../struct_astera_1_1_job_system_1_1_statistics.html#a0ac0d242addc83ddba8ae84a911e861a',1,'Astera::JobSystem::Statistics']]],
+  ['jobsperworker_2',['jobsPerWorker',['../struct_astera_1_1_job_system_1_1_statistics.html#aa97e909fa62101e4756e8b54cf74a07b',1,'Astera::JobSystem::Statistics']]]
 ];

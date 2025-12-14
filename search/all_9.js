@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['kdefaultheight_0',['kDefaultHeight',['../class_astera_1_1_game.html#ad28b36c6fa1965a492d7c5325c61e13c',1,'Astera::Game']]],
-  ['kdefaultwidth_1',['kDefaultWidth',['../class_astera_1_1_game.html#a9bf4b024fa001c0b9abd3de3c8cd4448',1,'Astera::Game']]],
-  ['keuler_2',['kEuler',['../class_astera_1_1_math.html#a18b002982c3567d4f20955b10f1cf899',1,'Astera::Math']]],
-  ['kinematic_3',['Kinematic',['../namespace_astera.html#a7a21d0e3701237e0c6db7e9977279e04a40c78b58b86002ee38fad2d3c9dd787e',1,'Astera']]],
-  ['kpi_4',['kPi',['../class_astera_1_1_math.html#a5cfba90521a8c32574e57495d1f692a8',1,'Astera::Math']]],
-  ['ktau_5',['kTau',['../class_astera_1_1_math.html#a017063cc28b4bcdae4ffbe1ec8c36845',1,'Astera::Math']]]
+  ['job_0',['Job',['../class_astera_1_1_job_system.html#ad06a4a3e8165920af92555bf4288a9b5',1,'Astera::JobSystem']]],
+  ['jobcounter_1',['JobCounter',['../struct_astera_1_1_job_system_1_1_job_counter.html',1,'Astera::JobSystem']]],
+  ['jobsinglobalqueue_2',['jobsInGlobalQueue',['../struct_astera_1_1_job_system_1_1_statistics.html#a3c8e11e648a58265c9a596d78f193224',1,'Astera::JobSystem::Statistics']]],
+  ['jobsinlocalqueues_3',['jobsInLocalQueues',['../struct_astera_1_1_job_system_1_1_statistics.html#a0ac0d242addc83ddba8ae84a911e861a',1,'Astera::JobSystem::Statistics']]],
+  ['jobsperworker_4',['jobsPerWorker',['../struct_astera_1_1_job_system_1_1_statistics.html#aa97e909fa62101e4756e8b54cf74a07b',1,'Astera::JobSystem::Statistics']]],
+  ['jobsystem_5',['jobsystem',['../class_astera_1_1_job_system.html',1,'Astera::JobSystem'],['../class_astera_1_1_job_system.html#a83f6b573cd784a13dcda84b04984b5a9',1,'Astera::JobSystem::JobSystem()']]],
+  ['jobsystem_2ecpp_6',['JobSystem.cpp',['../_job_system_8cpp.html',1,'']]],
+  ['jobsystem_2ehpp_7',['JobSystem.hpp',['../_job_system_8hpp.html',1,'']]]
 ];

@@ -1,18 +1,12 @@
 var searchData=
 [
-  ['scene_0',['Scene',['../class_astera_1_1_scene.html',1,'Astera']]],
-  ['scenedescriptor_1',['SceneDescriptor',['../struct_astera_1_1_scene_descriptor.html',1,'Astera']]],
-  ['sceneparser_2',['SceneParser',['../class_astera_1_1_scene_parser.html',1,'Astera']]],
-  ['scenestate_3',['SceneState',['../class_astera_1_1_scene_state.html',1,'Astera']]],
-  ['scriptengine_4',['ScriptEngine',['../class_astera_1_1_script_engine.html',1,'Astera']]],
-  ['scripttyperegistry_5',['ScriptTypeRegistry',['../class_astera_1_1_script_type_registry.html',1,'Astera']]],
-  ['setuniformcommand_6',['SetUniformCommand',['../struct_astera_1_1_set_uniform_command.html',1,'Astera']]],
-  ['setviewportcommand_7',['SetViewportCommand',['../struct_astera_1_1_set_viewport_command.html',1,'Astera']]],
-  ['shader_8',['Shader',['../class_astera_1_1_shader.html',1,'Astera']]],
-  ['shadermanager_9',['ShaderManager',['../class_astera_1_1_shader_manager.html',1,'Astera']]],
-  ['spritebatch_10',['SpriteBatch',['../struct_astera_1_1_sprite_batch.html',1,'Astera']]],
-  ['spriteinstancedata_11',['SpriteInstanceData',['../struct_astera_1_1_sprite_instance_data.html',1,'Astera']]],
-  ['spriterenderer_12',['SpriteRenderer',['../struct_astera_1_1_sprite_renderer.html',1,'Astera']]],
-  ['spriterendererdescriptor_13',['SpriteRendererDescriptor',['../struct_astera_1_1_sprite_renderer_descriptor.html',1,'Astera']]],
-  ['spritevertex_14',['SpriteVertex',['../struct_astera_1_1_sprite_vertex.html',1,'Astera']]]
+  ['rendercontext_0',['RenderContext',['../class_astera_1_1_render_context.html',1,'Astera']]],
+  ['resource_1',['Resource',['../class_astera_1_1_resource.html',1,'Astera']]],
+  ['resourcebase_2',['ResourceBase',['../class_astera_1_1_resource_base.html',1,'Astera']]],
+  ['resourcehandle_3',['ResourceHandle',['../class_astera_1_1_resource_handle.html',1,'Astera']]],
+  ['resourceloader_4',['ResourceLoader',['../class_astera_1_1_resource_loader.html',1,'Astera']]],
+  ['resourceloaderbase_5',['ResourceLoaderBase',['../class_astera_1_1_resource_loader_base.html',1,'Astera']]],
+  ['resourcemanager_6',['ResourceManager',['../class_astera_1_1_resource_manager.html',1,'Astera']]],
+  ['rigidbody2d_7',['Rigidbody2D',['../struct_astera_1_1_rigidbody2_d.html',1,'Astera']]],
+  ['rigidbody2ddescriptor_8',['Rigidbody2DDescriptor',['../struct_astera_1_1_rigidbody2_d_descriptor.html',1,'Astera']]]
 ];

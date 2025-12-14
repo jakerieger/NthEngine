@@ -1,29 +1,4 @@
 var searchData=
 [
-  ['r_0',['R',['../class_astera_1_1_color.html#a5013c405a9a6b9ff54a0dc6dc4d6ce34',1,'Astera::Color']]],
-  ['radtodeg_1',['RadToDeg',['../class_astera_1_1_math.html#a7697c72f6003bf92e090626d381e1c8e',1,'Astera::Math']]],
-  ['random_2',['Random',['../class_astera_1_1_math.html#aa9eab386343351393448a8b6db669323',1,'Astera::Math']]],
-  ['randomint_3',['RandomInt',['../class_astera_1_1_math.html#a3306756bc035703a1991424bac8b0ba0',1,'Astera::Math']]],
-  ['readbytes_4',['ReadBytes',['../class_astera_1_1_i_o.html#a268e1f2d674ad740c9dacffff6c2c182',1,'Astera::IO']]],
-  ['readtext_5',['ReadText',['../class_astera_1_1_i_o.html#a7575014e709c60b62c232094bb8b5363',1,'Astera::IO']]],
-  ['registerloaders_6',['RegisterLoaders',['../class_astera_1_1_resource_manager.html#a6f45425d182ff5125e6feea0056a1fe8',1,'Astera::ResourceManager']]],
-  ['registermembers_7',['registermembers',['../struct_astera_1_1_lua_type_traits_3_01_transform_01_4.html#a57817c1365340ebdf29d3096a6258094',1,'Astera::LuaTypeTraits&lt; Transform &gt;::RegisterMembers()'],['../struct_astera_1_1_lua_type_traits_3_01_scene_state_01_4.html#a269d68e33e1667bde6a05e9f113ab50d',1,'Astera::LuaTypeTraits&lt; SceneState &gt;::RegisterMembers()'],['../struct_astera_1_1_lua_type_traits_3_01_clock_01_4.html#a024e969916f3777eb42a9a613c83472d',1,'Astera::LuaTypeTraits&lt; Clock &gt;::RegisterMembers()'],['../struct_astera_1_1_lua_type_traits_3_01_vec2_01_4.html#a2759bdc3933d865a2433e6ba60255063',1,'Astera::LuaTypeTraits&lt; Vec2 &gt;::RegisterMembers()'],['../struct_astera_1_1_lua_type_traits_3_01_behavior_entity_01_4.html#a432c46e405c59ebde32e9b601bd618a5',1,'Astera::LuaTypeTraits&lt; BehaviorEntity &gt;::RegisterMembers()'],['../struct_astera_1_1_lua_type_traits.html#a1c3e7307b2a0f398a6efa443e0dc990f',1,'Astera::LuaTypeTraits::RegisterMembers()']]],
-  ['registertype_8',['RegisterType',['../class_astera_1_1_script_engine.html#a6419307845b2d8b85049b9cc641e88e9',1,'Astera::ScriptEngine']]],
-  ['registertypes_9',['registertypes',['../class_astera_1_1_script_engine.html#a20c4890878004fe157b3f995904be58f',1,'Astera::ScriptEngine::RegisterTypes()'],['../class_astera_1_1_script_type_registry.html#afe147c790429d2f7089a56253b009bd7',1,'Astera::ScriptTypeRegistry::RegisterTypes()']]],
-  ['registerwithlua_10',['registerwithlua',['../struct_astera_1_1_lua_registerable.html#aa7a4f2a7cecba42474c866326a9b1695',1,'Astera::LuaRegisterable::RegisterWithLua()'],['../struct_astera_1_1_lua_registry.html#a2e025e4a225eccaf31a847a86c92f36f',1,'Astera::LuaRegistry::RegisterWithLua()']]],
-  ['reload_11',['Reload',['../class_astera_1_1_asset_manager.html#aef48f2df0689c924537d860a3004517b',1,'Astera::AssetManager']]],
-  ['render_12',['render',['../class_astera_1_1_scene.html#ae447f28e90e60dea17c012c718f1f5a7',1,'Astera::Scene::Render()'],['../class_astera_1_1_debug_manager.html#af5cf53596292a8552973b6857f3a5b3d',1,'Astera::DebugManager::Render()'],['../class_astera_1_1_game.html#af905e019f1b320c37b3293fa695ec4dc',1,'Astera::Game::Render()']]],
-  ['rendercontext_13',['RenderContext',['../class_astera_1_1_render_context.html#a02318e110a24e8c0e306766f0a6ffca0',1,'Astera::RenderContext']]],
-  ['reserve_14',['Reserve',['../class_astera_1_1_command_queue.html#a5825bef41388e69cdc74f5f805221947',1,'Astera::CommandQueue']]],
-  ['reset_15',['reset',['../class_astera_1_1_arena_allocator.html#a2a873257ace6097a0e6afcfe43760f6f',1,'Astera::ArenaAllocator::Reset()'],['../class_astera_1_1_frame_allocator.html#aac1d559472601d6f48a165c90b3175c8',1,'Astera::FrameAllocator::Reset()'],['../class_astera_1_1_scene_state.html#a08f2d0d239381c5bbbf3ad3e204a9351',1,'Astera::SceneState::Reset()']]],
-  ['resetall_16',['ResetAll',['../class_astera_1_1_frame_allocator.html#a70d6c4540a743f37b3ecde4c47a2b025',1,'Astera::FrameAllocator']]],
-  ['resetmousedeltas_17',['ResetMouseDeltas',['../class_astera_1_1_input_manager.html#ad62806c4f78320944d5c933d3168f7ec',1,'Astera::InputManager']]],
-  ['resize_18',['resize',['../class_astera_1_1_render_context.html#a6155bed7a0798e9915ad377679875fc4',1,'Astera::RenderContext::Resize()'],['../class_astera_1_1_game.html#a99b2dcd030d25627d9a17aac30f7e861',1,'Astera::Game::Resize()']]],
-  ['resource_19',['Resource',['../class_astera_1_1_resource.html#a6c818eb67b7c3bf6e328c82d35197c86',1,'Astera::Resource']]],
-  ['resourcehandle_20',['resourcehandle',['../class_astera_1_1_resource_handle.html#ab0d9148ba6a36cf48a9b635eb655ecfe',1,'Astera::ResourceHandle::ResourceHandle()'],['../class_astera_1_1_resource_handle.html#a457a238cea9415e34288f82e7d52136a',1,'Astera::ResourceHandle::ResourceHandle(ResourceManager *manager, const u64 id, T *data)']]],
-  ['resourcemanager_21',['ResourceManager',['../class_astera_1_1_resource_manager.html#a8fc1254d533001a89e1d23c934c9fca8',1,'Astera::ResourceManager']]],
-  ['rigidbody2d_22',['Rigidbody2D',['../struct_astera_1_1_rigidbody2_d.html#a3d2a1f422fbc36d09df0e789b3da5f36',1,'Astera::Rigidbody2D']]],
-  ['rotate_23',['Rotate',['../struct_astera_1_1_transform.html#aa318436e9e13202576aaa02849209ffd',1,'Astera::Transform']]],
-  ['round_24',['Round',['../class_astera_1_1_math.html#a8216070543d0f021649f8b09c40cbc5e',1,'Astera::Math']]],
-  ['run_25',['run',['../class_astera_1_1_game.html#a643936fbd2df7813d61c736f7fa158d3',1,'Astera::Game::Run()'],['../struct_project_subcommand.html#aa1202756a9149aea258a883bcf0c9b84',1,'ProjectSubcommand::Run()']]]
+  ['quit_0',['Quit',['../class_astera_1_1_game.html#ae619a5b539ae4a5a962ddaad096ebe72',1,'Astera::Game']]]
 ];

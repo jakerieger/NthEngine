@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['openglexception_0',['OpenGLException',['../struct_astera_1_1_open_g_l_exception.html',1,'Astera']]]
+  ['notimplemented_0',['NotImplemented',['../class_astera_1_1_not_implemented.html',1,'Astera']]]
 ];

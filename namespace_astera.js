@@ -45,6 +45,7 @@ var namespace_astera =
     [ "IndexBuffer", "class_astera_1_1_index_buffer.html", "class_astera_1_1_index_buffer" ],
     [ "InputManager", "class_astera_1_1_input_manager.html", "class_astera_1_1_input_manager" ],
     [ "IO", "class_astera_1_1_i_o.html", null ],
+    [ "JobSystem", "class_astera_1_1_job_system.html", "class_astera_1_1_job_system" ],
     [ "Log", "class_astera_1_1_log.html", "class_astera_1_1_log" ],
     [ "LuaRegisterable", "struct_astera_1_1_lua_registerable.html", "struct_astera_1_1_lua_registerable" ],
     [ "LuaRegistry", "struct_astera_1_1_lua_registry.html", "struct_astera_1_1_lua_registry" ],
@@ -186,5 +187,8 @@ var namespace_astera =
     [ "operator\"\"_mB", "namespace_astera.html#a30f5bde06e726d65bf563720687c9d24", null ],
     [ "operator\"\"_TB", "namespace_astera.html#a73edcd20f3e5cdc12f7129611311e640", null ],
     [ "operator\"\"_tB", "namespace_astera.html#a12978eb8aea8c8a8ebc04ded3f72f8df", null ],
-    [ "StringToF32", "namespace_astera.html#ae4d367fbb298a84e1c8ce05ab6e9eb3e", null ]
+    [ "ParallelFor", "namespace_astera.html#a6dafa0d018be9e6cfec799bac89205a2", null ],
+    [ "ParallelForIndexed", "namespace_astera.html#ab5eb5a203bd89802393fbe43a3053658", null ],
+    [ "StringToF32", "namespace_astera.html#ae4d367fbb298a84e1c8ce05ab6e9eb3e", null ],
+    [ "gJobSystem", "namespace_astera.html#a61c8942da5d66eeec4005c0b29172713", null ]
 ];

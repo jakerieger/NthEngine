@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notimplemented_0',['NotImplemented',['../class_astera_1_1_not_implemented.html',1,'Astera']]]
+  ['math_0',['Math',['../class_astera_1_1_math.html',1,'Astera']]]
 ];

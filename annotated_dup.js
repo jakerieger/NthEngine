@@ -35,6 +35,7 @@ var annotated_dup =
       [ "IndexBuffer", "class_astera_1_1_index_buffer.html", "class_astera_1_1_index_buffer" ],
       [ "InputManager", "class_astera_1_1_input_manager.html", "class_astera_1_1_input_manager" ],
       [ "IO", "class_astera_1_1_i_o.html", null ],
+      [ "JobSystem", "class_astera_1_1_job_system.html", "class_astera_1_1_job_system" ],
       [ "Log", "class_astera_1_1_log.html", "class_astera_1_1_log" ],
       [ "LuaRegisterable", "struct_astera_1_1_lua_registerable.html", "struct_astera_1_1_lua_registerable" ],
       [ "LuaRegistry", "struct_astera_1_1_lua_registry.html", "struct_astera_1_1_lua_registry" ],

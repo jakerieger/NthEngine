@@ -5,6 +5,7 @@ var searchData=
   ['error_2',['Error',['../class_astera_1_1_log.html#ae021e46e6f91bbc7f8807f377b72e139',1,'Astera::Log']]],
   ['execute_3',['Execute',['../class_astera_1_1_script_engine.html#ad215ba0951896f25278bf43094b7796a',1,'Astera::ScriptEngine']]],
   ['executefile_4',['ExecuteFile',['../class_astera_1_1_script_engine.html#aeed0e41fdb799cbbd5b14371c504fc64',1,'Astera::ScriptEngine']]],
-  ['executequeue_5',['ExecuteQueue',['../class_astera_1_1_command_queue.html#a0dd465a1bb568034e3d05206a43fbcbc',1,'Astera::CommandQueue']]],
-  ['executequeuebatched_6',['ExecuteQueueBatched',['../class_astera_1_1_command_queue.html#a90a8586d2e9935558f1a47eabe7dfc3f',1,'Astera::CommandQueue']]]
+  ['executenextjob_5',['ExecuteNextJob',['../class_astera_1_1_job_system.html#a3789e330c8989880209bed590f3ef76b',1,'Astera::JobSystem']]],
+  ['executequeue_6',['ExecuteQueue',['../class_astera_1_1_command_queue.html#a0dd465a1bb568034e3d05206a43fbcbc',1,'Astera::CommandQueue']]],
+  ['executequeuebatched_7',['ExecuteQueueBatched',['../class_astera_1_1_command_queue.html#a90a8586d2e9935558f1a47eabe7dfc3f',1,'Astera::CommandQueue']]]
 ];

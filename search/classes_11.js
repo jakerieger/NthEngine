@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['unbindvertexarraycommand_0',['UnbindVertexArrayCommand',['../struct_astera_1_1_unbind_vertex_array_command.html',1,'Astera']]],
-  ['updateindexbuffercommand_1',['UpdateIndexBufferCommand',['../struct_astera_1_1_update_index_buffer_command.html',1,'Astera']]],
-  ['updatevertexbuffercommand_2',['UpdateVertexBufferCommand',['../struct_astera_1_1_update_vertex_buffer_command.html',1,'Astera']]]
+  ['texturemanager_0',['TextureManager',['../class_astera_1_1_texture_manager.html',1,'Astera']]],
+  ['transform_1',['Transform',['../struct_astera_1_1_transform.html',1,'Astera']]],
+  ['transformdescriptor_2',['TransformDescriptor',['../struct_astera_1_1_transform_descriptor.html',1,'Astera']]]
 ];

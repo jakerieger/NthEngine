@@ -1,9 +1,15 @@
 var searchData=
 [
-  ['unbind_0',['unbind',['../class_astera_1_1_i_buffer.html#aea96966a376a2b7f8c6b2c9a2ca9ddd5',1,'Astera::IBuffer::Unbind()'],['../class_astera_1_1_vertex_buffer.html#ad25301d0edd9ead15b802d27a1436966',1,'Astera::VertexBuffer::Unbind()'],['../class_astera_1_1_index_buffer.html#a96cf64c6982f75334ba04bbb686fc42d',1,'Astera::IndexBuffer::Unbind()'],['../class_astera_1_1_geometry.html#ae047c0a2fb4df509448b47552540cbc8',1,'Astera::Geometry::Unbind()'],['../class_astera_1_1_shader.html#a8be6b2c7a7e3a226092242e63abd11ea',1,'Astera::Shader::Unbind()'],['../class_astera_1_1_vertex_array.html#abe430a6086a7570252ebe8e585f9e386',1,'Astera::VertexArray::Unbind()']]],
-  ['update_1',['update',['../class_astera_1_1_debug_manager.html#a491bbd2c8b1e033f7cf12e989b625dea',1,'Astera::DebugManager::Update()'],['../class_astera_1_1_scene.html#ae7d9638df481856692b6e34f81df57fe',1,'Astera::Scene::Update()']]],
-  ['updateat_2',['UpdateAt',['../class_astera_1_1_binary_writer.html#abc28f23f913d9475eee91bd5106fa6e4',1,'Astera::BinaryWriter']]],
-  ['updatedata_3',['updatedata',['../class_astera_1_1_i_buffer.html#a24fb6b00c35d939e16de1404b14270d3',1,'Astera::IBuffer::UpdateData()'],['../class_astera_1_1_vertex_buffer.html#a6e5159dc4481eb8b4c01d7fa54fa6fec',1,'Astera::VertexBuffer::UpdateData()'],['../class_astera_1_1_index_buffer.html#ad6af867403e2fc208b4e16c9d2dd0ff4',1,'Astera::IndexBuffer::UpdateData()']]],
-  ['updatemass_4',['UpdateMass',['../struct_astera_1_1_rigidbody2_d.html#ae8833fea8471600b977483bdb326ee6d',1,'Astera::Rigidbody2D']]],
-  ['updatetransforms_5',['UpdateTransforms',['../class_astera_1_1_physics_debug_layer.html#ac73a313e30f1c19850b68051ed72115f',1,'Astera::PhysicsDebugLayer']]]
+  ['tan_0',['Tan',['../class_astera_1_1_math.html#a1a5a38def10fcb6e0ef2c687f1c7b95d',1,'Astera::Math']]],
+  ['tell_1',['Tell',['../class_astera_1_1_binary_writer.html#a42c6a970eb04ddcc281526f27dd0cd91',1,'Astera::BinaryWriter']]],
+  ['tick_2',['Tick',['../class_astera_1_1_clock.html#ac0bec751252d3524b857e348d7b004d7',1,'Astera::Clock']]],
+  ['to_3',['to',['../class_astera_1_1_color.html#a6ea311c5312b552444b875b9f4ebae0b',1,'Astera::Color::To() const'],['../class_astera_1_1_color.html#ad873dc63cf57a0e9eeca16c9a64d6aeb',1,'Astera::Color::To() const'],['../class_astera_1_1_color.html#a84d442e4ec42329990a42d0562d94577',1,'Astera::Color::To() const'],['../class_astera_1_1_color.html#a0a9817af74277174a103f18d23acff98',1,'Astera::Color::To() const']]],
+  ['tofloatarray_4',['ToFloatArray',['../class_astera_1_1_color.html#a7012549c43a5129c9395d6581026eb83',1,'Astera::Color']]],
+  ['togglefullscreen_5',['ToggleFullscreen',['../class_astera_1_1_game.html#ad7df3cf728dae4f69bf3faff80ffee33',1,'Astera::Game']]],
+  ['tohsv_6',['ToHSV',['../class_astera_1_1_color.html#ae88710e6054e99c8b64d6ffd03f60eaa',1,'Astera::Color']]],
+  ['tostring_7',['ToString',['../class_astera_1_1_color.html#a001131ed6d9da26a9f7f825143f2fbb6',1,'Astera::Color']]],
+  ['tou32_8',['ToU32',['../class_astera_1_1_color.html#ae2dc6c9e195a3912302ef76c1c9ea7f3',1,'Astera::Color']]],
+  ['tou32_5fabgr_9',['ToU32_ABGR',['../class_astera_1_1_color.html#a27cca180d40d75bb155ae13f3713dc22',1,'Astera::Color']]],
+  ['trace_10',['Trace',['../class_astera_1_1_log.html#ab8ddefce17376f9ada789abc15fd9d1d',1,'Astera::Log']]],
+  ['translate_11',['Translate',['../struct_astera_1_1_transform.html#ac9edfa9b850e5b353a8cb80fbd233afb',1,'Astera::Transform']]]
 ];

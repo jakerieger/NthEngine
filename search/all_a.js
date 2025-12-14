@@ -1,26 +1,9 @@
 var searchData=
 [
-  ['lateupdate_0',['LateUpdate',['../class_astera_1_1_scene.html#ac2022335d88cfb0151ca19a3f677feac',1,'Astera::Scene']]],
-  ['lerp_1',['lerp',['../class_astera_1_1_math.html#ae29f94410203f63e79dd0755ac6ccc20',1,'Astera::Math::Lerp()'],['../class_astera_1_1_color.html#adcd2165a0e915be4348ac4ab9396da41',1,'Astera::Color::Lerp()']]],
-  ['lineardamping_2',['lineardamping',['../struct_astera_1_1_rigidbody2_d_descriptor.html#adc81257e58ac44af3613ebfa2ad3a635',1,'Astera::Rigidbody2DDescriptor::linearDamping'],['../struct_astera_1_1_rigidbody2_d.html#ae99eb385b80affe7352bbcac2afb1201',1,'Astera::Rigidbody2D::linearDamping']]],
-  ['little_3',['Little',['../class_astera_1_1_binary_writer.html#ae3e58b544255b3902cb43b6595c153fea0f9197b3e286a7522984831949087332',1,'Astera::BinaryWriter']]],
-  ['load_4',['load',['../class_astera_1_1_scene.html#a94fb69fb1fe89dcd7c4393c7e7b17f12',1,'Astera::Scene::Load()'],['../class_astera_1_1_resource_loader_base.html#a2541abe7bc159ab5eb8f9dd35fb2dcc6',1,'Astera::ResourceLoaderBase::Load()'],['../class_astera_1_1_resource_loader.html#a03354714542839ec43aa1edd6dc1f1a9',1,'Astera::ResourceLoader::Load()'],['../class_astera_1_1_texture_manager.html#aea021abaee10b713a7dcf8f48c5ebaaf',1,'Astera::TextureManager::Load()'],['../class_astera_1_1_scene.html#ac04bb209a27eeb9d119f493657cb96ba',1,'Astera::Scene::Load()']]],
-  ['loadresource_5',['LoadResource',['../class_astera_1_1_resource_manager.html#a777e674f51956affc324669b6b6282af',1,'Astera::ResourceManager']]],
-  ['loadscript_6',['loadscript',['../class_astera_1_1_script_engine.html#aafc409546518f18cb899239d489e4278',1,'Astera::ScriptEngine::LoadScript(const string &amp;source, ScriptID scriptId, ScriptType type=ScriptType::Behavior)'],['../class_astera_1_1_script_engine.html#a248bbec8ea01c2551f2c4c1e2b6c138a',1,'Astera::ScriptEngine::LoadScript(const vector&lt; u8 &gt; &amp;bytecode, ScriptID scriptId, ScriptType type=ScriptType::Behavior)']]],
-  ['loadsound_7',['LoadSound',['../class_astera_1_1_audio_engine.html#a8c66d0e73a0d94b8a4a7ae26acb47829',1,'Astera::AudioEngine']]],
-  ['lockrotation_8',['lockrotation',['../struct_astera_1_1_rigidbody2_d.html#ad251eb4811fcdd88dc881f25f862182e',1,'Astera::Rigidbody2D::lockRotation'],['../struct_astera_1_1_rigidbody2_d_descriptor.html#aa7281d60a3d070855ddec4c49868ae7e',1,'Astera::Rigidbody2DDescriptor::lockRotation']]],
-  ['log_9',['Log',['../class_astera_1_1_log.html',1,'Astera']]],
-  ['log_2ecpp_10',['Log.cpp',['../_log_8cpp.html',1,'']]],
-  ['log_2ehpp_11',['Log.hpp',['../_log_8hpp.html',1,'']]],
-  ['log_2elua_12',['Log.lua',['../_log_8lua.html',1,'']]],
-  ['luaregisterable_13',['LuaRegisterable',['../struct_astera_1_1_lua_registerable.html',1,'Astera']]],
-  ['luaregistry_14',['LuaRegistry',['../struct_astera_1_1_lua_registry.html',1,'Astera']]],
-  ['luatyperegistration_15',['LuaTypeRegistration',['../struct_astera_1_1_lua_type_registration.html',1,'Astera']]],
-  ['luatypetraits_16',['LuaTypeTraits',['../struct_astera_1_1_lua_type_traits.html',1,'Astera']]],
-  ['luatypetraits_3c_20behaviorentity_20_3e_17',['LuaTypeTraits&lt; BehaviorEntity &gt;',['../struct_astera_1_1_lua_type_traits_3_01_behavior_entity_01_4.html',1,'Astera']]],
-  ['luatypetraits_3c_20clock_20_3e_18',['LuaTypeTraits&lt; Clock &gt;',['../struct_astera_1_1_lua_type_traits_3_01_clock_01_4.html',1,'Astera']]],
-  ['luatypetraits_3c_20scenestate_20_3e_19',['LuaTypeTraits&lt; SceneState &gt;',['../struct_astera_1_1_lua_type_traits_3_01_scene_state_01_4.html',1,'Astera']]],
-  ['luatypetraits_3c_20transform_20_3e_20',['LuaTypeTraits&lt; Transform &gt;',['../struct_astera_1_1_lua_type_traits_3_01_transform_01_4.html',1,'Astera']]],
-  ['luatypetraits_3c_20vec2_20_3e_21',['LuaTypeTraits&lt; Vec2 &gt;',['../struct_astera_1_1_lua_type_traits_3_01_vec2_01_4.html',1,'Astera']]],
-  ['luminance_22',['Luminance',['../class_astera_1_1_color.html#a3f9d3a9b58dc536ba774702810fbcd44',1,'Astera::Color']]]
+  ['kdefaultheight_0',['kDefaultHeight',['../class_astera_1_1_game.html#ad28b36c6fa1965a492d7c5325c61e13c',1,'Astera::Game']]],
+  ['kdefaultwidth_1',['kDefaultWidth',['../class_astera_1_1_game.html#a9bf4b024fa001c0b9abd3de3c8cd4448',1,'Astera::Game']]],
+  ['keuler_2',['kEuler',['../class_astera_1_1_math.html#a18b002982c3567d4f20955b10f1cf899',1,'Astera::Math']]],
+  ['kinematic_3',['Kinematic',['../namespace_astera.html#a7a21d0e3701237e0c6db7e9977279e04a40c78b58b86002ee38fad2d3c9dd787e',1,'Astera']]],
+  ['kpi_4',['kPi',['../class_astera_1_1_math.html#a5cfba90521a8c32574e57495d1f692a8',1,'Astera::Math']]],
+  ['ktau_5',['kTau',['../class_astera_1_1_math.html#a017063cc28b4bcdae4ffbe1ec8c36845',1,'Astera::Math']]]
 ];

@@ -43,6 +43,8 @@ var hierarchy =
     ] ],
     [ "Astera::InputManager", "class_astera_1_1_input_manager.html", null ],
     [ "Astera::IO", "class_astera_1_1_i_o.html", null ],
+    [ "Astera::JobSystem::JobCounter", "struct_astera_1_1_job_system_1_1_job_counter.html", null ],
+    [ "Astera::JobSystem", "class_astera_1_1_job_system.html", null ],
     [ "Astera::Log", "class_astera_1_1_log.html", null ],
     [ "Astera::LuaRegisterable", "struct_astera_1_1_lua_registerable.html", [
       [ "Astera::LuaRegistry< T >", "struct_astera_1_1_lua_registry.html", null ]
@@ -86,6 +88,7 @@ var hierarchy =
     [ "Astera::SpriteRenderer", "struct_astera_1_1_sprite_renderer.html", null ],
     [ "Astera::SpriteRendererDescriptor", "struct_astera_1_1_sprite_renderer_descriptor.html", null ],
     [ "Astera::SpriteVertex", "struct_astera_1_1_sprite_vertex.html", null ],
+    [ "Astera::JobSystem::Statistics", "struct_astera_1_1_job_system_1_1_statistics.html", null ],
     [ "Astera::TextureManager", "class_astera_1_1_texture_manager.html", null ],
     [ "Astera::Transform", "struct_astera_1_1_transform.html", null ],
     [ "Astera::TransformDescriptor", "struct_astera_1_1_transform_descriptor.html", null ],

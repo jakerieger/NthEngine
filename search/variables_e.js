@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['position_0',['position',['../struct_astera_1_1_transform.html#a49ee2798d941d9e36e99d3bc24135ad5',1,'Astera::Transform::position'],['../struct_astera_1_1_transform_descriptor.html#ace97ff9c4ffef36871844de1c0e1a708',1,'Astera::TransformDescriptor::position']]],
-  ['primitivetype_1',['primitivetype',['../struct_astera_1_1_draw_indexed_command.html#a0dfd09eef2e8ff29a6a79bb658ea1d64',1,'Astera::DrawIndexedCommand::primitiveType'],['../struct_astera_1_1_draw_indexed_instanced_command.html#a12736d2199f3bf49e444cdb375567480',1,'Astera::DrawIndexedInstancedCommand::primitiveType'],['../struct_astera_1_1_draw_arrays_command.html#abb0c6eddd6ac020bbb947f07318d2f32',1,'Astera::DrawArraysCommand::primitiveType']]],
-  ['programid_2',['programid',['../struct_astera_1_1_bind_shader_command.html#af245156e6414feecf38ceebca8f3517d',1,'Astera::BindShaderCommand::programId'],['../struct_astera_1_1_set_uniform_command.html#ac82bd1f3fb9406a2c9c84088d1206f8b',1,'Astera::SetUniformCommand::programId']]]
+  ['offset_0',['offset',['../struct_astera_1_1_update_vertex_buffer_command.html#ac14d39dd62fd55c45dc4e15b3e096f47',1,'Astera::UpdateVertexBufferCommand::offset'],['../struct_astera_1_1_update_index_buffer_command.html#a5736b1385f47d1a3d88b0e9db64065b0',1,'Astera::UpdateIndexBufferCommand::offset']]],
+  ['onawake_1',['OnAwake',['../struct_astera_1_1_behavior_script_context.html#a6f258845dab8be45bc8a12db1ff16414',1,'Astera::BehaviorScriptContext']]],
+  ['ondestroyed_2',['OnDestroyed',['../struct_astera_1_1_behavior_script_context.html#ac230ec1a43968bc56f20c886f98a3387',1,'Astera::BehaviorScriptContext']]],
+  ['onlateupdate_3',['OnLateUpdate',['../struct_astera_1_1_behavior_script_context.html#abafeb46db97d029588d437f4c284202b',1,'Astera::BehaviorScriptContext']]],
+  ['onupdate_4',['OnUpdate',['../struct_astera_1_1_behavior_script_context.html#afff87fb1263affabf18548d4a2d60725',1,'Astera::BehaviorScriptContext']]]
 ];

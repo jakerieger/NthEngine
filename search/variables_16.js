@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_0',['x',['../struct_astera_1_1_set_viewport_command.html#a9d1290180911eaea194e072f46dacbcf',1,'Astera::SetViewportCommand::x'],['../struct_astera_1_1_sprite_vertex.html#afbe1631d81a0e7a04ca857cd3bfe2c43',1,'Astera::SpriteVertex::x']]]
+  ['width_0',['width',['../struct_astera_1_1_set_viewport_command.html#a04283a864b86c1742a8409029fada1e4',1,'Astera::SetViewportCommand']]]
 ];
