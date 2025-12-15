@@ -62,6 +62,8 @@ var namespace_astera =
     [ "PhysicsDebugLayer", "class_astera_1_1_physics_debug_layer.html", "class_astera_1_1_physics_debug_layer" ],
     [ "PhysicsEngine", "class_astera_1_1_physics_engine.html", null ],
     [ "RenderContext", "class_astera_1_1_render_context.html", "class_astera_1_1_render_context" ],
+    [ "RenderTarget", "class_astera_1_1_render_target.html", "class_astera_1_1_render_target" ],
+    [ "RenderTargetConfig", "struct_astera_1_1_render_target_config.html", "struct_astera_1_1_render_target_config" ],
     [ "Resource", "class_astera_1_1_resource.html", "class_astera_1_1_resource" ],
     [ "ResourceBase", "class_astera_1_1_resource_base.html", "class_astera_1_1_resource_base" ],
     [ "ResourceHandle", "class_astera_1_1_resource_handle.html", "class_astera_1_1_resource_handle" ],
@@ -95,6 +97,8 @@ var namespace_astera =
     [ "VertexAttribute", "struct_astera_1_1_vertex_attribute.html", "struct_astera_1_1_vertex_attribute" ],
     [ "VertexBuffer", "class_astera_1_1_vertex_buffer.html", "class_astera_1_1_vertex_buffer" ],
     [ "VertexLayout", "class_astera_1_1_vertex_layout.html", "class_astera_1_1_vertex_layout" ],
+    [ "Window", "class_astera_1_1_window.html", "class_astera_1_1_window" ],
+    [ "WindowConfig", "struct_astera_1_1_window_config.html", "struct_astera_1_1_window_config" ],
     [ "ValidComponent", "concept_astera_1_1_valid_component.html", null ],
     [ "AssetID", "namespace_astera.html#af12b219535c2359a413fbe6933f80908", null ],
     [ "Entity", "namespace_astera.html#ad827a64a1d8efaf19a9eeac804dc4a07", null ],
@@ -109,6 +113,7 @@ var namespace_astera =
     [ "iptr", "namespace_astera.html#af99125950fae339ec2b225db3c41dc78", null ],
     [ "Mat3", "namespace_astera.html#aa9241995679ee52c1d21a4d3b3483e1a", null ],
     [ "Mat4", "namespace_astera.html#a7027406a136a3233ea643b26b70b4ab3", null ],
+    [ "Path", "namespace_astera.html#aa715b3684f0937d835d392f4378db884", null ],
     [ "Quat", "namespace_astera.html#a23db947ef2c34866124299ec2cdf7e93", null ],
     [ "RenderCommand", "namespace_astera.html#a57eb6764cff93f16f560ba79ce90ad98", null ],
     [ "Result", "namespace_astera.html#acd1a44433b72def744c95631c5ee03b9", null ],
@@ -161,6 +166,10 @@ var namespace_astera =
       [ "Script", "namespace_astera.html#a56fe2366139e5889dfac7fea1b30c3c5af907e651164789346ae0a1e257c462d8", null ],
       [ "Shader", "namespace_astera.html#a56fe2366139e5889dfac7fea1b30c3c5aa88a92f4a0e793589f2341851a15c660", null ],
       [ "Sprite", "namespace_astera.html#a56fe2366139e5889dfac7fea1b30c3c5a51f2b7b14433aa22c67d1f4fc18943cd", null ]
+    ] ],
+    [ "RenderTargetType", "namespace_astera.html#a79f9380e12cc6c1704aca78838d9f57e", [
+      [ "Window", "namespace_astera.html#a79f9380e12cc6c1704aca78838d9f57eac89686a387d2b12b3c729ce35a0bcb5b", null ],
+      [ "Framebuffer", "namespace_astera.html#a79f9380e12cc6c1704aca78838d9f57ea42badd9e49002a3cefeaaf28867add83", null ]
     ] ],
     [ "ScriptType", "namespace_astera.html#a3835a3d75fe815e14711fe0aa9723a77", [
       [ "Behavior", "namespace_astera.html#a3835a3d75fe815e14711fe0aa9723a77ab39a035a995fc6597c8eb942210d1527", null ],

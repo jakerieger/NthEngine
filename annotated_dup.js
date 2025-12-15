@@ -52,6 +52,8 @@ var annotated_dup =
       [ "PhysicsDebugLayer", "class_astera_1_1_physics_debug_layer.html", "class_astera_1_1_physics_debug_layer" ],
       [ "PhysicsEngine", "class_astera_1_1_physics_engine.html", null ],
       [ "RenderContext", "class_astera_1_1_render_context.html", "class_astera_1_1_render_context" ],
+      [ "RenderTarget", "class_astera_1_1_render_target.html", "class_astera_1_1_render_target" ],
+      [ "RenderTargetConfig", "struct_astera_1_1_render_target_config.html", "struct_astera_1_1_render_target_config" ],
       [ "Resource", "class_astera_1_1_resource.html", "class_astera_1_1_resource" ],
       [ "ResourceBase", "class_astera_1_1_resource_base.html", "class_astera_1_1_resource_base" ],
       [ "ResourceHandle", "class_astera_1_1_resource_handle.html", "class_astera_1_1_resource_handle" ],
@@ -84,7 +86,9 @@ var annotated_dup =
       [ "VertexArray", "class_astera_1_1_vertex_array.html", "class_astera_1_1_vertex_array" ],
       [ "VertexAttribute", "struct_astera_1_1_vertex_attribute.html", "struct_astera_1_1_vertex_attribute" ],
       [ "VertexBuffer", "class_astera_1_1_vertex_buffer.html", "class_astera_1_1_vertex_buffer" ],
-      [ "VertexLayout", "class_astera_1_1_vertex_layout.html", "class_astera_1_1_vertex_layout" ]
+      [ "VertexLayout", "class_astera_1_1_vertex_layout.html", "class_astera_1_1_vertex_layout" ],
+      [ "Window", "class_astera_1_1_window.html", "class_astera_1_1_window" ],
+      [ "WindowConfig", "struct_astera_1_1_window_config.html", "struct_astera_1_1_window_config" ]
     ] ],
     [ "std", null, [
       [ "hash< Astera::Color >", "structstd_1_1hash_3_01_astera_1_1_color_01_4.html", "structstd_1_1hash_3_01_astera_1_1_color_01_4" ]

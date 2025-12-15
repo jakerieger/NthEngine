@@ -132,6 +132,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa5573d8eb131842e32cbb1ad88fae835" id="r_aa5573d8eb131842e32cbb1ad88fae835"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_debug_manager.html#aa5573d8eb131842e32cbb1ad88fae835">HandleEvent</a> (<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> <a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">Event</a> &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">event</a>) <a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a></td></tr>
 <tr class="memdesc:aa5573d8eb131842e32cbb1ad88fae835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatches an event to all enabled debug overlays.  <br /></td></tr>
 <tr class="separator:aa5573d8eb131842e32cbb1ad88fae835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66ae397d3a19ff0faec4bbf0a32ea3f1" id="r_a66ae397d3a19ff0faec4bbf0a32ea3f1"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">typename</a> T &gt; <br />
+requires std::is_base_of_v&lt;<a class="el" href="class_astera_1_1_i_debug_overlay.html">IDebugOverlay</a>, T&gt;</td></tr>
+<tr class="memitem:a66ae397d3a19ff0faec4bbf0a32ea3f1"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_astera_1_1_debug_manager.html#a66ae397d3a19ff0faec4bbf0a32ea3f1">GetOverlay</a> (<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> string &amp;name)</td></tr>
+<tr class="separator:a66ae397d3a19ff0faec4bbf0a32ea3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages debug overlays for the engine. </p>
@@ -240,6 +244,37 @@ Public Member Functions</h2></td></tr>
 <p>Detaches all registered debug overlays. </p>
 
 <p class="definition">Definition at line <a class="el" href="_debug_interface_8cpp_source.html#l00041">41</a> of file <a class="el" href="_debug_interface_8cpp_source.html">DebugInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a66ae397d3a19ff0faec4bbf0a32ea3f1" name="a66ae397d3a19ff0faec4bbf0a32ea3f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66ae397d3a19ff0faec4bbf0a32ea3f1">&#9670;&#160;</a></span>GetOverlay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">typename</a> T &gt; <br />
+requires std::is_base_of_v&lt;<a class="el" href="class_astera_1_1_i_debug_overlay.html">IDebugOverlay</a>, T&gt;</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T * Astera::DebugManager::GetOverlay </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_debug_interface_8hpp_source.html#l00095">95</a> of file <a class="el" href="_debug_interface_8hpp_source.html">DebugInterface.hpp</a>.</p>
 
 </div>
 </div>

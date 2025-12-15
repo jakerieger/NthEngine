@@ -17,5 +17,6 @@ var searchData=
   ['vertexcount_14',['vertexCount',['../struct_astera_1_1_draw_arrays_command.html#ae3c825ddbd11c72559f8413760f48fe9',1,'Astera::DrawArraysCommand']]],
   ['vertexlayout_15',['vertexlayout',['../class_astera_1_1_vertex_layout.html',1,'Astera::VertexLayout'],['../class_astera_1_1_vertex_layout.html#a6d14b288b8a910b03662b079fc523ec2',1,'Astera::VertexLayout::VertexLayout()']]],
   ['vertexoffset_16',['vertexOffset',['../struct_astera_1_1_draw_arrays_command.html#a6b03575b920a6828a3031f5e7cf004f8',1,'Astera::DrawArraysCommand']]],
-  ['view_17',['View',['../class_astera_1_1_scene_state.html#aff667c31e7e4512cb1a6cfebf1140526',1,'Astera::SceneState']]]
+  ['view_17',['View',['../class_astera_1_1_scene_state.html#aff667c31e7e4512cb1a6cfebf1140526',1,'Astera::SceneState']]],
+  ['vsync_18',['vsync',['../struct_astera_1_1_window_config.html#af07e8899292c21c7988b646e590022b0',1,'Astera::WindowConfig']]]
 ];

@@ -16,6 +16,7 @@ var _engine_common_8hpp =
     [ "iptr", "_engine_common_8hpp.html#af99125950fae339ec2b225db3c41dc78", null ],
     [ "Mat3", "_engine_common_8hpp.html#aa9241995679ee52c1d21a4d3b3483e1a", null ],
     [ "Mat4", "_engine_common_8hpp.html#a7027406a136a3233ea643b26b70b4ab3", null ],
+    [ "Path", "_engine_common_8hpp.html#aa715b3684f0937d835d392f4378db884", null ],
     [ "Quat", "_engine_common_8hpp.html#a23db947ef2c34866124299ec2cdf7e93", null ],
     [ "Result", "_engine_common_8hpp.html#acd1a44433b72def744c95631c5ee03b9", null ],
     [ "u128", "_engine_common_8hpp.html#ac24c9d612c99e45a2b3a4bd3d1fca7f9", null ],

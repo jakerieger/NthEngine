@@ -30,7 +30,6 @@ var hierarchy =
       [ "Astera::NotImplemented", "class_astera_1_1_not_implemented.html", null ]
     ] ],
     [ "Astera::FrameAllocator", "class_astera_1_1_frame_allocator.html", null ],
-    [ "Astera::Game", "class_astera_1_1_game.html", null ],
     [ "Astera::Geometry", "class_astera_1_1_geometry.html", null ],
     [ "std::hash< Astera::Color >", "structstd_1_1hash_3_01_astera_1_1_color_01_4.html", null ],
     [ "Astera::IBuffer", "class_astera_1_1_i_buffer.html", [
@@ -60,6 +59,8 @@ var hierarchy =
     [ "Astera::PhysicsEngine", "class_astera_1_1_physics_engine.html", null ],
     [ "ProjectSubcommand", "struct_project_subcommand.html", null ],
     [ "Astera::RenderContext", "class_astera_1_1_render_context.html", null ],
+    [ "Astera::RenderTarget", "class_astera_1_1_render_target.html", null ],
+    [ "Astera::RenderTargetConfig", "struct_astera_1_1_render_target_config.html", null ],
     [ "Astera::ResourceBase", "class_astera_1_1_resource_base.html", [
       [ "Astera::Resource< T >", "class_astera_1_1_resource.html", null ]
     ] ],
@@ -97,5 +98,9 @@ var hierarchy =
     [ "Astera::UpdateVertexBufferCommand", "struct_astera_1_1_update_vertex_buffer_command.html", null ],
     [ "Astera::VertexArray", "class_astera_1_1_vertex_array.html", null ],
     [ "Astera::VertexAttribute", "struct_astera_1_1_vertex_attribute.html", null ],
-    [ "Astera::VertexLayout", "class_astera_1_1_vertex_layout.html", null ]
+    [ "Astera::VertexLayout", "class_astera_1_1_vertex_layout.html", null ],
+    [ "Astera::Window", "class_astera_1_1_window.html", [
+      [ "Astera::Game", "class_astera_1_1_game.html", null ]
+    ] ],
+    [ "Astera::WindowConfig", "struct_astera_1_1_window_config.html", null ]
 ];

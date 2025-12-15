@@ -10,5 +10,6 @@ var class_astera_1_1_input_manager =
     [ "GetMouseX", "class_astera_1_1_input_manager.html#a6b2735795c77454e7ee32343c700cfd9", null ],
     [ "GetMouseY", "class_astera_1_1_input_manager.html#a07d4a010070e746dfbe69fef13e6cfb5", null ],
     [ "ResetMouseDeltas", "class_astera_1_1_input_manager.html#ad62806c4f78320944d5c933d3168f7ec", null ],
-    [ "Game", "class_astera_1_1_input_manager.html#aa2fab026580d6f14280c2ffb8063a314", null ]
+    [ "Game", "class_astera_1_1_input_manager.html#aa2fab026580d6f14280c2ffb8063a314", null ],
+    [ "Window", "class_astera_1_1_input_manager.html#a553f958a25683445088050a69d3de8e9", null ]
 ];

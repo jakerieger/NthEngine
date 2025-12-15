@@ -51,5 +51,7 @@ var dir_5405398c23c020946029b9f4e6e04094 =
     [ "ShaderManager.cpp", "_shader_manager_8cpp.html", null ],
     [ "ShaderManager.hpp", "_shader_manager_8hpp.html", "_shader_manager_8hpp" ],
     [ "TextureManager.cpp", "_texture_manager_8cpp.html", null ],
-    [ "TextureManager.hpp", "_texture_manager_8hpp.html", "_texture_manager_8hpp" ]
+    [ "TextureManager.hpp", "_texture_manager_8hpp.html", "_texture_manager_8hpp" ],
+    [ "Window.cpp", "_window_8cpp.html", null ],
+    [ "Window.hpp", "_window_8hpp.html", "_window_8hpp" ]
 ];

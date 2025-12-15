@@ -11,7 +11,7 @@ var class_astera_1_1_binary_writer =
     [ "Data", "class_astera_1_1_binary_writer.html#a855bcbbfe137469c39e6d141cd71f761", null ],
     [ "GetBuffer", "class_astera_1_1_binary_writer.html#afd1de452d6891a099db005ab0a2f8bbc", null ],
     [ "GetEndian", "class_astera_1_1_binary_writer.html#a9913bc0415ba22f224a879f619441f35", null ],
-    [ "SaveToFile", "class_astera_1_1_binary_writer.html#a6559f23b8fc462004ea8183f3260f2a0", null ],
+    [ "SaveToFile", "class_astera_1_1_binary_writer.html#a21a9a9232b4823f3f1a2d5cefadef2d0", null ],
     [ "Seek", "class_astera_1_1_binary_writer.html#a16b0905dd4b55f7184c5fe54a2a57091", null ],
     [ "SetEndian", "class_astera_1_1_binary_writer.html#ada6181a3f950064188ecde7f523767f5", null ],
     [ "Size", "class_astera_1_1_binary_writer.html#a532f79d4b0b6b327479548514d7a7a54", null ],
