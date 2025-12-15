@@ -15,13 +15,6 @@ A cross-platform 2D game engine written in C++, designed for performance and eas
 combines modern rendering techniques with scripting flexibility to provide a comprehensive
 development environment for 2D games.
 
-## Overview
-
-Astera is built with a focus on simplicity without sacrificing power. The engine leverages OpenGL
-for graphics rendering, Lua for gameplay scripting, and implements an Entity Component System (ECS)
-architecture for efficient scene management. Whether you're prototyping a new game concept or
-building a complete project, Astera provides the tools you need.
-
 ## Architecture
 
 - **Entity Component System (ECS)** - Flexible, composition-based entity management

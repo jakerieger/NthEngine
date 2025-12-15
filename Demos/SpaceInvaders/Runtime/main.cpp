@@ -12,7 +12,7 @@ public:
 
     void OnAwake() override {
         auto& debug = GetDebugManager();
-        debug.SetOverlayEnabled("ImGuiDebugLayer", false);
+        debug.SetOverlayEnabled("ImGuiDebugLayer", true);
         debug.SetOverlayEnabled("PhysicsDebugLayer", false);
 
         GetActiveScene()->Load(Content::Get<ContentType::Scene>("Main.xml"), GetScriptEngine());
