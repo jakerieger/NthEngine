@@ -1,7 +1,5 @@
 {
-  "workspace.library": [
-    "../../../EngineContent/Scripts/types/"
-  ],
+  "workspace.library": ["../../../EngineContent/Scripts/types/"],
   "runtime.version": "Lua 5.3",
   "diagnostics.globals": [
     "Clock",

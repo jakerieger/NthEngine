@@ -27,6 +27,8 @@
  */
 
 #include "ImGuiDebugLayer.hpp"
+
+#include "Color.hpp"
 #include "../Macros.hpp"
 #include "Log.hpp"
 
@@ -50,7 +52,8 @@ namespace Astera {
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-        if (mPerfOverlay) DrawPerformanceOverlay();
+        if (mPerfOverlay)
+            DrawPerformanceOverlay();
 
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
@@ -87,14 +90,16 @@ namespace Astera {
                      ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoMove |
                        ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoBackground);
 
-        ImGui::Text("%.1f FPS", ImGui::GetIO().Framerate);
-
-        static float values[90]  = {};
-        static int values_offset = 0;
-        values[values_offset]    = ImGui::GetIO().Framerate;
-        values_offset            = (values_offset + 1) % IM_ARRAYSIZE(values);
-
-        ImGui::PlotLines("FPS", values, IM_ARRAYSIZE(values), values_offset, nullptr, 0.0f, 100.0f, ImVec2(0, 80));
+        ImGui::Text("Frame Stats");
+        ImGui::Separator();
+        ImGui::TextColored(Colors::Green.To<ImVec4>(), "Frame Rate     %.1f FPS", ImGui::GetIO().Framerate);
+        ImGui::TextColored(Colors::Green.To<ImVec4>(),
+                           "Frame Time     %.6f ms",
+                           (1.f / ImGui::GetIO().Framerate) * 1000.f);
+        ImGui::TextColored(Colors::Magenta.To<ImVec4>(), "Main Thread    0 ms");
+        ImGui::TextColored(Colors::Magenta.To<ImVec4>(), "Render Thread  0 ms");
+        ImGui::TextColored(Colors::Cyan.To<ImVec4>(), "Draw Calls     0");
+        ImGui::TextColored(Colors::Cyan.To<ImVec4>(), "Entities       0");
 
         ImGui::End();
     }

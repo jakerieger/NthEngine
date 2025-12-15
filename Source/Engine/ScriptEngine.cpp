@@ -40,7 +40,8 @@ namespace Astera {
     }
 
     void ScriptEngine::Initialize() {
-        if (mInitialized) return;
+        if (mInitialized)
+            return;
         mLua.open_libraries(sol::lib::base, sol::lib::math, sol::lib::table, sol::lib::string, sol::lib::debug);
         mInitialized = true;
     }
@@ -140,7 +141,8 @@ namespace Astera {
             return;
         }
 
-        if (const auto& ctx = mBehaviorScriptContexts[id]; ctx.OnAwake.valid()) {
+        const auto& ctx = mBehaviorScriptContexts[id];
+        if (ctx.OnAwake.valid()) {
             try {
                 std::ignore = ctx.OnAwake(entity);
             } catch (const sol::error& e) { Log::Error("ScriptEngine", "{}", e.what()); }
@@ -158,7 +160,8 @@ namespace Astera {
             return;
         }
 
-        if (const auto& ctx = mBehaviorScriptContexts[id]; ctx.OnAwake.valid()) {
+        const auto& ctx = mBehaviorScriptContexts[id];
+        if (ctx.OnAwake.valid()) {
             try {
                 std::ignore = ctx.OnUpdate(entity, clock);
             } catch (const sol::error& e) { Log::Error("ScriptEngine", "{}", e.what()); }
@@ -176,7 +179,8 @@ namespace Astera {
             return;
         }
 
-        if (const auto& ctx = mBehaviorScriptContexts[id]; ctx.OnAwake.valid()) {
+        const auto& ctx = mBehaviorScriptContexts[id];
+        if (ctx.OnAwake.valid()) {
             try {
                 std::ignore = ctx.OnLateUpdate(entity);
             } catch (const sol::error& e) { Log::Error("ScriptEngine", "{}", e.what()); }
@@ -194,7 +198,8 @@ namespace Astera {
             return;
         }
 
-        if (const auto& ctx = mBehaviorScriptContexts[id]; ctx.OnAwake.valid()) {
+        const auto& ctx = mBehaviorScriptContexts[id];
+        if (ctx.OnAwake.valid()) {
             try {
                 std::ignore = ctx.OnDestroyed(entity);
             } catch (const sol::error& e) { Log::Error("ScriptEngine", "{}", e.what()); }

@@ -5,19 +5,14 @@
 ---Called at entity initialization
 ---@param this Entity
 function OnAwake(this)
-
+    Log:Debug("Test message from EnemyController.lua")
 end
 
 ---Called every frame, before rendering
 ---@param this Entity
 ---@param clock Clock
 function OnUpdate(this, clock)
-    local player = Scene:FindEntityByName("Player")
-    if player ~= InvalidEntityID then
-        -- Get player location
-        local playerTransform = Scene:GetEntityTransform(player)
-        -- Rotate to face player
-    end
+    this.transform:Translate(ImVec2(1, 0))
 end
 
 ---Called every frame, after rendering
