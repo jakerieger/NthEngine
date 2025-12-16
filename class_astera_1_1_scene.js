@@ -6,6 +6,7 @@ var class_astera_1_1_scene =
     [ "Destroyed", "class_astera_1_1_scene.html#a361b4ef8cf5166ce2f66333d3c68fd4b", null ],
     [ "GetResourceManager", "class_astera_1_1_scene.html#a548d5fb2bf816933980b7d67f2cfc70f", null ],
     [ "GetState", "class_astera_1_1_scene.html#aef9916e2676be692730ff8401d3f7b86", null ],
+    [ "GetStatePtr", "class_astera_1_1_scene.html#a6e979cdb35336d97387b6c75aa1009b0", null ],
     [ "LateUpdate", "class_astera_1_1_scene.html#ac2022335d88cfb0151ca19a3f677feac", null ],
     [ "Load", "class_astera_1_1_scene.html#a9ac4b69b588efeceb1d238749b86032b", null ],
     [ "Load", "class_astera_1_1_scene.html#a94fb69fb1fe89dcd7c4393c7e7b17f12", null ],

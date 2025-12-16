@@ -28,6 +28,7 @@ var hierarchy =
     [ "Astera::DrawIndexedInstancedCommand", "struct_astera_1_1_draw_indexed_instanced_command.html", null ],
     [ "Astera::DrawSpriteCommand", "struct_astera_1_1_draw_sprite_command.html", null ],
     [ "Astera::EngineConfig", "struct_astera_1_1_engine_config.html", null ],
+    [ "Astera::EntityBuilder", "class_astera_1_1_entity_builder.html", null ],
     [ "Astera::EntityDescriptor", "struct_astera_1_1_entity_descriptor.html", null ],
     [ "std::exception", null, [
       [ "Astera::NotImplemented", "class_astera_1_1_not_implemented.html", null ]

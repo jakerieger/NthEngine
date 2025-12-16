@@ -23,10 +23,11 @@ var searchData=
   ['buffer_2ecpp_20',['Buffer.cpp',['../_buffer_8cpp.html',1,'']]],
   ['buffer_2ehpp_21',['Buffer.hpp',['../_buffer_8hpp.html',1,'']]],
   ['bufferusage_22',['BufferUsage',['../namespace_astera.html#ab99263b7ecc43ec8ed6f22cc3166690e',1,'Astera']]],
-  ['bytestogb_23',['BytesToGB',['../namespace_astera.html#a3ba6770891e5f271574b7a3cad39ca63',1,'Astera']]],
-  ['bytestogbprecise_24',['BytesToGBPrecise',['../namespace_astera.html#a8af2440af55074f0fa0d430474f29825',1,'Astera']]],
-  ['bytestokb_25',['BytesToKB',['../namespace_astera.html#a761e8889172af87089b0152f308c9f87',1,'Astera']]],
-  ['bytestokbprecise_26',['BytesToKBPrecise',['../namespace_astera.html#a2ee346f63488e58ee227f9ad7f67b10f',1,'Astera']]],
-  ['bytestomb_27',['BytesToMB',['../namespace_astera.html#a8e4653628134e23e6eeca69c7c32db58',1,'Astera']]],
-  ['bytestombprecise_28',['BytesToMBPrecise',['../namespace_astera.html#aeaef786f3e0b532315dbc9e11ca0d2f1',1,'Astera']]]
+  ['build_23',['Build',['../class_astera_1_1_entity_builder.html#a6f10d4846870f1b9df458572239744d6',1,'Astera::EntityBuilder']]],
+  ['bytestogb_24',['BytesToGB',['../namespace_astera.html#a3ba6770891e5f271574b7a3cad39ca63',1,'Astera']]],
+  ['bytestogbprecise_25',['BytesToGBPrecise',['../namespace_astera.html#a8af2440af55074f0fa0d430474f29825',1,'Astera']]],
+  ['bytestokb_26',['BytesToKB',['../namespace_astera.html#a761e8889172af87089b0152f308c9f87',1,'Astera']]],
+  ['bytestokbprecise_27',['BytesToKBPrecise',['../namespace_astera.html#a2ee346f63488e58ee227f9ad7f67b10f',1,'Astera']]],
+  ['bytestomb_28',['BytesToMB',['../namespace_astera.html#a8e4653628134e23e6eeca69c7c32db58',1,'Astera']]],
+  ['bytestombprecise_29',['BytesToMBPrecise',['../namespace_astera.html#aeaef786f3e0b532315dbc9e11ca0d2f1',1,'Astera']]]
 ];

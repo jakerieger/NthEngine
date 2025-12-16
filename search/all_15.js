@@ -2,7 +2,7 @@ var searchData=
 [
   ['v_0',['v',['../struct_astera_1_1_sprite_vertex.html#a3eabb7a125208fbfcfff486ec6bf4739',1,'Astera::SpriteVertex']]],
   ['valid_1',['Valid',['../class_astera_1_1_resource_handle.html#ae8eadcb4fe597566a3111acfef5cbfac',1,'Astera::ResourceHandle']]],
-  ['value_2',['value',['../struct_astera_1_1_set_uniform_command.html#acec049d7abe6180ab5bae5b4cc74afc7',1,'Astera::SetUniformCommand']]],
+  ['value_2',['value',['../struct_astera_1_1_camera.html#a98e1a1f7e2dfa07c00634cbcf7687b5f',1,'Astera::Camera::value'],['../struct_astera_1_1_collider2_d.html#a2dcbce2ecc00821dd9419dc054c9ac5b',1,'Astera::Collider2D::value'],['../struct_astera_1_1_set_uniform_command.html#acec049d7abe6180ab5bae5b4cc74afc7',1,'Astera::SetUniformCommand::value']]],
   ['vao_3',['vao',['../struct_astera_1_1_bind_vertex_array_command.html#a3b7d6ab72d15ed4acce576e2d3b8b7f2',1,'Astera::BindVertexArrayCommand::vao'],['../struct_astera_1_1_draw_arrays_command.html#a12620e10d18a9029b04a056ed2f030c5',1,'Astera::DrawArraysCommand::vao'],['../struct_astera_1_1_draw_indexed_instanced_command.html#a0bfe3a2e473c0923ab48275cf680d329',1,'Astera::DrawIndexedInstancedCommand::vao'],['../struct_astera_1_1_draw_indexed_command.html#a378136cfcf3c911fa239b4a2cea829cd',1,'Astera::DrawIndexedCommand::vao']]],
   ['vec2_4',['Vec2',['../namespace_astera.html#a32228f3a61c481af9c7e8925045a7c34',1,'Astera']]],
   ['vec2_2elua_5',['Vec2.lua',['../_vec2_8lua.html',1,'']]],

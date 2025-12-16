@@ -11,12 +11,15 @@ var searchData=
   ['entities_8',['entities',['../struct_astera_1_1_scene_descriptor.html#a0a9ae3d7e9b47f5b0e009baf652d3d31',1,'Astera::SceneDescriptor']]],
   ['entity_9',['Entity',['../namespace_astera.html#ad827a64a1d8efaf19a9eeac804dc4a07',1,'Astera']]],
   ['entity_2elua_10',['Entity.lua',['../_entity_8lua.html',1,'']]],
-  ['entitydescriptor_11',['EntityDescriptor',['../struct_astera_1_1_entity_descriptor.html',1,'Astera']]],
-  ['env_12',['env',['../struct_astera_1_1_behavior_script_context.html#af250fb0152d4b4e16889941075f86ab4',1,'Astera::BehaviorScriptContext']]],
-  ['error_13',['Error',['../class_astera_1_1_log.html#ae021e46e6f91bbc7f8807f377b72e139',1,'Astera::Log']]],
-  ['execute_14',['Execute',['../class_astera_1_1_script_engine.html#ad215ba0951896f25278bf43094b7796a',1,'Astera::ScriptEngine']]],
-  ['executefile_15',['ExecuteFile',['../class_astera_1_1_script_engine.html#af28f26b9e8241b1a91f2b45ba41ee2dd',1,'Astera::ScriptEngine']]],
-  ['executenextjob_16',['ExecuteNextJob',['../class_astera_1_1_job_system.html#a3789e330c8989880209bed590f3ef76b',1,'Astera::JobSystem']]],
-  ['executequeue_17',['ExecuteQueue',['../class_astera_1_1_command_queue.html#a0dd465a1bb568034e3d05206a43fbcbc',1,'Astera::CommandQueue']]],
-  ['executequeuebatched_18',['ExecuteQueueBatched',['../class_astera_1_1_command_queue.html#a90a8586d2e9935558f1a47eabe7dfc3f',1,'Astera::CommandQueue']]]
+  ['entitybuilder_11',['entitybuilder',['../class_astera_1_1_entity_builder.html#a0b6952f1ac584b4660a00e86cbba61cf',1,'Astera::EntityBuilder::EntityBuilder()'],['../class_astera_1_1_entity_builder.html',1,'Astera::EntityBuilder']]],
+  ['entitybuilder_2ecpp_12',['EntityBuilder.cpp',['../_entity_builder_8cpp.html',1,'']]],
+  ['entitybuilder_2ehpp_13',['EntityBuilder.hpp',['../_entity_builder_8hpp.html',1,'']]],
+  ['entitydescriptor_14',['EntityDescriptor',['../struct_astera_1_1_entity_descriptor.html',1,'Astera']]],
+  ['env_15',['env',['../struct_astera_1_1_behavior_script_context.html#af250fb0152d4b4e16889941075f86ab4',1,'Astera::BehaviorScriptContext']]],
+  ['error_16',['Error',['../class_astera_1_1_log.html#ae021e46e6f91bbc7f8807f377b72e139',1,'Astera::Log']]],
+  ['execute_17',['Execute',['../class_astera_1_1_script_engine.html#ad215ba0951896f25278bf43094b7796a',1,'Astera::ScriptEngine']]],
+  ['executefile_18',['ExecuteFile',['../class_astera_1_1_script_engine.html#af28f26b9e8241b1a91f2b45ba41ee2dd',1,'Astera::ScriptEngine']]],
+  ['executenextjob_19',['ExecuteNextJob',['../class_astera_1_1_job_system.html#a3789e330c8989880209bed590f3ef76b',1,'Astera::JobSystem']]],
+  ['executequeue_20',['ExecuteQueue',['../class_astera_1_1_command_queue.html#a0dd465a1bb568034e3d05206a43fbcbc',1,'Astera::CommandQueue']]],
+  ['executequeuebatched_21',['ExecuteQueueBatched',['../class_astera_1_1_command_queue.html#a90a8586d2e9935558f1a47eabe7dfc3f',1,'Astera::CommandQueue']]]
 ];

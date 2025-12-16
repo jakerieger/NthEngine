@@ -22,6 +22,8 @@ var dir_5405398c23c020946029b9f4e6e04094 =
     [ "Coordinates.inl", "_coordinates_8inl.html", null ],
     [ "EngineCommon.hpp", "_engine_common_8hpp.html", "_engine_common_8hpp" ],
     [ "EngineConfig.hpp", "_engine_config_8hpp.html", "_engine_config_8hpp" ],
+    [ "EntityBuilder.cpp", "_entity_builder_8cpp.html", null ],
+    [ "EntityBuilder.hpp", "_entity_builder_8hpp.html", "_entity_builder_8hpp" ],
     [ "FrameAllocator.cpp", "_frame_allocator_8cpp.html", null ],
     [ "FrameAllocator.hpp", "_frame_allocator_8hpp.html", "_frame_allocator_8hpp" ],
     [ "Game.cpp", "_game_8cpp.html", null ],

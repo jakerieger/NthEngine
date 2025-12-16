@@ -15,7 +15,7 @@ var searchData=
   ['colordodge_12',['ColorDodge',['../class_astera_1_1_color.html#a4daa9bf120b277d6bb41fcef239db9f4',1,'Astera::Color']]],
   ['commandqueue_13',['CommandQueue',['../class_astera_1_1_command_queue.html#a4afe981bd38aa1e6b878fcbb8a907cb5',1,'Astera::CommandQueue']]],
   ['cos_14',['Cos',['../class_astera_1_1_math.html#a50ddd9f079df7a501c18c15e73cec677',1,'Astera::Math']]],
-  ['create_15',['Create',['../struct_project_subcommand.html#a1f49a9ad500903d957256b4374529433',1,'ProjectSubcommand']]],
+  ['create_15',['create',['../class_astera_1_1_entity_builder.html#a7dd9e651efe944ef47a303ff84a94036',1,'Astera::EntityBuilder::Create()'],['../struct_project_subcommand.html#a1f49a9ad500903d957256b4374529433',1,'ProjectSubcommand::Create()']]],
   ['createentity_16',['CreateEntity',['../class_astera_1_1_scene_state.html#a69cd0b23c22a0a0f3b483a83b710114d',1,'Astera::SceneState']]],
   ['createindexbufferupdate_17',['CreateIndexBufferUpdate',['../namespace_astera_1_1_command_helpers.html#ae88a30808b47f05ec75f7ddf79c4b6af',1,'Astera::CommandHelpers']]],
   ['createquad_18',['CreateQuad',['../class_astera_1_1_geometry.html#a97006950280a3c2443f13983db432843',1,'Astera::Geometry']]],
