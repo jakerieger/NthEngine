@@ -22,7 +22,8 @@ var searchData=
   ['_7escenestate_19',['~SceneState',['../class_astera_1_1_scene_state.html#a8aa107ebb80d7aef4abc278219abae87',1,'Astera::SceneState']]],
   ['_7escriptengine_20',['~ScriptEngine',['../class_astera_1_1_script_engine.html#a654a80885bc8dbbe866eb9cdbd44ee49',1,'Astera::ScriptEngine']]],
   ['_7eshader_21',['~Shader',['../class_astera_1_1_shader.html#ab2060801a8a54382771e764a9f0d7990',1,'Astera::Shader']]],
-  ['_7etexturesprite_22',['~TextureSprite',['../class_astera_1_1_texture_sprite.html#abfaf78276a20150f68ea3cedd62940c6',1,'Astera::TextureSprite']]],
-  ['_7evertexarray_23',['~VertexArray',['../class_astera_1_1_vertex_array.html#a910e084484327b4e467fd04c52cf20b3',1,'Astera::VertexArray']]],
-  ['_7ewindow_24',['~Window',['../class_astera_1_1_window.html#a4437d86af465b8c38e033a4b80a3cd88',1,'Astera::Window']]]
+  ['_7esound_22',['~Sound',['../class_astera_1_1_sound.html#a19c3f265cc072a0bd4012c79936236e5',1,'Astera::Sound']]],
+  ['_7etexturesprite_23',['~TextureSprite',['../class_astera_1_1_texture_sprite.html#abfaf78276a20150f68ea3cedd62940c6',1,'Astera::TextureSprite']]],
+  ['_7evertexarray_24',['~VertexArray',['../class_astera_1_1_vertex_array.html#a910e084484327b4e467fd04c52cf20b3',1,'Astera::VertexArray']]],
+  ['_7ewindow_25',['~Window',['../class_astera_1_1_window.html#a4437d86af465b8c38e033a4b80a3cd88',1,'Astera::Window']]]
 ];

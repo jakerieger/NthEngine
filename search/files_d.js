@@ -17,8 +17,11 @@ var searchData=
   ['shader_2ehpp_14',['Shader.hpp',['../_shader_8hpp.html',1,'']]],
   ['shadermanager_2ecpp_15',['ShaderManager.cpp',['../_shader_manager_8cpp.html',1,'']]],
   ['shadermanager_2ehpp_16',['ShaderManager.hpp',['../_shader_manager_8hpp.html',1,'']]],
-  ['sprite_2einc_17',['Sprite.inc',['../_sprite_8inc.html',1,'']]],
-  ['spriteinstanced_2einc_18',['SpriteInstanced.inc',['../_sprite_instanced_8inc.html',1,'']]],
-  ['spriterenderer_2ehpp_19',['SpriteRenderer.hpp',['../_sprite_renderer_8hpp.html',1,'']]],
-  ['stringconvert_2einl_20',['StringConvert.inl',['../_string_convert_8inl.html',1,'']]]
+  ['sound_2ehpp_17',['Sound.hpp',['../_sound_8hpp.html',1,'']]],
+  ['soundloader_2ehpp_18',['SoundLoader.hpp',['../_sound_loader_8hpp.html',1,'']]],
+  ['soundsource_2ehpp_19',['SoundSource.hpp',['../_sound_source_8hpp.html',1,'']]],
+  ['sprite_2einc_20',['Sprite.inc',['../_sprite_8inc.html',1,'']]],
+  ['spriteinstanced_2einc_21',['SpriteInstanced.inc',['../_sprite_instanced_8inc.html',1,'']]],
+  ['spriterenderer_2ehpp_22',['SpriteRenderer.hpp',['../_sprite_renderer_8hpp.html',1,'']]],
+  ['stringconvert_2einl_23',['StringConvert.inl',['../_string_convert_8inl.html',1,'']]]
 ];

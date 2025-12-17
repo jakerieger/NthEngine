@@ -12,5 +12,7 @@ var _asset_8hpp =
       [ "SpriteSheet", "_asset_8hpp.html#affcc4f831bca1e4b5448519bb50c5f50a47945664520c45ad70e9c4b667ea1915", null ],
       [ "TextData", "_asset_8hpp.html#affcc4f831bca1e4b5448519bb50c5f50a093138ce41d1c63ce287ba3a20ba4ad5", null ]
     ] ],
-    [ "AssetTypeFromID", "_asset_8hpp.html#a6b02f52e3fddbfe3fb12464bd4a88fe5", null ]
+    [ "AssetTypeFromID", "_asset_8hpp.html#a6b02f52e3fddbfe3fb12464bd4a88fe5", null ],
+    [ "kAssetIdBitmask", "_asset_8hpp.html#aed26c142cb20bdaf82858d217b1779e1", null ],
+    [ "kInvalidAssetID", "_asset_8hpp.html#a217cea86e31ee456a0e9601bd49c16ed", null ]
 ];

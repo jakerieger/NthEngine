@@ -2,9 +2,9 @@ var searchData=
 [
   ['g_0',['G',['../class_astera_1_1_color.html#af840f74d8c97b6be4430e4f6af1dac6b',1,'Astera::Color']]],
   ['game_1',['game',['../class_astera_1_1_game.html#a32c2c2b95138688417f854433fd8bd10',1,'Astera::Game::Game()'],['../class_astera_1_1_game.html#a7395046423cb24d6159aba19fb9b4db2',1,'Astera::Game::Game(const string &amp;title, u32 width, u32 height)']]],
-  ['generateassetdescriptor_2',['GenerateAssetDescriptor',['../struct_asset_subcommand.html#af3b31487b77e54ce48a1e8960856622a',1,'AssetSubcommand']]],
-  ['generateassetdescriptorforfile_3',['GenerateAssetDescriptorForFile',['../struct_asset_subcommand.html#af884a74462207f180b9bd0712c2a3805',1,'AssetSubcommand']]],
-  ['generateassetdescriptorsfordirectory_4',['GenerateAssetDescriptorsForDirectory',['../struct_asset_subcommand.html#a191e786861b92dd168d6159bf3d67967',1,'AssetSubcommand']]],
+  ['generateassetdescriptor_2',['GenerateAssetDescriptor',['../struct_astera_c_l_i_1_1_asset_subcommand.html#aafab2473d6a21fadb8732220d1d3b0fc',1,'AsteraCLI::AssetSubcommand']]],
+  ['generateassetdescriptorforfile_3',['GenerateAssetDescriptorForFile',['../struct_astera_c_l_i_1_1_asset_subcommand.html#aece8db0e5f93f14846ef1d2b02570b70',1,'AsteraCLI::AssetSubcommand']]],
+  ['generateassetdescriptorsfordirectory_4',['GenerateAssetDescriptorsForDirectory',['../struct_astera_c_l_i_1_1_asset_subcommand.html#aa5332e96a09ad1b3ad7e4ece34fa9e15',1,'AsteraCLI::AssetSubcommand']]],
   ['geometry_5',['Geometry',['../class_astera_1_1_geometry.html#af7dd84c5f785effe2a231fa6c9fd8df1',1,'Astera::Geometry']]],
   ['get_6',['get',['../class_astera_1_1_content.html#a29753c13050ecc7ffbb8377ec9ac0a8a',1,'Astera::Content::Get()'],['../class_astera_1_1_resource_handle.html#a89c187ee8914d7fb2032b4cb9d2e3745',1,'Astera::ResourceHandle::Get()'],['../class_astera_1_1_resource_handle.html#aacd99a6b8fb6431c5e22ca1fb739d948',1,'Astera::ResourceHandle::Get() const']]],
   ['getaction_7',['GetAction',['../class_astera_1_1_input_manager.html#a6460fc26612f2797f4afc709065142b2',1,'Astera::InputManager']]],

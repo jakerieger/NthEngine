@@ -6,11 +6,13 @@ var searchData=
   ['resource_3',['Resource',['../class_astera_1_1_resource.html',1,'Astera']]],
   ['resourcebase_4',['ResourceBase',['../class_astera_1_1_resource_base.html',1,'Astera']]],
   ['resourcehandle_5',['ResourceHandle',['../class_astera_1_1_resource_handle.html',1,'Astera']]],
-  ['resourcehandle_3c_20astera_3a_3atexturesprite_20_3e_6',['ResourceHandle&lt; Astera::TextureSprite &gt;',['../class_astera_1_1_resource_handle.html',1,'Astera']]],
-  ['resourceloader_7',['ResourceLoader',['../class_astera_1_1_resource_loader.html',1,'Astera']]],
-  ['resourceloader_3c_20texturesprite_20_3e_8',['ResourceLoader&lt; TextureSprite &gt;',['../class_astera_1_1_resource_loader.html',1,'Astera']]],
-  ['resourceloaderbase_9',['ResourceLoaderBase',['../class_astera_1_1_resource_loader_base.html',1,'Astera']]],
-  ['resourcemanager_10',['ResourceManager',['../class_astera_1_1_resource_manager.html',1,'Astera']]],
-  ['rigidbody2d_11',['Rigidbody2D',['../struct_astera_1_1_rigidbody2_d.html',1,'Astera']]],
-  ['rigidbody2ddescriptor_12',['Rigidbody2DDescriptor',['../struct_astera_1_1_rigidbody2_d_descriptor.html',1,'Astera']]]
+  ['resourcehandle_3c_20astera_3a_3asound_20_3e_6',['ResourceHandle&lt; Astera::Sound &gt;',['../class_astera_1_1_resource_handle.html',1,'Astera']]],
+  ['resourcehandle_3c_20astera_3a_3atexturesprite_20_3e_7',['ResourceHandle&lt; Astera::TextureSprite &gt;',['../class_astera_1_1_resource_handle.html',1,'Astera']]],
+  ['resourceloader_8',['ResourceLoader',['../class_astera_1_1_resource_loader.html',1,'Astera']]],
+  ['resourceloader_3c_20sound_20_3e_9',['ResourceLoader&lt; Sound &gt;',['../class_astera_1_1_resource_loader.html',1,'Astera']]],
+  ['resourceloader_3c_20texturesprite_20_3e_10',['ResourceLoader&lt; TextureSprite &gt;',['../class_astera_1_1_resource_loader.html',1,'Astera']]],
+  ['resourceloaderbase_11',['ResourceLoaderBase',['../class_astera_1_1_resource_loader_base.html',1,'Astera']]],
+  ['resourcemanager_12',['ResourceManager',['../class_astera_1_1_resource_manager.html',1,'Astera']]],
+  ['rigidbody2d_13',['Rigidbody2D',['../struct_astera_1_1_rigidbody2_d.html',1,'Astera']]],
+  ['rigidbody2ddescriptor_14',['Rigidbody2DDescriptor',['../struct_astera_1_1_rigidbody2_d_descriptor.html',1,'Astera']]]
 ];

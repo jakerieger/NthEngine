@@ -5,7 +5,9 @@ var NAVTREEINDEX0 =
 "_arena_allocator_8hpp.html":[3,0,1,0,5],
 "_arena_allocator_8hpp_source.html":[3,0,1,0,5],
 "_asset_8hpp.html":[3,0,1,0,6],
+"_asset_8hpp.html#a217cea86e31ee456a0e9601bd49c16ed":[3,0,1,0,6,4],
 "_asset_8hpp.html#a6b02f52e3fddbfe3fb12464bd4a88fe5":[3,0,1,0,6,2],
+"_asset_8hpp.html#aed26c142cb20bdaf82858d217b1779e1":[3,0,1,0,6,3],
 "_asset_8hpp.html#af12b219535c2359a413fbe6933f80908":[3,0,1,0,6,0],
 "_asset_8hpp.html#affcc4f831bca1e4b5448519bb50c5f50":[3,0,1,0,6,1],
 "_asset_8hpp.html#affcc4f831bca1e4b5448519bb50c5f50a093138ce41d1c63ce287ba3a20ba4ad5":[3,0,1,0,6,1,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "_macros_8hpp.html#a6fb96dd29a6e23a1651256c4add2d840":[3,0,1,0,38,95],
 "_macros_8hpp.html#a736359026f6c1584d399f977b040a3fe":[3,0,1,0,38,91],
 "_macros_8hpp.html#a789b3833b55b6511b252a53c11b71cf3":[3,0,1,0,38,85],
-"_macros_8hpp.html#a7c6ce400533fb35566f8733f2252b35f":[3,0,1,0,38,57],
-"_macros_8hpp.html#a7caf4823939af247995793aab1cf7e0c":[3,0,1,0,38,65],
-"_macros_8hpp.html#a809386ecdf03577bb96c6a4522069c96":[3,0,1,0,38,9]
+"_macros_8hpp.html#a7c6ce400533fb35566f8733f2252b35f":[3,0,1,0,38,57]
 };

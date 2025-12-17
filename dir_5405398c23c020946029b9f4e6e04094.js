@@ -57,6 +57,8 @@ var dir_5405398c23c020946029b9f4e6e04094 =
     [ "ScriptTypeRegistry.hpp", "_script_type_registry_8hpp.html", "_script_type_registry_8hpp" ],
     [ "ShaderManager.cpp", "_shader_manager_8cpp.html", null ],
     [ "ShaderManager.hpp", "_shader_manager_8hpp.html", "_shader_manager_8hpp" ],
+    [ "Sound.hpp", "_sound_8hpp.html", "_sound_8hpp" ],
+    [ "SoundLoader.hpp", "_sound_loader_8hpp.html", "_sound_loader_8hpp" ],
     [ "StringConvert.inl", "_string_convert_8inl.html", "_string_convert_8inl" ],
     [ "Texture.hpp", "_texture_8hpp.html", "_texture_8hpp" ],
     [ "TextureLoader.hpp", "_texture_loader_8hpp.html", "_texture_loader_8hpp" ],

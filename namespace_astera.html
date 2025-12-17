@@ -331,6 +331,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_shader_manager.html">ShaderManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages shader resources and provides cached access to compiled shaders.  <a href="class_astera_1_1_shader_manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_sound.html">Sound</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_sound_loader.html">SoundLoader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_astera_1_1_sound_source.html">SoundSource</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_astera_1_1_sound_source_descriptor.html">SoundSourceDescriptor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_astera_1_1_sprite_batch.html">SpriteBatch</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A batch of sprites sharing the same texture.  <a href="struct_astera_1_1_sprite_batch.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -583,6 +591,10 @@ requires (!std::is_void_v&lt;std::invoke_result_t&lt;<a class="el" href="_engine
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:aed26c142cb20bdaf82858d217b1779e1" id="r_aed26c142cb20bdaf82858d217b1779e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">constexpr</a> <a class="el" href="namespace_astera.html#a66168173fb9cc48b1100ed2a3ca256c4">u64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_astera.html#aed26c142cb20bdaf82858d217b1779e1">kAssetIdBitmask</a> = 0x00FFFFFFFFFFFFFF</td></tr>
+<tr class="separator:aed26c142cb20bdaf82858d217b1779e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217cea86e31ee456a0e9601bd49c16ed" id="r_a217cea86e31ee456a0e9601bd49c16ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">constexpr</a> <a class="el" href="namespace_astera.html#af12b219535c2359a413fbe6933f80908">AssetID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_astera.html#a217cea86e31ee456a0e9601bd49c16ed">kInvalidAssetID</a> = 0</td></tr>
+<tr class="separator:a217cea86e31ee456a0e9601bd49c16ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61c8942da5d66eeec4005c0b29172713" id="r_a61c8942da5d66eeec4005c0b29172713"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; <a class="el" href="class_astera_1_1_job_system.html">JobSystem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_astera.html#a61c8942da5d66eeec4005c0b29172713">gJobSystem</a></td></tr>
 <tr class="memdesc:a61c8942da5d66eeec4005c0b29172713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global job system instance.  <br /></td></tr>
 <tr class="separator:a61c8942da5d66eeec4005c0b29172713"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -625,7 +637,7 @@ Variables</h2></td></tr>
 
 <p>Type alias for entt::entity. Casts to integer types as id value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00046">46</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_state_8hpp_source.html#l00047">47</a> of file <a class="el" href="_scene_state_8hpp_source.html">SceneState.hpp</a>.</p>
 
 </div>
 </div>
@@ -1316,7 +1328,7 @@ template&lt;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc8
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_asset_8hpp_source.html#l00055">55</a> of file <a class="el" href="_asset_8hpp_source.html">Asset.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_asset_8hpp_source.html#l00056">56</a> of file <a class="el" href="_asset_8hpp_source.html">Asset.hpp</a>.</p>
 
 </div>
 </div>
@@ -2049,6 +2061,54 @@ template&lt;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc8
 <p>Global job system instance. </p>
 
 <p class="definition">Definition at line <a class="el" href="_job_system_8cpp_source.html#l00025">25</a> of file <a class="el" href="_job_system_8cpp_source.html">JobSystem.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aed26c142cb20bdaf82858d217b1779e1" name="aed26c142cb20bdaf82858d217b1779e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed26c142cb20bdaf82858d217b1779e1">&#9670;&#160;</a></span>kAssetIdBitmask</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">constexpr</a> <a class="el" href="namespace_astera.html#a66168173fb9cc48b1100ed2a3ca256c4">u64</a> Astera::kAssetIdBitmask = 0x00FFFFFFFFFFFFFF</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_asset_8hpp_source.html#l00051">51</a> of file <a class="el" href="_asset_8hpp_source.html">Asset.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a217cea86e31ee456a0e9601bd49c16ed" name="a217cea86e31ee456a0e9601bd49c16ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a217cea86e31ee456a0e9601bd49c16ed">&#9670;&#160;</a></span>kInvalidAssetID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">constexpr</a> <a class="el" href="namespace_astera.html#af12b219535c2359a413fbe6933f80908">AssetID</a> Astera::kInvalidAssetID = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_asset_8hpp_source.html#l00052">52</a> of file <a class="el" href="_asset_8hpp_source.html">Asset.hpp</a>.</p>
 
 </div>
 </div>

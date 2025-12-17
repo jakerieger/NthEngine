@@ -17,5 +17,5 @@ var searchData=
   ['pow_14',['Pow',['../class_astera_1_1_math.html#adf4f783ad6208e9a94855e13dc5ed910',1,'Astera::Math']]],
   ['primitivetype_15',['primitivetype',['../struct_astera_1_1_draw_indexed_command.html#a0dfd09eef2e8ff29a6a79bb658ea1d64',1,'Astera::DrawIndexedCommand::primitiveType'],['../struct_astera_1_1_draw_indexed_instanced_command.html#a12736d2199f3bf49e444cdb375567480',1,'Astera::DrawIndexedInstancedCommand::primitiveType'],['../struct_astera_1_1_draw_arrays_command.html#abb0c6eddd6ac020bbb947f07318d2f32',1,'Astera::DrawArraysCommand::primitiveType']]],
   ['programid_16',['programid',['../struct_astera_1_1_bind_shader_command.html#af245156e6414feecf38ceebca8f3517d',1,'Astera::BindShaderCommand::programId'],['../struct_astera_1_1_set_uniform_command.html#ac82bd1f3fb9406a2c9c84088d1206f8b',1,'Astera::SetUniformCommand::programId']]],
-  ['projectsubcommand_17',['ProjectSubcommand',['../struct_project_subcommand.html',1,'']]]
+  ['projectsubcommand_17',['ProjectSubcommand',['../struct_astera_c_l_i_1_1_project_subcommand.html',1,'AsteraCLI']]]
 ];

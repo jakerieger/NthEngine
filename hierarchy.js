@@ -3,7 +3,7 @@ var hierarchy =
     [ "Astera::ActionMap", "struct_astera_1_1_action_map.html", null ],
     [ "Astera::ArenaAllocator", "class_astera_1_1_arena_allocator.html", null ],
     [ "Astera::AssetManager", "class_astera_1_1_asset_manager.html", null ],
-    [ "AssetSubcommand", "struct_asset_subcommand.html", null ],
+    [ "AsteraCLI::AssetSubcommand", "struct_astera_c_l_i_1_1_asset_subcommand.html", null ],
     [ "Astera::AudioEngine", "class_astera_1_1_audio_engine.html", null ],
     [ "Astera::AxisMap", "struct_astera_1_1_axis_map.html", null ],
     [ "Astera::Behavior", "struct_astera_1_1_behavior.html", null ],
@@ -64,7 +64,7 @@ var hierarchy =
     [ "Astera::LuaTypeTraits< Vec2 >", "struct_astera_1_1_lua_type_traits_3_01_vec2_01_4.html", null ],
     [ "Astera::Math", "class_astera_1_1_math.html", null ],
     [ "Astera::PhysicsEngine", "class_astera_1_1_physics_engine.html", null ],
-    [ "ProjectSubcommand", "struct_project_subcommand.html", null ],
+    [ "AsteraCLI::ProjectSubcommand", "struct_astera_c_l_i_1_1_project_subcommand.html", null ],
     [ "Astera::RenderContext", "class_astera_1_1_render_context.html", null ],
     [ "Astera::RenderTarget", "class_astera_1_1_render_target.html", null ],
     [ "Astera::RenderTargetConfig", "struct_astera_1_1_render_target_config.html", null ],
@@ -72,8 +72,12 @@ var hierarchy =
       [ "Astera::Resource< T >", "class_astera_1_1_resource.html", null ]
     ] ],
     [ "Astera::ResourceHandle< T >", "class_astera_1_1_resource_handle.html", null ],
+    [ "Astera::ResourceHandle< Astera::Sound >", "class_astera_1_1_resource_handle.html", null ],
     [ "Astera::ResourceHandle< Astera::TextureSprite >", "class_astera_1_1_resource_handle.html", null ],
     [ "Astera::ResourceLoaderBase", "class_astera_1_1_resource_loader_base.html", [
+      [ "Astera::ResourceLoader< Sound >", "class_astera_1_1_resource_loader.html", [
+        [ "Astera::SoundLoader", "class_astera_1_1_sound_loader.html", null ]
+      ] ],
       [ "Astera::ResourceLoader< TextureSprite >", "class_astera_1_1_resource_loader.html", [
         [ "Astera::TextureLoaderSprite", "class_astera_1_1_texture_loader_sprite.html", null ]
       ] ],
@@ -96,6 +100,9 @@ var hierarchy =
     [ "Astera::SetViewportCommand", "struct_astera_1_1_set_viewport_command.html", null ],
     [ "Astera::Shader", "class_astera_1_1_shader.html", null ],
     [ "Astera::ShaderManager", "class_astera_1_1_shader_manager.html", null ],
+    [ "Astera::Sound", "class_astera_1_1_sound.html", null ],
+    [ "Astera::SoundSource", "struct_astera_1_1_sound_source.html", null ],
+    [ "Astera::SoundSourceDescriptor", "struct_astera_1_1_sound_source_descriptor.html", null ],
     [ "Astera::SpriteBatch", "struct_astera_1_1_sprite_batch.html", null ],
     [ "Astera::SpriteInstanceData", "struct_astera_1_1_sprite_instance_data.html", null ],
     [ "Astera::SpriteRenderer", "struct_astera_1_1_sprite_renderer.html", null ],

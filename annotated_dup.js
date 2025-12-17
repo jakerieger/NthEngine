@@ -80,6 +80,10 @@ var annotated_dup =
       [ "SetViewportCommand", "struct_astera_1_1_set_viewport_command.html", "struct_astera_1_1_set_viewport_command" ],
       [ "Shader", "class_astera_1_1_shader.html", "class_astera_1_1_shader" ],
       [ "ShaderManager", "class_astera_1_1_shader_manager.html", null ],
+      [ "Sound", "class_astera_1_1_sound.html", "class_astera_1_1_sound" ],
+      [ "SoundLoader", "class_astera_1_1_sound_loader.html", null ],
+      [ "SoundSource", "struct_astera_1_1_sound_source.html", "struct_astera_1_1_sound_source" ],
+      [ "SoundSourceDescriptor", "struct_astera_1_1_sound_source_descriptor.html", "struct_astera_1_1_sound_source_descriptor" ],
       [ "SpriteBatch", "struct_astera_1_1_sprite_batch.html", "struct_astera_1_1_sprite_batch" ],
       [ "SpriteInstanceData", "struct_astera_1_1_sprite_instance_data.html", "struct_astera_1_1_sprite_instance_data" ],
       [ "SpriteRenderer", "struct_astera_1_1_sprite_renderer.html", "struct_astera_1_1_sprite_renderer" ],
@@ -100,9 +104,11 @@ var annotated_dup =
       [ "Window", "class_astera_1_1_window.html", "class_astera_1_1_window" ],
       [ "WindowConfig", "struct_astera_1_1_window_config.html", "struct_astera_1_1_window_config" ]
     ] ],
+    [ "AsteraCLI", "namespace_astera_c_l_i.html", [
+      [ "AssetSubcommand", "struct_astera_c_l_i_1_1_asset_subcommand.html", null ],
+      [ "ProjectSubcommand", "struct_astera_c_l_i_1_1_project_subcommand.html", null ]
+    ] ],
     [ "std", null, [
       [ "hash< Astera::Color >", "structstd_1_1hash_3_01_astera_1_1_color_01_4.html", "structstd_1_1hash_3_01_astera_1_1_color_01_4" ]
-    ] ],
-    [ "AssetSubcommand", "struct_asset_subcommand.html", null ],
-    [ "ProjectSubcommand", "struct_project_subcommand.html", null ]
+    ] ]
 ];

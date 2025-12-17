@@ -11,10 +11,14 @@ var searchData=
   ['setviewportcommand_8',['SetViewportCommand',['../struct_astera_1_1_set_viewport_command.html',1,'Astera']]],
   ['shader_9',['Shader',['../class_astera_1_1_shader.html',1,'Astera']]],
   ['shadermanager_10',['ShaderManager',['../class_astera_1_1_shader_manager.html',1,'Astera']]],
-  ['spritebatch_11',['SpriteBatch',['../struct_astera_1_1_sprite_batch.html',1,'Astera']]],
-  ['spriteinstancedata_12',['SpriteInstanceData',['../struct_astera_1_1_sprite_instance_data.html',1,'Astera']]],
-  ['spriterenderer_13',['SpriteRenderer',['../struct_astera_1_1_sprite_renderer.html',1,'Astera']]],
-  ['spriterendererdescriptor_14',['SpriteRendererDescriptor',['../struct_astera_1_1_sprite_renderer_descriptor.html',1,'Astera']]],
-  ['spritevertex_15',['SpriteVertex',['../struct_astera_1_1_sprite_vertex.html',1,'Astera']]],
-  ['statistics_16',['Statistics',['../struct_astera_1_1_job_system_1_1_statistics.html',1,'Astera::JobSystem']]]
+  ['sound_11',['Sound',['../class_astera_1_1_sound.html',1,'Astera']]],
+  ['soundloader_12',['SoundLoader',['../class_astera_1_1_sound_loader.html',1,'Astera']]],
+  ['soundsource_13',['SoundSource',['../struct_astera_1_1_sound_source.html',1,'Astera']]],
+  ['soundsourcedescriptor_14',['SoundSourceDescriptor',['../struct_astera_1_1_sound_source_descriptor.html',1,'Astera']]],
+  ['spritebatch_15',['SpriteBatch',['../struct_astera_1_1_sprite_batch.html',1,'Astera']]],
+  ['spriteinstancedata_16',['SpriteInstanceData',['../struct_astera_1_1_sprite_instance_data.html',1,'Astera']]],
+  ['spriterenderer_17',['SpriteRenderer',['../struct_astera_1_1_sprite_renderer.html',1,'Astera']]],
+  ['spriterendererdescriptor_18',['SpriteRendererDescriptor',['../struct_astera_1_1_sprite_renderer_descriptor.html',1,'Astera']]],
+  ['spritevertex_19',['SpriteVertex',['../struct_astera_1_1_sprite_vertex.html',1,'Astera']]],
+  ['statistics_20',['Statistics',['../struct_astera_1_1_job_system_1_1_statistics.html',1,'Astera::JobSystem']]]
 ];

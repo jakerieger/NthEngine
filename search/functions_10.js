@@ -26,5 +26,5 @@ var searchData=
   ['rigidbody2d_23',['Rigidbody2D',['../struct_astera_1_1_rigidbody2_d.html#a3d2a1f422fbc36d09df0e789b3da5f36',1,'Astera::Rigidbody2D']]],
   ['rotate_24',['Rotate',['../struct_astera_1_1_transform.html#aa318436e9e13202576aaa02849209ffd',1,'Astera::Transform']]],
   ['round_25',['Round',['../class_astera_1_1_math.html#a8216070543d0f021649f8b09c40cbc5e',1,'Astera::Math']]],
-  ['run_26',['run',['../class_astera_1_1_window.html#a30d9797793a91c717b2907bf94a6308b',1,'Astera::Window::Run()'],['../struct_project_subcommand.html#aa1202756a9149aea258a883bcf0c9b84',1,'ProjectSubcommand::Run()']]]
+  ['run_26',['run',['../class_astera_1_1_window.html#a30d9797793a91c717b2907bf94a6308b',1,'Astera::Window::Run()'],['../struct_astera_c_l_i_1_1_project_subcommand.html#a182507900fe894f8dfd0473ca82b74df',1,'AsteraCLI::ProjectSubcommand::Run()']]]
 ];

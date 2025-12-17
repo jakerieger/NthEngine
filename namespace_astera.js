@@ -124,6 +124,10 @@ var namespace_astera =
     [ "SetViewportCommand", "struct_astera_1_1_set_viewport_command.html", "struct_astera_1_1_set_viewport_command" ],
     [ "Shader", "class_astera_1_1_shader.html", "class_astera_1_1_shader" ],
     [ "ShaderManager", "class_astera_1_1_shader_manager.html", null ],
+    [ "Sound", "class_astera_1_1_sound.html", "class_astera_1_1_sound" ],
+    [ "SoundLoader", "class_astera_1_1_sound_loader.html", null ],
+    [ "SoundSource", "struct_astera_1_1_sound_source.html", "struct_astera_1_1_sound_source" ],
+    [ "SoundSourceDescriptor", "struct_astera_1_1_sound_source_descriptor.html", "struct_astera_1_1_sound_source_descriptor" ],
     [ "SpriteBatch", "struct_astera_1_1_sprite_batch.html", "struct_astera_1_1_sprite_batch" ],
     [ "SpriteInstanceData", "struct_astera_1_1_sprite_instance_data.html", "struct_astera_1_1_sprite_instance_data" ],
     [ "SpriteRenderer", "struct_astera_1_1_sprite_renderer.html", "struct_astera_1_1_sprite_renderer" ],
@@ -244,5 +248,7 @@ var namespace_astera =
     [ "ParallelFor", "namespace_astera.html#a6dafa0d018be9e6cfec799bac89205a2", null ],
     [ "ParallelForIndexed", "namespace_astera.html#ab5eb5a203bd89802393fbe43a3053658", null ],
     [ "gJobSystem", "namespace_astera.html#a61c8942da5d66eeec4005c0b29172713", null ],
+    [ "kAssetIdBitmask", "namespace_astera.html#aed26c142cb20bdaf82858d217b1779e1", null ],
+    [ "kInvalidAssetID", "namespace_astera.html#a217cea86e31ee456a0e9601bd49c16ed", null ],
     [ "kInvalidTextureID", "namespace_astera.html#a919073212c9569b0f22784809507cc69", null ]
 ];
