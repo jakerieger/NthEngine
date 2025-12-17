@@ -44,7 +44,7 @@ var searchData=
   ['resourcetype_41',['ResourceType',['../class_astera_1_1_resource_loader.html#a5c7d84e1e7a62be0ad578e50b146a90b',1,'Astera::ResourceLoader']]],
   ['restitution_42',['restitution',['../struct_astera_1_1_rigidbody2_d.html#a369b6a28ff9c62a8bc3a2172312c11eb',1,'Astera::Rigidbody2D::restitution'],['../struct_astera_1_1_rigidbody2_d_descriptor.html#a1a234ae22385c18229cd931c752ab1ef',1,'Astera::Rigidbody2DDescriptor::restitution']]],
   ['result_43',['Result',['../namespace_astera.html#acd1a44433b72def744c95631c5ee03b9',1,'Astera']]],
-  ['rigidbody2d_44',['rigidbody2d',['../struct_astera_1_1_rigidbody2_d.html#a3d2a1f422fbc36d09df0e789b3da5f36',1,'Astera::Rigidbody2D::Rigidbody2D()'],['../struct_astera_1_1_entity_descriptor.html#a8e1c835b6bfe7a972ba10879237c34e6',1,'Astera::EntityDescriptor::rigidbody2D'],['../struct_astera_1_1_rigidbody2_d.html',1,'Astera::Rigidbody2D']]],
+  ['rigidbody2d_44',['rigidbody2d',['../struct_astera_1_1_entity_descriptor.html#a8e1c835b6bfe7a972ba10879237c34e6',1,'Astera::EntityDescriptor::rigidbody2D'],['../struct_astera_1_1_rigidbody2_d.html#a3d2a1f422fbc36d09df0e789b3da5f36',1,'Astera::Rigidbody2D::Rigidbody2D()'],['../struct_astera_1_1_rigidbody2_d.html',1,'Astera::Rigidbody2D']]],
   ['rigidbody2d_2ecpp_45',['Rigidbody2D.cpp',['../_rigidbody2_d_8cpp.html',1,'']]],
   ['rigidbody2d_2ehpp_46',['Rigidbody2D.hpp',['../_rigidbody2_d_8hpp.html',1,'']]],
   ['rigidbody2ddescriptor_47',['Rigidbody2DDescriptor',['../struct_astera_1_1_rigidbody2_d_descriptor.html',1,'Astera']]],

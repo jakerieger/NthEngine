@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"functions_i.html":[2,3,0,8],
+"functions_j.html":[2,3,0,9],
+"functions_k.html":[2,3,0,10],
+"functions_l.html":[2,3,0,11],
 "functions_m.html":[2,3,0,12],
 "functions_n.html":[2,3,0,13],
 "functions_o.html":[2,3,0,14],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "struct_astera_1_1_collider2_d_descriptor.html":[2,0,0,17],
 "struct_astera_1_1_collider2_d_descriptor.html":[0,0,0,24],
 "struct_astera_1_1_draw_arrays_command.html":[2,0,0,24],
-"struct_astera_1_1_draw_arrays_command.html":[0,0,0,31],
-"struct_astera_1_1_draw_arrays_command.html#a12620e10d18a9029b04a056ed2f030c5":[0,0,0,31,1],
-"struct_astera_1_1_draw_arrays_command.html#a12620e10d18a9029b04a056ed2f030c5":[2,0,0,24,1],
-"struct_astera_1_1_draw_arrays_command.html#a6b03575b920a6828a3031f5e7cf004f8":[2,0,0,24,3],
-"struct_astera_1_1_draw_arrays_command.html#a6b03575b920a6828a3031f5e7cf004f8":[0,0,0,31,3]
+"struct_astera_1_1_draw_arrays_command.html":[0,0,0,31]
 };

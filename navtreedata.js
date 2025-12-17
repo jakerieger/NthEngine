@@ -68,9 +68,9 @@ var NAVTREEINDEX =
 "class_astera_1_1_debug_manager.html#aa0f34623ab41170d9e281f4b8efa646d",
 "class_astera_1_1_job_system.html#a6b3a12fb064cdb7a4f5ad7e78b9cb79c",
 "class_astera_1_1_script_engine.html#ad81261436f8ba13fb2e8c716a95baf8d",
-"functions_m.html",
-"struct_astera_1_1_draw_arrays_command.html#abb0c6eddd6ac020bbb947f07318d2f32",
-"struct_astera_1_1_sprite_batch.html#a557dbda7b1a5e8a3bd2cdc2e8df11dc0"
+"functions_i.html",
+"struct_astera_1_1_draw_arrays_command.html#a12620e10d18a9029b04a056ed2f030c5",
+"struct_astera_1_1_sound_source_descriptor.html#af7ca23014665789e0fd1b0d28b698b36"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

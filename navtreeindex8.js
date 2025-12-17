@@ -1,5 +1,9 @@
 var NAVTREEINDEX8 =
 {
+"struct_astera_1_1_sound_source_descriptor.html#af7ca23014665789e0fd1b0d28b698b36":[2,0,0,82,1],
+"struct_astera_1_1_sound_source_descriptor.html#af7ca23014665789e0fd1b0d28b698b36":[0,0,0,89,1],
+"struct_astera_1_1_sprite_batch.html":[2,0,0,83],
+"struct_astera_1_1_sprite_batch.html":[0,0,0,90],
 "struct_astera_1_1_sprite_batch.html#a557dbda7b1a5e8a3bd2cdc2e8df11dc0":[0,0,0,90,0],
 "struct_astera_1_1_sprite_batch.html#a557dbda7b1a5e8a3bd2cdc2e8df11dc0":[2,0,0,83,0],
 "struct_astera_1_1_sprite_batch.html#a7ae521819686082c4e2ea92d884180a6":[0,0,0,90,4],

@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"struct_astera_1_1_draw_arrays_command.html#a12620e10d18a9029b04a056ed2f030c5":[0,0,0,31,1],
+"struct_astera_1_1_draw_arrays_command.html#a12620e10d18a9029b04a056ed2f030c5":[2,0,0,24,1],
+"struct_astera_1_1_draw_arrays_command.html#a6b03575b920a6828a3031f5e7cf004f8":[2,0,0,24,3],
+"struct_astera_1_1_draw_arrays_command.html#a6b03575b920a6828a3031f5e7cf004f8":[0,0,0,31,3],
 "struct_astera_1_1_draw_arrays_command.html#abb0c6eddd6ac020bbb947f07318d2f32":[0,0,0,31,0],
 "struct_astera_1_1_draw_arrays_command.html#abb0c6eddd6ac020bbb947f07318d2f32":[2,0,0,24,0],
 "struct_astera_1_1_draw_arrays_command.html#ae3c825ddbd11c72559f8413760f48fe9":[0,0,0,31,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "struct_astera_1_1_sound_source_descriptor.html#a37fcd5fbc5928f6b6942aba5fbd8e6db":[2,0,0,82,2],
 "struct_astera_1_1_sound_source_descriptor.html#a37fcd5fbc5928f6b6942aba5fbd8e6db":[0,0,0,89,2],
 "struct_astera_1_1_sound_source_descriptor.html#a55715d9871ab6c3a5d645e5efccc10d4":[0,0,0,89,0],
-"struct_astera_1_1_sound_source_descriptor.html#a55715d9871ab6c3a5d645e5efccc10d4":[2,0,0,82,0],
-"struct_astera_1_1_sound_source_descriptor.html#af7ca23014665789e0fd1b0d28b698b36":[2,0,0,82,1],
-"struct_astera_1_1_sound_source_descriptor.html#af7ca23014665789e0fd1b0d28b698b36":[0,0,0,89,1],
-"struct_astera_1_1_sprite_batch.html":[2,0,0,83],
-"struct_astera_1_1_sprite_batch.html":[0,0,0,90]
+"struct_astera_1_1_sound_source_descriptor.html#a55715d9871ab6c3a5d645e5efccc10d4":[2,0,0,82,0]
 };
