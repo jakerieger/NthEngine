@@ -201,6 +201,7 @@ namespace Astera {
 #define ASTERA_RUN_GAME(GAME_CLASS)                                                                                    \
     int main() {                                                                                                       \
         Content::SetRuntimeDefaults();                                                                                 \
+        AssetManager::SetRuntimeDefaults();                                                                            \
         GAME_CLASS().Run();                                                                                            \
     }
 }  // namespace Astera

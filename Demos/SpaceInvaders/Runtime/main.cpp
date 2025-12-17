@@ -6,9 +6,7 @@ using namespace Astera;
 
 class SpaceInvadersDemo final : public Game {
 public:
-    SpaceInvadersDemo() : Game("Space Invaders [Demo]", 1280, 720) {
-        AssetManager::SetWorkingDirectory(fs::current_path() / "Content");
-    }
+    SpaceInvadersDemo() : Game("Space Invaders [Demo]", 1280, 720) {}
 
     void LoadContent() override {
         const Path sceneFile = Content::Get<ContentType::Scene>("Main.xml");

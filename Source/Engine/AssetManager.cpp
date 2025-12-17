@@ -124,6 +124,10 @@ namespace Astera {
         sWorkingDirectory = path;
     }
 
+    void AssetManager::SetRuntimeDefaults() {
+        sWorkingDirectory = fs::current_path() / "Content";
+    }
+
     bool AssetManager::sInitialized = false;
     Path AssetManager::sWorkingDirectory {};
     unordered_map<AssetID, Path> AssetManager::sAssetPaths {};

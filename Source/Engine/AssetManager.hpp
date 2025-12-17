@@ -44,6 +44,8 @@ namespace Astera {
         static void Reload();
         static void SetWorkingDirectory(const Path& path);
 
+        static void SetRuntimeDefaults();
+
     private:
         static bool sInitialized;
         static Path sWorkingDirectory;

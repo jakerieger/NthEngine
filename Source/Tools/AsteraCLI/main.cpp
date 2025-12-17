@@ -1,11 +1,14 @@
 #include <CLI/CLI.hpp>
-#include <Engine/Asset.hpp>
 #include <openssl/sha.h>
 #include <pugixml.hpp>
 #include <filesystem>
 #include <fstream>
 #include <iomanip>
 #include <vector>
+
+#include <Engine/Asset.hpp>
+#include <Engine/ScriptCompiler.hpp>
+#include <Engine/IO.hpp>
 
 using std::filesystem::path;
 
@@ -97,20 +100,59 @@ struct AssetSubcommand {
     }
 
     static void GenerateAssetDescriptor() {
-        if (!exists(path(arg))) { throw std::runtime_error("File does not exist"); }
+        if (!exists(path(arg))) {
+            throw std::runtime_error("File does not exist");
+        }
 
         GenerateAssetDescriptorForFile(path(arg));
     }
 
     static void GenerateAssetDescriptorsForDirectory() {
-        if (!exists(path(arg))) { throw std::runtime_error("Directory does not exist"); }
+        if (!exists(path(arg))) {
+            throw std::runtime_error("Directory does not exist");
+        }
 
         const auto it = std::filesystem::recursive_directory_iterator(path(arg));
         for (const auto& entry : it) {
             if (entry.is_regular_file()) {
-                if (entry.path().extension() != ".asset") { GenerateAssetDescriptorForFile(entry.path()); }
+                if (entry.path().extension() != ".asset") {
+                    GenerateAssetDescriptorForFile(entry.path());
+                }
             }
         }
+    }
+
+    static void CompileScript() {
+        using namespace Astera;
+
+        const auto scriptFile = path(arg);
+        if (!exists(scriptFile)) {
+            fprintf(stderr, "Script file '%s' does not exist.", scriptFile.string().c_str());
+            return;
+        }
+
+        const auto scriptSource = IO::ReadText(scriptFile);
+        if (!scriptSource.has_value()) {
+            fprintf(stderr, "Error reading script file: %s\n", scriptSource.error().c_str());
+            return;
+        }
+
+        const auto bytecode = ScriptCompiler::Compile(*scriptSource, scriptFile.stem().string());
+        if (!bytecode.has_value()) {
+            fprintf(stderr, "Failed to compile bytecode: %s\n", bytecode.error().c_str());
+            return;
+        }
+
+        const path bytecodeFile = scriptFile.parent_path() / path(scriptFile.stem().string() + ".bytecode");
+        const auto result       = IO::WriteBytes(bytecodeFile, *bytecode);
+        if (!result) {
+            fprintf(stderr, "Failed to write bytecode to disk\n");
+            return;
+        }
+
+        printf("-- Compiled script '%s' -> '%s'\n",
+               scriptFile.filename().string().c_str(),
+               bytecodeFile.filename().string().c_str());
     }
 };
 
@@ -154,6 +196,10 @@ int main(int argc, char* argv[]) {
         generateAssetDescriptors->add_option("directory", AssetSubcommand::arg, "Directory to generate descriptors for")
           ->required();
         generateAssetDescriptors->callback([&]() { AssetSubcommand::GenerateAssetDescriptorsForDirectory(); });
+
+        CLI::App* compileScript = asset->add_subcommand("compile-script", "Compile the given Lua script");
+        compileScript->add_option("script", AssetSubcommand::arg, "Script to compile the given Lua script")->required();
+        compileScript->callback([&]() { AssetSubcommand::CompileScript(); });
     }
 
     CLI11_PARSE(app, argc, argv);
