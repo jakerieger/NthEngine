@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['window_0',['Window',['../class_astera_1_1_input_manager.html#a553f958a25683445088050a69d3de8e9',1,'Astera::InputManager']]]
+  ['textureloadersprite_0',['TextureLoaderSprite',['../class_astera_1_1_texture_sprite.html#ac7d2bf8ba5e4c75d59a7791f008572b5',1,'Astera::TextureSprite']]]
 ];

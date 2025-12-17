@@ -63,13 +63,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_arena_allocator_8cpp.html",
-"_macros_8hpp.html#a809386ecdf03577bb96c6a4522069c96",
-"class_astera_1_1_binary_writer.html#a513e75567f5e38712920c2cd5458a193",
-"class_astera_1_1_frame_allocator.html#a79463bdfbbee46947f149a0622af6700",
-"class_astera_1_1_physics_debug_layer.html#acae8dfb429b0f519ed7d9db98e46e91a",
-"class_astera_1_1_vertex_array.html#a980c5246415b991e9cafd79e901dca1f",
-"namespace_astera.html#abac28202be698be873bf0781ff8e7585",
-"struct_astera_1_1_rigidbody2_d.html#a369b6a28ff9c62a8bc3a2172312c11eb"
+"_macros_8hpp.html#a8180cb0bd8b98bbf6a9a67c13379813c",
+"class_astera_1_1_audio_engine.html#a67f42f86bce92cb5efaeedfa070ac96a",
+"class_astera_1_1_entity_builder.html#a0b6952f1ac584b4660a00e86cbba61cf",
+"class_astera_1_1_job_system.html#abe843948723c2808752aae96a5bfaa55",
+"class_astera_1_1_shader.html#a8062776d5a2daac009dfdf12873b6bf8",
+"namespace_astera.html#a13e9a8965b1d671fa24dec41986ab2b9",
+"struct_astera_1_1_draw_sprite_command.html#a42704b2efef5b9c7d43de195e146e623",
+"struct_astera_1_1_transform.html#a8c683c9f5f2c7b6ab87ea64dae43d8ad"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -14,9 +14,11 @@ var hierarchy =
     [ "Astera::BindShaderCommand", "struct_astera_1_1_bind_shader_command.html", null ],
     [ "Astera::BindVertexArrayCommand", "struct_astera_1_1_bind_vertex_array_command.html", null ],
     [ "Astera::Camera", "struct_astera_1_1_camera.html", null ],
+    [ "Astera::CameraDescriptor", "struct_astera_1_1_camera_descriptor.html", null ],
     [ "Astera::ClearCommand", "struct_astera_1_1_clear_command.html", null ],
     [ "Astera::Clock", "class_astera_1_1_clock.html", null ],
     [ "Astera::Collider2D", "struct_astera_1_1_collider2_d.html", null ],
+    [ "Astera::Collider2DDescriptor", "struct_astera_1_1_collider2_d_descriptor.html", null ],
     [ "Astera::CollisionDetection", "class_astera_1_1_collision_detection.html", null ],
     [ "Astera::Color", "class_astera_1_1_color.html", null ],
     [ "Astera::CommandExecutor", "class_astera_1_1_command_executor.html", null ],
@@ -70,7 +72,11 @@ var hierarchy =
       [ "Astera::Resource< T >", "class_astera_1_1_resource.html", null ]
     ] ],
     [ "Astera::ResourceHandle< T >", "class_astera_1_1_resource_handle.html", null ],
+    [ "Astera::ResourceHandle< Astera::TextureSprite >", "class_astera_1_1_resource_handle.html", null ],
     [ "Astera::ResourceLoaderBase", "class_astera_1_1_resource_loader_base.html", [
+      [ "Astera::ResourceLoader< TextureSprite >", "class_astera_1_1_resource_loader.html", [
+        [ "Astera::TextureLoaderSprite", "class_astera_1_1_texture_loader_sprite.html", null ]
+      ] ],
       [ "Astera::ResourceLoader< T >", "class_astera_1_1_resource_loader.html", null ]
     ] ],
     [ "Astera::ResourceManager", "class_astera_1_1_resource_manager.html", null ],
@@ -96,6 +102,7 @@ var hierarchy =
     [ "Astera::SpriteVertex", "struct_astera_1_1_sprite_vertex.html", null ],
     [ "Astera::JobSystem::Statistics", "struct_astera_1_1_job_system_1_1_statistics.html", null ],
     [ "Astera::TextureManager", "class_astera_1_1_texture_manager.html", null ],
+    [ "Astera::TextureSprite", "class_astera_1_1_texture_sprite.html", null ],
     [ "Astera::Transform", "struct_astera_1_1_transform.html", null ],
     [ "Astera::TransformDescriptor", "struct_astera_1_1_transform_descriptor.html", null ],
     [ "Astera::UnbindVertexArrayCommand", "struct_astera_1_1_unbind_vertex_array_command.html", null ],

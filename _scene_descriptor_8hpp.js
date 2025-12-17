@@ -1,5 +1,7 @@
 var _scene_descriptor_8hpp =
 [
+    [ "Astera::CameraDescriptor", "struct_astera_1_1_camera_descriptor.html", null ],
+    [ "Astera::Collider2DDescriptor", "struct_astera_1_1_collider2_d_descriptor.html", null ],
     [ "Astera::Rigidbody2DDescriptor", "struct_astera_1_1_rigidbody2_d_descriptor.html", "struct_astera_1_1_rigidbody2_d_descriptor" ],
     [ "Astera::TransformDescriptor", "struct_astera_1_1_transform_descriptor.html", "struct_astera_1_1_transform_descriptor" ],
     [ "Astera::SpriteRendererDescriptor", "struct_astera_1_1_sprite_renderer_descriptor.html", "struct_astera_1_1_sprite_renderer_descriptor" ],

@@ -28,6 +28,5 @@ var _engine_common_8hpp =
     [ "Vec2", "_engine_common_8hpp.html#a32228f3a61c481af9c7e8925045a7c34", null ],
     [ "Vec3", "_engine_common_8hpp.html#abac28202be698be873bf0781ff8e7585", null ],
     [ "Vec4", "_engine_common_8hpp.html#af422fe38ab663b130303af1cfd38b61a", null ],
-    [ "Distance", "_engine_common_8hpp.html#aa9f901dde240648c549b91f5bb97c13d", null ],
-    [ "StringToF32", "_engine_common_8hpp.html#ae4d367fbb298a84e1c8ce05ab6e9eb3e", null ]
+    [ "Distance", "_engine_common_8hpp.html#aa9f901dde240648c549b91f5bb97c13d", null ]
 ];

@@ -18,5 +18,6 @@ var searchData=
   ['sprite_2einc_15',['Sprite.inc',['../_sprite_8inc.html',1,'']]],
   ['spriteinstanced_2einc_16',['SpriteInstanced.inc',['../_sprite_instanced_8inc.html',1,'']]],
   ['spriterenderer_2ecpp_17',['SpriteRenderer.cpp',['../_sprite_renderer_8cpp.html',1,'']]],
-  ['spriterenderer_2ehpp_18',['SpriteRenderer.hpp',['../_sprite_renderer_8hpp.html',1,'']]]
+  ['spriterenderer_2ehpp_18',['SpriteRenderer.hpp',['../_sprite_renderer_8hpp.html',1,'']]],
+  ['stringconvert_2einl_19',['StringConvert.inl',['../_string_convert_8inl.html',1,'']]]
 ];

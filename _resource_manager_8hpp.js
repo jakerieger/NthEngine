@@ -1,4 +1,4 @@
-var _resource_manager_8inl =
+var _resource_manager_8hpp =
 [
     [ "Astera::ResourceBase", "class_astera_1_1_resource_base.html", "class_astera_1_1_resource_base" ],
     [ "Astera::Resource< T >", "class_astera_1_1_resource.html", "class_astera_1_1_resource" ],
