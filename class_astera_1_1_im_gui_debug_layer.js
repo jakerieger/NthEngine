@@ -11,5 +11,7 @@ var class_astera_1_1_im_gui_debug_layer =
     [ "UpdateFrameRate", "class_astera_1_1_im_gui_debug_layer.html#ac1abcba1bce547d582827d00368f9a62", null ],
     [ "UpdateFrameTime", "class_astera_1_1_im_gui_debug_layer.html#a2540055adeefcbdda2ca0e78e2da35c4", null ],
     [ "UpdateMainThreadTime", "class_astera_1_1_im_gui_debug_layer.html#a8c14f17cafcc3ef42466afc83c9d3ecf", null ],
-    [ "UpdateRenderThreadTime", "class_astera_1_1_im_gui_debug_layer.html#a08012dc163b7af00133551b5729ac055", null ]
+    [ "UpdateRenderThreadTime", "class_astera_1_1_im_gui_debug_layer.html#a08012dc163b7af00133551b5729ac055", null ],
+    [ "UpdateResourcePoolAllocatedBytes", "class_astera_1_1_im_gui_debug_layer.html#a500963f614bbbc752cd1ab45855c51d5", null ],
+    [ "UpdateResourcePoolUsedBytes", "class_astera_1_1_im_gui_debug_layer.html#ac406dfd63c5058b9128c5efe1a4e6179", null ]
 ];

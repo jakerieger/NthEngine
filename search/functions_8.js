@@ -10,10 +10,10 @@ var searchData=
   ['isinitialized_7',['isinitialized',['../class_astera_1_1_audio_engine.html#ae23d1da42c529c7f6ed7de272a5adbda',1,'Astera::AudioEngine::IsInitialized()'],['../class_astera_1_1_job_system.html#a650229856b74d6768cb0f4d4132d3905',1,'Astera::JobSystem::IsInitialized()'],['../class_astera_1_1_render_target.html#ad217f21820b744d2289c10471a956b91',1,'Astera::RenderTarget::IsInitialized()'],['../class_astera_1_1_script_engine.html#a5359d00f48b506406770b1753942b91b',1,'Astera::ScriptEngine::IsInitialized()']]],
   ['isrunning_8',['IsRunning',['../class_astera_1_1_window.html#a9d03b71fdb810b52ff5a2976e2cc69bd',1,'Astera::Window']]],
   ['isvalid_9',['isvalid',['../class_astera_1_1_resource_handle.html#ada1343fc6162753d2704754862378621',1,'Astera::ResourceHandle::IsValid()'],['../class_astera_1_1_texture_sprite.html#ab5982c16efb5d6b14a162ec94449fb30',1,'Astera::TextureSprite::IsValid()']]],
-  ['isvalidf32_10',['IsValidF32',['../namespace_astera.html#a46fac08d4a9ba474c4e17ee352e5fead',1,'Astera']]],
-  ['isvalidf64_11',['IsValidF64',['../namespace_astera.html#aaf923bfd8aa2d225f8f3113251304dda',1,'Astera']]],
-  ['isvalidi32_12',['IsValidI32',['../namespace_astera.html#a5a8e66c1b81d117e58f72bb389c5ad4a',1,'Astera']]],
-  ['isvalidi64_13',['IsValidI64',['../namespace_astera.html#ac5eb7601e1b19cc392552e5cb00f9a6e',1,'Astera']]],
-  ['isvalidu32_14',['IsValidU32',['../namespace_astera.html#a4f07369a6a65bc967af8b063714565e0',1,'Astera']]],
-  ['isvalidu64_15',['IsValidU64',['../namespace_astera.html#a3af17c3032029ac505f8929503efd773',1,'Astera']]]
+  ['isvalidf32_10',['IsValidF32',['../namespace_astera_1_1_string_convert.html#a49c619790e1c1f3eab044b5a57a17065',1,'Astera::StringConvert']]],
+  ['isvalidf64_11',['IsValidF64',['../namespace_astera_1_1_string_convert.html#a6b4fb6c9350836e02b0c9a2aed7969d7',1,'Astera::StringConvert']]],
+  ['isvalidi32_12',['IsValidI32',['../namespace_astera_1_1_string_convert.html#a0f5ba711811065a4366121c80076daa1',1,'Astera::StringConvert']]],
+  ['isvalidi64_13',['IsValidI64',['../namespace_astera_1_1_string_convert.html#a1ac46e18b9fd23b68667af824a6985c3',1,'Astera::StringConvert']]],
+  ['isvalidu32_14',['IsValidU32',['../namespace_astera_1_1_string_convert.html#a13b7b6e3d81e977339911d3e90635305',1,'Astera::StringConvert']]],
+  ['isvalidu64_15',['IsValidU64',['../namespace_astera_1_1_string_convert.html#a27189b41889118944c3d773caa7f54c1',1,'Astera::StringConvert']]]
 ];

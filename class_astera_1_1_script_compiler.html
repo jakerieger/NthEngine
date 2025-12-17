@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Astera: Astera::BindShaderCommand Struct Reference</title>
+<title>Astera: Astera::ScriptCompiler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('struct_astera_1_1_bind_shader_command.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('class_astera_1_1_script_compiler.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -93,52 +93,72 @@ $(document).ready(function(){initNavTree('struct_astera_1_1_bind_shader_command.
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="struct_astera_1_1_bind_shader_command-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Astera::BindShaderCommand Struct Reference</div></div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="class_astera_1_1_script_compiler-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Astera::ScriptCompiler Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Command to bind a shader program.  
- <a href="struct_astera_1_1_bind_shader_command.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="_command_8hpp_source.html">Command.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_script_compiler_8hpp_source.html">ScriptCompiler.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:af245156e6414feecf38ceebca8f3517d" id="r_af245156e6414feecf38ceebca8f3517d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_astera.html#af76bf8cc1b4c1304679e2ea9ae13ac11">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_astera_1_1_bind_shader_command.html#af245156e6414feecf38ceebca8f3517d">programId</a> {0}</td></tr>
-<tr class="separator:af245156e6414feecf38ceebca8f3517d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:acc3dcaec256202da20fcdd3eec18899c" id="r_acc3dcaec256202da20fcdd3eec18899c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">static</a> <a class="el" href="namespace_astera.html#acd1a44433b72def744c95631c5ee03b9">Result</a>&lt; vector&lt; <a class="el" href="namespace_astera.html#a4fa33b880ef4545b39e7b108c4adad14">u8</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_astera_1_1_script_compiler.html#acc3dcaec256202da20fcdd3eec18899c">Compile</a> (<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> string &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">source</a>, <a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> string &amp;<a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">chunkName</a>)</td></tr>
+<tr class="separator:acc3dcaec256202da20fcdd3eec18899c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Command to bind a shader program. </p>
-
-<p class="definition">Definition at line <a class="el" href="_command_8hpp_source.html#l00061">61</a> of file <a class="el" href="_command_8hpp_source.html">Command.hpp</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="af245156e6414feecf38ceebca8f3517d" name="af245156e6414feecf38ceebca8f3517d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af245156e6414feecf38ceebca8f3517d">&#9670;&#160;</a></span>programId</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_script_compiler_8hpp_source.html#l00038">38</a> of file <a class="el" href="_script_compiler_8hpp_source.html">ScriptCompiler.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="acc3dcaec256202da20fcdd3eec18899c" name="acc3dcaec256202da20fcdd3eec18899c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3dcaec256202da20fcdd3eec18899c">&#9670;&#160;</a></span>Compile()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_astera.html#af76bf8cc1b4c1304679e2ea9ae13ac11">u32</a> Astera::BindShaderCommand::programId {0}</td>
+          <td class="memname"><a class="el" href="namespace_astera.html#acd1a44433b72def744c95631c5ee03b9">Result</a>&lt; vector&lt; <a class="el" href="namespace_astera.html#a4fa33b880ef4545b39e7b108c4adad14">u8</a> &gt; &gt; Astera::ScriptCompiler::Compile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> string &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">const</a> string &amp;&#160;</td>
+          <td class="paramname"><em>chunkName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_command_8hpp_source.html#l00062">62</a> of file <a class="el" href="_command_8hpp_source.html">Command.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_script_compiler_8cpp_source.html#l00042">42</a> of file <a class="el" href="_script_compiler_8cpp_source.html">ScriptCompiler.cpp</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>Source/Engine/Rendering/<a class="el" href="_command_8hpp_source.html">Command.hpp</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>Source/Engine/<a class="el" href="_script_compiler_8hpp_source.html">ScriptCompiler.hpp</a></li>
+<li>Source/Engine/<a class="el" href="_script_compiler_8cpp_source.html">ScriptCompiler.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_astera.html">Astera</a></li><li class="navelem"><a class="el" href="struct_astera_1_1_bind_shader_command.html">BindShaderCommand</a></li>
+    <li class="navelem"><a class="el" href="namespace_astera.html">Astera</a></li><li class="navelem"><a class="el" href="class_astera_1_1_script_compiler.html">ScriptCompiler</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

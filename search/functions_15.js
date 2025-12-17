@@ -11,7 +11,7 @@ var searchData=
   ['withred_8',['WithRed',['../class_astera_1_1_color.html#a0d154aa4615fc9d16a651da275459e14',1,'Astera::Color']]],
   ['writearray_9',['WriteArray',['../class_astera_1_1_binary_writer.html#a4ed7d749d87ec0dab20c04a43b1c149f',1,'Astera::BinaryWriter']]],
   ['writebool_10',['WriteBool',['../class_astera_1_1_binary_writer.html#a50045132e2bc8965368099dd1d69cd18',1,'Astera::BinaryWriter']]],
-  ['writebytes_11',['writebytes',['../class_astera_1_1_binary_writer.html#ade22c6d6900587d7bc1441405ec5115c',1,'Astera::BinaryWriter::WriteBytes(const u8 *data, size_t size)'],['../class_astera_1_1_binary_writer.html#a5f83abf5e00f2f782576d729105163af',1,'Astera::BinaryWriter::WriteBytes(const std::vector&lt; u8 &gt; &amp;data)']]],
+  ['writebytes_11',['writebytes',['../class_astera_1_1_binary_writer.html#ade22c6d6900587d7bc1441405ec5115c',1,'Astera::BinaryWriter::WriteBytes(const u8 *data, size_t size)'],['../class_astera_1_1_binary_writer.html#a5f83abf5e00f2f782576d729105163af',1,'Astera::BinaryWriter::WriteBytes(const std::vector&lt; u8 &gt; &amp;data)'],['../class_astera_1_1_i_o.html#a16227531a04908f5eb18628078dc2a62',1,'Astera::IO::WriteBytes()']]],
   ['writecstring_12',['WriteCString',['../class_astera_1_1_binary_writer.html#aac84db58f34d7bedb2c524e723ed5fa5',1,'Astera::BinaryWriter']]],
   ['writedouble_13',['WriteDouble',['../class_astera_1_1_binary_writer.html#a5ecc93b3ccb459082c7e7b3598ecaf88',1,'Astera::BinaryWriter']]],
   ['writefixedstring_14',['WriteFixedString',['../class_astera_1_1_binary_writer.html#a0276b3c54c233e52435fd85932e1f818',1,'Astera::BinaryWriter']]],
@@ -22,8 +22,9 @@ var searchData=
   ['writeint8_19',['WriteInt8',['../class_astera_1_1_binary_writer.html#a513e75567f5e38712920c2cd5458a193',1,'Astera::BinaryWriter']]],
   ['writepadding_20',['WritePadding',['../class_astera_1_1_binary_writer.html#a55a92f486ecb829bc5282fd55f3566a5',1,'Astera::BinaryWriter']]],
   ['writestring_21',['WriteString',['../class_astera_1_1_binary_writer.html#a5bbfbb4b0fe3cb98db6fdd2dad540f24',1,'Astera::BinaryWriter']]],
-  ['writeuint16_22',['WriteUInt16',['../class_astera_1_1_binary_writer.html#af394996f754ec33a7649f5fd979c3b84',1,'Astera::BinaryWriter']]],
-  ['writeuint32_23',['WriteUInt32',['../class_astera_1_1_binary_writer.html#a8d2fdb30f36e3ba635d9456cf2253fc0',1,'Astera::BinaryWriter']]],
-  ['writeuint64_24',['WriteUInt64',['../class_astera_1_1_binary_writer.html#a35cff45a2ac726f2c4f842e21d2591d5',1,'Astera::BinaryWriter']]],
-  ['writeuint8_25',['WriteUInt8',['../class_astera_1_1_binary_writer.html#a31f2767268180ac6d9f8008015ff468b',1,'Astera::BinaryWriter']]]
+  ['writetext_22',['WriteText',['../class_astera_1_1_i_o.html#ac9971cbe7206f29bd4f78fbf5dad1458',1,'Astera::IO']]],
+  ['writeuint16_23',['WriteUInt16',['../class_astera_1_1_binary_writer.html#af394996f754ec33a7649f5fd979c3b84',1,'Astera::BinaryWriter']]],
+  ['writeuint32_24',['WriteUInt32',['../class_astera_1_1_binary_writer.html#a8d2fdb30f36e3ba635d9456cf2253fc0',1,'Astera::BinaryWriter']]],
+  ['writeuint64_25',['WriteUInt64',['../class_astera_1_1_binary_writer.html#a35cff45a2ac726f2c4f842e21d2591d5',1,'Astera::BinaryWriter']]],
+  ['writeuint8_26',['WriteUInt8',['../class_astera_1_1_binary_writer.html#a31f2767268180ac6d9f8008015ff468b',1,'Astera::BinaryWriter']]]
 ];

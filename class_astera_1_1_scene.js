@@ -8,8 +8,8 @@ var class_astera_1_1_scene =
     [ "GetState", "class_astera_1_1_scene.html#aef9916e2676be692730ff8401d3f7b86", null ],
     [ "GetStatePtr", "class_astera_1_1_scene.html#a6e979cdb35336d97387b6c75aa1009b0", null ],
     [ "LateUpdate", "class_astera_1_1_scene.html#ac2022335d88cfb0151ca19a3f677feac", null ],
-    [ "Load", "class_astera_1_1_scene.html#a9ac4b69b588efeceb1d238749b86032b", null ],
-    [ "Load", "class_astera_1_1_scene.html#a94fb69fb1fe89dcd7c4393c7e7b17f12", null ],
+    [ "LoadBytes", "class_astera_1_1_scene.html#a44b2d8ebec06de740d15f3f1bd9417d2", null ],
+    [ "LoadXML", "class_astera_1_1_scene.html#ac7438de087b236987cc3371622b8ed38", null ],
     [ "Render", "class_astera_1_1_scene.html#ae447f28e90e60dea17c012c718f1f5a7", null ],
     [ "Update", "class_astera_1_1_scene.html#ae7d9638df481856692b6e34f81df57fe", null ],
     [ "Game", "class_astera_1_1_scene.html#aa2fab026580d6f14280c2ffb8063a314", null ]

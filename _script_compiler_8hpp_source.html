@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Astera: Source/Engine/IO.hpp Source File</title>
+<title>Astera: Source/Engine/ScriptCompiler.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,7 +71,7 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('_i_o_8hpp_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('_script_compiler_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,11 +97,11 @@ $(document).ready(function(){initNavTree('_i_o_8hpp_source.html',''); initResiza
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">IO.hpp</div></div>
+  <div class="headertitle"><div class="title">ScriptCompiler.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_i_o_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *  Filename: IO.hpp</span></div>
+<a href="_script_compiler_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *  Filename: ScriptCompiler.hpp</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *  This code is part of the Astera core library</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *  Copyright 2025 Jake Rieger</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
@@ -132,36 +132,38 @@ $(document).ready(function(){initNavTree('_i_o_8hpp_source.html',''); initResiza
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="_engine_common_8hpp.html">EngineCommon.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_astera.html">Astera</a> {</div>
-<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_astera_1_1_i_o.html">   34</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_astera_1_1_i_o.html">IO</a> {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_class" href="class_astera_1_1_i_o.html">IO</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;lua.h&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keyword">static</span> <a class="code hl_typedef" href="namespace_astera.html#acd1a44433b72def744c95631c5ee03b9">Result&lt;vector&lt;u8&gt;</a>&gt; <a class="code hl_function" href="class_astera_1_1_i_o.html#ae6381caba7f04232238034a630cab9b0">ReadBytes</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_astera.html#aa715b3684f0937d835d392f4378db884">Path</a>&amp; <a class="code hl_define" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">filename</a>);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">static</span> <a class="code hl_typedef" href="namespace_astera.html#acd1a44433b72def744c95631c5ee03b9">Result&lt;string&gt;</a> <a class="code hl_function" href="class_astera_1_1_i_o.html#ab77f8f92757906dc42eca12e6ab07311">ReadText</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_astera.html#aa715b3684f0937d835d392f4378db884">Path</a>&amp; <a class="code hl_define" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">filename</a>);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_astera_1_1_i_o.html#a16227531a04908f5eb18628078dc2a62">WriteBytes</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_astera.html#aa715b3684f0937d835d392f4378db884">Path</a>&amp; <a class="code hl_define" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">filename</a>, <span class="keyword">const</span> vector&lt;u8&gt;&amp; <a class="code hl_define" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">bytes</a>);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_astera_1_1_i_o.html#ac9971cbe7206f29bd4f78fbf5dad1458">WriteText</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_astera.html#aa715b3684f0937d835d392f4378db884">Path</a>&amp; <a class="code hl_define" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">filename</a>, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code hl_define" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">text</a>);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    };</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_astera.html">Astera</a> {</div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_astera_1_1_script_compiler.html">   38</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_astera_1_1_script_compiler.html">ScriptCompiler</a> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">static</span> <a class="code hl_typedef" href="namespace_astera.html#acd1a44433b72def744c95631c5ee03b9">Result&lt;vector&lt;u8&gt;</a>&gt; <a class="code hl_function" href="class_astera_1_1_script_compiler.html#acc3dcaec256202da20fcdd3eec18899c">Compile</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code hl_define" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">source</a>, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code hl_define" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">chunkName</a>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">struct </span>BytecodeWriterState {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            vector&lt;u8&gt;* bytecode;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        };</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keyword">static</span> <a class="code hl_typedef" href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">i32</a> BytecodeWriter(<a class="code hl_define" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">lua_State</a>* L, <span class="keyword">const</span> <span class="keywordtype">void</span>* <a class="code hl_define" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">p</a>, <span class="keywordtype">size_t</span> size, <span class="keywordtype">void</span>* <a class="code hl_define" href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">ud</a>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    };</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}  <span class="comment">// namespace Astera</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}  <span class="comment">// namespace Astera</span></div>
 <div class="ttc" id="a_engine_common_8hpp_html"><div class="ttname"><a href="_engine_common_8hpp.html">EngineCommon.hpp</a></div></div>
 <div class="ttc" id="a_engine_common_8hpp_html_aee24d8236281595b79ebc82dbbcf0f89"><div class="ttname"><a href="_engine_common_8hpp.html#aee24d8236281595b79ebc82dbbcf0f89">RCAST</a></div><div class="ttdeci">#define RCAST</div><div class="ttdef"><b>Definition</b> <a href="_engine_common_8hpp_source.html#l00071">EngineCommon.hpp:71</a></div></div>
-<div class="ttc" id="aclass_astera_1_1_i_o_html"><div class="ttname"><a href="class_astera_1_1_i_o.html">Astera::IO</a></div><div class="ttdef"><b>Definition</b> <a href="_i_o_8hpp_source.html#l00034">IO.hpp:34</a></div></div>
-<div class="ttc" id="aclass_astera_1_1_i_o_html_a16227531a04908f5eb18628078dc2a62"><div class="ttname"><a href="class_astera_1_1_i_o.html#a16227531a04908f5eb18628078dc2a62">Astera::IO::WriteBytes</a></div><div class="ttdeci">static bool WriteBytes(const Path &amp;filename, const vector&lt; u8 &gt; &amp;bytes)</div><div class="ttdef"><b>Definition</b> <a href="_i_o_8cpp_source.html#l00064">IO.cpp:64</a></div></div>
-<div class="ttc" id="aclass_astera_1_1_i_o_html_ab77f8f92757906dc42eca12e6ab07311"><div class="ttname"><a href="class_astera_1_1_i_o.html#ab77f8f92757906dc42eca12e6ab07311">Astera::IO::ReadText</a></div><div class="ttdeci">static Result&lt; string &gt; ReadText(const Path &amp;filename)</div><div class="ttdef"><b>Definition</b> <a href="_i_o_8cpp_source.html#l00054">IO.cpp:54</a></div></div>
-<div class="ttc" id="aclass_astera_1_1_i_o_html_ac9971cbe7206f29bd4f78fbf5dad1458"><div class="ttname"><a href="class_astera_1_1_i_o.html#ac9971cbe7206f29bd4f78fbf5dad1458">Astera::IO::WriteText</a></div><div class="ttdeci">static bool WriteText(const Path &amp;filename, const string &amp;text)</div><div class="ttdef"><b>Definition</b> <a href="_i_o_8cpp_source.html#l00074">IO.cpp:74</a></div></div>
-<div class="ttc" id="aclass_astera_1_1_i_o_html_ae6381caba7f04232238034a630cab9b0"><div class="ttname"><a href="class_astera_1_1_i_o.html#ae6381caba7f04232238034a630cab9b0">Astera::IO::ReadBytes</a></div><div class="ttdeci">static Result&lt; vector&lt; u8 &gt; &gt; ReadBytes(const Path &amp;filename)</div><div class="ttdef"><b>Definition</b> <a href="_i_o_8cpp_source.html#l00033">IO.cpp:33</a></div></div>
+<div class="ttc" id="aclass_astera_1_1_script_compiler_html"><div class="ttname"><a href="class_astera_1_1_script_compiler.html">Astera::ScriptCompiler</a></div><div class="ttdef"><b>Definition</b> <a href="_script_compiler_8hpp_source.html#l00038">ScriptCompiler.hpp:38</a></div></div>
+<div class="ttc" id="aclass_astera_1_1_script_compiler_html_acc3dcaec256202da20fcdd3eec18899c"><div class="ttname"><a href="class_astera_1_1_script_compiler.html#acc3dcaec256202da20fcdd3eec18899c">Astera::ScriptCompiler::Compile</a></div><div class="ttdeci">static Result&lt; vector&lt; u8 &gt; &gt; Compile(const string &amp;source, const string &amp;chunkName)</div><div class="ttdef"><b>Definition</b> <a href="_script_compiler_8cpp_source.html#l00042">ScriptCompiler.cpp:42</a></div></div>
 <div class="ttc" id="anamespace_astera_html"><div class="ttname"><a href="namespace_astera.html">Astera</a></div><div class="ttdoc">Root namespace of all Astera components.</div><div class="ttdef"><b>Definition</b> <a href="_arena_allocator_8cpp_source.html#l00031">ArenaAllocator.cpp:31</a></div></div>
-<div class="ttc" id="anamespace_astera_html_aa715b3684f0937d835d392f4378db884"><div class="ttname"><a href="namespace_astera.html#aa715b3684f0937d835d392f4378db884">Astera::Path</a></div><div class="ttdeci">fs::path Path</div><div class="ttdef"><b>Definition</b> <a href="_engine_common_8hpp_source.html#l00114">EngineCommon.hpp:114</a></div></div>
+<div class="ttc" id="anamespace_astera_html_aaa0c3a7b3f64c206fbfa3fcdf6482173"><div class="ttname"><a href="namespace_astera.html#aaa0c3a7b3f64c206fbfa3fcdf6482173">Astera::i32</a></div><div class="ttdeci">int32_t i32</div><div class="ttdef"><b>Definition</b> <a href="_engine_common_8hpp_source.html#l00083">EngineCommon.hpp:83</a></div></div>
 <div class="ttc" id="anamespace_astera_html_acd1a44433b72def744c95631c5ee03b9"><div class="ttname"><a href="namespace_astera.html#acd1a44433b72def744c95631c5ee03b9">Astera::Result</a></div><div class="ttdeci">expected&lt; T, string &gt; Result</div><div class="ttdef"><b>Definition</b> <a href="_engine_common_8hpp_source.html#l00120">EngineCommon.hpp:120</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_74389ed8173ad57b461b9d623a1f3867.html">Source</a></li><li class="navelem"><a class="el" href="dir_5405398c23c020946029b9f4e6e04094.html">Engine</a></li><li class="navelem"><a class="el" href="_i_o_8hpp.html">IO.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_74389ed8173ad57b461b9d623a1f3867.html">Source</a></li><li class="navelem"><a class="el" href="dir_5405398c23c020946029b9f4e6e04094.html">Engine</a></li><li class="navelem"><a class="el" href="_script_compiler_8hpp.html">ScriptCompiler.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

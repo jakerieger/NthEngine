@@ -20,7 +20,9 @@ var searchData=
   ['updatemainthreadtime_17',['UpdateMainThreadTime',['../class_astera_1_1_im_gui_debug_layer.html#a8c14f17cafcc3ef42466afc83c9d3ecf',1,'Astera::ImGuiDebugLayer']]],
   ['updatemass_18',['UpdateMass',['../struct_astera_1_1_rigidbody2_d.html#ae8833fea8471600b977483bdb326ee6d',1,'Astera::Rigidbody2D']]],
   ['updaterenderthreadtime_19',['UpdateRenderThreadTime',['../class_astera_1_1_im_gui_debug_layer.html#a08012dc163b7af00133551b5729ac055',1,'Astera::ImGuiDebugLayer']]],
-  ['updatetransforms_20',['UpdateTransforms',['../class_astera_1_1_physics_debug_layer.html#ac73a313e30f1c19850b68051ed72115f',1,'Astera::PhysicsDebugLayer']]],
-  ['updatevertexbuffercommand_21',['UpdateVertexBufferCommand',['../struct_astera_1_1_update_vertex_buffer_command.html',1,'Astera']]],
-  ['uptr_22',['uptr',['../namespace_astera.html#ad4d79c0aa558dd20ef2c7f7bdd6093a3',1,'Astera']]]
+  ['updateresourcepoolallocatedbytes_20',['UpdateResourcePoolAllocatedBytes',['../class_astera_1_1_im_gui_debug_layer.html#a500963f614bbbc752cd1ab45855c51d5',1,'Astera::ImGuiDebugLayer']]],
+  ['updateresourcepoolusedbytes_21',['UpdateResourcePoolUsedBytes',['../class_astera_1_1_im_gui_debug_layer.html#ac406dfd63c5058b9128c5efe1a4e6179',1,'Astera::ImGuiDebugLayer']]],
+  ['updatetransforms_22',['UpdateTransforms',['../class_astera_1_1_physics_debug_layer.html#ac73a313e30f1c19850b68051ed72115f',1,'Astera::PhysicsDebugLayer']]],
+  ['updatevertexbuffercommand_23',['UpdateVertexBufferCommand',['../struct_astera_1_1_update_vertex_buffer_command.html',1,'Astera']]],
+  ['uptr_24',['uptr',['../namespace_astera.html#ad4d79c0aa558dd20ef2c7f7bdd6093a3',1,'Astera']]]
 ];

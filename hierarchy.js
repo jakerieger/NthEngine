@@ -89,6 +89,7 @@ var hierarchy =
     [ "Astera::SceneDescriptor", "struct_astera_1_1_scene_descriptor.html", null ],
     [ "Astera::SceneParser", "class_astera_1_1_scene_parser.html", null ],
     [ "Astera::SceneState", "class_astera_1_1_scene_state.html", null ],
+    [ "Astera::ScriptCompiler", "class_astera_1_1_script_compiler.html", null ],
     [ "Astera::ScriptEngine", "class_astera_1_1_script_engine.html", null ],
     [ "Astera::ScriptTypeRegistry", "class_astera_1_1_script_type_registry.html", null ],
     [ "Astera::SetUniformCommand", "struct_astera_1_1_set_uniform_command.html", null ],

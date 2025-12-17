@@ -73,6 +73,7 @@ var annotated_dup =
       [ "SceneDescriptor", "struct_astera_1_1_scene_descriptor.html", "struct_astera_1_1_scene_descriptor" ],
       [ "SceneParser", "class_astera_1_1_scene_parser.html", null ],
       [ "SceneState", "class_astera_1_1_scene_state.html", "class_astera_1_1_scene_state" ],
+      [ "ScriptCompiler", "class_astera_1_1_script_compiler.html", null ],
       [ "ScriptEngine", "class_astera_1_1_script_engine.html", "class_astera_1_1_script_engine" ],
       [ "ScriptTypeRegistry", "class_astera_1_1_script_type_registry.html", null ],
       [ "SetUniformCommand", "struct_astera_1_1_set_uniform_command.html", "struct_astera_1_1_set_uniform_command" ],

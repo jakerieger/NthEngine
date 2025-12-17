@@ -50,6 +50,8 @@ var dir_5405398c23c020946029b9f4e6e04094 =
     [ "SceneParser.hpp", "_scene_parser_8hpp.html", "_scene_parser_8hpp" ],
     [ "SceneState.cpp", "_scene_state_8cpp.html", null ],
     [ "SceneState.hpp", "_scene_state_8hpp.html", "_scene_state_8hpp" ],
+    [ "ScriptCompiler.cpp", "_script_compiler_8cpp.html", null ],
+    [ "ScriptCompiler.hpp", "_script_compiler_8hpp.html", "_script_compiler_8hpp" ],
     [ "ScriptEngine.cpp", "_script_engine_8cpp.html", null ],
     [ "ScriptEngine.hpp", "_script_engine_8hpp.html", "_script_engine_8hpp" ],
     [ "ScriptTypeRegistry.hpp", "_script_type_registry_8hpp.html", "_script_type_registry_8hpp" ],

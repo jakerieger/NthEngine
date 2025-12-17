@@ -4,7 +4,7 @@ var searchData=
   ['unloadcontent_1',['UnloadContent',['../class_astera_1_1_game.html#aa4042306997796b69f4cf4dc0ce952b0',1,'Astera::Game']]],
   ['update_2',['update',['../class_astera_1_1_debug_manager.html#a491bbd2c8b1e033f7cf12e989b625dea',1,'Astera::DebugManager::Update()'],['../class_astera_1_1_scene.html#ae7d9638df481856692b6e34f81df57fe',1,'Astera::Scene::Update()']]],
   ['updateat_3',['UpdateAt',['../class_astera_1_1_binary_writer.html#abc28f23f913d9475eee91bd5106fa6e4',1,'Astera::BinaryWriter']]],
-  ['updatedata_4',['updatedata',['../class_astera_1_1_i_buffer.html#a24fb6b00c35d939e16de1404b14270d3',1,'Astera::IBuffer::UpdateData()'],['../class_astera_1_1_vertex_buffer.html#a6e5159dc4481eb8b4c01d7fa54fa6fec',1,'Astera::VertexBuffer::UpdateData()'],['../class_astera_1_1_index_buffer.html#ad6af867403e2fc208b4e16c9d2dd0ff4',1,'Astera::IndexBuffer::UpdateData()']]],
+  ['updatedata_4',['updatedata',['../class_astera_1_1_i_buffer.html#a24fb6b00c35d939e16de1404b14270d3',1,'Astera::IBuffer::UpdateData()'],['../class_astera_1_1_index_buffer.html#ad6af867403e2fc208b4e16c9d2dd0ff4',1,'Astera::IndexBuffer::UpdateData()'],['../class_astera_1_1_vertex_buffer.html#a6e5159dc4481eb8b4c01d7fa54fa6fec',1,'Astera::VertexBuffer::UpdateData()']]],
   ['updatedrawcalls_5',['UpdateDrawCalls',['../class_astera_1_1_im_gui_debug_layer.html#abc914e9ecbc459c9de953390f8159272',1,'Astera::ImGuiDebugLayer']]],
   ['updateentities_6',['UpdateEntities',['../class_astera_1_1_im_gui_debug_layer.html#ac2683859ecdefb36b360a25a0a98bfe8',1,'Astera::ImGuiDebugLayer']]],
   ['updateframerate_7',['UpdateFrameRate',['../class_astera_1_1_im_gui_debug_layer.html#ac1abcba1bce547d582827d00368f9a62',1,'Astera::ImGuiDebugLayer']]],
@@ -12,5 +12,7 @@ var searchData=
   ['updatemainthreadtime_9',['UpdateMainThreadTime',['../class_astera_1_1_im_gui_debug_layer.html#a8c14f17cafcc3ef42466afc83c9d3ecf',1,'Astera::ImGuiDebugLayer']]],
   ['updatemass_10',['UpdateMass',['../struct_astera_1_1_rigidbody2_d.html#ae8833fea8471600b977483bdb326ee6d',1,'Astera::Rigidbody2D']]],
   ['updaterenderthreadtime_11',['UpdateRenderThreadTime',['../class_astera_1_1_im_gui_debug_layer.html#a08012dc163b7af00133551b5729ac055',1,'Astera::ImGuiDebugLayer']]],
-  ['updatetransforms_12',['UpdateTransforms',['../class_astera_1_1_physics_debug_layer.html#ac73a313e30f1c19850b68051ed72115f',1,'Astera::PhysicsDebugLayer']]]
+  ['updateresourcepoolallocatedbytes_12',['UpdateResourcePoolAllocatedBytes',['../class_astera_1_1_im_gui_debug_layer.html#a500963f614bbbc752cd1ab45855c51d5',1,'Astera::ImGuiDebugLayer']]],
+  ['updateresourcepoolusedbytes_13',['UpdateResourcePoolUsedBytes',['../class_astera_1_1_im_gui_debug_layer.html#ac406dfd63c5058b9128c5efe1a4e6179',1,'Astera::ImGuiDebugLayer']]],
+  ['updatetransforms_14',['UpdateTransforms',['../class_astera_1_1_physics_debug_layer.html#ac73a313e30f1c19850b68051ed72115f',1,'Astera::PhysicsDebugLayer']]]
 ];
