@@ -181,6 +181,10 @@ namespace Astera {
         if (mActiveScene)
             mActiveScene->Awake(GetScriptEngine());
 
+        for (const auto& plugin : mPlugins | std::views::values) {
+            plugin->OnSceneAwake(this);
+        }
+
         LoadContent();
     }
 
@@ -210,6 +214,10 @@ namespace Astera {
             mPhysicsDebugLayer->UpdateTransforms(transforms);
         }
 
+        for (const auto& plugin : mPlugins | std::views::values) {
+            plugin->OnSceneUpdate(this);
+        }
+
         // Advance frame allocator
         mFrameAllocator.NextFrame();
     }
@@ -221,6 +229,10 @@ namespace Astera {
         // Call user's LateUpdate
         if (mActiveScene)
             mActiveScene->LateUpdate(GetScriptEngine());
+
+        for (const auto& plugin : mPlugins | std::views::values) {
+            plugin->OnSceneLateUpdate(this);
+        }
     }
 
     void Game::OnDestroyed() {
@@ -266,8 +278,12 @@ namespace Astera {
             }
         }
         mMainRenderTarget->GetContext().EndFrame();
-        mImGuiDebugLayer->UpdateDrawCalls(CommandExecutor::gDrawCalls);
 
+        for (const auto& plugin : mPlugins | std::views::values) {
+            plugin->OnSceneRender(this);
+        }
+
+        mImGuiDebugLayer->UpdateDrawCalls(CommandExecutor::gDrawCalls);
         mDebugManager.Render();
         glfwSwapBuffers(GetHandle());
 

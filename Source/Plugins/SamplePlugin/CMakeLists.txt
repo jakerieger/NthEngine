@@ -1,7 +1,7 @@
 add_library(SamplePlugin SHARED
     PluginExport.hpp
-    SamplePlugin.cpp
-    SamplePlugin.hpp
+    Screenshot.cpp
+    Screenshot.hpp
 )
 
 target_include_directories(SamplePlugin PRIVATE

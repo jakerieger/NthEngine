@@ -46,7 +46,7 @@ if (LINUX)
 endif ()
 
 add_dependencies(SpaceInvaders_CopyEngineContent SpaceInvaders_CopyContent)
-add_dependencies(SpaceInvaders_CopyPlugins SamplePlugin)
+add_dependencies(SpaceInvaders_CopyPlugins Screenshot)
 add_dependencies(Demo-SpaceInvaders SpaceInvaders_CopyEngineContent)
 add_dependencies(Demo-SpaceInvaders SpaceInvaders_CopyConfig)
 add_dependencies(Demo-SpaceInvaders SpaceInvaders_CopyPlugins)

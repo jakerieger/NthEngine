@@ -6,6 +6,8 @@ set(GLAD_SOURCES
 set(STB_SOURCES
     ${VENDOR_ROOT}/stb_image.cpp
     ${VENDOR_ROOT}/stb_image.h
+    ${VENDOR_ROOT}/stb_image_write.cpp
+    ${VENDOR_ROOT}/stb_image_write.h
 )
 
 set(MINIAUDIO_SOURCES
