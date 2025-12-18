@@ -67,6 +67,7 @@ var hierarchy =
     [ "Astera::PhysicsEngine", "class_astera_1_1_physics_engine.html", null ],
     [ "Astera::Plugin", "class_astera_1_1_plugin.html", null ],
     [ "Astera::PluginManager", "class_astera_1_1_plugin_manager.html", null ],
+    [ "AsteraCLI::PluginSubcommand", "struct_astera_c_l_i_1_1_plugin_subcommand.html", null ],
     [ "AsteraCLI::ProjectSubcommand", "struct_astera_c_l_i_1_1_project_subcommand.html", null ],
     [ "Astera::RenderContext", "class_astera_1_1_render_context.html", null ],
     [ "Astera::RenderTarget", "class_astera_1_1_render_target.html", null ],
