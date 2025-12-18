@@ -29,7 +29,7 @@ jobs:
         run: .\vcpkg\bootstrap-vcpkg.bat
 
       - name: Install dependencies via vcpkg
-        run: .\vcpkg\vcpkg install pkgconf fmt spdlog pugixml cli11 glfw3 luajit --triplet x64-windows
+        run: .\vcpkg\vcpkg install pkgconf fmt spdlog pugixml cli11 glfw3 luajit libsndfile --triplet x64-windows
 
       - name: Configure CMake
         run: |
