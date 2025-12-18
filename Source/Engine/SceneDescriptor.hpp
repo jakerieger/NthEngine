@@ -90,6 +90,7 @@ namespace Astera {
 
     struct SceneDescriptor {
         string name;
+        bool entry {false};
         vector<EntityDescriptor> entities;
     };
 }  // namespace Astera

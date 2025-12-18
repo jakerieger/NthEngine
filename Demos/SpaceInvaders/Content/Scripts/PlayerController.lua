@@ -37,6 +37,8 @@ function WrapBounds(transform)
     end
 end
 
+local loaded = false
+
 --- Called every frame, before rendering
 ---@param this Entity
 ---@param clock Clock
@@ -49,6 +51,11 @@ function OnUpdate(this, clock)
 
     -- Wrap around when going out of screen bounds
     WrapBounds(transform)
+
+    if Input:GetKeyDown(KeyCode.Space) and not loaded then
+        Game:LoadScene("Level_1")
+        loaded = true
+    end
 end
 
 --- Called every frame, after rendering

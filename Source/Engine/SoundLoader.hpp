@@ -41,10 +41,10 @@ namespace Astera {
                 throw std::runtime_error(fmt::format("Failed to get sound asset: {}", assetPath.error()));
             }
 
-            SndfileHandle sndfileHandle(assetPath->string());
-            const i64 bufferSize = sndfileHandle.frames() * sndfileHandle.channels();
+            SndfileHandle handle(assetPath->string());
+            const i64 bufferSize = handle.frames() * handle.channels();
             auto* buffer         = (f32*)allocator.Allocate(bufferSize, alignof(f32));
-            sndfileHandle.readf(buffer, sndfileHandle.frames());
+            handle.readf(buffer, handle.frames());
 
             return Sound {buffer, size_t(bufferSize)};
         }

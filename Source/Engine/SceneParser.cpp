@@ -320,7 +320,11 @@ namespace Astera {
         }
 
         // Parse scene name
-        outDescriptor.name = sceneNode.attribute("name").as_string();
+        outDescriptor.name   = sceneNode.attribute("name").as_string();
+        const auto entryAttr = sceneNode.attribute("entry");
+        if (!entryAttr.empty()) {
+            outDescriptor.entry = entryAttr.as_bool();
+        }
 
         // Parse entities
         if (const auto entitiesNode = sceneNode.child("Entities")) {

@@ -46,6 +46,7 @@ include(${VENDOR_ROOT}/Vendor.cmake)
 
 add_subdirectory(Source/Engine)
 add_subdirectory(Source/Tools)
+add_subdirectory(Source/Plugins)
 
 # Build demos
 add_subdirectory(Demos)

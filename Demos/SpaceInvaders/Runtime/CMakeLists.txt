@@ -35,6 +35,18 @@ add_custom_target(SpaceInvaders_CopyEngineContent ALL
     COMMENT "Copying Engine content directory to build output"
 )
 
+add_custom_target(SpaceInvaders_CopyPlugins ALL
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+    ${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/Plugins
+    ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/Plugins
+)
+
+if (LINUX)
+    target_link_options(Demo-SpaceInvaders PRIVATE -rdynamic)
+endif ()
+
 add_dependencies(SpaceInvaders_CopyEngineContent SpaceInvaders_CopyContent)
+add_dependencies(SpaceInvaders_CopyPlugins SamplePlugin)
 add_dependencies(Demo-SpaceInvaders SpaceInvaders_CopyEngineContent)
 add_dependencies(Demo-SpaceInvaders SpaceInvaders_CopyConfig)
+add_dependencies(Demo-SpaceInvaders SpaceInvaders_CopyPlugins)

@@ -33,6 +33,7 @@
 #include "SceneState.hpp"
 #include "ScriptEngine.hpp"
 #include "ResourceManager.hpp"
+#include "SceneDescriptor.hpp"
 #include "TextureLoader.hpp"
 #include "SoundLoader.hpp"
 #include "Rendering/RenderContext.hpp"
@@ -81,6 +82,14 @@ namespace Astera {
         /// @param bytes Vector containing the scene data
         /// @param engine Script engine reference
         void LoadBytes(const vector<u8>& bytes, ScriptEngine& engine);
+
+        /// @brief Loads a scene from a descriptor object
+        /// @param descriptor Scene descriptor object
+        /// @param engine Script engine reference
+        void LoadDescriptor(const SceneDescriptor& descriptor, ScriptEngine& engine);
+
+        /// @brief Resets the scene. Clears the state and frees resource pool memory
+        void Reset();
 
         /// @brief Gets the current state of the scene
         /// @return Reference to the scene state object

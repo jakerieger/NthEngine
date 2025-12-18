@@ -36,6 +36,7 @@
 #include "Math.hpp"
 #include "AssetManager.hpp"
 #include "JobSystem.hpp"
+#include "SceneParser.hpp"
 #include "Rendering/ImGuiDebugLayer.hpp"
 
 #include <stb_image.h>
@@ -62,6 +63,16 @@ namespace Astera {
         if (mMainRenderTarget) {
             mMainRenderTarget->Resize(width, height);
         }
+    }
+
+    bool Game::LoadScene(const string& name) {
+        if (!mSceneCache.contains(name)) {
+            Log::Error("Game", "Scene '{}' does not exist", name);
+            return false;
+        }
+
+        mActiveScene->LoadDescriptor(mSceneCache[name], GetScriptEngine());
+        return true;
     }
 
     void Game::OnAwake() {
@@ -117,17 +128,54 @@ namespace Astera {
         // Create the initial scene
         mActiveScene = make_unique<Scene>(GetRenderContext());
 
+        // Load scenes into cache
+        bool loadedEntry = false;
+        for (auto& scenePath : AssetManager::GetScenes()) {
+            SceneDescriptor desc;
+            SceneParser::DeserializeDescriptorXML(scenePath, desc);
+            mSceneCache[desc.name] = desc;
+            if (desc.entry && !loadedEntry) {
+                mActiveScene->LoadDescriptor(desc, GetScriptEngine());
+                loadedEntry = true;
+            }
+            Log::Debug("Game", "Added scene '{}' to cache", desc.name);
+        }
+
         // Initialize job system
         gJobSystem = make_unique<JobSystem>();
         gJobSystem->Initialize();
 
-        Log::Debug(
-          "Game",
-          "Successfully initialized game instance:\n-- Dimensions: {}x{}\n-- V-Sync: {}\n-- Worker Threads: {}",
-          width,
-          height,
-          mVsync ? "On" : "Off",
-          gJobSystem->GetWorkerCount());
+        // Look for and load plugins
+        const auto pluginsPath = fs::current_path() / "Plugins";
+        if (!exists(pluginsPath)) {
+            Log::Warn("Game", "No plugins directory found");
+        } else {
+            for (const auto& entry : fs::directory_iterator(pluginsPath)) {
+                if (entry.is_regular_file()) {
+                    // Attempt to load the plugin library
+                    Plugin plugin;
+                    plugin.Load(entry.path().string());
+                    const auto name = plugin->GetName();
+
+                    Log::Debug("Game", "Loaded plugin: '{}' (from: {})", name, plugin.GetPluginPath().string());
+
+                    mPlugins[name] = std::move(plugin);
+                }
+            }
+        }
+
+        Log::Debug("Game",
+                   "Successfully initialized game instance:\n-- Dimensions: {}x{}\n-- V-Sync: {}\n-- Worker Threads: "
+                   "{}\n-- Plugins: {}",
+                   width,
+                   height,
+                   mVsync ? "On" : "Off",
+                   gJobSystem->GetWorkerCount(),
+                   mPlugins.size());
+
+        for (const auto& plugin : mPlugins | std::views::values) {
+            plugin->OnEngineStart(this);
+        }
 
         // Call user's OnAwake if they have overridden it
         if (mActiveScene)
@@ -176,6 +224,10 @@ namespace Astera {
     }
 
     void Game::OnDestroyed() {
+        for (const auto& plugin : mPlugins | std::views::values) {
+            plugin->OnEngineStop(this);
+        }
+
         if (mActiveScene) {
             mActiveScene->Destroyed(GetScriptEngine());
             mActiveScene.reset();
@@ -235,6 +287,9 @@ namespace Astera {
             u32 w, h;
             GetSize(w, h);
             return {CAST<f32>(w), CAST<f32>(h)};
+        };
+        gameGlobal["LoadScene"] = [this](const sol::object&, const string& sceneName) -> bool {
+            return LoadScene(sceneName);
         };
 
         lua["Scene"] = &mActiveScene->GetState();

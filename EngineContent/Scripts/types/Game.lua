@@ -14,7 +14,12 @@ end
 ---Return the screen size
 ---@return Vec2
 function Game:GetScreenSize()
+end
 
+--- Loads a scene and returns true if succeeds
+---@param name string
+---@return boolean
+function Game:LoadScene(name)
 end
 
 return Game

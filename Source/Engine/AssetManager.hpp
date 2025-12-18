@@ -48,10 +48,15 @@ namespace Astera {
 
         static void SetRuntimeDefaults();
 
+        static vector<Path>& GetScenes() {
+            return sScenes;
+        }
+
     private:
         static bool sInitialized;
         static Path sWorkingDirectory;
         static unordered_map<AssetID, Path> sAssetPaths;
+        static vector<Path> sScenes;
 
         static bool Initialize();
     };

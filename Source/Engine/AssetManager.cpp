@@ -110,6 +110,11 @@ namespace Astera {
 
                 sAssetPaths[id] = assetPath;
 
+                // cache scene paths
+                if (AssetTypeFromID(id) == AssetType::Scene) {
+                    sScenes.push_back(assetPath);
+                }
+
                 Log::Info("AssetManager",
                           "Found asset `{}` with ID {} and type {}",
                           assetPath.string(),
@@ -139,4 +144,5 @@ namespace Astera {
     bool AssetManager::sInitialized = false;
     Path AssetManager::sWorkingDirectory {};
     unordered_map<AssetID, Path> AssetManager::sAssetPaths {};
+    vector<Path> AssetManager::sScenes {};
 }  // namespace Astera

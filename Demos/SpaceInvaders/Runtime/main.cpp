@@ -9,9 +9,13 @@ public:
     SpaceInvadersDemo() : Game("Space Invaders [Demo]", 1280, 720) {}
 
     void LoadContent() override {
-        const Path sceneFile = Content::Get<ContentType::Scene>("Main.xml");
-        auto* scene          = GetActiveScene();
-        scene->LoadXML(sceneFile, GetScriptEngine());
+        auto* dbgLayer = GetDebugManager().GetOverlay<ImGuiDebugLayer>("ImGuiDebugLayer");
+        vector<string> lines;
+        lines.emplace_back("A / Left - Move player left");
+        lines.emplace_back("D / Right - Move player right");
+        lines.emplace_back("Space - Reset level");
+        lines.emplace_back("Esc - Quit");
+        dbgLayer->SetCustomText("Controls", lines);
     }
 
     void OnKeyDown(const u32 keyCode) override {

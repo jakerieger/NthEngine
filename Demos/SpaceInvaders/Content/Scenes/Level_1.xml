@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Scene name="Main">
+<!--'entry=true' means this is the first scene the game will load-->
+<Scene name="Level_1" entry="true">
     <Entities>
         <Entity id="0" name="Player">
             <Components>

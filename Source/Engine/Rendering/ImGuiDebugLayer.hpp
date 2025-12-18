@@ -31,6 +31,8 @@
 #include "EngineCommon.hpp"
 #include "DebugInterface.hpp"
 
+#include <imgui.h>
+
 namespace Astera {
     class ImGuiDebugLayer final : public IDebugOverlay {
     public:
@@ -77,6 +79,11 @@ namespace Astera {
             mSceneStats.resourcePoolUsedBytes = usedBytes;
         }
 
+        void SetCustomText(const string& header, const vector<string>& lines) {
+            mCustomText       = lines;
+            mCustomTextHeader = header;
+        }
+
     private:
         void InitImGui(GLFWwindow* window) const;
         void ShutdownImGui() const;
@@ -91,12 +98,19 @@ namespace Astera {
             u32 drawCalls {0};
         } mFrameStats;
 
-        void DrawStats() const;
+        void DrawStats();
+
+        void DrawCustomText() const;
 
         struct SceneStats {
             u32 entities {0};
             u64 resourcePoolAllocatedBytes {0};
             u64 resourcePoolUsedBytes {0};
         } mSceneStats;
+
+        ImVec2 mStatsSize;
+
+        vector<string> mCustomText;
+        string mCustomTextHeader;
     };
 }  // namespace Astera

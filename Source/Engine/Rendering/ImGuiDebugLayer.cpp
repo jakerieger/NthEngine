@@ -29,11 +29,10 @@
 #include "ImGuiDebugLayer.hpp"
 
 #include "Color.hpp"
-#include "../Macros.hpp"
+#include "Macros.hpp"
 #include "Log.hpp"
 #include "Math.hpp"
 
-#include <imgui.h>
 #include <backends/imgui_impl_opengl3.h>
 #include <backends/imgui_impl_glfw.h>
 
@@ -53,8 +52,10 @@ namespace Astera {
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-        if (mPerfOverlay)
-            DrawStats();
+        DrawStats();
+
+        if (!mCustomText.empty())
+            DrawCustomText();
 
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
@@ -84,6 +85,7 @@ namespace Astera {
         ImGui::DestroyContext();
     }
 
+    /// @brief Calculates the value order-of-magnitude and returns the resized value + corresponding suffix
     static f32 CalcBytesOOM(u64 value, string& suffix) {
         if (value <= 1_KB) {
             suffix = "B";
@@ -108,7 +110,7 @@ namespace Astera {
         return f32(value);
     }
 
-    void ImGuiDebugLayer::DrawStats() const {
+    void ImGuiDebugLayer::DrawStats() {
         ImGui::SetNextWindowPos({0, 0});
         ImGui::Begin("Performance",
                      nullptr,
@@ -148,6 +150,25 @@ namespace Astera {
                            "Resource Pool (Used)       %.1f %s",
                            usedOOM,
                            usedSuffix.c_str());
+
+        mStatsSize = ImGui::GetWindowSize();
+
+        ImGui::End();
+    }
+
+    void ImGuiDebugLayer::DrawCustomText() const {
+        ImGui::SetNextWindowPos({0, mStatsSize.y + 40});
+        ImGui::Begin(mCustomTextHeader.c_str(),
+                     nullptr,
+                     ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoMove |
+                       ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoBackground);
+
+        ImGui::Text("%s", mCustomTextHeader.c_str());
+        ImGui::Separator();
+
+        for (auto& line : mCustomText) {
+            ImGui::Text("%s", line.c_str());
+        }
 
         ImGui::End();
     }

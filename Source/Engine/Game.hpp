@@ -31,6 +31,7 @@
 #include "EngineCommon.hpp"
 #include "AudioEngine.hpp"
 #include "EngineConfig.hpp"
+#include "EnginePlugin.hpp"
 #include "FrameAllocator.hpp"
 #include "Scene.hpp"
 #include "ScriptEngine.hpp"
@@ -129,10 +130,21 @@ namespace Astera {
             return mFullscreen;
         }
 
+        IEnginePlugin* GetPlugin(const string& name) const {
+            return mPlugins.find(name)->second.Get();
+        }
+
+        template<ValidPlugin Plugin>
+        Plugin* GetPlugin(const string& name) {
+            return mPlugins.find(name)->second.Get<Plugin>();
+        }
+
     protected:
         virtual void LoadContent() {}
 
         virtual void UnloadContent() {}
+
+        bool LoadScene(const string& name);
 
         /// @brief Called once when the game starts, before the main loop
         /// Override this to initialize game systems and load resources
@@ -186,10 +198,14 @@ namespace Astera {
         /// @brief Frame allocator for temporary, fast allocations
         FrameAllocator mFrameAllocator;
 
+        unordered_map<string, Plugin> mPlugins;
+
         // Client systems
 
         /// @brief Currently active game scene
         unique_ptr<Scene> mActiveScene;
+
+        unordered_map<string, SceneDescriptor> mSceneCache;
 
         /// @brief ImGui-based debug UI layer (optional)
         unique_ptr<ImGuiDebugLayer> mImGuiDebugLayer;

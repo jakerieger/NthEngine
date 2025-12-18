@@ -79,8 +79,7 @@ namespace Astera {
     }
 
     void Scene::LoadXML(const Path& filename, ScriptEngine& engine) {
-        mState.Reset();
-        mResourceManager.Clear();
+        Reset();
 
         SceneDescriptor descriptor;
         SceneParser::DeserializeDescriptorXML(filename, descriptor);
@@ -91,8 +90,7 @@ namespace Astera {
     }
 
     void Scene::LoadBytes(const vector<u8>& bytes, ScriptEngine& engine) {
-        mState.Reset();
-        mResourceManager.Clear();
+        Reset();
 
         SceneDescriptor descriptor;
         SceneParser::DeserializeDescriptorBytes(bytes, descriptor);
@@ -100,5 +98,18 @@ namespace Astera {
 
         Log::Debug("Scene", "Loaded scene: `{}`", descriptor.name);
         Awake(engine);
+    }
+
+    void Scene::LoadDescriptor(const SceneDescriptor& descriptor, ScriptEngine& engine) {
+        Reset();
+
+        SceneParser::DescriptorToScene(descriptor, this, engine);
+        Log::Debug("Scene", "Loaded scene: `{}`", descriptor.name);
+        Awake(engine);
+    }
+
+    void Scene::Reset() {
+        mState.Reset();
+        mResourceManager.Clear();
     }
 }  // namespace Astera
