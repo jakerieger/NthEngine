@@ -33,8 +33,15 @@
 
 #if defined(ASTERA_PLATFORM_LINUX)
     #include <dlfcn.h>
+using LibraryHandle = void*;
+#elif defined(ASTERA_PLATFORM_WINDOWS)
+    #ifndef WIN32_LEAN_AND_MEAN
+        #define WIN32_LEAN_AND_MEAN
+    #endif
+    #include <Windows.h>
+using LibraryHandle = HMODULE;
 #else
-    #error "Plugin loading hasn't been implemented for this platform yet."
+    #error "Plugins are not supported on this platform"
 #endif
 
 namespace Astera {
@@ -43,7 +50,7 @@ namespace Astera {
 
     class Plugin {
         IEnginePlugin* mPluginHandle {nullptr};
-        void* mLibHandle {nullptr};
+        LibraryHandle mLibHandle {nullptr};
         Path mPluginPath;
 
     public:
@@ -59,6 +66,7 @@ namespace Astera {
 
             const auto CreatePlugin = (CreatePluginFunc)dlsym(mLibHandle, "CreatePlugin");
             if (!CreatePlugin) {
+                dlclose(mLibHandle);
                 throw std::runtime_error(
                   "Could not find 'CreatePlugin' symbol in plugin. Make sure it is defined and exported.");
             }
@@ -66,36 +74,44 @@ namespace Astera {
             mPluginHandle = CreatePlugin();
             mPluginPath   = pluginFile;
 #else
-            throw ASTERA_NOT_IMPLEMENTED;
+            mLibHandle = ::LoadLibraryA(pluginFile.string().c_str());
+            if (!mLibHandle) {
+                throw std::runtime_error(
+                  fmt::format("IEnginePlugin", "Failed to load plugin: '{}'", pluginFile.string()));
+            }
+
+            const auto CreatePlugin = RCAST<CreatePluginFunc>(::GetProcAddress(mLibHandle, "CreatePlugin"));
+            if (!CreatePlugin) {
+                ::FreeLibrary(mLibHandle);
+                throw std::runtime_error(
+                  "Could not find 'CreatePlugin' symbol in plugin. Make sure it is defined and exported.");
+            }
+
+            mPluginHandle = CreatePlugin();
+            mPluginPath   = pluginFile;
 #endif
         }
 
         i32 Unload() {
 #if defined(ASTERA_PLATFORM_LINUX)
-            if (mPluginHandle) {
-                mPluginHandle = nullptr;
-            }
-
             if (mLibHandle) {
                 dlclose(mLibHandle);
                 mLibHandle = nullptr;
             }
-
-            mPluginPath = "";
-            return 0;
 #else
+            if (mLibHandle) {
+                // Platform-specific handling
+                ::FreeLibrary(mLibHandle);
+                mLibHandle = nullptr;
+            }
+#endif
+
             if (mPluginHandle) {
                 mPluginHandle = nullptr;
             }
 
-            if (mLibHandle) {
-                // Platform-specific handling
-                mLibHandle = nullptr;
-            }
-
             mPluginPath = "";
             return 0;
-#endif
         }
 
         ASTERA_CLASS_PREVENT_COPIES(Plugin)

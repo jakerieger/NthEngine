@@ -92,7 +92,11 @@ namespace Astera {
         const auto ms   = std::chrono::duration_cast<std::chrono::milliseconds>(now.time_since_epoch()) % 1000;
 
         std::tm tm;
+        #if defined(ASTERA_PLATFORM_LINUX)
         localtime_r(&time, &tm);  // Use localtime_s on Windows
+        #elif defined(ASTERA_PLATFORM_WINDOWS)
+        localtime_s(&tm, &time);
+        #endif
 
         char buffer[64];
         std::strftime(buffer, sizeof(buffer), "%Y%m%d_%H%M%S", &tm);

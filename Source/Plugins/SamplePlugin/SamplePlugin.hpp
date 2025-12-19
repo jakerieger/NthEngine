@@ -5,9 +5,9 @@
 #include "PluginExport.hpp"
 
 namespace Astera {
-    class SAMPLE_PLUGIN_API Screenshot final : public IEnginePlugin {
+    class SAMPLE_PLUGIN_API SamplePlugin final : public IEnginePlugin {
     public:
-        Screenshot() {
+        SamplePlugin() {
             this->mName = "SamplePlugin";
         }
 
