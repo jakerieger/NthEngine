@@ -34,12 +34,20 @@
 #if defined(ASTERA_PLATFORM_LINUX)
     #include <dlfcn.h>
 using LibraryHandle = void*;
+
+    #define PLUGIN_LOAD(name) dlopen(name, RTLD_LAZY)
+    #define PLUGIN_UNLOAD(handle) dlclose(handle)
+    #define PLUGIN_GET_CREATE_FUNC(handle) (CreatePluginFunc) dlsym(handle, "CreatePlugin")
 #elif defined(ASTERA_PLATFORM_WINDOWS)
     #ifndef WIN32_LEAN_AND_MEAN
         #define WIN32_LEAN_AND_MEAN
     #endif
     #include <Windows.h>
 using LibraryHandle = HMODULE;
+
+    #define PLUGIN_LOAD(name) ::LoadLibraryA(name, RTLD_LAZY)
+    #define PLUGIN_UNLOAD(handle) ::FreeLibrary(handle)
+    #define PLUGIN_GET_CREATE_FUNC(handle) RCAST<CreatePluginFunc>(::GetProcAddress(handle, "CreatePlugin"));
 #else
     #error "Plugins are not supported on this platform"
 #endif
@@ -56,55 +64,30 @@ namespace Astera {
     public:
         Plugin() = default;
 
-        void Load(const Path& pluginFile) {
-#if defined(ASTERA_PLATFORM_LINUX)
-            mLibHandle = dlopen(pluginFile.c_str(), RTLD_LAZY);
+        Result<string> Load(const Path& pluginFile) {
+            mLibHandle = PLUGIN_LOAD(pluginFile.c_str());
             if (!mLibHandle) {
-                throw std::runtime_error(
-                  fmt::format("IEnginePlugin", "Failed to load plugin: '{}'", pluginFile.string()));
+                return unexpected(fmt::format("Plugin '{}' failed to load. Ensure the plugin is a valid Astera plugin.",
+                                              pluginFile.string()));
             }
 
-            const auto CreatePlugin = (CreatePluginFunc)dlsym(mLibHandle, "CreatePlugin");
+            const auto CreatePlugin = PLUGIN_GET_CREATE_FUNC(mLibHandle);
             if (!CreatePlugin) {
-                dlclose(mLibHandle);
-                throw std::runtime_error(
+                PLUGIN_UNLOAD(mLibHandle);
+                return unexpected(
                   "Could not find 'CreatePlugin' symbol in plugin. Make sure it is defined and exported.");
             }
 
             mPluginHandle = CreatePlugin();
             mPluginPath   = pluginFile;
-#else
-            mLibHandle = ::LoadLibraryA(pluginFile.string().c_str());
-            if (!mLibHandle) {
-                throw std::runtime_error(
-                  fmt::format("IEnginePlugin", "Failed to load plugin: '{}'", pluginFile.string()));
-            }
-
-            const auto CreatePlugin = RCAST<CreatePluginFunc>(::GetProcAddress(mLibHandle, "CreatePlugin"));
-            if (!CreatePlugin) {
-                ::FreeLibrary(mLibHandle);
-                throw std::runtime_error(
-                  "Could not find 'CreatePlugin' symbol in plugin. Make sure it is defined and exported.");
-            }
-
-            mPluginHandle = CreatePlugin();
-            mPluginPath   = pluginFile;
-#endif
+            return mPluginHandle->GetName();
         }
 
         i32 Unload() {
-#if defined(ASTERA_PLATFORM_LINUX)
             if (mLibHandle) {
-                dlclose(mLibHandle);
+                PLUGIN_UNLOAD(mLibHandle);
                 mLibHandle = nullptr;
             }
-#else
-            if (mLibHandle) {
-                // Platform-specific handling
-                ::FreeLibrary(mLibHandle);
-                mLibHandle = nullptr;
-            }
-#endif
 
             if (mPluginHandle) {
                 mPluginHandle = nullptr;
@@ -133,7 +116,7 @@ namespace Astera {
             return *this;
         }
 
-        const Path& GetPluginPath() const {
+        ASTERA_KEEP const Path& GetPluginPath() const {
             return mPluginPath;
         }
 
@@ -146,7 +129,7 @@ namespace Astera {
             return DCAST<Plugin*>(mPluginHandle);
         }
 
-        IEnginePlugin* Get() const {
+        ASTERA_KEEP IEnginePlugin* Get() const {
             return mPluginHandle;
         }
 

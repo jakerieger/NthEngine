@@ -179,6 +179,11 @@ namespace Astera {
         /// @return True if initialization succeeded, false otherwise
         bool InitializeScriptEngine();
 
+        void LoadPlugins();
+        void UpdateSceneCache();
+        void LoadEngineConfigurations();
+        void LoadDebugLayers(u32 width, u32 height);
+
         // Core rendering
 
         /// @brief Main render target for the game window

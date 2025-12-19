@@ -23,7 +23,7 @@ namespace Astera {
         void SetHotkey(int key);  // GLFW key code
 
     private:
-        std::string GenerateFilename() const;
+        [[nodiscard]] std::string GenerateFilename() const;
         static bool SavePixelsToPNG(const std::string& filepath, const std::vector<u8>& pixels, u32 width, u32 height);
 
         Game* mEngine {nullptr};

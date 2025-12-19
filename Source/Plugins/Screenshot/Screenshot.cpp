@@ -12,13 +12,13 @@ namespace Astera {
             fs::create_directories(mOutputDir);
         }
 
-        Log::Info(mName, "Initialized. Press F12 to capture screenshots.");
-        Log::Info(mName, "Output directory: {}", fs::absolute(mOutputDir).string());
+        Log::Warn(mName, "Initialized. Press F12 to capture screenshots.");
+        Log::Warn(mName, "Output directory: {}", fs::absolute(mOutputDir).string());
     }
 
     void Screenshot::OnEngineStop(Game* engine) {
         mEngine = nullptr;
-        Log::Info(mName, "Shutdown complete.");
+        Log::Warn(mName, "Shutdown complete.");
     }
 
     void Screenshot::OnSceneRender(Game* engine) {
@@ -64,7 +64,7 @@ namespace Astera {
             // Generate filename and save
             std::string filepath = GenerateFilename();
             if (SavePixelsToPNG(filepath, flipped, width, height)) {
-                Log::Info(mName, "Screenshot saved: {}", filepath);
+                Log::Warn(mName, "Screenshot saved: {}", filepath);
             } else {
                 Log::Error(mName, "Failed to save screenshot: {}", filepath);
             }
@@ -92,11 +92,11 @@ namespace Astera {
         const auto ms   = std::chrono::duration_cast<std::chrono::milliseconds>(now.time_since_epoch()) % 1000;
 
         std::tm tm;
-        #if defined(ASTERA_PLATFORM_LINUX)
+#if defined(ASTERA_PLATFORM_LINUX)
         localtime_r(&time, &tm);  // Use localtime_s on Windows
-        #elif defined(ASTERA_PLATFORM_WINDOWS)
+#elif defined(ASTERA_PLATFORM_WINDOWS)
         localtime_s(&tm, &time);
-        #endif
+#endif
 
         char buffer[64];
         std::strftime(buffer, sizeof(buffer), "%Y%m%d_%H%M%S", &tm);

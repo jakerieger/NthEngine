@@ -75,6 +75,59 @@ namespace Astera {
         return true;
     }
 
+    void Game::LoadPlugins() {
+        const auto pluginsPath = fs::current_path() / "Plugins";
+        if (!exists(pluginsPath)) {
+            Log::Warn("Game", "No plugins directory found");
+        } else {
+            for (const auto& entry : fs::directory_iterator(pluginsPath)) {
+                if (entry.is_regular_file() && entry.path().extension() == ".plugin") {
+                    Plugin plugin;
+                    const auto loadResult = plugin.Load(entry.path().string());
+                    if (!loadResult.has_value()) {
+                        Log::Error("Game", "Error loading plugin: {}", loadResult.error());
+                        continue;
+                    }
+
+                    Log::Debug("Game", "Loaded plugin: '{}' (from: {})", *loadResult, plugin.GetPluginPath().string());
+
+                    mPlugins[*loadResult] = std::move(plugin);
+                }
+            }
+        }
+    }
+
+    void Game::UpdateSceneCache() {
+        mSceneCache.clear();
+        bool loadedEntry = false;
+        for (auto& scenePath : AssetManager::GetScenes()) {
+            SceneDescriptor desc;
+            SceneParser::DeserializeDescriptorXML(scenePath, desc);
+            mSceneCache[desc.name] = desc;
+            if (desc.entry && !loadedEntry) {
+                mActiveScene->LoadDescriptor(desc, GetScriptEngine());
+                loadedEntry = true;
+            }
+            Log::Debug("Game", "Added scene '{}' to cache", desc.name);
+        }
+    }
+
+    void Game::LoadEngineConfigurations() {
+        const auto inputMapPath = fs::current_path() / "Config" / "InputMap.ini";
+        InputMap inputMap;
+        if (inputMap.Load(inputMapPath)) {
+            mInputManager.SetInputMap(inputMap);
+        }
+    }
+
+    void Game::LoadDebugLayers(u32 width, u32 height) {
+        mImGuiDebugLayer = make_unique<ImGuiDebugLayer>(GetHandle());
+        mDebugManager.AttachOverlay("ImGuiDebugLayer", mImGuiDebugLayer.get());
+
+        mPhysicsDebugLayer = make_unique<PhysicsDebugLayer>(width, height);
+        mDebugManager.AttachOverlay("PhysicsDebugLayer", mPhysicsDebugLayer.get());
+    }
+
     void Game::OnAwake() {
         Log::Info("Game", "Initializing game systems...");
 
@@ -105,11 +158,7 @@ namespace Astera {
         // Initialize script engine
         InitializeScriptEngine();
 
-        const auto inputMapPath = fs::current_path() / "Config" / "InputMap.ini";
-        InputMap inputMap;
-        if (inputMap.Load(inputMapPath)) {
-            mInputManager.SetInputMap(inputMap);
-        }
+        LoadEngineConfigurations();
 
         // Asset manager
         if (!AssetManager::Initialize()) {
@@ -119,50 +168,18 @@ namespace Astera {
         }
 
         // Debug layers
-        mImGuiDebugLayer = make_unique<ImGuiDebugLayer>(GetHandle());
-        mDebugManager.AttachOverlay("ImGuiDebugLayer", mImGuiDebugLayer.get());
-
-        mPhysicsDebugLayer = make_unique<PhysicsDebugLayer>(width, height);
-        mDebugManager.AttachOverlay("PhysicsDebugLayer", mPhysicsDebugLayer.get());
+        LoadDebugLayers(width, height);
 
         // Create the initial scene
         mActiveScene = make_unique<Scene>(GetRenderContext());
 
-        // Load scenes into cache
-        bool loadedEntry = false;
-        for (auto& scenePath : AssetManager::GetScenes()) {
-            SceneDescriptor desc;
-            SceneParser::DeserializeDescriptorXML(scenePath, desc);
-            mSceneCache[desc.name] = desc;
-            if (desc.entry && !loadedEntry) {
-                mActiveScene->LoadDescriptor(desc, GetScriptEngine());
-                loadedEntry = true;
-            }
-            Log::Debug("Game", "Added scene '{}' to cache", desc.name);
-        }
+        UpdateSceneCache();
 
         // Initialize job system
         gJobSystem = make_unique<JobSystem>();
         gJobSystem->Initialize();
 
-        // Look for and load plugins
-        const auto pluginsPath = fs::current_path() / "Plugins";
-        if (!exists(pluginsPath)) {
-            Log::Warn("Game", "No plugins directory found");
-        } else {
-            for (const auto& entry : fs::directory_iterator(pluginsPath)) {
-                if (entry.is_regular_file()) {
-                    // Attempt to load the plugin library
-                    Plugin plugin;
-                    plugin.Load(entry.path().string());
-                    const auto name = plugin->GetName();
-
-                    Log::Debug("Game", "Loaded plugin: '{}' (from: {})", name, plugin.GetPluginPath().string());
-
-                    mPlugins[name] = std::move(plugin);
-                }
-            }
-        }
+        LoadPlugins();
 
         Log::Debug("Game",
                    "Successfully initialized game instance:\n-- Dimensions: {}x{}\n-- V-Sync: {}\n-- Worker Threads: "
