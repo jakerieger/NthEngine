@@ -2,7 +2,7 @@ var searchData=
 [
   ['saturate_0',['Saturate',['../class_astera_1_1_color.html#ab44f7baa5128a8b9c9b0b84d8ee54234',1,'Astera::Color']]],
   ['savetofile_1',['SaveToFile',['../class_astera_1_1_binary_writer.html#a21a9a9232b4823f3f1a2d5cefadef2d0',1,'Astera::BinaryWriter']]],
-  ['scale_2',['scale',['../struct_astera_1_1_transform.html#ae821dbc0b13e3bdfa4307d57bbfb2836',1,'Astera::Transform::Scale()'],['../struct_astera_1_1_transform_descriptor.html#aaa28b540517c63caff34d35ce3485652',1,'Astera::TransformDescriptor::scale'],['../struct_astera_1_1_transform.html#a8c683c9f5f2c7b6ab87ea64dae43d8ad',1,'Astera::Transform::scale']]],
+  ['scale_2',['scale',['../struct_astera_1_1_transform_descriptor.html#aaa28b540517c63caff34d35ce3485652',1,'Astera::TransformDescriptor::scale'],['../struct_astera_1_1_transform.html#a8c683c9f5f2c7b6ab87ea64dae43d8ad',1,'Astera::Transform::scale'],['../struct_astera_1_1_transform.html#ae821dbc0b13e3bdfa4307d57bbfb2836',1,'Astera::Transform::Scale(const Vec2 &amp;scaleFactor)']]],
   ['scene_3',['scene',['../class_astera_1_1_scene.html#af545656e9e7f6d0567d3a9744171af62',1,'Astera::Scene::Scene()'],['../namespace_astera.html#a56fe2366139e5889dfac7fea1b30c3c5a9ead0d38e06ec253ca0ecbf6ea56e59b',1,'Astera::Scene'],['../namespace_astera.html#affcc4f831bca1e4b5448519bb50c5f50a9ead0d38e06ec253ca0ecbf6ea56e59b',1,'Astera::Scene'],['../class_astera_1_1_scene.html',1,'Astera::Scene']]],
   ['scene_2ecpp_4',['Scene.cpp',['../_scene_8cpp.html',1,'']]],
   ['scene_2ehpp_5',['Scene.hpp',['../_scene_8hpp.html',1,'']]],
