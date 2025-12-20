@@ -152,14 +152,13 @@ var searchData=
   ['asteracli_149',['AsteraCLI',['../namespace_astera_c_l_i.html',1,'']]],
   ['asteracli_3a_3aplugintemplates_150',['PluginTemplates',['../namespace_astera_c_l_i_1_1_plugin_templates.html',1,'AsteraCLI']]],
   ['asteracore_2ehpp_151',['AsteraCore.hpp',['../_astera_core_8hpp.html',1,'']]],
-  ['attachoverlay_152',['AttachOverlay',['../class_astera_1_1_debug_manager.html#aa6f2e970bbe28b86b47b2084dd18d6c1',1,'Astera::DebugManager']]],
-  ['attributetype_153',['AttributeType',['../namespace_astera.html#a20f0df955e322a9b3ca7866de516ceeb',1,'Astera']]],
-  ['audio_154',['audio',['../namespace_astera.html#affcc4f831bca1e4b5448519bb50c5f50ab22f0418e8ac915eb66f829d262d14a2',1,'Astera::Audio'],['../namespace_astera.html#a56fe2366139e5889dfac7fea1b30c3c5ab22f0418e8ac915eb66f829d262d14a2',1,'Astera::Audio']]],
-  ['audioengine_155',['audioengine',['../class_astera_1_1_audio_engine.html',1,'Astera::AudioEngine'],['../class_astera_1_1_audio_engine.html#abbbc12a3c782607303f9c339593cadb5',1,'Astera::AudioEngine::AudioEngine()']]],
-  ['audioengine_2ecpp_156',['AudioEngine.cpp',['../_audio_engine_8cpp.html',1,'']]],
-  ['audioengine_2ehpp_157',['AudioEngine.hpp',['../_audio_engine_8hpp.html',1,'']]],
-  ['audioplayer_2elua_158',['AudioPlayer.lua',['../_audio_player_8lua.html',1,'']]],
-  ['awake_159',['Awake',['../class_astera_1_1_scene.html#a8ccb345e5871be6d7077b50a860a1ae3',1,'Astera::Scene']]],
-  ['axes_160',['axes',['../struct_astera_1_1_input_map.html#a75cd8fc46783e7507962a5766bbee88a',1,'Astera::InputMap']]],
-  ['axismap_161',['AxisMap',['../struct_astera_1_1_axis_map.html',1,'Astera']]]
+  ['attributetype_152',['AttributeType',['../namespace_astera.html#a20f0df955e322a9b3ca7866de516ceeb',1,'Astera']]],
+  ['audio_153',['audio',['../namespace_astera.html#affcc4f831bca1e4b5448519bb50c5f50ab22f0418e8ac915eb66f829d262d14a2',1,'Astera::Audio'],['../namespace_astera.html#a56fe2366139e5889dfac7fea1b30c3c5ab22f0418e8ac915eb66f829d262d14a2',1,'Astera::Audio']]],
+  ['audioengine_154',['audioengine',['../class_astera_1_1_audio_engine.html',1,'Astera::AudioEngine'],['../class_astera_1_1_audio_engine.html#abbbc12a3c782607303f9c339593cadb5',1,'Astera::AudioEngine::AudioEngine()']]],
+  ['audioengine_2ecpp_155',['AudioEngine.cpp',['../_audio_engine_8cpp.html',1,'']]],
+  ['audioengine_2ehpp_156',['AudioEngine.hpp',['../_audio_engine_8hpp.html',1,'']]],
+  ['audioplayer_2elua_157',['AudioPlayer.lua',['../_audio_player_8lua.html',1,'']]],
+  ['awake_158',['Awake',['../class_astera_1_1_scene.html#a8ccb345e5871be6d7077b50a860a1ae3',1,'Astera::Scene']]],
+  ['axes_159',['axes',['../struct_astera_1_1_input_map.html#a75cd8fc46783e7507962a5766bbee88a',1,'Astera::InputMap']]],
+  ['axismap_160',['AxisMap',['../struct_astera_1_1_axis_map.html',1,'Astera']]]
 ];

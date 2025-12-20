@@ -24,7 +24,6 @@ var hierarchy =
     [ "Astera::CommandExecutor", "class_astera_1_1_command_executor.html", null ],
     [ "Astera::CommandQueue", "class_astera_1_1_command_queue.html", null ],
     [ "Astera::Content", "class_astera_1_1_content.html", null ],
-    [ "Astera::DebugManager", "class_astera_1_1_debug_manager.html", null ],
     [ "Astera::DrawArraysCommand", "struct_astera_1_1_draw_arrays_command.html", null ],
     [ "Astera::DrawIndexedCommand", "struct_astera_1_1_draw_indexed_command.html", null ],
     [ "Astera::DrawIndexedInstancedCommand", "struct_astera_1_1_draw_indexed_instanced_command.html", null ],

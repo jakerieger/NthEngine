@@ -10,7 +10,7 @@ var searchData=
   ['unbindvertexarraycommand_7',['UnbindVertexArrayCommand',['../struct_astera_1_1_unbind_vertex_array_command.html',1,'Astera']]],
   ['unload_8',['Unload',['../class_astera_1_1_plugin.html#ae493d720e63325de406d4b1350f98b55',1,'Astera::Plugin']]],
   ['unloadcontent_9',['UnloadContent',['../class_astera_1_1_game.html#aa4042306997796b69f4cf4dc0ce952b0',1,'Astera::Game']]],
-  ['update_10',['update',['../class_astera_1_1_scene.html#ae7d9638df481856692b6e34f81df57fe',1,'Astera::Scene::Update()'],['../class_astera_1_1_debug_manager.html#a491bbd2c8b1e033f7cf12e989b625dea',1,'Astera::DebugManager::Update()']]],
+  ['update_10',['Update',['../class_astera_1_1_scene.html#ae7d9638df481856692b6e34f81df57fe',1,'Astera::Scene']]],
   ['updateat_11',['UpdateAt',['../class_astera_1_1_binary_writer.html#abc28f23f913d9475eee91bd5106fa6e4',1,'Astera::BinaryWriter']]],
   ['updatedata_12',['updatedata',['../class_astera_1_1_i_buffer.html#a24fb6b00c35d939e16de1404b14270d3',1,'Astera::IBuffer::UpdateData()'],['../class_astera_1_1_vertex_buffer.html#a6e5159dc4481eb8b4c01d7fa54fa6fec',1,'Astera::VertexBuffer::UpdateData()'],['../class_astera_1_1_index_buffer.html#ad6af867403e2fc208b4e16c9d2dd0ff4',1,'Astera::IndexBuffer::UpdateData()']]],
   ['updatedrawcalls_13',['UpdateDrawCalls',['../class_astera_1_1_im_gui_debug_layer.html#abc914e9ecbc459c9de953390f8159272',1,'Astera::ImGuiDebugLayer']]],

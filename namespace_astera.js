@@ -68,7 +68,6 @@ var namespace_astera =
     [ "CommandExecutor", "class_astera_1_1_command_executor.html", "class_astera_1_1_command_executor" ],
     [ "CommandQueue", "class_astera_1_1_command_queue.html", "class_astera_1_1_command_queue" ],
     [ "Content", "class_astera_1_1_content.html", null ],
-    [ "DebugManager", "class_astera_1_1_debug_manager.html", "class_astera_1_1_debug_manager" ],
     [ "DrawArraysCommand", "struct_astera_1_1_draw_arrays_command.html", "struct_astera_1_1_draw_arrays_command" ],
     [ "DrawIndexedCommand", "struct_astera_1_1_draw_indexed_command.html", "struct_astera_1_1_draw_indexed_command" ],
     [ "DrawIndexedInstancedCommand", "struct_astera_1_1_draw_indexed_instanced_command.html", "struct_astera_1_1_draw_indexed_instanced_command" ],

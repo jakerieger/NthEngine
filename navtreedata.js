@@ -63,14 +63,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_arena_allocator_8cpp.html",
-"_macros_8hpp.html#a63e209215c7974a14a4238c0063f7838",
-"class_astera_1_1_arena_allocator.html#a2dc1de6f447d42c9e7d60b47a6583c61",
-"class_astera_1_1_command_queue.html#ab3c167e12e606dbe301ab1e0b79c1d26",
-"class_astera_1_1_index_buffer.html#a022d341382de2a0d5d485e4f653b035d",
-"class_astera_1_1_scene.html#aadaa7e12e88f09b3a6c8ab637deceba8",
-"class_astera_1_1_window.html#a8221707cecad50f3274691d52914f0c7",
-"namespace_astera_1_1_string_convert.html#ae8053d60e1270a4c286454f25ff39a22",
-"struct_astera_1_1_rigidbody2_d.html#a82a9689fc90352748930f8b29c4e1a4d"
+"_macros_8hpp.html#a6a04807bd96921a4214f628f3d3eecc7",
+"class_astera_1_1_arena_allocator.html#a58602e176eec66daafed40978174d0da",
+"class_astera_1_1_command_queue.html#acdf74d6d00de281d444e09f593a0728e",
+"class_astera_1_1_input_manager.html#a6b2735795c77454e7ee32343c700cfd9",
+"class_astera_1_1_scene_state.html#a08f2d0d239381c5bbbf3ad3e204a9351",
+"class_astera_1_1_window.html#ad9309b6ab466e7b846009c4bc480d1bd",
+"namespaces.html",
+"struct_astera_1_1_rigidbody2_d.html#ae99eb385b80affe7352bbcac2afb1201"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
